@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CItemContainer id="ContainerEquipmentMisc"/>
+    <CItemContainer id="ContainerEquipmentSDM">
+        <Slots Equip="1" Row="0" Column="0">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots Equip="1" Row="0" Column="1">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots EmptyFace="EquipmentArmor" Row="2" Column="0">
+            <Classes value="Misc"/>
+            <Classes value="Armor"/>
+        </Slots>
+        <Slots Equip="1" Row="1" Column="0">
+            <Classes value="Misc"/>
+            <Classes value="Ammo"/>
+        </Slots>
+        <Slots Row="1" Column="1">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots EmptyFace="EquipmentWeapon" Row="2" Column="1">
+            <Classes value="Misc"/>
+            <Classes value="WeaponSDM"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="ContainerEquipmentRifle">
+        <Slots Equip="1" Row="0" Column="0">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots Equip="1" Row="0" Column="1">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots EmptyFace="EquipmentArmor" Row="2" Column="0">
+            <Classes value="Misc"/>
+            <Classes value="Armor"/>
+        </Slots>
+        <Slots Equip="1" Row="1" Column="0">
+            <Classes value="Misc"/>
+            <Classes value="Ammo"/>
+        </Slots>
+        <Slots Row="1" Column="1">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots EmptyFace="EquipmentWeapon" Row="2" Column="1">
+            <Classes value="Misc"/>
+            <Classes value="WeaponRifle"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="ContainerEquipmentMG">
+        <Slots Equip="1" Row="0" Column="0">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots Equip="1" Row="0" Column="1">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots EmptyFace="EquipmentArmor" Row="2" Column="0">
+            <Classes value="Misc"/>
+            <Classes value="Armor"/>
+        </Slots>
+        <Slots Equip="1" Row="1" Column="0">
+            <Classes value="Misc"/>
+            <Classes value="Ammo"/>
+        </Slots>
+        <Slots Row="1" Column="1">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots EmptyFace="EquipmentWeapon" Row="2" Column="1">
+            <Classes value="Misc"/>
+            <Classes value="WeaponMG"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="ContainerEquipmentPlasma">
+        <Slots Equip="1" Row="0" Column="0">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots Equip="1" Row="0" Column="1">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots EmptyFace="EquipmentArmor" Row="2" Column="0">
+            <Classes value="Misc"/>
+            <Classes value="Armor"/>
+        </Slots>
+        <Slots Equip="1" Row="1" Column="0">
+            <Classes value="Misc"/>
+            <Classes value="Ammo"/>
+        </Slots>
+        <Slots Row="1" Column="1">
+            <Classes value="Misc"/>
+        </Slots>
+        <Slots EmptyFace="EquipmentWeapon" Row="2" Column="1">
+            <Classes value="Misc"/>
+            <Classes value="WeaponPlasma"/>
+        </Slots>
+    </CItemContainer>
+</Catalog>

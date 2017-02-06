@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CItemEffectInstant id="40mmGrenade" parent="CONTAINER">
+        <Face value="40mmGrenades"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Container value=""/>
+        <Effect value="ItemDummy"/>
+        <EffectCost>
+            <Charge>
+                <CountMax value="10"/>
+                <CountStart value="5"/>
+                <CountUse value="1"/>
+                <Link value="ItemCharges"/>
+            </Charge>
+            <Cooldown Location="Unit" TimeUse="1"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+        <RefundFraction Charge="1"/>
+    </CItemEffectInstant>
+    <CItem id="DURounds">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <CarryBehaviorArray value="DURounds"/>
+    </CItem>
+    <CItem id="AimAssist">
+        <Class value="Misc"/>
+        <Face value="AimAssistant"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="AimAssist"/>
+    </CItem>
+    <CItemEffectInstant id="BetaCellAnalyzer">
+        <Face value="BCA"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge HideCount="1" Link="AmmoCharges"/>
+            <Cooldown TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemEffectInstant id="BioSample">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge HideCount="1" Link="ItemCharges"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemAbil id="Claymore">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Abil value="ClaymoreItem"/>
+    </CItemAbil>
+    <CItem id="APRounds">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <CarryBehaviorArray value="APRounds"/>
+    </CItem>
+    <CItem id="M92Torrent">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponSDM"/>
+        <CarryBehaviorArray value="M92Torrent"/>
+    </CItem>
+    <CItem id="IPR">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponPlasma"/>
+        <CarryBehaviorArray value="IPR"/>
+    </CItem>
+    <CItemAbil id="LLDR">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Requirements value="CASOnStation"/>
+    </CItemAbil>
+    <CItemAbil id="LiftBoots">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+    </CItemAbil>
+    <CItem id="M135Minigun">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponMG"/>
+        <CarryBehaviorArray value="M135Minigun"/>
+    </CItem>
+    <CItem id="M241MMG">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponMG"/>
+        <CarryBehaviorArray value="M241MMG"/>
+    </CItem>
+    <CItemAbil id="M5MAR">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponRifle"/>
+        <CarryBehaviorArray value="M5MAR"/>
+        <Abil value="MGLItem"/>
+    </CItemAbil>
+    <CItemAbil id="MK79SentryGun">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+    </CItemAbil>
+    <CItemAbil id="SAMSitePacked">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Abil value="SAMSite"/>
+    </CItemAbil>
+    <CItem id="SOFAR">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponRifle"/>
+        <CarryBehaviorArray value="SOFAR"/>
+    </CItem>
+    <CItemEffectInstant id="SatchelCharge">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge HideCount="1" Link="AmmoCharges"/>
+            <Cooldown TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemEffectInstant id="KEC">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge HideCount="1" Link="AmmoCharges"/>
+            <Cooldown TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemEffectInstant id="EnergyBattery">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge HideCount="1" Link="AmmoCharges"/>
+            <Cooldown TimeUse="1"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItem id="Casualty">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <CarryBehaviorArray value="CarryCasualty"/>
+    </CItem>
+    <CItemEffectTarget id="FirstAidKit" parent="CONTAINER">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Effect value="FirstAidKitBehavior"/>
+        <EffectCost>
+            <Charge>
+                <CountMax value="5"/>
+                <CountStart value="3"/>
+                <CountUse value="1"/>
+                <Link value="ItemCharges"/>
+            </Charge>
+            <Cooldown Location="Unit" TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+        <Range value="3"/>
+    </CItemEffectTarget>
+    <CItem id="IDMR2">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponSDM"/>
+        <CarryBehaviorArray value="IDMR2"/>
+    </CItem>
+    <CItem id="ISS7">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponShotgun"/>
+        <CarryBehaviorArray value="ISS7"/>
+    </CItem>
+    <CItem id="M41SAW">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponMG"/>
+        <CarryBehaviorArray value="M41SAW"/>
+        <CarryBehaviorArray value="M41SAW2"/>
+    </CItem>
+    <CItemAbil id="ExplosiveCharge">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+    </CItemAbil>
+    <CItemAbil id="MRL">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+    </CItemAbil>
+    <CItemAbil id="MGL">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Abil value="MGLItem"/>
+    </CItemAbil>
+    <CItemAbil id="FlareGun">
+        <Face value="FlareGunItem"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Abil value="FlareGunItem"/>
+    </CItemAbil>
+    <CItemEffectInstant id="SeismicResonator">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge HideCount="1" Link="AmmoCharges"/>
+            <Cooldown TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemAbil id="SmokeGrenade">
+        <Face value="SmokeGrenadeItem"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Abil value="SmokeGrenadeItem"/>
+    </CItemAbil>
+    <CItemAbil id="GroundFlare">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Abil value="GroundFlareItem"/>
+    </CItemAbil>
+    <CItemEffectInstant id="MuscleRelaxant">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Effect value="MuscleRelaxantAB"/>
+        <EffectCost>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="ItemCharges"/>
+            </Charge>
+            <Cooldown Location="Unit" TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemEffectInstant id="KineticIntegrator">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <CarryBehaviorArray value="KineticIntegrator"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge Link="ItemCharges"/>
+            <Cooldown Location="Unit" TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItem id="HK42">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponRifle"/>
+        <CarryBehaviorArray value="HK42"/>
+    </CItem>
+    <CItem id="OPA">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <CarryBehaviorArray value="OPA"/>
+    </CItem>
+    <CItem id="KevlarBodyArmor">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <CarryBehaviorArray value="KevlarBodyArmor"/>
+    </CItem>
+    <CItem id="SPCS">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <CarryBehaviorArray value="SPCS"/>
+    </CItem>
+    <CItemEffectInstant id="EnergyCell">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Effect value="EnergyCellAB"/>
+        <EffectCost>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="ItemCharges"/>
+            </Charge>
+            <Cooldown Location="Unit" TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItem id="StynerBR2">
+        <Face value="HK422"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponRifle"/>
+        <CarryBehaviorArray value="StynerBR2"/>
+    </CItem>
+    <CItemEffectInstant id="MK44SentryGun2">
+        <Face value="MK44SentryGun"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge HideCount="1" Link="AmmoCharges"/>
+            <Cooldown TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItem id="Flashlight">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <CarryBehaviorArray value="Flashlight"/>
+        <CarryBehaviorArray value="FlashlightReveal"/>
+    </CItem>
+    <CItemAbil id="FragGrenade">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Abil value="FragGrenadeItem"/>
+        <Face value="FragGrenadeItem"/>
+    </CItemAbil>
+    <CItemAbil id="MK44SentryGun">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+    </CItemAbil>
+    <CItemEffectInstant id="Magazines">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <EffectCost>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="AmmoCharges"/>
+            </Charge>
+            <Cooldown TimeStart="0.25" TimeUse="0.25"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemEffectInstant id="AmmoCase">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value="Magazines"/>
+        <EffectCost>
+            <Charge>
+                <CountMax value="10"/>
+                <CountStart value="4"/>
+                <CountUse value="1"/>
+                <Link value="AmmoCharges"/>
+            </Charge>
+            <Cooldown TimeStart="0.25" TimeUse="0.25"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemEffectInstant id="BMDD">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Misc"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Charge HideCount="1" Link="AmmoCharges"/>
+            <Cooldown TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItemEffectInstant id="SalineSyringe">
+        <Face value="QuikClot"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Misc"/>
+        <Effect value="QuikClot"/>
+        <EffectCost>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="ItemCharges"/>
+            </Charge>
+            <Cooldown Location="Unit" TimeUse="2"/>
+        </EffectCost>
+        <EffectFlags index="Transient" value="1"/>
+    </CItemEffectInstant>
+    <CItem id="M79Flamethrower">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponFlame"/>
+        <CarryBehaviorArray value="M79Flamethrower"/>
+    </CItem>
+    <CItem id="USMCR">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="WeaponRifle"/>
+        <CarryBehaviorArray value="USMCR"/>
+    </CItem>
+</Catalog>

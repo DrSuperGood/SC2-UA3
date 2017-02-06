@@ -1,0 +1,16 @@
+UI/ResourceIcon0=Assets\Custom Icons\icon-bullets.dds
+UI/ResourceIcon0_Terr=Assets\Custom Icons\icon-bullets.dds
+UI/ResourceIconNoBackground0=Assets\Custom Icons\icon-bullets.dds
+UI/ResourceIconNoBackground0_Terr=Assets\Custom Icons\icon-bullets.dds
+UI/ResourceIcon1=Assets\Custom Icons\icon-mags.dds
+UI/ResourceIcon1_Terr=Assets\Custom Icons\icon-mags.dds
+UI/ResourceIconNoBackground1=Assets\Custom Icons\icon-mags.dds
+UI/ResourceIconNoBackground1_Terr=Assets\Custom Icons\icon-mags.dds
+UI/ResourceIconSupply=Assets\Textures\btn-ability-zerg-generatecreep-color.dds
+UI/ResourceIconSupply_Terr=Assets\Textures\btn-ability-zerg-generatecreep-color.dds
+UI/ResourceIconNoBackgroundSupply=Assets\Textures\btn-ability-zerg-generatecreep-color.dds
+UI/ResourceIconNoBackgroundSupply_Terr=Assets\Textures\btn-ability-zerg-generatecreep-color.dds
+UI/ResourceIcon2=Assets\Textures\fireball_10.dds
+UI/ResourceIcon2_Terr=Assets\Textures\fireball_10.dds
+UI/ResourceIconNoBackground2=Assets\Textures\fireball_10.dds
+UI/ResourceIconNoBackground2_Terr=Assets\Textures\fireball_10.dds

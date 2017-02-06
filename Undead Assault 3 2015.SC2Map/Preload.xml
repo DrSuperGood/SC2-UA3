@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Preload>
+<Asset path="textures\medals\mdlpurple heart.dds" Type="Image"/>
+<Asset path="textures\medals\mdlcombat infantry medal.dds" Type="Image"/>
+<Asset path="textures\medals\mdldist serv medal.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-missioncase.dds" Type="Image"/>
+<Asset path="textures\medals\mdlmarksman infantry medal.dds" Type="Image"/>
+<Asset path="assets\textures\btn-command-terran-buildstructure.dds" Type="Image"/>
+<Asset path="textures\medals\mdlbronze star.dds" Type="Image"/>
+<Asset path="textures\decals\combat medic badge.dds" Type="Image"/>
+<Asset path="assets\textures\ui_frame_small_base_zerg.dds" Type="Image"/>
+<Asset path="textures\medals\mdlgood conduct medal.dds" Type="Image"/>
+<Asset path="assets\textures\ui_storymode_subtitle_frame.dds" Type="Image"/>
+<Asset path="textures\medals\mdlsilver star.dds" Type="Image"/>
+<Asset path="textures\medals\mdlgold star.dds" Type="Image"/>
+<Asset path="textures\medals\mdlcombat action medal.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-hotkeys.dds" Type="Image"/>
+<Asset path="assets\textures\ui_tip_questionmark.dds" Type="Image"/>
+<Asset path="textures\medals\mdlmeritorious service medal.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-biosample.dds" Type="Image"/>
+<Asset path="textures\medals\mdlmedal of valor.dds" Type="Image"/>
+<Asset path="assets\textures\ui_mission_frame_massege.dds" Type="Image"/>
+<Asset path="assets\textures\btn-techupgrade-terran-fullborecanisterammo.dds" Type="Image"/>
+<Asset path="assets\textures\btn-icon-dominion.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-terran-holdfire.dds" Type="Image"/>
+<Asset path="assets\custom icons\icon-mags.dds" Type="Image"/>
+<Asset path="assets\textures\ui_ingame_subpanel2.dds" Type="Image"/>
+<Asset path="assets\textures\fireball_10.dds" Type="Image"/>
+<Asset path="assets\textures\ui_hots_icon_generic_infestation.dds" Type="Image"/>
+<Asset path="assets\textures\btn-research-terran-microfiltering.dds" Type="Image"/>
+<Asset path="assets\textures\fireball_10.lvl0" Type="Image"/>
+<Asset path="assets\textures\ui_ingame_hotscampaign_unitstatus_healthbar.dds" Type="Image"/>
+<Asset path="assets\textures\ui_ingame_resourcesharing_frame_message.dds" Type="Image"/>
+<Asset path="assets\textures\ui_ingame_help_techtree_questionmark.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-hacking.dds" Type="Image"/>
+<Abil id="Leadership"/>
+<Abil id="Training"/>
+<Actor id="SYSTEM_ActorConfig"/>
+<Actor id="LightOmniRedLarge"/>
+<Actor id="LightOmniWhite"/>
+<Actor id="LightOmniWhiteLarge"/>
+<Actor id="LightOmniYellow"/>
+<Actor id="SmallBurrowDownEffects"/>
+<Actor id="LargeBurrowDownEffects"/>
+<Actor id="AgriaCrops" Variations="0,1,2"/>
+<Actor id="AgriaCurtain" Variations="1,2,3"/>
+<Actor id="AgriaDebris" Variations="1"/>
+<Actor id="AgriaFoliage" Variations="0,3,5"/>
+<Actor id="AgriaTree" Variations="0,1,2,3,4,5,6,7"/>
+<Actor id="AgriaUnderbrush" Variations="0,1,2,3"/>
+<Actor id="AiurCurtain" Variations="2"/>
+<Actor id="Checkpoint"/>
+<Actor id="AlarmLight" Variations="0"/>
+<Actor id="AvernusBarrier" Variations="3"/>
+<Actor id="BelShirCurtain" Variations="0,1,2,3"/>
+<Actor id="BelShirTree" Variations="0,1,2,3,4,5,6,7"/>
+<Actor id="BioDomeDoodad" Variations="2"/>
+<Actor id="Birds"/>
+<Actor id="BloodSplats" Variations="0,3,4"/>
+<Actor id="Brambles" Variations="4,7"/>
+<Actor id="BraxisAlphaBarrels" Variations="0,1,2"/>
+<Actor id="BraxisAlphaFloodLights" Variations="0,2"/>
+<Actor id="BubbasFuelStop"/>
+<Actor id="BullhornLights" Variations="1"/>
+<Actor id="Bush" Variations="0,1,2,3,4"/>
+<Actor id="CastanarCabinet" Variations="0,1,2,3,4,5,6"/>
+<Actor id="CastanarCage" Variations="0,3"/>
+<Actor id="CastanarCamera" Variations="2"/>
+<Actor id="CastanarDissectionArm"/>
+<Actor id="CastanarFloodlight" Variations="1,2"/>
+<Actor id="CastanarHoloProjector"/>
+<Actor id="CastanarLightboard" Variations="1,2"/>
+<Actor id="CastanarMonitorFloor" Variations="0,1"/>
+<Actor id="CastanarMonitorWall" Variations="1"/>
+<Actor id="CastanarStasisTube" Variations="1,5"/>
+<Actor id="CastanarTable"/>
+<Actor id="AvernusUltraliskSevered" Variations="1,2"/>
+<Actor id="CastanarWorkstation" Variations="0,2,3,4"/>
+<Actor id="CaveEntrance"/>
+<Actor id="ChainLinkFenceDiagonal" Variations="0,1,2,3"/>
+<Actor id="ChainLinkFencePost"/>
+<Actor id="ChainLinkFenceStraight" Variations="0,1,2,3,4,5,6,7"/>
+<Actor id="Crate" Variations="0,1,2,4,5"/>
+<Actor id="Decal" Variations="0,1,3,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,23,24,25,26"/>
+<Actor id="Dumpster" Variations="0,1,2"/>
+<Actor id="ExhaustPipes" Variations="2,4"/>
+<Actor id="FanVent" Variations="1"/>
+<Actor id="FireMedium"/>
+<Actor id="Floodlight" Variations="0"/>
+<Actor id="FlySwarm"/>
+<Actor id="Garage" Variations="0,1"/>
+<Actor id="GarageLarge" Variations="0,1"/>
+<Actor id="GasStationAngled"/>
+<Actor id="HavenDoodadsCrates" Variations="1,2,3,4"/>
+<Actor id="HavenTree" Variations="0,1,2,3,4,5,6,7"/>
+<Actor id="HavenUnderbrush" Variations="0,1,2,3"/>
+<Actor id="KorhalBuilding" Variations="9"/>
+<Actor id="KorhalLoneMarineStatue"/>
+<Actor id="KorhalStoreFront" Variations="0,2,3,5,7"/>
+<Actor id="LandingLights" Variations="0,1,2,3"/>
+<Actor id="LandingTower"/>
+<Actor id="BridgeOrdinalFootprint"/>
+<Actor id="MarSaraDirtPileLarge" Variations="0"/>
+<Actor id="MarSaraTree" Variations="0,1,2,3,4,5"/>
+<Actor id="MeinhoffCrater" Variations="1,2"/>
+<Actor id="MeinhoffCraterSmall" Variations="0,1"/>
+<Actor id="MonlythStonePieces" Variations="0,1,2,3,4,5,6"/>
+<Actor id="NewFolsomEquipment" Variations="0,1,2"/>
+<Actor id="NewFolsomLockers" Variations="0,1"/>
+<Actor id="NewFolsomMisc" Variations="0,4,5"/>
+<Actor id="NewFolsomSandbags" Variations="0,1,2,3,4,5,6,7"/>
+<Actor id="Outhouse" Variations="2"/>
+<Actor id="PipesCorner45" Variations="1"/>
+<Actor id="PipesLong" Variations="0,1"/>
+<Actor id="PlantsJungle" Variations="0,7,10,14,21,22,26,29"/>
+<Actor id="PortZionBarrel" Variations="0,1"/>
+<Actor id="PortZionCompactor"/>
+<Actor id="PortZionDumpster"/>
+<Actor id="PortZionGarbagePile" Variations="0,4"/>
+<Actor id="PortZionJunkPile" Variations="0"/>
+<Actor id="PortZionScrapConveyorBelt" Variations="1"/>
+<Actor id="PortZionTower" Variations="0,1,2,3,5,9"/>
+<Actor id="PowerLine" Variations="2,3,5"/>
+<Actor id="Rock" Variations="0,1,2,3,4,5,6,7,8,9,10"/>
+<Actor id="RockArch" Variations="5,9"/>
+<Actor id="RockTower" Variations="0,1"/>
+<Actor id="RockWaterfall" Variations="6"/>
+<Actor id="RockGiant" Variations="1,3,4,5,8,9,10,11,12,13,14,15,16"/>
+<Actor id="RockLarge" Variations="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23"/>
+<Actor id="RooftopAC" Variations="0,1,2"/>
+<Actor id="RooftopEntrance"/>
+<Actor id="Rubble" Variations="0,1,2,3,4"/>
+<Actor id="RubbleBuilding" Variations="0,1"/>
+<Actor id="RubbleWall45" Variations="0,1,2,3,4,5"/>
+<Actor id="RubbleWall90" Variations="0,1,2,3,4,5"/>
+<Actor id="RubbleWallCorner" Variations="0,1"/>
+<Actor id="Searchlight" Variations="0,2"/>
+<Actor id="SecurityFenceStraight"/>
+<Actor id="ShakurasRuinDebris" Variations="1"/>
+<Actor id="SignsWarning" Variations="0,16"/>
+<Actor id="SmokeMedium"/>
+<Actor id="SpacePlatformArchwayLarge" Variations="2"/>
+<Actor id="SpacePlatformGenerator" Variations="1"/>
+<Actor id="SpacePlatformGroundDecals" Variations="6,8,16"/>
+<Actor id="SpacePlatformHatch"/>
+<Actor id="SpacePlatformHose" Variations="2"/>
+<Actor id="SpacePlatformReactor" Variations="1"/>
+<Actor id="SpacePlatformSignTowerLarge" Variations="0"/>
+<Actor id="SpacePlatformTower" Variations="0,1,2,3"/>
+<Actor id="SpacePlatformVents" Variations="0"/>
+<Actor id="StoreFrontCityProps" Variations="2"/>
+<Actor id="Streetlight" Variations="0,1,2"/>
+<Actor id="SupplyTanks"/>
+<Actor id="TrafficSignalBroken" Variations="0,2,3,7"/>
+<Actor id="VespeneTank" Variations="0,1,2"/>
+<Actor id="WaterTank" Variations="0,1,2"/>
+<Actor id="WaterTankTall" Variations="0"/>
+<Actor id="WindTurbine"/>
+<Actor id="WreckedCargoTruckCorpse" Variations="0,2"/>
+<Actor id="WreckedJackal"/>
+<Actor id="WreckedSandbags" Variations="0,1,2"/>
+<Actor id="CargoTruck" Variations="0,2"/>
+<Actor id="ColonistVehicleAbandoned" Variations="0"/>
+<Actor id="WreckedCargoTruck" Variations="0,3"/>
+<Actor id="ColonistSupplies" Variations="0,2,3,4,5,9"/>
+<Actor id="ColonistSupplyCrate" Variations="0,1,2,3,4,5,6,7,8"/>
+<Actor id="HavenCurtain" Variations="0,1,2,3"/>
+<Actor id="KorhalBuildingDebris" Variations="4"/>
+<Actor id="AnimalCorpse" Variations="2"/>
+<Actor id="KillwallLarge"/>
+<Actor id="Crow" Variations="1"/>
+<Actor id="CivilianCars" Variations="0,2,6"/>
+<Actor id="KorhalFlag" Variations="0"/>
+<Actor id="ColonistHutDoodad" Variations="0,1,2,3,4,5,6,7"/>
+<Actor id="ColonistHutHalfBuilt" Variations="0,1,2"/>
+<Actor id="HomeSmallDoodad" Variations="0,1"/>
+<Actor id="HomeLargeDoodad" Variations="0"/>
+<Actor id="ColonistSandbagsCarried" Variations="0,1,2"/>
+<Actor id="CastanarMonitorLarge" Variations="1"/>
+<Actor id="TombstoneDLH"/>
+<Actor id="AvernusMeshFloorDoodad"/>
+<Actor id="BillboardPropaganda" Variations="4"/>
+<Actor id="ColonistCorpse" Variations="0,8,11"/>
+<Actor id="MarineCorpse" Variations="1,2,4,7,9"/>
+<Actor id="PipeGroundBig" Variations="1,2,3"/>
+<Actor id="PipesSmallCorner" Variations="2"/>
+<Actor id="PipesSmallLong"/>
+<Actor id="StoneZealotBase"/>
+<Actor id="TerrainObjectTrenchDoodad" Variations="0,2"/>
+<Actor id="TRaynor01RadarDish"/>
+<Actor id="ValhallaTable"/>
+<Actor id="CastanarDissectionTableDestroyed" Variations="0,1"/>
+<Actor id="CastanarMonitorFloorDestroyed" Variations="0,1"/>
+<Actor id="TruckTanker"/>
+<Actor id="TruckDump"/>
+<Actor id="CycloneMissilesWarning"/>
+<Actor id="CallForFireWarning"/>
+<Actor id="Gravestone2"/>
+<Actor id="Tombstone1"/>
+<Actor id="Tombstone2"/>
+<Actor id="Gravestone1"/>
+<Actor id="ChainLinkFenceDiagonal2" Variations="1,3"/>
+<Actor id="ChainLinkFenceVertical" Variations="0,1,2,3,4,5,6,7"/>
+<Behavior id="KillsToCaster"/>
+<Behavior id="CritterWander"/>
+<Behavior id="NoDraw"/>
+<Behavior id="Flashlight"/>
+<Behavior id="BurstFire"/>
+<Behavior id="BWCycloneMissileAI"/>
+<Behavior id="BurstFire2"/>
+<Behavior id="BurstFireFullyAutomatic"/>
+<Behavior id="BurstFireStacks"/>
+<Behavior id="EnergyLeak"/>
+<Behavior id="MedicBTAI"/>
+<Behavior id="FracturedArm"/>
+<Behavior id="FracturedLeg"/>
+<Behavior id="GeneratorLeech"/>
+<Behavior id="MedicNanoAI"/>
+<Behavior id="SelfPreservation"/>
+<Behavior id="TraumaticBrainInjury"/>
+<Behavior id="ParasiticInfection"/>
+<Behavior id="Abdul"/>
+<Behavior id="Sprint"/>
+<Behavior id="Prone2"/>
+<Behavior id="Prone"/>
+<Behavior id="PMCExplosionReduction"/>
+<Behavior id="IonCannonAI"/>
+<Behavior id="ClusterRocketsAIGroupMech"/>
+<Behavior id="ClusterRocketsAIHero"/>
+<Behavior id="CollectingSample"/>
+<Behavior id="CollectingSampleGrave"/>
+<Behavior id="DamageAIMiniPlasmaShield"/>
+<Behavior id="Decloaking1"/>
+<Behavior id="Decloaking2"/>
+<Behavior id="Decloaking3"/>
+<Behavior id="Decloaking4"/>
+<Behavior id="Decloaking5"/>
+<Behavior id="DifficultyModifierArmy"/>
+<Behavior id="Evasion10"/>
+<Behavior id="Evasion30"/>
+<Behavior id="Evasion15"/>
+<Behavior id="FlareGunAIHero"/>
+<Behavior id="FragAIGrouporHero"/>
+<Behavior id="FuelDischargeAIGroupHero"/>
+<Behavior id="GroundFlareAIHero"/>
+<Behavior id="LiftBootsIn"/>
+<Behavior id="MRLAIHeroMechanical"/>
+<Behavior id="Spawned"/>
+<Behavior id="TimeStopped"/>
+<Behavior id="UnknownBehavior"/>
+<Behavior id="Plus1MS"/>
+<Behavior id="CWClusterRocketsAI"/>
+<Behavior id="Darreus"/>
+<Behavior id="ClusterRocketsAIIgnis"/>
+<Behavior id="BornToLead"/>
+<Behavior id="Intellectual"/>
+<Behavior id="RecruitModifier"/>
+<Behavior id="TwinkleToes"/>
+<Behavior id="BinocularAIHero"/>
+<Behavior id="JumpInjury"/>
+<Behavior id="Mutation"/>
+<Behavior id="PlayerHandicap"/>
+<Behavior id="Energetic"/>
+<Behavior id="Hawkeye"/>
+<Behavior id="RankModifier"/>
+<Behavior id="ReactiveFire"/>
+<Behavior id="ToughAsNails"/>
+<Behavior id="QuickThinking"/>
+<Behavior id="UndeadSprintAIAres"/>
+<Behavior id="UndeadTongueAI"/>
+<Behavior id="Unpowered"/>
+<Behavior id="WeaponsHold"/>
+<Behavior id="PlayerModifier"/>
+<Behavior id="DifficultyModifierBoss"/>
+<Behavior id="PatrollingSlow"/>
+<Behavior id="CatchingUp"/>
+<Behavior id="EscortingSlow"/>
+<Behavior id="FlashlightReveal"/>
+<Behavior id="KevlarBodyArmor"/>
+<Behavior id="ClassIVHemmorrhaging"/>
+<Behavior id="DifficultyModifier"/>
+<Behavior id="HK42"/>
+<Behavior id="MinorLacerations"/>
+<Behavior id="ClassIIIHemmorrhaging"/>
+<Behavior id="InfectedBite"/>
+<Behavior id="NecroticVenom"/>
+<Behavior id="NeurotoxicVenom"/>
+<Behavior id="OPA"/>
+<Behavior id="SPCS"/>
+<Behavior id="Encumbered"/>
+<Behavior id="StynerBR2"/>
+<Behavior id="Jammed"/>
+<Behavior id="aidummyhelicopterrf"/>
+<Behavior id="aidummychainjag"/>
+<Effect id="ExplosiveChargeDamage"/>
+<Effect id="FlareGunLaunchMissile"/>
+<Effect id="OrbitalSatteliteReconnaissance"/>
+<Effect id="OrbitalStrikeDamage1"/>
+<Effect id="SelfAidPeriod"/>
+<Effect id="AddXP12"/>
+<Effect id="FTRally"/>
+<Effect id="FTAttack"/>
+<Effect id="JAG108Damage3"/>
+<Effect id="CallForFirePLLaunch"/>
+<Effect id="CompetitiveStartingXP"/>
+<Effect id="CriticalShotBonus"/>
+<Effect id="EnergyCellSIPU"/>
+<Effect id="ImmediateSmokeLaunch"/>
+<Effect id="RailGunLaunch"/>
+<Effect id="RifleButtSearchAreaCSlam"/>
+<Effect id="SatchelExplosionDamageCE"/>
+<Effect id="SatchelExplosionDamage"/>
+<Effect id="FirstAidKitBehaviorMedic"/>
+<Effect id="Discipline"/>
+<Effect id="InfestedSiloExplosionDamage"/>
+<Effect id="ReviveModifyUnit"/>
+<Effect id="WhitePhosphorousLaunch"/>
+<Light id="BioResonator"/>
+<Light id="NODs"/>
+<Light id="NODsBright"/>
+<Light id="TimeStop"/>
+<Light id="UA3Dawn"/>
+<Light id="UA3Day"/>
+<Light id="UA3Dusk"/>
+<Light id="UA3Night"/>
+<Model id="BeaconRally"/>
+<Model id="PingBaseAttack"/>
+<Model id="PingAlert"/>
+<Model id="PingBoss"/>
+<Model id="PingObjective"/>
+<Model id="PingSimple"/>
+<Model id="PingWarning"/>
+<Model id="BeaconDefendPing"/>
+<Model id="BeaconAssaultPing"/>
+<Model id="BeaconRallyPing"/>
+<Model id="GhostNukeTarget"/>
+<Model id="ColonistShipWrecked"/>
+<Model id="FireMedium"/>
+<Model id="RainEmitterLarge"/>
+<Model id="Rock"/>
+<Model id="EnergyNovaShockwave"/>
+<Model id="BriefingHighlight"/>
+<Model id="Exclamation"/>
+<Model id="BioResExplode"/>
+<Model id="PingSimpleSmall"/>
+<Model id="LevelUp"/>
+<Model id="InfestedSiloExplode"/>
+<Sound id="Terran_ExplosionMedium"/>
+<Sound id="Terran_ExplosionLarge"/>
+<Sound id="UI_TerranHint"/>
+<Sound id="TUIWarning"/>
+<Sound id="Banshee_Attack"/>
+<Sound id="Ghost_Ready"/>
+<Sound id="Marauder_Ready"/>
+<Sound id="Marine_Ready"/>
+<Sound id="UI_GenericError"/>
+<Sound id="Sentry_GuardianShieldDeath"/>
+<Sound id="Immortal_HardenedShieldImpact"/>
+<Sound id="Zerg_BurrowSmall"/>
+<Sound id="Zerg_BurrowLarge"/>
+<Sound id="Zerg_UnburrowMedium"/>
+<Sound id="Nydus_ConstructionFinish"/>
+<Sound id="Overlord_Load"/>
+<Sound id="Ultralisk_AttackImpact"/>
+<Sound id="Shuttle_Load"/>
+<Sound id="Shuttle_Unload"/>
+<Sound id="UI_MissionFailed"/>
+<Sound id="UI_Bnet_MatchCountdown3"/>
+<Sound id="TValerian02BMusicEventBB"/>
+<Sound id="UI_BnetClick"/>
+<Sound id="UI_BnetError"/>
+<Sound id="THorner04MusicEventAA"/>
+<Sound id="TTosh03BMusicEventB"/>
+<Sound id="TTosh03BMusicEventAAAA"/>
+<Sound id="TTosh03BMusicEventCCCC"/>
+<Sound id="TTychus03MusicIntroABC"/>
+<Sound id="TZeratul01MusicEventCC"/>
+<Sound id="TRaynor03MusicEventA2"/>
+<Sound id="THanson03AMusicEventC"/>
+<Sound id="THorner04MusicEventB"/>
+<Sound id="TRaynor03MusicEventA"/>
+<Sound id="THanson02MusicEventA"/>
+<Sound id="THanson03AMusicEventB"/>
+<Sound id="THorner04MusicEventA"/>
+<Sound id="TRaynor01MusicEventA"/>
+<Sound id="TRaynor01MusicOutro"/>
+<Sound id="TTosh03BMusicEventA"/>
+<Sound id="TTychus01MusicOutro"/>
+<Sound id="TTychus02MusicIntro"/>
+<Sound id="TTychus04MusicIntro"/>
+<Sound id="TValerian02AMusicEventB"/>
+<Sound id="TValerian02AMusicEventC"/>
+<Sound id="TValerian02AMusicEventE"/>
+<Sound id="TValerian02AMusicEventF"/>
+<Sound id="TValerian02BMusicEventA"/>
+<Sound id="TValerian03MusicIntro"/>
+<Sound id="UI_ScreenWipe"/>
+<Sound id="UI_ScoreScreenMissionTime"/>
+<Sound id="UI_TransmissionStart"/>
+<Sound id="UI_ObjectiveUpdate"/>
+<Sound id="UI_ObjectiveText"/>
+<Sound id="UI_TipSelect"/>
+<Sound id="Zealot_Death_NP"/>
+<Sound id="UI_Starmap_Popup"/>
+<Sound id="UI_TerranReminderPing"/>
+<Sound id="UI_TerranRescueUnit"/>
+<Sound id="TUISecret"/>
+<Sound id="UI_TerranKlaxonAlert"/>
+<Sound id="TUIWarningPing"/>
+<Sound id="TValerian02BMusicEventB"/>
+<Sound id="Firebat_Ready"/>
+<Sound id="CargoTruck_Explode"/>
+<Sound id="Diamondback_Ready"/>
+<Sound id="Swann_Ready"/>
+<Sound id="Hercules_Ready"/>
+<Sound id="Odin_NukeExplode"/>
+<Sound id="Purifier_PowerUp"/>
+<Sound id="Purifier_PrePlanetCrackerEnergySwirl"/>
+<Sound id="Purifier_PrePlanetCrackerEnergyBuildUp"/>
+<Sound id="Raynor_Ready"/>
+<Sound id="Raynor_MorosDeviceStart"/>
+<Sound id="Raynor_PenetratorRoundChargeUp"/>
+<Sound id="Spectre_Ready"/>
+<Sound id="Spectre_EMPImpact"/>
+<Sound id="Obliterate_Charge"/>
+<Sound id="Tosh_Ready"/>
+<Sound id="Tychus_Ready"/>
+<Sound id="Medic_Ready"/>
+<Sound id="HybridF_Roar"/>
+<Sound id="NukePack_StandWorkStart"/>
+<Sound id="Ambience_TRaynor03Rain"/>
+<Sound id="Event_Hanson02ZombieHowl"/>
+<Sound id="Mission_MusicCue004"/>
+<Sound id="Mission_MusicCue005"/>
+<Sound id="BridgeToStarMapTransition"/>
+<Sound id="HybridADeath"/>
+<Sound id="Hill_Ready"/>
+<Sound id="FlareTarget2"/>
+<Sound id="IonCannonStart"/>
+<Sound id="AmmoBelt"/>
+<Sound id="PickupItem"/>
+<Sound id="Shockwave"/>
+<Sound id="CriticalShot"/>
+<Sound id="NetScan"/>
+<Sound id="AmmoUse"/>
+<Sound id="DarknessFalls"/>
+<Sound id="EarRinging"/>
+<Sound id="IDFIncoming"/>
+<Sound id="LeaperLeap"/>
+<Sound id="NODOff"/>
+<Sound id="NODOn"/>
+<Sound id="OctoCamo"/>
+<Sound id="RadioChatter"/>
+<Sound id="CASImpact"/>
+<Sound id="Darkness"/>
+<Sound id="Heartbeat"/>
+<Sound id="HunterRoar"/>
+<Sound id="charginghandle"/>
+<Sound id="noammo"/>
+<Sound id="magout"/>
+<Sound id="magin"/>
+<Sound id="lowammo"/>
+<Sound id="diebuzz"/>
+<Terrain id="AgriaEx1"/>
+<Unit id="InfestedCivilian"/>
+<Unit id="ColonistShipFlying"/>
+<Unit id="DestructibleGateStraightHorizontalBF"/>
+<Unit id="MetalGateDiagonalULBR"/>
+<Unit id="MetalGateStraightHorizontalBF"/>
+<Unit id="Civilian" Variations="0,1,2"/>
+<Unit id="CivilianFemale" Variations="0,1,2"/>
+<Unit id="TerranDropPod"/>
+<Unit id="ColonistTransport"/>
+<Unit id="MK44SentryGun"/>
+<Unit id="74DFlamethrower"/>
+<Unit id="AH25Hunter"/>
+<Unit id="Aspectus"/>
+<Unit id="BDS"/>
+<Unit id="BioSample"/>
+<Unit id="CasterDummy"/>
+<Unit id="Claymore2"/>
+<Unit id="FragGrenade"/>
+<Unit id="DrJashan"/>
+<Unit id="FTAttackPoint"/>
+<Unit id="FTRallyPoint"/>
+<Unit id="Generator"/>
+<Unit id="GhostMini"/>
+<Unit id="APRounds"/>
+<Unit id="68WCombatMedic"/>
+<Unit id="Apiary"/>
+<Unit id="Swarmer"/>
+<Unit id="InfantrySDM"/>
+<Unit id="JavelinGunner"/>
+<Unit id="LMTV"/>
+<Unit id="M1Abrams"/>
+<Unit id="M241MMG"/>
+<Unit id="M5MAR"/>
+<Unit id="SquadLeaderMini"/>
+<Unit id="TimeStop"/>
+<Unit id="USMCR"/>
+<Unit id="Umbra"/>
+<Unit id="Vesania"/>
+<Unit id="Shocker"/>
+<Unit id="Metasis"/>
+<Unit id="MK79SentryGunPacked"/>
+<Unit id="SatchelCharge"/>
+<Unit id="BioResonator"/>
+<Unit id="Sanies"/>
+<Unit id="KEC"/>
+<Unit id="IDMR2"/>
+<Unit id="ISS7"/>
+<Unit id="Ignis"/>
+<Unit id="DeadHeroIndicator"/>
+<Unit id="Immussilus"/>
+<Unit id="EnergyBattery"/>
+<Unit id="M41SAW"/>
+<Unit id="ExplosiveCharge"/>
+<Unit id="AimAssist"/>
+<Unit id="Casualty"/>
+<Unit id="Commander"/>
+<Unit id="FirstAidKit"/>
+<Unit id="MRL"/>
+<Unit id="FlareGun"/>
+<Unit id="Hull"/>
+<Unit id="SmokeGrenadeItem"/>
+<Unit id="InfantryAutomaticRifleman"/>
+<Unit id="CombatEngineerMini"/>
+<Unit id="Planet"/>
+<Unit id="Sniper"/>
+<Unit id="PlagueVector"/>
+<Unit id="M2BradleyIFV"/>
+<Unit id="GroundFlareItem"/>
+<Unit id="MuscleRelaxant"/>
+<Unit id="KineticIntegrator"/>
+<Unit id="EnergyCell"/>
+<Unit id="KevlarBodyArmor"/>
+<Unit id="InfestedSilo"/>
+<Unit id="M79Flamethrower"/>
+<Unit id="Shredder"/>
+<Unit id="HK42"/>
+<Unit id="Gargoyle"/>
+<Unit id="PoliceOfficerShotgun"/>
+<Unit id="SPCS"/>
+<Unit id="StynerBR2"/>
+<Unit id="MK44SentryGun2"/>
+<Unit id="MK44SentryGunPacked"/>
+<Unit id="Flashlight"/>
+<Unit id="BMDD"/>
+<Unit id="FarmerAkma" Variations="1"/>
+<Unit id="PoliceOfficer"/>
+<Unit id="Mayor"/>
+<Unit id="Gourmand"/>
+<Unit id="HeroSelector"/>
+<Unit id="Glutton"/>
+<Unit id="Magazines"/>
+<Unit id="AmmoCase"/>
+<Unit id="QuikClot"/>
+<Unit id="InfantryRifleman"/>
+<Unit id="CombatWalker"/>
+<Unit id="BattleWalker"/>
+<Unit id="Crab"/>
+<Unit id="Darreus"/>
+<Unit id="Charger"/>
+<Unit id="Swollen"/>
+<Unit id="Creeper"/>
+<Unit id="Boomer"/>
+<Unit id="Cursed"/>
+<Unit id="Tarantula"/>
+<Unit id="Risen"/>
+<Unit id="Eel"/>
+<Unit id="Thanatos"/>
+<Unit id="Zombie"/>
+<Unit id="Zulu"/>
+<Weapon id="IncendiaryRounds"/>
+<Weapon id="MachineGun"/>
+<Weapon id="30mmChainGun"/>
+<Weapon id="ShotgunCE"/>
+<Weapon id="MachineGunCyborg"/>
+<Weapon id="AssaultRifle4"/>
+<Weapon id="AssaultRifleJavGunner"/>
+<Weapon id="AssaultRiflePL"/>
+<Weapon id="DesignatedMarksmanRifle"/>
+<Weapon id="ShotgunSFAAT"/>
+<Weapon id="Carbine"/>
+<Weapon id="AssaultRifle2"/>
+<Weapon id="AssaultRifle"/>
+<Weapon id="SteelSaberCarbine"/>
+</Preload>

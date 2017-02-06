@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<BankList>
+    <Bank Name="UA3" Player="10"/>
+    <Bank Name="UA3" Player="12"/>
+    <Bank Name="UA3" Player="4"/>
+    <Bank Name="IBUA" Player="7"/>
+    <Bank Name="IBUA" Player="9"/>
+    <Bank Name="IBUA" Player="5"/>
+    <Bank Name="UA3" Player="1"/>
+    <Bank Name="IBUA" Player="3"/>
+    <Bank Name="UA3" Player="8"/>
+    <Bank Name="UA3" Player="7"/>
+    <Bank Name="IBUA" Player="11"/>
+    <Bank Name="UA3" Player="2"/>
+    <Bank Name="IBUA" Player="1"/>
+    <Bank Name="IBUA" Player="2"/>
+    <Bank Name="IBUA" Player="8"/>
+    <Bank Name="IBUA" Player="10"/>
+    <Bank Name="UA3" Player="5"/>
+    <Bank Name="UA3" Player="3"/>
+    <Bank Name="IBUA" Player="12"/>
+    <Bank Name="UA3" Player="6"/>
+    <Bank Name="IBUA" Player="6"/>
+    <Bank Name="UA3" Player="11"/>
+    <Bank Name="IBUA" Player="4"/>
+    <Bank Name="UA3" Player="9"/>
+    <Bank Name="ZCampaignStats" Player="1"/>
+    <Bank Name="ZStorySimulation" Player="1"/>
+    <Bank Name="ZArchive" Player="1"/>
+    <Bank Name="ZCampaign" Player="1"/>
+    <Bank Name="ZArmy" Player="1"/>
+    <Bank Name="ZDebugProgress" Player="1"/>
+    <Bank Name="ZStory" Player="1"/>
+    <Bank Name="ZStoryTransition" Player="1"/>
+    <Bank Name="TCampaign" Player="1"/>
+</BankList>

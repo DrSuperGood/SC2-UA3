@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CGame default="1">
+        <CallForHelpRadius value="15"/>
+        <CameraMarginAspectAdjust index="2" AspectWidth="18" AspectHeight="13" Margin="5,0,5,0"/>
+        <CameraMarginAspectAdjust index="3" AspectWidth="16" AspectHeight="9" Margin="5,0,5,0"/>
+        <CameraMarginAspectAdjust AspectWidth="5" AspectHeight="4"/>
+        <UnitSightRangeDead value="1"/>
+        <VeterancySearchRadius value="25"/>
+        <VeterancySearchFilters value="-;Enemy,Missile,Dead,Hidden"/>
+    </CGame>
+    <CGame id="Dflt">
+        <CallForHelpRadius value="15"/>
+        <CameraMarginAspectAdjust index="2" AspectWidth="18" AspectHeight="13"/>
+        <CameraMarginAspectAdjust index="3" AspectWidth="16" AspectHeight="9" Margin="5,0,5,0"/>
+        <CameraMarginAspectAdjust AspectWidth="5" AspectHeight="4"/>
+        <UnitSightRangeDead value="1"/>
+        <VeterancySearchRadius value="25"/>
+        <VeterancySearchFilters value="-;Enemy,Missile,Dead,Hidden"/>
+    </CGame>
+</Catalog>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CUpgrade id="1LT" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="1Life">
+        <Alert value=""/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="1SG" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="Barbaric">
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="BloodinBloodOut">
+        <Alert value=""/>
+        <EffectArray Operation="Set" Reference="Abil,BloodTransfusion,Cost[0].Charge[0].CountMax[0]" Value="2"/>
+        <EffectArray Operation="Set" Reference="Abil,BloodTransfusion,Cost[0].Charge[0].CountStart[0]" Value="2"/>
+        <EffectArray Operation="Set" Reference="Abil,BloodTransfusion,Cost[0].Charge[0].CountUse[0]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Abil,BloodTransfusion,Cost[0].Charge[0].TimeUse[0]" Value="30.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,BloodTransfusion,Cost[0].Cooldown[0].TimeUse[0]" Value="5.000000"/>
+        <EffectArray Operation="Set" Reference="Effect,NanoInjectionHeal,VitalArray[Life].Change[0]" Value="150"/>
+        <EffectArray Operation="Set" Reference="Effect,ImprovedNanoInjectionHeal,VitalArray[Life].Change[0]" Value="300"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedBloodTransfusion,Cost[0].Cooldown[0].TimeUse[0]" Value="5.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedBloodTransfusion,Cost[0].Charge[0].CountMax[0]" Value="2"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedBloodTransfusion,Cost[0].Charge[0].CountStart[0]" Value="2"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedBloodTransfusion,Cost[0].Charge[0].CountUse[0]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedBloodTransfusion,Cost[0].Charge[0].TimeUse[0]" Value="20.000000"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="CASOnStation" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="CPT" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="CSM" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="CallforFire">
+        <Alert value=""/>
+        <EffectArray Reference="Effect,CallforFirePLDamage,Amount[0]" Value="600"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="5"/>
+    </CUpgrade>
+    <CUpgrade id="EngineeringSkills">
+        <Alert value=""/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="4"/>
+    </CUpgrade>
+    <CUpgrade id="Grenadier">
+        <Alert value=""/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Range[0]" Value="15"/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Cost[0].Cooldown[0].TimeUse[0]" Value="25.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Cost[0].Vital[Energy]" Value="95"/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Cost[1].Cooldown[0].TimeUse[0]" Value="20.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Cost[1].Vital[Energy]" Value="85"/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Cost[2].Cooldown[0].TimeUse[0]" Value="15.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Cost[2].Vital[Energy]" Value="75"/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Cost[3].Cooldown[0].TimeUse[0]" Value="10.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,FragGrenade,Cost[3].Vital[Energy]" Value="65"/>
+        <EffectArray Operation="Set" Reference="Abil,GroundFlare,Cost[0].Cooldown[0].TimeUse[0]" Value="120.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,GroundFlare,Range[0]" Value="15"/>
+        <EffectArray Operation="Set" Reference="Abil,SmokeGrenade,Cost[0].Cooldown[0].TimeUse[0]" Value="45.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,SmokeGrenade,Range[0]" Value="15"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedGroundFlare,Cost[0].Cooldown[0].TimeUse[0]" Value="70.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedGroundFlare,Range[0]" Value="15"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedSmokeGrenade,Range[0]" Value="15"/>
+        <EffectArray Operation="Set" Reference="Abil,ImprovedSmokeGrenade,Cost[0].Cooldown[0].TimeUse[0]" Value="17.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MGL,Cost[0].Vital[Energy]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MGL,Cost[1].Vital[Energy]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MGL,Cost[2].Vital[Energy]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Abil,MGL,Cost[3].Vital[Energy]" Value="10"/>
+        <EffectArray Reference="Abil,MGL,Range[0]" Value="5"/>
+        <EffectArray Reference="Abil,MGL,Range[1]" Value="5"/>
+        <EffectArray Reference="Abil,MGL,Range[2]" Value="5"/>
+        <EffectArray Reference="Abil,MGL,Range[3]" Value="5"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="IDFSupport">
+        <Alert value=""/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="5"/>
+    </CUpgrade>
+    <CUpgrade id="IncendiaryRounds1">
+        <EffectArray Reference="Behavior,IncendiaryRound1,Duration[0]" Value="0.150000"/>
+        <EffectArray Reference="Effect,IncendiaryRoundSA,AreaArray[0].Radius[0]" Value="0.18"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="IncendiaryRounds12">
+        <EffectArray Reference="Behavior,IncendiaryRound1,Duration[0]" Value="0.150000"/>
+        <EffectArray Reference="Effect,IncendiaryRoundSA,AreaArray[0].Radius[0]" Value="0.18"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="IncendiaryRounds13">
+        <EffectArray Reference="Behavior,IncendiaryRound1,Duration[0]" Value="0.150000"/>
+        <EffectArray Reference="Effect,IncendiaryRoundSA,AreaArray[0].Radius[0]" Value="0.18"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="JavSkills1">
+        <Alert value=""/>
+        <EffectArray Operation="Set" Reference="Effect,HEDamage1,AreaArray[0].Radius[0]" Value="5"/>
+        <EffectArray Operation="Set" Reference="Effect,HEDamage2,AreaArray[0].Radius[0]" Value="5"/>
+        <EffectArray Operation="Set" Reference="Effect,HEDamage3,AreaArray[0].Radius[0]" Value="5"/>
+        <EffectArray Operation="Set" Reference="Effect,HEDamage4,AreaArray[0].Radius[0]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Effect,JGBackblastDamage,AreaArray[1].Radius[0]" Value="0.4"/>
+        <EffectArray Operation="Subtract" Reference="Effect,JGBackblastDamage,AreaArray[0].Radius[0]" Value="0.25"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="JavHEATup">
+        <Alert value=""/>
+        <EffectArray Operation="Subtract" Reference="Abil,HERocket,Cost[0].Vital[Energy]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Abil,HERocket,Cost[1].Vital[Energy]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Abil,HERocket,Cost[2].Vital[Energy]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Abil,HERocket,Cost[3].Vital[Energy]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Abil,HERocket,Cost[0].Cooldown.TimeUse" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,HERocket,Cost[1].Cooldown.TimeUse" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,HERocket,Cost[2].Cooldown.TimeUse" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,HERocket,Cost[3].Cooldown.TimeUse" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ATRocket,Cost[0].Vital[Energy]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ATRocket,Cost[1].Vital[Energy]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ATRocket,Cost[2].Vital[Energy]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ATRocket,Cost[3].Vital[Energy]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ATRocket,Cost[0].Cooldown.TimeUse" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ATRocket,Cost[1].Cooldown.TimeUse" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ATRocket,Cost[2].Cooldown.TimeUse" Value="5.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ATRocket,Cost[3].Cooldown.TimeUse" Value="5.000000"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="4"/>
+    </CUpgrade>
+    <CUpgrade id="JavSkills2">
+        <Alert value=""/>
+        <EffectArray Operation="Subtract" Reference="Effect,JGBackblastDamage,AreaArray[1].Radius[0]" Value="0.4"/>
+        <EffectArray Operation="Subtract" Reference="Effect,JGBackblastDamage,AreaArray[0].Radius[0]" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Unit,ATRocket,Mover[0]" Value="ATRocketFaster"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="JavSkills3">
+        <Alert value=""/>
+        <EffectArray Operation="Subtract" Reference="Effect,JGBackblastDamage,AreaArray[1].Radius[0]" Value="0.4"/>
+        <EffectArray Operation="Subtract" Reference="Effect,JGBackblastDamage,AreaArray[0].Radius[0]" Value="0.25"/>
+        <EffectArray Operation="Multiply" Reference="Unit,JavelinGunner2,EnergyRegenRate[0]" Value="1.500000"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="JavSkills4">
+        <Alert value=""/>
+        <EffectArray Operation="Subtract" Reference="Effect,JGBackblastDamage,AreaArray[1].Radius[0]" Value="0.4"/>
+        <EffectArray Operation="Subtract" Reference="Effect,JGBackblastDamage,AreaArray[0].Radius[0]" Value="0.25"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="MGEN" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="MSG" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="SGM" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="Security">
+        <Alert value=""/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="4"/>
+    </CUpgrade>
+    <CUpgrade id="SkiesClear" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="SSG" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="JumpChangeMover">
+        <EffectArray Operation="Set" Reference="Unit,Rifleman,Mover[0]" Value="CliffJumper"/>
+        <EditorCategories value="Race:Terran"/>
+    </CUpgrade>
+    <CUpgrade id="CPL" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="SGT" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="Ranger" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="RifleMode" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="PFC" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="SFCEn" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="SkillIdentifier">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="160"/>
+    </CUpgrade>
+    <CUpgrade id="Training">
+        <Alert value=""/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="4"/>
+    </CUpgrade>
+    <CUpgrade id="Leadership">
+        <Alert value=""/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="4"/>
+    </CUpgrade>
+    <CUpgrade id="MonoWire">
+        <Alert value=""/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+        <MaxLevel value="4"/>
+    </CUpgrade>
+    <CUpgrade id="WO2" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="WO3" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+    <CUpgrade id="WO5" parent="Research">
+        <Alert value=""/>
+        <Race value="Terr"/>
+        <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+    </CUpgrade>
+</Catalog>

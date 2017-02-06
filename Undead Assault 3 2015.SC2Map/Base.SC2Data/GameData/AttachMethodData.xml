@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CAttachMethodPattern id="AMHelicopterLaunch2">
+        <Keyword value="Hit"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="HelicopterLM"/>
+    </CAttachMethodPattern>
+</Catalog>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirement id="AUG01">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1"/>
+        <NodeArray index="Show" Link="LTCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="Augmentation2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2"/>
+        <NodeArray index="Show" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="Augmentation3">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3"/>
+        <NodeArray index="Show" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="Augmentation4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4"/>
+        <NodeArray index="Show" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="Augmentation5">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5"/>
+        <NodeArray index="Show" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5"/>
+    </CRequirement>
+    <CRequirement id="BarricadeRequirements" parent="MothershipRequirements">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndLT643609641CountUnitBarricadeQueuedOrBetter3GTE2373625175CountUpgradeEngineeringSkillsCompleteOnly3"/>
+    </CRequirement>
+    <CRequirement id="CASOnStation">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="Eq1805456185CountUpgradeCASOnStationCompleteOnlyTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="Cloaking">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="And2411104750EqCountBehaviorDecloaking1CompleteOnlyAtUnit0EqCountBehaviorDecloaking2CompleteOnlyAtUnit0EqCountBehaviorDecloaking3CompleteOnlyAtUnit0EqCountBehaviorDecloaking4CompleteOnlyAtUnit0EqCountBehaviorDecloaking5CompleteOnlyAtUnit0GTECountAbilGhostSkillsCompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="CombatEnhancements1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE4257896482CountAbilCombatEnhancementsCompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="CombatEnhancements12">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE2213874053CountAbilCombatEnhancementsCompleteOnlyAtUnit2"/>
+    </CRequirement>
+    <CRequirement id="CombatEnhancements13">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE2495743555CountAbilCombatEnhancementsCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="CombatEnhancements14">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1989884963CountAbilCombatEnhancementsCompleteOnlyAtUnit4"/>
+    </CRequirement>
+    <CRequirement id="ConstructReqs">
+        <NodeArray index="Use" Link="AndGTECountUpgradeTrainingCompleteOnly2LTSumCountUnitBarricadeCompleteOnlyCountUnitM1SentryGunCompleteOnlyCountUnitLNCombatEngineerCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ConstructReqsMaintain">
+        <NodeArray index="Use" Link="LTESumCountUnitBarricadeCompleteOnlyCountUnitM1SentryGunCompleteOnlyCountUnitLNCombatEngineerCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CyborgCharge">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="Eq3501222248CountBehaviorAgility3CompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="CyborgFieldCam">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="Or4143660971EqCountBehaviorStealth1CompleteOnlyAtUnit1Eq4143660971CountBehaviorStealth2CompleteOnlyAtUnit1Eq4143660971CountBehaviorStealth3CompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="CyborgFlareGun">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="Or4277935258EqCountBehaviorStealth2CompleteOnlyAtUnit1EqCountBehaviorStealth3CompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="CyborgMeltdown">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="AndGTE2276327908CountAbilCyborgStrengthCompleteOnlyAtUnit3GTE1102934219CountAbilCyborgStealthCompleteOnlyAtUnit3GTE3063185261CountAbilCyborgAgilityCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="CyborgRifleButt">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="Or311064107EqCountBehaviorStrength1CompleteOnlyAtUnit1EqCountBehaviorStrength2CompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="CyborgRifleButt2">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="Eq2276327908CountBehaviorStrength3CompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="CyborgRifleButtCharging">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="AndGTE2791772819CountAbilCyborgStrengthCompleteOnlyAtUnit3Eq518497321CountBehaviorChargeCompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="CyborgStonewall">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="AndGTE2276327908CountAbilCyborgStrengthCompleteOnlyAtUnit3GTE1102934219CountAbilCyborgStealthCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="EngineeringSkills1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1501146480CountUpgradeEngineeringSkillsCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="EngineeringSkills2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE3737081613CountUpgradeEngineeringSkillsCompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="EngineeringSkills3">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE4002722016CountUpgradeEngineeringSkillsCompleteOnly3"/>
+    </CRequirement>
+    <CRequirement id="EngineeringSkills4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE89067501CountUpgradeEngineeringSkillsCompleteOnly4"/>
+    </CRequirement>
+    <CRequirement id="FirstAidBuff1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat1"/>
+        <NodeArray index="Show" Link="EqCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="FirstAidBuff2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat2"/>
+        <NodeArray index="Show" Link="EqCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="FirstAidBuff3">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3"/>
+        <NodeArray index="Show" Link="EqCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="FirstAidBuff4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4"/>
+        <NodeArray index="Show" Link="EqCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="GhostSkills1M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE3896639198CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="GhostSkills2M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1979772316CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="GhostSkills3M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE2925036810CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="GhostSkills4M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1300418668CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="GhostSkills5M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE4144293025CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat5"/>
+    </CRequirement>
+    <CRequirement id="IDFSupport1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE893805867CountUpgradeIDFSupportCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="IDFSupport12">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1860585296CountUpgradeIDFSupportCompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="IDFSupport122">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE2425553789CountUpgradeIDFSupportCompleteOnly3"/>
+    </CRequirement>
+    <CRequirement id="IDFSupport1222">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE524278969CountUpgradeIDFSupportCompleteOnly4"/>
+    </CRequirement>
+    <CRequirement id="IDFSupport12222">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE404353804CountUpgradeIDFSupportCompleteOnly5"/>
+    </CRequirement>
+    <CRequirement id="ISBotRequirements" parent="MothershipRequirements">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndEq3793755040CountUnitISBotQueuedOrBetter0GTE2687546691CountUpgradeSecurityCompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="JFO1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE2420255148CountAbilOrbitalStrikeCompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="JFO12">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE2516338816CountAbilOrbitalStrikeCompleteOnlyAtUnit2"/>
+    </CRequirement>
+    <CRequirement id="JFO122">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1397761057CountAbilOrbitalStrikeCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="JFO123">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE2708380730CountAbilOrbitalStrikeCompleteOnlyAtUnit4"/>
+    </CRequirement>
+    <CRequirement id="JFO5CAS">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndGTE3564591396CountAbilOrbitalStrikeCompleteOnlyAtUnit5GTE1805456185CountUpgradeCASOnStationCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="JavelinSkills1M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE4031064180CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="JavelinSkills2M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE3476359170CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="JavelinSkills3M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1310947799CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="JavelinSkills4M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE4209075357CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="Jump">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="Eq307393282CountBehaviorProneCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="LeadershipSkills1M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="LeadershipSkills2M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="LeadershipSkills3M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="LeadershipSkills4M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="LeadershipTraining4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2304769686GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat4GTECountUpgradeTrainingCompleteOnlyTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="MarksmanshipMedic">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Show" Link="AndLTCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat4EqCountUpgrade1LifeCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="MarksmanshipMedic1M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1"/>
+        <NodeArray index="Show" Link="EqCountUpgrade1LifeCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="MonoWire1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="Leadership2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="LNTraining4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountUpgradeTrainingCompleteOnlyTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="Leadership4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="Augmentation1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1"/>
+        <NodeArray index="Show" Link="EqCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="MarksmanSkills1M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="MarksmanSkills2M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="MarksmanSkills3M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="MonoWire2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="MonoWire3">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="MonoWire4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="Rank1LTNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq3823691090CountUpgrade1LTCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="RankCPTSGMNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrEq474972807CountUpgradeSGMCompleteOnlyTechTreeCheat1Eq3185170552CountUpgradeCPTCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="RankCSM">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="Eq3550057370CountUpgradeCSMCompleteOnlyTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="RankMGEN">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="Eq92015944CountUpgradeMGENCompleteOnlyTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="RankMSGNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq2092276232CountUpgradeMSGCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="RankWO21SGCPTNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrEq457914689CountUpgrade1SGCompleteOnlyTechTreeCheat1Eq505824172CountUpgradeWO2CompleteOnlyTechTreeCheat1Eq3185170552CountUpgradeCPTCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="RankWO21SGNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrEq457914689CountUpgrade1SGCompleteOnlyTechTreeCheat1Eq505824172CountUpgradeWO2CompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="RankWO3NR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrEq3888807122CountUpgradeWO3CompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="RankWO5">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="Eq3972752984CountUpgradeWO5CompleteOnlyTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="RiflemanSkills042">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4"/>
+        <NodeArray index="Show" Link="AndGTECountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4GTCountAbilFragGrenadeCompleteOnlyAtUnitTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="RiflemanSkillsLT4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="LTCountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4"/>
+        <NodeArray index="Show" Link="LTCountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="SatchelChargeReqs" parent="MothershipRequirements">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndLT3916787485CountUnitSatchelChargeCEQueuedOrBetter1GTE3923531317CountUpgradeEngineeringSkillsCompleteOnly4"/>
+    </CRequirement>
+    <CRequirement id="Security1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1921614202CountUpgradeSecurityCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="Security2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE3447350149CountUpgradeSecurityCompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="Security3">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE3855879615CountUpgradeSecurityCompleteOnly3"/>
+    </CRequirement>
+    <CRequirement id="Security4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE473313262CountUpgradeSecurityCompleteOnly4"/>
+    </CRequirement>
+    <CRequirement id="SentryGunRequirements" parent="MothershipRequirements">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTE3447350149CountAbilSecurityCompleteOnlyAtUnit2OrAndEq981512461CountUnitM1SentryGunQueuedOrBetter0LT223606906CountAbilSecurityCompleteOnlyAtUnit4AndLTE1461848182CountUnitM1SentryGunQueuedOrBetter1GTE473313262CountAbilSecurityCompleteOnlyAtUnit4"/>
+    </CRequirement>
+    <CRequirement id="SkiesClear">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="Eq861056159CountUpgradeSkiesClearCompleteOnlyTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="RankSSGNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1126111820CountUpgradeSSGCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="RankSFCEnNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1342765758CountUpgradeSFCEnCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="ReconaissanceSkills1M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="Napalm1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1"/>
+        <NodeArray index="Show" Link="EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="Napalm1M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="Napalm2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat2"/>
+        <NodeArray index="Show" Link="EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="Napalm3">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat3"/>
+        <NodeArray index="Show" Link="EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="Napalm4">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat4"/>
+        <NodeArray index="Show" Link="EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="RankPFCNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1315196357CountUpgradePFCCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="Ranger">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="EqCountUpgradeRangerCompleteOnly1"/>
+        <NodeArray index="Show" Link="EqCountUpgradeRangerCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="RankCPLNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEqCountUpgradeCPLCompleteOnlyTechTreeCheat1EqCountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="RankSGTNR">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq4182996759CountUpgradeSGTCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="ReconaissanceSkills2M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="ReconaissanceSkills3M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="ReconaissanceSkills4M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="Revive">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21"/>
+        <NodeArray index="Show" Link="AndLTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3EqCountUpgrade1LifeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="AUG05">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5"/>
+        <NodeArray index="Show" Link="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5"/>
+    </CRequirement>
+    <CRequirement id="AUG03B">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4"/>
+        <NodeArray index="Show" Link="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="AUG02">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2"/>
+        <NodeArray index="Show" Link="LTCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5"/>
+    </CRequirement>
+    <CRequirement id="AUG03">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3"/>
+        <NodeArray index="Show" Link="LTCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5"/>
+    </CRequirement>
+    <CRequirement id="FirstAid02">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilFirstAidCompleteOnlyAtUnit2"/>
+        <NodeArray index="Show" Link="LTCountAbilFirstAidCompleteOnlyAtUnit4"/>
+    </CRequirement>
+    <CRequirement id="FirstAid03">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilFirstAidCompleteOnlyAtUnit3"/>
+        <NodeArray index="Show" Link="GTECountAbilFirstAidCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="FirstAid04">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilFirstAidCompleteOnlyAtUnit4"/>
+        <NodeArray index="Show" Link="GTECountAbilFirstAidCompleteOnlyAtUnit4"/>
+    </CRequirement>
+    <CRequirement id="Marksmanship01M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="Marksmanship02">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2"/>
+        <NodeArray index="Show" Link="EqCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="Marksmanship03">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat3"/>
+        <NodeArray index="Show" Link="EqCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="Marksmanship04">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat4"/>
+        <NodeArray index="Show" Link="EqCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="NotRifle">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="FirstAid01">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilFirstAidCompleteOnlyAtUnit1"/>
+        <NodeArray index="Show" Link="LTCountAbilFirstAidCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="RiflemanSkills03">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit3"/>
+        <NodeArray index="Show" Link="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="RiflemanSkills02">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit2"/>
+        <NodeArray index="Show" Link="LTCountAbilRiflemanSkillsCompleteOnlyAtUnit4"/>
+    </CRequirement>
+    <CRequirement id="RiflemanSkills04">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit4"/>
+        <NodeArray index="Show" Link="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit4"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills01">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1"/>
+        <NodeArray index="Show" Link="LTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="Marksmanship01">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1"/>
+        <NodeArray index="Show" Link="EqCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills01M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="RiflemanSkills01">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit1"/>
+        <NodeArray index="Show" Link="LTCountAbilRiflemanSkillsCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills02M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills02">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilSoldierSkillsCompleteOnlyAtUnit2"/>
+        <NodeArray index="Show" Link="EqCountAbilSoldierSkillsCompleteOnlyAtUnit2"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills03MS">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTE1791906363CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat3"/>
+        <NodeArray index="Show" Link="GTE1791906363CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills04M">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills03">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilSoldierSkillsCompleteOnlyAtUnit3"/>
+        <NodeArray index="Show" Link="EqCountAbilSoldierSkillsCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills04">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountAbilSoldierSkillsCompleteOnlyAtUnit4"/>
+        <NodeArray index="Show" Link="EqCountAbilSoldierSkillsCompleteOnlyAtUnit4"/>
+    </CRequirement>
+    <CRequirement id="RifleButt">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="OrGTE2593853111CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4Eq1529213028CountUpgradeBarbaricCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SoldierSkills4Marks2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="And3863654470GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="Training1">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeTrainingCompleteOnlyTechTreeCheat1LTCountUpgradeTrainingCompleteOnlyTechTreeCheat3"/>
+        <NodeArray index="Show" Link="AndGTECountUpgradeTrainingCompleteOnlyTechTreeCheat1LTCountUpgradeTrainingCompleteOnlyTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="TrainingShow">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountUpgradeTrainingCompleteOnlyTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="Training2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountUpgradeTrainingCompleteOnlyTechTreeCheat3"/>
+        <NodeArray index="Show" Link="GTECountUpgradeTrainingCompleteOnlyTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="LNTraining2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTECountUpgradeTrainingCompleteOnlyTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="WeaponRifle">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+</Catalog>

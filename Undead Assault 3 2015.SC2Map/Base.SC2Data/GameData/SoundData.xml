@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CSound id="ATRocketImpact" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sounds\Sounds\new sounds\AT Rocket Impact.ogg" Pitch="-1.500000,1.500000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="AbomDeath" parent="Death">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="fleshgolemdeatha.ogg" FacialGroup=""/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="AbramsAttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\new sounds\Abrams Fire.ogg" Pitch="0.900000,1.100000" FacialGroup=""/>
+    </CSound>
+    <CSound id="30mmFire" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\BradleyFire3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="48"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="32"/>
+        <Pitch value="6.000000,8.000000"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="LoadingMusic">
+        <AssetArray File="Assets\Music\ZSwarm_Music_01.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_02.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_04.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_05.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_07.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_09.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_101.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_102.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_103.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_105.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_106.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_107.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_108.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_19.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_21.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_22.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_23.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Corruptors.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment1.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment2.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment2_Ambient.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment3_WithGuitars.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment4.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment4_WithGuitars.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment5_WithGuitars.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment7.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoment7_WithGuitars.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoments3.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneMoments5.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_CutsceneVictory6.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_DangerAlert_LiveAmbient.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_DangerAlert_LiveFull.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_DangerAlert_LivePitchGrain.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_DarkVictory_LiveFull.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_DarkVictory_LiveOnly.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_GS Terran8.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_GS_109.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_GS_110.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_GS_Terran9.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Inspirational_LiveFull.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_intro_brief.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="30mmImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\new sounds\40mmImpact.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="48"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="32"/>
+        <Pitch value="4.000000,6.000000"/>
+        <Volume value="-14.000000,-7.000000"/>
+    </CSound>
+    <CSound id="NetScan" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Environment\Net Scan.ogg" Weight="51" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="AmmoUse">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\AmmoUse.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+    </CSound>
+    <CSound id="Banshee_AttackLaunch2">
+        <Volume value="-2.100000,0.000000"/>
+    </CSound>
+    <CSound id="BatteryUse">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\BatteryUse.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+    </CSound>
+    <CSound id="Brutalisk_Footsteps">
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Concentration" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Concentration.ogg" Weight="51" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="AlarmCom" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Environment\Alarm Com.ogg" Weight="51" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="CryoRoundImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\CryoImpact1.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\CryoImpact2.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\CryoImpact3.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\CryoImpact4.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="M92TorrentFire" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\M92 Torrent Fire.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="DarknessFalls">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Uni\Events\Temp_Event_Flashback0.wav" Pitch="-13.710000,-13.710000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="DeepBoom" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sounds\Deep Boom.ogg" Weight="51" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="DisruptorRoundImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\DisruptorImpact1.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\DisruptorImpact2.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\DisruptorImpact3.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\DisruptorImpact4.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="EarRinging">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\EarRing.ogg" Pitch="8.910000,8.910000" FacialGroup=""/>
+        <Flags index="Ignorable" value="1"/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Alert"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="1" Time="250" Volume="-96.000000"/>
+    </CSound>
+    <CSound id="Flamethrower_AttackImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\Flamethrower\FlamethrowerImpact.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-3.000000,0.000000"/>
+    </CSound>
+    <CSound id="FlareTarget2">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\FlareTarget2.ogg" FacialGroup=""/>
+        <Category value="Dialogue"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="FocusFire" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\FocusFire.ogg" Weight="51" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="HealStart">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\MedHealStart.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="HelicopterRotorLoop">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Undead\Sounds\new sounds\BMS\Helicopter Rotor Loop.ogg" Volume="-11.660000,-11.660000" FacialGroup=""/>
+        <Category value="Spell"/>
+        <LoopCount value="-1"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="Hill_Attack" parent="TerranAck">
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinaFidgetsHillHill00007.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinaFidgetsHillHill00008.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinaFidgetsHillHill00009.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsJukeboxHill00004.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsJukeboxHill00013.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00001.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00002.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00004.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00005.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00007.ogg" FacialGroup=""/>
+        <Flags index="Download" value="0"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Hill_Help" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00013.ogg" FacialAnim="Marine_Help00"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Hill_Pissed" parent="Marine_Pissed">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\TerranVO\CampaignVO\CantinaFidgetsTrophyTZeratul042Hill00008.ogg"/>
+            <FacialAnim value=""/>
+            <FacialGroup value=""/>
+            <PortraitModel value=""/>
+            <Speaker value=""/>
+        </AssetArray>
+        <AssetArray index="1" File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsTrophyTHanson03BHill00008.ogg" FacialAnim="" FacialGroup=""/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <AssetArray index="10" removed="1"/>
+    </CSound>
+    <CSound id="Hill_Ready" parent="Marine_Ready">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\TerranVO\CampaignVO\CantinaFidgetsHillHill00007.ogg"/>
+            <FacialAnim value=""/>
+            <FacialGroup value=""/>
+            <PortraitModel value=""/>
+            <Speaker value=""/>
+        </AssetArray>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+    </CSound>
+    <CSound id="Hill_What" parent="TerranAck">
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00008.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00009.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00010.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00011.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00013.ogg" FacialGroup=""/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Hill_Yes" parent="TerranAck">
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinaFidgetsHillHill00007.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinaFidgetsHillHill00008.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinaFidgetsHillHill00009.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsJukeboxHill00004.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsJukeboxHill00013.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00001.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00002.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00004.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00005.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\CantinafidgetsmercsHill00007.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignVO\MerccontractsHill00004.ogg" FacialGroup=""/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="IDFIncoming" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\IDF Incoming.ogg" FacialGroup=""/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+    </CSound>
+    <CSound id="ImmediateSmoke">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="smoke.mp3" Pitch="-8.230000,-8.230000" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+    </CSound>
+    <CSound id="IncendiaryRoundImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\IncendiaryImpact1.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\IncendiaryImpact2.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\IncendiaryImpact3.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="InfestedCivilian_Moan">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan00.wav" Weight="25"/>
+        <AssetArray index="1" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan01.wav" Weight="25"/>
+        <AssetArray index="2" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan02.wav" Weight="25"/>
+        <AssetArray index="3" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan03.wav" Weight="25"/>
+        <AssetArray index="4" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan04.wav" Weight="25"/>
+        <AssetArray index="5" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan05.wav" Weight="25"/>
+        <AssetArray index="6" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan06.wav" Weight="25"/>
+        <AssetArray index="7" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan07.wav" Weight="25"/>
+        <AssetArray index="8" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan08.wav" Weight="25"/>
+        <AssetArray index="9" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan09.wav" Weight="25"/>
+        <AssetArray index="10" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan10.wav" Weight="25"/>
+        <AssetArray index="11" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan11.wav" Weight="25"/>
+        <AssetArray index="12" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan12.wav" Weight="25"/>
+        <AssetArray index="13" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan13.wav" Weight="25"/>
+        <AssetArray index="14" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan14.wav" Weight="25"/>
+        <AssetArray index="15" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan15.wav" Weight="25"/>
+        <AssetArray index="16" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan16.wav" Weight="25"/>
+        <AssetArray index="17" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan17.wav" Weight="25"/>
+        <AssetArray index="18" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan18.wav" Weight="25"/>
+        <AssetArray index="19" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan19.wav" Weight="25"/>
+        <AssetArray index="20" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan20.wav" Weight="25"/>
+        <AssetArray index="21" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan21.wav" Weight="25"/>
+        <AssetArray index="22" File="Assets\Sounds\Zerg\InfestedRefugee\InfestedRefugee_Moan22.wav" Weight="25"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\ZombieIdle1.ogg" Weight="54" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\ZombieIdle2.ogg" Weight="54" FacialGroup=""/>
+    </CSound>
+    <CSound id="IonCannon" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ion Cannon Short.ogg" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="IonCannonNova" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\Ion Cannon Nova.ogg" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="IonCannonStart" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Ghost\Ion Cannon Start.ogg" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="LeaperLeap" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="mghoulaggro1.ogg" Pitch="-0.100000,1.100000" FacialGroup=""/>
+        <Category value="Spell"/>
+    </CSound>
+    <CSound id="Flamethrower_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\Flamethrower\FlamethrowerAttack.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="FuelDischarge" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Flamethrower\BreathOfFire1.ogg"/>
+        <DupeDestroyCount value="5"/>
+        <Pitch value="-3.000000,-2.000000"/>
+        <Volume value="-1.000000,0.000000"/>
+    </CSound>
+    <CSound id="DMRFire" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\Sounds\new sounds\DMR.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="MindScramble">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Mind Scramble.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="MinigunAttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\Sounds\new sounds\Minigun.ogg"/>
+            <Pitch value="1.000000,1.000000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+    </CSound>
+    <CSound id="MinigunLoop" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\Sounds\new sounds\MinigunFire.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <LoopCount value="-1"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="NODOff" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\nvg_off.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+    </CSound>
+    <CSound id="NODOn" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\nvg_on.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+    </CSound>
+    <CSound id="OctoCamo">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Uni\Foley\Adjutant_Fidget.wav"/>
+        <Mode value="3DWorld"/>
+        <Category value="Spell"/>
+    </CSound>
+    <CSound id="Phoenix_AirAttackImpact">
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="PlasmaGrenadeImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Plasma Burst.ogg" Weight="51" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+        <Pitch value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="PlasmaRifleImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_AttackImpact0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_AttackImpact1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_AttackImpact2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_AttackImpact3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_AttackImpact4.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="PlasmaRifleLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Weapons\Plasma Rifle Launch1.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\Weapons\Plasma Rifle Launch2.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Purge">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\PurgeTarget1.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="PurifierPlanetCrackerSound">
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="QuikClotUse">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\QuikClotUse.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+    </CSound>
+    <CSound id="RadioChatter">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\RadioChatter.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="ReviveUndead" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sounds\ReviveUndead.ogg" Pitch="-0.100000,1.100000" FacialGroup=""/>
+    </CSound>
+    <CSound id="Rifle_Suppressed_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\Sounds\new sounds\RIFLE_Suppressed.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="CASImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Airstrike.mp3"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="RocketLoop">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\RocketLoop.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <LoopCount value="-1"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="SatchelChargeExplode2" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sounds\new sounds\40mmImpact.ogg" Pitch="-18.090000,-15.090000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="Shotgun_AttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\Sounds\new sounds\ShotgunAuto.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="SleepBirth" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sounds\SleepBirth1.ogg" Pitch="-0.100000,1.100000" FacialGroup=""/>
+    </CSound>
+    <CSound id="SpitterSpit" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\SpitterSpit.ogg" Pitch="-0.100000,1.100000" FacialGroup=""/>
+    </CSound>
+    <CSound id="SpitterSplash" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\SpitterSplat1.ogg" Pitch="-0.100000,1.100000" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\SpitterSplat2.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="SprintingLoop" parent="Movement">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\breathing loop.ogg" Volume="-13.710000,-13.710000" FacialGroup=""/>
+        <LoopCount value="-1"/>
+    </CSound>
+    <CSound id="CriticalShot">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Zerg\Mutalisk\Mutalisk_AttackImpact0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Mutalisk\Mutalisk_AttackImpact1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Mutalisk\Mutalisk_AttackImpact2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Mutalisk\Mutalisk_AttackImpact3.wav" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="Darkness" parent="MUSIC">
+        <AssetArray File="Assets\Music\MissionMusic\Music_T13.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="DarreusAttack" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="cryptlordattacka.ogg" Pitch="-0.100000,1.100000" FacialGroup=""/>
+    </CSound>
+    <CSound id="AresDeath" parent="Death">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="yetideath.ogg" FacialGroup=""/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="EelBirth" parent="Broodling_Yes">
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="GameMusicTerr">
+        <AssetArray index="0" File="Assets\Music\MissionMusic\Music_PBetrayalB.ogg" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Music\MissionMusic\Music_PDeal.ogg" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Music\MissionMusic\Music_PProphecy.ogg" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Music\MissionMusic\Music_Low_A.ogg" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Music\MissionMusic\Music_Low_B.ogg" FacialGroup=""/>
+        <AssetArray index="5" File="Assets\Music\MissionMusic\Music_ClustersPitchedDown.ogg" FacialGroup=""/>
+        <AssetArray index="6" File="Assets\Music\MissionMusic\Music_ActionScary.ogg" Volume="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="7" File="Assets\Music\ZergSC2-02.ogg" FacialGroup=""/>
+        <AssetArray index="8" File="Assets\Music\ZergSC2-09.ogg" FacialGroup=""/>
+        <AssetArray index="9" File="Assets\Music\ZergSC2-08.ogg" FacialGroup=""/>
+        <AssetArray index="10" File="Assets\Music\ZergSC2-01.ogg" FacialGroup=""/>
+        <AssetArray index="11" File="Assets\Music\ZergSC2-03.ogg" FacialGroup=""/>
+        <AssetArray index="12" File="Assets\Music\ZergSC2-04.ogg" FacialGroup=""/>
+        <AssetArray index="13" File="Assets\Music\ZergSC2-05.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZergSC2-06.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZergSC2-07.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Ambient_Creepy_Choir_Swells1.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Ambient_Creepy_Choir_Swells2.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Evolution_1_FULL.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Evolution_2_FULL.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Evolution_3_FULL.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_01.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_02.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_04.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_05.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_07.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_09.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_101.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_102.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_103.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_105.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_106.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_107.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_108.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_19.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_21.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_22.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_23.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Kaldir1.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Kaldir2.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Kaldir3.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Kaldir4.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Zerus_1.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Zerus_2.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_Zerus_3.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_zerus_a.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZSwarm_Music_zerus_b.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZZerus01MusicIntro.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZZerus02MissionIntro.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZZerus02MusicCutscene01_PrimalSpawningPool.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\ZZerus03MissionIntro.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Heartbeat" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Heartbeat.mp3" FacialGroup=""/>
+        <LoopCount value="-1"/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+    </CSound>
+    <CSound id="HunterRoar" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="yetiroar.ogg" Pitch="-0.100000,1.100000" FacialGroup=""/>
+    </CSound>
+    <CSound id="MRLLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\RocketFire.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+        <Pitch value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="Odin_NukeExplode">
+        <AssetArray index="0" File="Assets\Sounds\Terran\Ghost\Ghost_NuclearStrikeImpact0.wav" Pitch="-17.139999,-17.139999"/>
+        <Category value="Dialogue"/>
+        <Spread value="0.000000"/>
+    </CSound>
+    <CSound id="Omegalisk_Attack">
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="BradleyAttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\BradleyFire3.ogg" Pitch="0.900000,1.100000" FacialGroup=""/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="BradleyEngineLoop">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\new sounds\engine loop.ogg" Volume="-47.310001,-47.310001" FacialGroup=""/>
+        <Category value="Spell"/>
+        <LoopCount value="-1"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="MGLLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\new sounds\MGLFire.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+        <Pitch value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="Sniper_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\new sounds\sniper1.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeDestroyCount value="6"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="Shotgun_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\Sounds\new sounds\Shotgun.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="SentryGunAttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sentry Gun Attack.wav" Pitch="0.900000,1.100000" FacialGroup=""/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="SmokeGrenade">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="smoke.mp3" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+    </CSound>
+    <CSound id="SmokeGrenadeLoop">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="smokeloop.wav" FacialGroup=""/>
+        <LoopCount value="-1"/>
+        <Mode value="3DWorld"/>
+        <ReverbBalance Room="0"/>
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="Sniper_Echo" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\new sounds\SniperEcho1.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <Category value="Dialogue"/>
+        <DupeDestroyCount value="6"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="TarantulaDeath" parent="Death">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="mtarantuladeath1a.ogg" FacialGroup=""/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="Rifleman_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\new sounds\Rifle 3.ogg"/>
+            <Pitch value="0.900000,1.100000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="Rifleman_AttackImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\BulletSliceFlesh1.wav" FacialGroup=""/>
+        <AssetArray File="Sounds\BulletSliceFlesh2.wav" FacialGroup=""/>
+        <AssetArray File="Sounds\BulletSliceFlesh3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact0.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact1.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact2.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact3.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact4.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact5.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\Ghost\Ghost_SnipeImpact0.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\Ghost\Ghost_SnipeImpact1.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\Ghost\Ghost_SnipeImpact2.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\Ghost\Ghost_SnipeImpact3.wav" Weight="10" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\Ghost\Ghost_SnipeImpact4.wav" Weight="10" FacialGroup=""/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="MG_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray>
+            <File value="Sounds\new sounds\MG-1.mp3"/>
+            <Pitch value="1.000000,1.000000"/>
+            <Volume value="-1.000000,0.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeDestroyCount value="6"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="64"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-9.000000,-6.000000"/>
+    </CSound>
+    <CSound id="SatchelChargeExplode" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge0.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge1.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge2.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge3.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge4.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge5.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge6.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge7.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge8.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionLarge9.wav" Pitch="-3.000000,3.000000"/>
+        <DupeDestroyCount value="5"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="-8.910000,-8.910000"/>
+    </CSound>
+    <CSound id="TossGrenadeImpact">
+        <AssetArray index="0" File="Sounds\explode2.ogg" Pitch="-1.500000,1.500000" FacialGroup=""/>
+        <AssetArray index="1" File="Sounds\explode3.ogg" Pitch="-1.500000,1.500000" FacialGroup=""/>
+        <AssetArray index="2" File="Sounds\Sounds\new sounds\BMS\HandGrenade.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="LickerDeath" parent="Death">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="mghouldeath1.ogg" FacialGroup=""/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="RifleButtImpact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_AttackImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_AttackImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_AttackImpact2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_AttackImpact3.wav"/>
+        <Pitch value="-2.810000,-1.820000"/>
+    </CSound>
+    <CSound id="DarreusDeath" parent="Death">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="cryptlorddeath.ogg" FacialGroup=""/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="MGLImpact" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sounds\new sounds\40mmImpact.ogg" Pitch="-1.500000,1.500000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="VikingAssault_AttackLaunch">
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="ZergFlyLoop">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sounds\new sounds\Enemy\Zerg Fly Loop.ogg" FacialGroup=""/>
+        <Category value="Spell"/>
+        <LoopCount value="-1"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="ZombieAttack" parent="Omegalisk_Attack">
+        <AssetArray index="0" File="Sounds\Sounds\new sounds\BMS\Enemy\ZombieAttack1.ogg" FacialGroup=""/>
+        <AssetArray index="1" File="Sounds\Sounds\new sounds\BMS\Enemy\ZombieAttack2.ogg" FacialGroup=""/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+    </CSound>
+    <CSound id="Zombie_AttackImpact" parent="Zerg_AttackImpactSmallPierce">
+        <AssetArray index="0" File="Sounds\ZombieMedBashFlesh1.wav" FacialGroup=""/>
+        <AssetArray index="1" File="Sounds\ZombieMedBashFlesh2.wav" FacialGroup=""/>
+        <AssetArray index="2" File="Sounds\ZombieMedBashFlesh3.wav" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+    </CSound>
+    <CSound id="ZombieDeath" parent="Death">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="zombiedeatha.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\ZombieDie1.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\ZombieAlert1.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\ZombieAlert2.ogg" FacialGroup=""/>
+        <AssetArray File="Sounds\Sounds\new sounds\BMS\Enemy\ZombieAlert3.ogg" FacialGroup=""/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="AbomAttackImpact" parent="Zerg_AttackImpactSmallPierce">
+        <AssetArray index="0" File="Sounds\Undead\MetalHeavyChopFlesh1.mp3" FacialGroup=""/>
+        <AssetArray index="1" File="Sounds\Undead\MetalHeavyChopFlesh2.mp3" FacialGroup=""/>
+        <AssetArray index="2" File="Sounds\Undead\MetalHeavyChopFlesh3.mp3" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+    </CSound>
+    <CSound id="charginghandle" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\sg552_boltpull.wav" Pitch="-0.200000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="PickupItem" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\2.0 sounds\Pickup2.mp3" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="AmmoBelt" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\new sounds\ammobelt.ogg" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="WeaponLock" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Uni\UI\UI_Warning.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="maginplasma" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Sounds\new sounds\PlasmaRifle InsertCanister.ogg" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="magoutplasma" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\Sounds\new sounds\PlasmaRifle DropCanister.ogg" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="noammo" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\NoAmmo.wav" Pitch="-0.100000,1.100000" FacialGroup=""/>
+    </CSound>
+    <CSound id="magout" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\m4a1_clipout.wav" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="magin" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\Sounds\new sounds\m4a1_clipin.wav" Pitch="-0.800000,1.200000" FacialGroup=""/>
+    </CSound>
+    <CSound id="lowammo" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\lowammo.mp3" Pitch="-0.100000,1.100000" FacialGroup=""/>
+    </CSound>
+    <CSound id="diebuzz" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sounds\diebuzzC.mp3" Pitch="-1.500000,1.500000" FacialGroup=""/>
+    </CSound>
+    <CSound id="Shockwave" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sounds\Shockwave.wav" Pitch="-0.100000,1.100000" FacialGroup=""/>
+    </CSound>
+</Catalog>

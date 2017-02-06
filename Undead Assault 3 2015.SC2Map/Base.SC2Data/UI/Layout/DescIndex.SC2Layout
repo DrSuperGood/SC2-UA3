@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Include path="UI/Layout/UA3UILayout.SC2Layout"/>
+    <Include path="UI/Layout/CustomUnitStatusBar.SC2Layout"/>
+    <Include path="UI/Layout/WeaponIcon.SC2Layout"/>
+</Desc>

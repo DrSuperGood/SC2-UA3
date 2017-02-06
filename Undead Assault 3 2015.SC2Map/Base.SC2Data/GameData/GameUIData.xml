@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CGameUI id="Dflt">
+        <MinimapData SelectedUnitColor="255,255,128,0"/>
+        <SoundData index="Dialogue">
+            <DSPArray value="ReverbForest"/>
+            <VolumeRolloffPoints index="0" Distance="50.000000"/>
+            <VolumeRolloffPoints index="1" Distance="1000.000000" Volume="-50.000000"/>
+        </SoundData>
+        <SoundData index="Combat">
+            <DSPArray value="ReverbForest"/>
+            <VolumeRolloffPoints index="0" Distance="15.000000"/>
+            <VolumeRolloffPoints index="1" Distance="70.000000" Volume="-50.000000"/>
+            <VolumeRolloffPoints Distance="130.000000" Volume="-96.000000"/>
+        </SoundData>
+        <InfoColorDebuffed value="255,155,85,170"/>
+        <CustomLayoutFileArray value="UI\Layout\UA3GameUI.SC2Layout"/>
+    </CGameUI>
+</Catalog>

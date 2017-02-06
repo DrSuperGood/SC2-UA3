@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="UnitStatusFrame" name="HeroStatus">
+        <Height val="100"/>
+        <Width val="100"/>
+        <Frame type="Frame" name="AttachPointFrame">
+            <Anchor relative="$parent"/>
+        </Frame>
+
+        <Frame type="UnitStatusHealthBar" name="HealthBar">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="15"/>
+            <Anchor side="Left" relative="$parent/AttachPointFrame" pos="Min" offset="-35"/>
+            <CollapseLayout val="true"/>
+            <Height val="15"/>
+            <Width val="70"/>
+            <Texture val="@UI/HealthBar"/>
+            <OwnerColor val="135,255,135" index="0"/>
+            <AllyColor val="0,200,0" index="0"/>
+            <EnemyColor val="150,15,50" index="0"/>
+            <ReductionColor val="255,0,0" index="0"/>
+            <ReductionShown val="true" index="0"/>
+            <IncreaseDuration val="500" index="0"/>
+            <DecreaseDuration val="2000" index="0"/>
+            <BarInsetRect top="2" left="2" bottom="2" right="2"/>
+            <BackgroundInsetRect top="1" left="1" bottom="1" right="1"/>
+            <BackgroundShown val="true"/>
+            <BackgroundColor val="0,0,0"/>
+        </Frame>
+
+        <Frame type="UnitStatusShieldedHealthBar" name="ShieldedHealthBar">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/AttachPointFrame" pos="Min" offset="-35"/>
+            <Height val="15"/>
+            <Width val="70"/>
+            <Texture val="@UI/HealthBar"/>
+            <OwnerColor val="50,50,255" index="0"/>
+            <AllyColor val="50,50,255" index="0"/>
+            <EnemyColor val="50,50,255" index="0"/>
+            <ReductionColor val="0,0,135" index="0"/>
+            <ReductionShown val="true" index="0"/>
+            <IncreaseDuration val="500" index="0"/>
+            <DecreaseDuration val="2000" index="0"/>
+            <BarInsetRect top="2" left="2" bottom="2" right="2"/>
+            <BackgroundInsetRect top="1" left="1" bottom="1" right="1"/>
+            <BackgroundShown val="true"/>
+            <BackgroundColor val="0,0,0"/>
+        </Frame>
+
+        <Frame type="UnitStatusEnergyBar" name="EnergyBar">
+            <Anchor side="Top" relative="$parent/HealthBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <Height val="15"/>
+            <Width val="70"/>
+            <Texture val="@UI/HealthBar"/>
+            <OwnerColor val="150,40,220" index="0"/>
+            <AllyColor val="0,200,0" index="0"/>
+            <EnemyColor val="150,15,50" index="0"/>
+            <ReductionColor val="135,135,255" index="0"/>
+            <ReductionShown val="true" index="0"/>
+            <IncreaseDuration val="500" index="0"/>
+            <DecreaseDuration val="2000" index="0"/>
+            <BarInsetRect top="2" left="2" bottom="2" right="2"/>
+            <BackgroundInsetRect top="1" left="1" bottom="1" right="1"/>
+            <BackgroundShown val="true"/>
+            <BackgroundColor val="0,0,0"/>
+        </Frame>
+
+        <Frame type="UnitStatusProgressBar" name="ProgressBar">
+            <Anchor side="Top" relative="$parent/EnergyBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/EnergyBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <Height val="15"/>
+            <Width val="70"/>
+            <Texture val="@UI/HealthBar"/>
+            <OwnerColor val="140,140,140" index="0"/>
+            <AllyColor val="140,140,140" index="0"/>
+            <EnemyColor val="140,140,140" index="0"/>
+            <ReductionColor val="0,0,0" index="0"/>
+            <ReductionShown val="true" index="0"/>
+            <IncreaseDuration val="500" index="0"/>
+            <DecreaseDuration val="2000" index="0"/>
+            <BarInsetRect top="2" left="2" bottom="2" right="2"/>
+            <BackgroundInsetRect top="1" left="1" bottom="1" right="1"/>
+            <BackgroundShown val="true"/>
+            <BackgroundColor val="0,0,0"/>
+        </Frame>
+
+        <Frame type="UnitStatusDurationBar" name="DurationBar">
+            <Anchor side="Top" relative="$parent/ProgressBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/ProgressBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <Height val="15"/>
+            <Width val="70"/>
+            <Texture val="@UI/HealthBar"/>
+            <OwnerColor val="135,135,135" index="0"/>
+            <AllyColor val="135,135,135" index="0"/>
+            <EnemyColor val="135,135,135" index="0"/>
+            <ReductionColor val="0,0,0" index="0"/>
+            <ReductionShown val="true" index="0"/>
+            <IncreaseDuration val="500" index="0"/>
+            <DecreaseDuration val="2000" index="0"/>
+            <BarInsetRect top="2" left="2" bottom="2" right="2"/>
+            <BackgroundInsetRect top="1" left="1" bottom="1" right="1"/>
+            <BackgroundShown val="true"/>
+            <BackgroundColor val="0,0,0"/>
+        </Frame>
+    </Frame>
+</Desc>

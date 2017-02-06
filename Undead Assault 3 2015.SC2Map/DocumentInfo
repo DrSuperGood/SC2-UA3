@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Icon>
+        <Value>UA Arcade Icon.dds</Value>
+    </Icon>
+    <Dependencies>
+        <Value>bnet:Liberty (Mod)/0.0/999,file:Mods/Liberty.SC2Mod</Value>
+        <Value>bnet:Liberty (Campaign)/0.0/999,file:Campaigns/Liberty.SC2Campaign</Value>
+        <Value>bnet:Liberty Story (Campaign)/0.0/999,file:Campaigns/LibertyStory.SC2Campaign</Value>
+        <Value>bnet:Swarm (Mod)/0.0/999,file:Mods/Swarm.SC2Mod</Value>
+        <Value>bnet:Swarm (Campaign)/0.0/999,file:Campaigns/Swarm.SC2Campaign</Value>
+        <Value>bnet:Swarm Story (Campaign)/0.0/999,file:Campaigns/SwarmStory.SC2Campaign</Value>
+        <Value>bnet:Undead Assault 3 2015 Assets/1.0/211722</Value>
+    </Dependencies>
+    <Screenshot>
+        <File>
+            <Value>T Objective Highlight.tga</Value>
+        </File>
+        <CaptionId>
+            <Value>1</Value>
+        </CaptionId>
+        <Flags>
+            <Value> </Value>
+        </Flags>
+    </Screenshot>
+    <ScreenshotHowToPlay>
+        <File>
+            <Value>T Item Highlight.tga</Value>
+            <Value>T Mode Dialog.tga</Value>
+            <Value>T Objective Highlight.tga</Value>
+        </File>
+        <CaptionId>
+            <Value>4</Value>
+            <Value>1</Value>
+            <Value>5</Value>
+        </CaptionId>
+        <Flags>
+            <Value> </Value>
+            <Value> </Value>
+            <Value> </Value>
+        </Flags>
+    </ScreenshotHowToPlay>
+    <PatchNote>
+        <Version>
+            <Value>1.14</Value>
+            <Value>1.15</Value>
+            <Value>1.16</Value>
+            <Value>1.17</Value>
+            <Value>1.18</Value>
+            <Value>1.19</Value>
+            <Value>1.20</Value>
+            <Value>1.21</Value>
+            <Value>1.22</Value>
+            <Value>1.23</Value>
+            <Value>1.24</Value>
+            <Value>1.25</Value>
+            <Value>1.26</Value>
+            <Value>1.27</Value>
+            <Value>1.28</Value>
+            <Value>1.29</Value>
+            <Value>1.30</Value>
+            <Value>1.31</Value>
+            <Value>1.32</Value>
+            <Value>1.33</Value>
+            <Value>1.34</Value>
+            <Value>1.35</Value>
+            <Value>1.36</Value>
+            <Value>1.37</Value>
+            <Value>1.38</Value>
+            <Value>1.39</Value>
+            <Value>1.40</Value>
+            <Value>1.41</Value>
+            <Value>1.42</Value>
+            <Value>1.43</Value>
+            <Value>1.44</Value>
+            <Value>1.45</Value>
+            <Value>1.46</Value>
+            <Value>1.47</Value>
+            <Value>1.48</Value>
+            <Value>1.49</Value>
+        </Version>
+        <Date>
+            <Value>12/19/2012</Value>
+            <Value>12/25/2012</Value>
+            <Value>12/27/2012</Value>
+            <Value>12/27/2012</Value>
+            <Value>12/30/2012</Value>
+            <Value>12/31/2012</Value>
+            <Value>3/4/2013</Value>
+            <Value>3/5/2013</Value>
+            <Value>3/8/2013</Value>
+            <Value>3/9/2013</Value>
+            <Value>3/17/2013</Value>
+            <Value>3/30/2013</Value>
+            <Value>5/4/2013</Value>
+            <Value>5/11/2013</Value>
+            <Value>5/12/2013</Value>
+            <Value>5/12/2013</Value>
+            <Value>5/19/2013</Value>
+            <Value>5/24/2013</Value>
+            <Value>5/25/2013</Value>
+            <Value>5/26/2013</Value>
+            <Value>5/27/2013</Value>
+            <Value>6/1/2013</Value>
+            <Value>6/2/2013</Value>
+            <Value>6/8/2013</Value>
+            <Value>6/16/2013</Value>
+            <Value>8/8/2013</Value>
+            <Value>9/1/2013</Value>
+            <Value>9/7/2013</Value>
+            <Value>12/19/2013</Value>
+            <Value>11/24/2014</Value>
+            <Value>11/28/2014</Value>
+            <Value>12/5/2014</Value>
+            <Value>12/12/2014</Value>
+            <Value>1/9/2015</Value>
+            <Value>2/22/2015</Value>
+            <Value>3/26/2016</Value>
+        </Date>
+        <Notes>
+            <Value>59,60,61,62,63,64,65</Value>
+            <Value>66,67,68</Value>
+            <Value>69,70</Value>
+            <Value>71,72,73</Value>
+            <Value>74,75,76,77,78</Value>
+            <Value>79</Value>
+            <Value>80,81,1,2,3</Value>
+            <Value>4,5,6</Value>
+            <Value>7,8</Value>
+            <Value>9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</Value>
+            <Value>25,26,27,28,29,30</Value>
+            <Value>31,32,33,34</Value>
+            <Value>35,36,37,38,39</Value>
+            <Value>40,41,42,43,44,45,46,47,48,49,50,51</Value>
+            <Value>52,53,54,55,56,57,58,82,83</Value>
+            <Value>84,85,86,87,88,89</Value>
+            <Value>90,91,92,93,94,95,96</Value>
+            <Value>97,98,99,100,101,102,103</Value>
+            <Value>104,105,106,107,108</Value>
+            <Value>109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124</Value>
+            <Value>125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145</Value>
+            <Value>146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165</Value>
+            <Value>166,167,168,169,170,171,172,173,174,175,176,177,178</Value>
+            <Value>179,180,181,182,183,184,185,186,187,188,189,190</Value>
+            <Value>191,192,193,194,195,196,197,198,199</Value>
+            <Value>200,201,202</Value>
+            <Value>203,204,205,206,207,208,209,210,211,212</Value>
+            <Value>213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235</Value>
+            <Value>236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257</Value>
+            <Value>258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275</Value>
+            <Value>276,277,278,279,280,281,282,283,284,285,286,287,288</Value>
+            <Value>289,290,291,292,293,294,295</Value>
+            <Value>296,297,298,299,300,301,302,303</Value>
+            <Value>304,305</Value>
+            <Value>306,307,308</Value>
+            <Value>309,310,311,312,313,314,315,316,317,318,319</Value>
+        </Notes>
+    </PatchNote>
+</DocInfo>

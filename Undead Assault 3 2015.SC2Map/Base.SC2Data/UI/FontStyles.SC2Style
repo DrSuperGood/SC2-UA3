@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StyleFile>
+    <Style name="0UI_LCD" font="UI\Fonts\LiquidCrystal-Bold.otf" height="20" vjustify="Top" hjustify="Left" fontflags="HintingAuto" styleflags="Shadow | Glow" textcolor="255,159,237,215" highlightcolor="255,0,0,0" disabledcolor="255,0,0,0" hotkeycolor="255,0,0,0" hyperlinkcolor="255,0,0,0" glowcolor="255,0,128,255" shadowoffset="1"/>
+</StyleFile>

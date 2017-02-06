@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Components>
+    <Optimized/>
+    <DataComponent Type="gada">GameData</DataComponent>
+    <DataComponent Type="text" Locale="enGB">GameText</DataComponent>
+    <DataComponent Type="info">DocumentInfo</DataComponent>
+</Components>

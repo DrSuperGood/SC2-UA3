@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CAlert id="AmmoComplete_Terr">
+        <PrimaryActions index="Flash" value="0"/>
+        <PrimaryActions index="Select" value="0"/>
+        <PrimaryActions index="View" value="0"/>
+        <SecondaryActions index="Flash" value="0"/>
+        <SecondaryActions index="Select" value="0"/>
+        <SecondaryActions index="View" value="0"/>
+        <Display index="Self" value="0"/>
+        <Display index="Other" value="0"/>
+        <Sound value=""/>
+    </CAlert>
+    <CAlert id="AttackTownAlly_Terr">
+        <PrimaryActions index="Flash" value="0"/>
+        <PrimaryActions index="Select" value="0"/>
+        <PrimaryActions index="View" value="0"/>
+        <SecondaryActions index="Flash" value="0"/>
+        <SecondaryActions index="Target" value="0"/>
+        <SecondaryActions index="View" value="0"/>
+        <Display index="Self" value="0"/>
+        <Display index="Other" value="0"/>
+        <Sound value=""/>
+    </CAlert>
+    <CAlert id="AttackTown_Terr">
+        <PrimaryActions index="Flash" value="0"/>
+        <PrimaryActions index="Select" value="0"/>
+        <PrimaryActions index="View" value="0"/>
+        <SecondaryActions index="Flash" value="0"/>
+        <SecondaryActions index="Target" value="0"/>
+        <SecondaryActions index="View" value="0"/>
+        <Display index="Self" value="0"/>
+        <Display index="Other" value="0"/>
+        <Sound value=""/>
+    </CAlert>
+    <CAlert id="AttackUnitAlly_Terr">
+        <PrimaryActions index="Flash" value="0"/>
+        <PrimaryActions index="Select" value="0"/>
+        <PrimaryActions index="View" value="0"/>
+        <SecondaryActions index="Flash" value="0"/>
+        <SecondaryActions index="Target" value="0"/>
+        <SecondaryActions index="View" value="0"/>
+        <Display index="Self" value="0"/>
+        <Display index="Other" value="0"/>
+        <Sound value=""/>
+    </CAlert>
+    <CAlert id="AttackUnit_Terr">
+        <PrimaryActions index="Flash" value="0"/>
+        <PrimaryActions index="Select" value="0"/>
+        <PrimaryActions index="View" value="0"/>
+        <SecondaryActions index="Flash" value="0"/>
+        <SecondaryActions index="Target" value="0"/>
+        <SecondaryActions index="View" value="0"/>
+        <Display index="Self" value="0"/>
+        <Display index="Other" value="0"/>
+        <Sound value=""/>
+    </CAlert>
+    <CAlert id="BuildComplete_Terr">
+        <PrimaryActions index="Flash" value="0"/>
+        <PrimaryActions index="Select" value="0"/>
+        <PrimaryActions index="View" value="0"/>
+        <SecondaryActions index="Flash" value="0"/>
+        <SecondaryActions index="Select" value="0"/>
+        <SecondaryActions index="View" value="0"/>
+        <Display index="Self" value="0"/>
+        <Display index="Other" value="0"/>
+        <Sound value=""/>
+    </CAlert>
+    <CAlert id="ResearchComplete_Terr">
+        <PrimaryActions index="Flash" value="0"/>
+        <PrimaryActions index="Select" value="0"/>
+        <PrimaryActions index="View" value="0"/>
+        <SecondaryActions index="Flash" value="0"/>
+        <SecondaryActions index="Select" value="0"/>
+        <SecondaryActions index="View" value="0"/>
+        <Display index="Self" value="0"/>
+        <Display index="Other" value="0"/>
+        <Sound value=""/>
+    </CAlert>
+</Catalog>

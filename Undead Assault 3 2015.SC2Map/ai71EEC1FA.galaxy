@@ -1,0 +1,139 @@
+//==================================================================================================
+// 
+// Generated AI Script
+// 
+// AI Name: Untitled AI
+// 
+//==================================================================================================
+include "TriggerLibs/natives"
+include "TriggerLibs/AI"
+include "TriggerLibs/Computer"
+
+//--------------------------------------------------------------------------------------------------
+// Globals
+//--------------------------------------------------------------------------------------------------
+point[17] ai71EEC1FA_defGather;
+string[17] ai71EEC1FA_customData;
+wave[17] ai71EEC1FA_lastWave;
+
+//--------------------------------------------------------------------------------------------------
+// Attack Wave Wrappers
+//--------------------------------------------------------------------------------------------------
+void ai71EEC1FA_wave_enable (int w, int p, bool val) {
+}
+
+//--------------------------------------------------------------------------------------------------
+bool ai71EEC1FA_wave_isEnabled (int w, int p) {
+    return false;
+}
+
+//--------------------------------------------------------------------------------------------------
+unitgroup ai71EEC1FA_wave_createdUnits (int w, int p) {
+    return null;
+}
+
+//--------------------------------------------------------------------------------------------------
+wave ai71EEC1FA_wave_createdWave (int w, int p) {
+    return null;
+}
+
+//--------------------------------------------------------------------------------------------------
+void ai71EEC1FA_wave_run (int w, int p, playergroup target, bool wait) {
+}
+
+//--------------------------------------------------------------------------------------------------
+// Attack Wave Sequence
+//--------------------------------------------------------------------------------------------------
+trigger ai71EEC1FA_waves_trigger = null;
+int ai71EEC1FA_waves_runPlayer;
+playergroup ai71EEC1FA_waves_runTarget;
+
+//--------------------------------------------------------------------------------------------------
+void ai71EEC1FA_waves_init () {
+    ai71EEC1FA_waves_trigger = TriggerCreate("ai71EEC1FA_waves_runFunc");
+}
+
+//--------------------------------------------------------------------------------------------------
+bool ai71EEC1FA_waves_runFunc (bool c, bool a) {
+    int p = ai71EEC1FA_waves_runPlayer;
+    playergroup target = ai71EEC1FA_waves_runTarget;
+
+    if (p < 0 || p >= 16) {
+        return false;
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void ai71EEC1FA_waves_run (int p, playergroup target) {
+    ai71EEC1FA_waves_runPlayer = p;
+    ai71EEC1FA_waves_runTarget = PlayerGroupCopy(target);
+
+    TriggerExecute(ai71EEC1FA_waves_trigger, false, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+void ai71EEC1FA_waves_enable (int p, bool val) {
+    if (p < 0 || p >= 16) {
+        return;
+    }
+
+}
+
+//--------------------------------------------------------------------------------------------------
+void ai71EEC1FA_waves_stop () {
+    TriggerStop(ai71EEC1FA_waves_trigger);
+
+}
+
+//--------------------------------------------------------------------------------------------------
+// Configuration
+//--------------------------------------------------------------------------------------------------
+void ai71EEC1FA_setDefGather (int p, point val) {
+    if (p < 0 || p >= 16) {
+        return;
+    }
+    ai71EEC1FA_defGather[p] = val;
+}
+
+//--------------------------------------------------------------------------------------------------
+string ai71EEC1FA_getCustomData (int p) {
+    if (p < 0 || p >= 16) {
+        return null;
+    }
+    return ai71EEC1FA_customData[p];
+}
+
+//--------------------------------------------------------------------------------------------------
+wave ai71EEC1FA_getLastWave (int p) {
+    if (p < 0 || p >= 16) {
+        return null;
+    }
+    return ai71EEC1FA_lastWave[p];
+}
+
+//--------------------------------------------------------------------------------------------------
+// Start
+//--------------------------------------------------------------------------------------------------
+bool ai71EEC1FA_initialized = false;
+
+//--------------------------------------------------------------------------------------------------
+void ai71EEC1FA_start (int p) {
+    int init_i;
+
+    if (p < 0 || p >= 16) {
+        return;
+    }
+    if (!ai71EEC1FA_initialized) {
+        ai71EEC1FA_waves_init();
+
+        for (init_i = 0; init_i <= 16; init_i += 1) {
+            ai71EEC1FA_defGather[init_i] = PointFromId(0);
+        }
+
+        ai71EEC1FA_initialized = true;
+    }
+
+    AICampaignStart(p);
+}

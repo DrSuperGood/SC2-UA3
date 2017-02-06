@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CTile id="KorhalTile">
+        <Material value="Assets/HardTiles/MarSaraRoad/MarSaraRoad.m3"/>
+    </CTile>
+</Catalog>
