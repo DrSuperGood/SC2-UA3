@@ -1055,4 +1055,10 @@
             <quad value="172.6948,250.0434,183.2316,254.605"/>
         </shape>
     </region>
+    <region id="154">
+        <name value="Hero Spawn"/>
+        <shape type="rect">
+            <quad value="38.25,107,40.75,109"/>
+        </shape>
+    </region>
 </Regions>

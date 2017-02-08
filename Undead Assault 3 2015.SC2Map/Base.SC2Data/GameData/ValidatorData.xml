@@ -39,6 +39,12 @@
         <Value value="0.4"/>
         <Vital value="Energy"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="Energy1">
+        <WhichUnit Value="Source"/>
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
     <CValidatorUnitCompareBehaviorCount id="IsBroken">
         <Compare value="GT"/>
         <Behavior value="Broken"/>
@@ -47,6 +53,16 @@
         <ResultNoUnit value="MustTargetUnit,Is MOS"/>
         <Filters value="Heroic;-"/>
     </CValidatorUnitFilters>
+    <CValidatorLocationPathable id="JumpPathing">
+        <Find value="0"/>
+        <Types index="Ground" value="0"/>
+        <Types index="Building" value="0"/>
+    </CValidatorLocationPathable>
+    <CValidatorPlayerCompareResource id="Minerals1">
+        <WhichPlayer Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="1"/>
+    </CValidatorPlayerCompareResource>
     <CValidatorUnitCompareBehaviorCount id="NotFullyAutomatic">
         <Behavior value="BurstFireFullyAutomatic"/>
     </CValidatorUnitCompareBehaviorCount>

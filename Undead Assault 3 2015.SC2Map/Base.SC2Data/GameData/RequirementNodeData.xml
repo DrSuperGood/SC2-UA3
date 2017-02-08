@@ -113,7 +113,7 @@
         <OperandArray value="EqCountUpgrade1LifeCompleteOnly1"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndLTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3EqCountUpgrade1LifeCompleteOnly0">
-        <Tooltip value=""/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="LTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3"/>
         <OperandArray value="EqCountUpgrade1LifeCompleteOnly0"/>
     </CRequirementAnd>
@@ -424,6 +424,9 @@
     <CRequirementCountUpgrade id="CountUpgradeSGTCompleteOnlyTechTreeCheat">
         <Count Link="SGT" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeSJHyperionHangerCheckCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeSSGCompleteOnlyTechTreeCheat">
         <Count Link="SSG" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
@@ -702,7 +705,7 @@
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
     <CRequirementEq id="EqCountUpgrade1LifeCompleteOnly0">
-        <Tooltip value=""/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgrade1LifeCompleteOnly"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
@@ -775,6 +778,10 @@
     <CRequirementGTE id="GTE1860585296CountUpgradeIDFSupportCompleteOnly2">
         <OperandArray index="0" value="CountUpgradeIDFSupportCompleteOnly"/>
         <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE1918093729CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21">
+        <OperandArray index="0" value="CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheat"/>
+        <OperandArray index="1" value="SumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTE1921614202CountUpgradeSecurityCompleteOnly1">
         <OperandArray index="0" value="CountUpgradeSecurityCompleteOnly"/>
@@ -1055,11 +1062,6 @@
         <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="4"/>
     </CRequirementGTE>
-    <CRequirementGTE id="GTECountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21">
-        <Tooltip value=""/>
-        <OperandArray index="0" value="CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheat"/>
-        <OperandArray index="1" value="SumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21"/>
-    </CRequirementGTE>
     <CRequirementGTE id="GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat2">
         <OperandArray index="0" value="CountUpgradeLeadershipCompleteOnlyTechTreeCheat"/>
         <OperandArray index="1" value="2"/>
@@ -1122,7 +1124,7 @@
         <OperandArray index="1" value="4"/>
     </CRequirementLT>
     <CRequirementLT id="LTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3">
-        <Tooltip value=""/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountAbilReviveCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
     </CRequirementLT>
@@ -1213,7 +1215,6 @@
         <OperandArray value="Eq1529213028CountUpgradeBarbaricCompleteOnly1"/>
     </CRequirementOr>
     <CRequirementSum id="SumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21">
-        <Tooltip value=""/>
         <OperandArray value="MulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat2"/>
         <OperandArray value="1"/>
     </CRequirementSum>

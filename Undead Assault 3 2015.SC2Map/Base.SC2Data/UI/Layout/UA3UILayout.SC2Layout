@@ -8,6 +8,7 @@
     <!-- console panel -->
     <Frame type="ConsolePanel" name="GameUI/UIContainer/ConsolePanel" file="GameUI">
         <Alpha val="120"/>
+
         <Frame type="PortraitPanel" name="PortraitPanel">
             <Alpha val="190"/>
         </Frame>
@@ -29,11 +30,31 @@
         <Anchor side="Bottom" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="Min" offset="-42"/>
     </Frame>
 
+    <!-- Timer Window -->
+    <Frame type="TimerWindow" name="TimerWindowTemplate" file="TriggerWindowPanel">
+        <Frame type="Label" name="TimerTitle">
+            <Style val="TimerTitle"/>
+            <Anchor side="Top" relative="$parent" pos="Min" offset="-55"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="200"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="160"/>
+        </Frame>
+
+        <Frame type="Label" name="TimerText">
+            <Style val="TimerText"/>
+            <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="200"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-60"/>
+        </Frame>
+    </Frame>
+
     <Frame type="InventoryPanel" name="GameUI/UIContainer/ConsoleUIContainer/InventoryPanel" file="GameUI">
         <Frame type="InventoryContainer" name="InventoryButtons">
             <Anchor side="Bottom" relative="$parent" pos="Max" offset="-210"/>
             <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
             <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+
             <Frame type="CommandButton" name="Button05">
                 <Anchor side="Bottom" relative="$parent" pos="Max" offset="-28"/>
                 <Anchor side="Right" relative="$parent" pos="Max" offset="-20"/>
@@ -81,6 +102,7 @@
                 <Texture val="@@UI/RevealPanelBorder"/>
                 <TextureType val="Border"/>
                 <RenderPriority val="500"/>
+                <Visible val="false"/>
             </Frame>
         </Frame>
     </Frame>

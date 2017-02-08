@@ -285,135 +285,62 @@ Alert/Text/AttackUnitAlly=
 Alert/Text/BuildComplete_Terr=
 Alert/Text/ResearchComplete_Terr=
 Behavior/Name/APRounds=AP Rounds
-Behavior/Name/Abdul=Abdul
 Behavior/Name/AcidSplash=Acid Splash
 Behavior/Name/Agility1=Agility 1
 Behavior/Name/Agility2=Agility 2
 Behavior/Name/Agility3=Agility 3
 Behavior/Name/AimAssist=Aim Assist
 Behavior/Name/AnabolicPerformanceEnhancement=Anabolic Performance Enhancement
-Behavior/Name/ArachCharge=Arach Charge
-Behavior/Name/ArachChargeTarg=Arach Charge Targ
-Behavior/Name/ArachnathidClaws=ArachnathidClaws
 Behavior/Name/ArcCell=Arc Cell
-Behavior/Name/AresCharge=Ares Charge
-Behavior/Name/AresChargeDieoff=Ares Charge Dieoff
-Behavior/Name/AspectusCFFAI=Aspectus CFF AI
-Behavior/Name/Augmentation1=Augmentation1
-Behavior/Name/Augmentation2=Augmentation2
-Behavior/Name/Augmentation3=Augmentation3
-Behavior/Name/Augmentation4=Augmentation4
-Behavior/Name/Augmentation5=Augmentation5
-Behavior/Name/BWCycloneMissileAI=BW Cyclone Missile AI
-Behavior/Name/BarricadeAggro=Barricade Aggro
-Behavior/Name/BeltLinking=Belt Linking
-Behavior/Name/BinocularAIHero=Binocular AI Hero
 Behavior/Name/BloodTransfusion=Blood Transfusion
-Behavior/Name/BoomerExplode=Boomer Explode
-Behavior/Name/BornToLead=Born To Lead
 Behavior/Name/BornToLeadTarget=Born To Lead
-Behavior/Name/BreakDown=Break Down
 Behavior/Name/Broken=Broken
 Behavior/Name/BurstFire=Burst Fire
 Behavior/Name/BurstFire2=Burst Fire
-Behavior/Name/BurstFireAS=Burst Fire AS
 Behavior/Name/BurstFireFullyAutomatic=Fully Automatic
-Behavior/Name/BurstFirePause=Burst Fire Pause
-Behavior/Name/BurstFireStacks=Burst Fire Stacks
-Behavior/Name/CWClusterRocketsAI=CW Cluster Rockets AI
 Behavior/Name/Camouflage1=Camouflage
 Behavior/Name/Camouflage2=Camouflage
 Behavior/Name/Camouflage3=Camouflage
 Behavior/Name/Camouflage4=Camouflage
-Behavior/Name/CarryCasualty=Carry Casualty
-Behavior/Name/CatchingUp=Catching Up
 Behavior/Name/Charge=Charge
-Behavior/Name/ChargerCharge=Charger Charge
-Behavior/Name/ChargerChargeDieoff=Charger Charge Dieoff
 Behavior/Name/ClassIIIHemmorrhaging=Class III Hemmorrhaging
 Behavior/Name/ClassIVHemmorrhaging=Class IV Hemmorrhaging
 Behavior/Name/Cloaking=Cloaking
 Behavior/Name/ClusterRocketStun=Cluster Rocket Stun
-Behavior/Name/ClusterRocketsAIGroupMech=Cluster Rockets AI Group/Mech
-Behavior/Name/ClusterRocketsAIHero=Cluster Rockets AI Hero
-Behavior/Name/ClusterRocketsAIIgnis=Cluster Rockets AI Ignis
 Behavior/Name/CognitiveEnhancement=Cognitive Enhancement
 Behavior/Name/CollectingSample=Collecting Sample
 Behavior/Name/CollectingSampleGrave=Collecting Sample
-Behavior/Name/CombatFitness=Combat Fitness
 Behavior/Name/CommandoTentacle=Commando Tentacle
-Behavior/Name/Concentration=Concentration
 Behavior/Name/ConcentrationT=Concentration
 Behavior/Name/CougherMucous=Cougher Mucous
 Behavior/Name/CryoRounds=Cryo Rounds
 Behavior/Name/CryoRoundsTarget=Cryo Rounds
 Behavior/Name/DURounds=DU Rounds
-Behavior/Name/DamageAIIgnis=Damage AI Ignis
-Behavior/Name/DamageAIMiniPlasmaShield=Damage AI Mini Plasma Shield
-Behavior/Name/Darreus=Darreus
-Behavior/Name/Decloaking1=Decloaking 1
-Behavior/Name/Decloaking2=Decloaking 2
-Behavior/Name/Decloaking3=Decloaking 3
-Behavior/Name/Decloaking4=Decloaking 4
-Behavior/Name/Decloaking5=Decloaking 5
 Behavior/Name/Dexterity=Dexterity
-Behavior/Name/DifficultyModifier=Difficulty Modifier
-Behavior/Name/DifficultyModifierArmy=Difficulty Modifier Army
-Behavior/Name/DifficultyModifierBoss=Difficulty Modifier Boss
-Behavior/Name/Disarmable=Disarmable
 Behavior/Name/DisruptorRounds=Disruptor Rounds
 Behavior/Name/DisruptorRoundsTarget=Disruptor Rounds
 Behavior/Name/EelBite=Eel Bite
 Behavior/Name/Encumbered=Encumbered
-Behavior/Name/Energetic=Energetic
 Behavior/Name/EnergyCell=Energy Cell
 Behavior/Name/EnergyLeak=Energy Leak
-Behavior/Name/EscortingSlow=Escorting Slow
-Behavior/Name/Evasion10=Evasion 10
-Behavior/Name/Evasion15=Evasion 15
-Behavior/Name/Evasion30=Evasion 30
-Behavior/Name/ExpertMarksman=Expert Marksman
-Behavior/Name/ExplosiveChargeExplode=Explosive Charge Explode
 Behavior/Name/FieldAid=Field Aid
-Behavior/Name/FieldCameraTimedLife=Field Camera Timed Life
-Behavior/Name/FirstAid1=First Aid1
-Behavior/Name/FirstAid2=First Aid2
-Behavior/Name/FirstAid3=First Aid3
-Behavior/Name/FirstAid4=First Aid4
 Behavior/Name/FirstAidKit=First Aid Kit
-Behavior/Name/FirstAidKitMedic=First Aid Kit Medic
 Behavior/Name/Fitness=Fitness
-Behavior/Name/FlareGun=Flare Gun
-Behavior/Name/FlareGunAIHero=Flare Gun AI Hero
 Behavior/Name/FlareGunSlow=Flare Gun Slow
 Behavior/Name/Flash=Flash
 Behavior/Name/FlashlightReveal=Flashlight Reveal
 Behavior/Name/FocusFire=Focus Fire
 Behavior/Name/FracturedArm=Fractured Arm
 Behavior/Name/FracturedLeg=Fractured Leg
-Behavior/Name/FragAIGrouporHero=Frag AI Group or Hero
-Behavior/Name/FriendlyFireImmune=Friendly Fire Immune
-Behavior/Name/FuelDischargeAIGroupHero=Fuel Discharge AI Group/Hero
-Behavior/Name/GeneratorLeech=Generator Leech
 Behavior/Name/GeneratorPowering=Generator Powering
 Behavior/Name/GravitonCharge=Graviton Charge
-Behavior/Name/GroundFlareAIHero=Ground Flare AI Hero
-Behavior/Name/GroundFlareTimedLife=Ground Flare Timed Life
 Behavior/Name/HK42=HK42
 Behavior/Name/HatchedParasites=Hatched Parasites
-Behavior/Name/Hawkeye=Hawkeye
-Behavior/Name/HeavyArmor=Heavy Armor
-Behavior/Name/HellfireAIGroupMech=Hellfire AI GroupMech
-Behavior/Name/HeroDeathPreventer=Hero Death Preventer
 Behavior/Name/HeroIncapacitated=Hero Incapacitated
 Behavior/Name/HeroLevels=Hero Levels
-Behavior/Name/HopperJump=Hopper Jump
 Behavior/Name/HorrorAcid=Horror Acid
-Behavior/Name/HunterReveal=Hunter Reveal
 Behavior/Name/IDMR2=IDMR-2
 Behavior/Name/IPR=IPR
-Behavior/Name/ISBotRockets=IS Bot Rockets
-Behavior/Name/ISR=ISR
 Behavior/Name/ISS7=ISS-7
 Behavior/Name/ImprovedAnabolicPerformanceEnhancement=Improved Anabolic Performance Enhancement
 Behavior/Name/ImprovedBloodTransfusion=Improved Blood Transfusion
@@ -422,76 +349,31 @@ Behavior/Name/ImprovedPainKiller=Improved Pain Killer
 Behavior/Name/InCombat=In Combat
 Behavior/Name/IncendiaryRound1=Incendiary Round
 Behavior/Name/IncendiaryRounds=Incendiary Rounds
-Behavior/Name/IncendiaryRounds1=Incendiary Rounds 1
-Behavior/Name/IncendiaryRounds2=Incendiary Rounds 2
-Behavior/Name/IncendiaryRounds3=Incendiary Rounds 3
-Behavior/Name/IncendiaryRounds4=Incendiary Rounds 4
 Behavior/Name/IncendiaryRoundsGhost=Incendiary Rounds
-Behavior/Name/IncendiaryRoundsLN=Incendiary Rounds
 Behavior/Name/InfectedBite=Infected Bite
-Behavior/Name/Instructor=Instructor
 Behavior/Name/InstructorTarget=Instructor
-Behavior/Name/Intellectual=Intellectual
-Behavior/Name/IonCannonAI=Ion Cannon AI
-Behavior/Name/IonCannonTimedLife=Ion Cannon Timed Life
 Behavior/Name/Jammed=Jammed
-Behavior/Name/Jump=Jump
-Behavior/Name/JumpCyborg=Jump Cyborg
 Behavior/Name/JumpInjury=Jump Injury
 Behavior/Name/KeenSense=Keen Sense
 Behavior/Name/KeenSense2=Keen Sense 2
 Behavior/Name/KevlarBodyArmor=Kevlar Body Armor
 Behavior/Name/KineticIntegrator=Kinetic Integrator
-Behavior/Name/LNReloadAI=LN Reload AI
 Behavior/Name/LaserDesignator=Laser Designator
-Behavior/Name/Leadership1=Leadership 1
 Behavior/Name/Leadership1T=Leadership 1
-Behavior/Name/Leadership2=Leadership 2
 Behavior/Name/Leadership2T=Leadership 2
-Behavior/Name/Leadership3=Leadership 3
 Behavior/Name/Leadership3T=Leadership 3
-Behavior/Name/Leadership4=Leadership 4
 Behavior/Name/Leadership4T=Leadership 4
-Behavior/Name/Leap=Leap
-Behavior/Name/LeapAI=Leap AI
 Behavior/Name/LickerTongue=Licker Tongue
-Behavior/Name/LiftBoots=Lift Boots
-Behavior/Name/LiftBootsIn=Lift Boots In
-Behavior/Name/LightArmor=Light Armor
 Behavior/Name/LightFilter=Light Filter
-Behavior/Name/LightFilterGhost=Light Filter
 Behavior/Name/LocalNational=Local National
 Behavior/Name/M135Minigun=M135 Minigun
 Behavior/Name/M241MMG=M241 MMG
 Behavior/Name/M41SAW=M41 SAW
-Behavior/Name/M41SAW2=M41 SAW Extra
-Behavior/Name/M41SAWBurstPause=M41 SAW Burst Pause
 Behavior/Name/M5MAR=M5 MAR
 Behavior/Name/M79Flamethrower=M79 Flamethrower
 Behavior/Name/M92Torrent=M92 Torrent
-Behavior/Name/MGBurst=MG Burst
-Behavior/Name/MGBurstPause=MG Burst Pause
-Behavior/Name/MGBurstUpgrade=MG Burst Upgrade
-Behavior/Name/MGBurstUpgradePause=MG Burst Upgrade Pause
-Behavior/Name/MGLAIGrouporHero=MGL AI Group or Hero
-Behavior/Name/MRLAIHeroMechanical=MRL AI Hero/Mechanical
-Behavior/Name/MarksmanSkills1=Marksman Skills 1
-Behavior/Name/MarksmanSkills2=Marksman Skills 2
-Behavior/Name/MarksmanSkills3=Marksman Skills 3
-Behavior/Name/MarksmanSkillsLN=Marksman Skills
-Behavior/Name/Marksmanship1=Marksmanship1
-Behavior/Name/Marksmanship2=Marksmanship2
-Behavior/Name/Marksmanship3=Marksmanship3
-Behavior/Name/Marksmanship4=Marksmanship4
-Behavior/Name/MarksmanshipLN=Marksmanship
-Behavior/Name/MarksmanshipLNlesser=Marksmanship
-Behavior/Name/MarksmanshipMedic=Marksmanship Medic
 Behavior/Name/Mechanical=Mechanical
-Behavior/Name/MedicBTAI=Medic BT AI
-Behavior/Name/MedicNanoAI=Medic Nano AI
 Behavior/Name/Meltdown=Meltdown
-Behavior/Name/MinervaCharge=Minerva Charge
-Behavior/Name/MinigunBurstPause=Minigun Burst Pause
 Behavior/Name/MinorLacerations=Minor Lacerations
 Behavior/Name/MonoWireMissile1=Mono Wire Missile1
 Behavior/Name/MonoWireMissile2=Mono Wire Missile2
@@ -499,16 +381,11 @@ Behavior/Name/MonoWireMissile3=Mono Wire Missile3
 Behavior/Name/MonoWireMissile4=Mono Wire Missile4
 Behavior/Name/MonomolecularWire1=Monomolecular Wire
 Behavior/Name/MonomolecularWire2=Monomolecular Wire
-Behavior/Name/MotionSensorTimedLife=Motion Sensor Timed Life
 Behavior/Name/Mounted50Cal=Mounted .50 Cal
 Behavior/Name/MountedFlamethrower=Mounted Flamethrower
 Behavior/Name/MountedMMG=Mounted MMG
 Behavior/Name/MuscleRelaxant=Muscle Relaxant
 Behavior/Name/Mutation=Mutation
-Behavior/Name/Napalm1=Napalm1
-Behavior/Name/Napalm2=Napalm2
-Behavior/Name/Napalm3=Napalm3
-Behavior/Name/Napalm4=Napalm4
 Behavior/Name/Napalm5=Napalm
 Behavior/Name/NapalmBurn1=Napalm Burn
 Behavior/Name/NapalmBurn2=Napalm Burn
@@ -517,14 +394,8 @@ Behavior/Name/NapalmBurn4=Napalm Burn
 Behavior/Name/NecroticVenom=Necrotic Venom
 Behavior/Name/NeurotoxicVenom=Neurotoxic Venom
 Behavior/Name/OPA=OPA
-Behavior/Name/OpportunedShot=Opportuned Shot
-Behavior/Name/OpportunedShotBonus=Opportuned Shot Bonus
-Behavior/Name/PMCExplosionReduction=PMC Explosion Reduction
 Behavior/Name/PainKiller=Pain Killer
-Behavior/Name/ParalysisTrap=Paralysis Trap
-Behavior/Name/ParalysisTrapExplode=Paralysis Trap Explode
 Behavior/Name/ParasiticInfection=Parasitic Infection
-Behavior/Name/PatrollingSlow=Patrolling Slow
 Behavior/Name/PlasmaGrenade=Plasma Grenade
 Behavior/Name/PlasmaShield1=Plasma Shield
 Behavior/Name/PlasmaShield2=Plasma Shield
@@ -532,56 +403,23 @@ Behavior/Name/PlasmaShield3=Plasma Shield
 Behavior/Name/PlasmaShield4=Plasma Shield
 Behavior/Name/PlasmaShieldIgnis=Plasma Shield
 Behavior/Name/PlasmaShieldMini=Plasma Shield
-Behavior/Name/PlayerHandicap=Player Handicap
-Behavior/Name/PlayerModifier=Player Modifier
-Behavior/Name/Plus1MS=Plus 1 MS
 Behavior/Name/Prone=Prone
 Behavior/Name/Prone2=Prone
-Behavior/Name/PullAI=Pull AI
 Behavior/Name/Pulled=Pulled
-Behavior/Name/QuickThinking=Quick Thinking
-Behavior/Name/RankModifier=Rank Modifier
 Behavior/Name/RapidFire1=Rapid Fire
 Behavior/Name/RapidFire2=Rapid Fire
 Behavior/Name/RapidFire3=Rapid Fire
 Behavior/Name/RapidFire4=Rapid Fire
 Behavior/Name/RapidFireLN=Rapid Fire
-Behavior/Name/ReactiveFire=Reactive Fire
-Behavior/Name/ReconSkills1=Recon Skills 1
-Behavior/Name/ReconSkills2=Recon Skills 2
-Behavior/Name/ReconSkills3=Recon Skills 3
-Behavior/Name/ReconSkills4=Recon Skills 4
-Behavior/Name/RecruitModifier=Recruit Modifier
-Behavior/Name/RifleButt=Rifle Butt
-Behavior/Name/RifleButtBehaviorCSlam=Rifle Butt Behavior CSlam
-Behavior/Name/RifleButtBehaviorController=Rifle Butt Behavior Controller
-Behavior/Name/RifleButtCyborg=Rifle Butt Cyborg
-Behavior/Name/RifleButtCyborg2=Rifle Butt Cyborg 2
-Behavior/Name/RifleButtCyborgCharging=Rifle Butt Cyborg Charging
-Behavior/Name/RifleButtLN=Rifle Butt
 Behavior/Name/SOFAR=SOF-AR
 Behavior/Name/SPCS=SPCS
-Behavior/Name/STSPlaceholder=STS Placeholder
-Behavior/Name/Security1=Security 1
-Behavior/Name/Security2=Security 2
-Behavior/Name/Security3=Security 3
-Behavior/Name/Security4=Security 4
 Behavior/Name/SelfAid=Self Aid
 Behavior/Name/SelfPreservation=Self Preservation
 Behavior/Name/SmokeGrenade=Smoke Grenade
 Behavior/Name/SmokeGrenadeLoop=Smoke Grenade Loop
-Behavior/Name/SmokeGrenadeTimedLife=Smoke Grenade Timed Life
-Behavior/Name/SoldierSkills1=SoldierSkills1
-Behavior/Name/SoldierSkills2=SoldierSkills2
-Behavior/Name/SoldierSkills3=SoldierSkills3
-Behavior/Name/SoldierSkills4=SoldierSkills4
 Behavior/Name/Spawned=Spawned
 Behavior/Name/SpitterAcid=Spitter Acid
 Behavior/Name/Sprint=Sprint
-Behavior/Name/SprintDieoff=Sprint Dieoff
-Behavior/Name/StalkerAI=Stalker AI
-Behavior/Name/StalkerCharge=Stalker Charge
-Behavior/Name/StartingStats=Starting Stats
 Behavior/Name/Stealth1=Stealth 1
 Behavior/Name/Stealth2=Stealth 2
 Behavior/Name/Stealth3=Stealth 3
@@ -595,35 +433,15 @@ Behavior/Name/SuppressiveFire2=Suppressive Fire
 Behavior/Name/SuppressiveFire3=Suppressive Fire
 Behavior/Name/SuppressiveFire4=Suppressive Fire
 Behavior/Name/SuppressiveFireLN=Suppressive Fire
-Behavior/Name/SwollenExplode=Swollen Explode
-Behavior/Name/TOWAIGroupMechMassive=TOW AI Group Mech Massive
-Behavior/Name/ThresherMaw=Thresher Maw
-Behavior/Name/ThresherMawInvuln=Thresher Maw Invuln
-Behavior/Name/ThresherMawOrder=Thresher Maw Order
-Behavior/Name/ThresherMawRollarcoaster=Thresher Maw Rollarcoaster
 Behavior/Name/TimeStopped=Time-Stopped
-Behavior/Name/ToughAsNails=Tough As Nails
 Behavior/Name/Training1=Training 1
 Behavior/Name/Training2=Training 2
 Behavior/Name/TraumaticBrainInjury=Traumatic Brain Injury
-Behavior/Name/TwinkleToes=Twinkle Toes
 Behavior/Name/USMCR=US MCR
-Behavior/Name/UndeadChargeAI=Undead Charge AI
-Behavior/Name/UndeadSprintAI=Undead Sprint AI
-Behavior/Name/UndeadSprintAIAres=Undead Sprint AI Ares
-Behavior/Name/UndeadTongueAI=Undead Tongue AI
-Behavior/Name/UnknownBehavior=Construct Support
 Behavior/Name/Unpowered=Unpowered
-Behavior/Name/VesaniaExplode=Vesania Explode
-Behavior/Name/Veteran=Veteran
 Behavior/Name/WeaponLock=Weapon Lock
 Behavior/Name/WeaponsHold=Weapons Hold
-Behavior/Name/WhitePhosphorousTimedLife=White Phosphorous Timed Life
-Behavior/Name/WhizKid=Whiz Kid
-Behavior/Name/XPSharing=XP Sharing
 Behavior/Name/aidummy=dummy
-Behavior/Name/aidummychainjag=Chain JAG
-Behavior/Name/aidummyhelicopterrf=Helicopter Refresh
 Behavior/Tooltip/AcidSplash=This unit has been splashed by a Swollen, causing a reduction in movement speed and damage over time.
 Behavior/Tooltip/AnabolicPerformanceEnhancement=Increases attack and movement speed.
 Behavior/Tooltip/ArcCell=
@@ -644,17 +462,11 @@ Behavior/Tooltip/CollectingSampleGrave=This unit is collecting a sample.
 Behavior/Tooltip/CommandoTentacle=
 Behavior/Tooltip/ConcentrationT=This unit has increased damage.
 Behavior/Tooltip/CougherMucous=This unit has been splashed by a cougher.
-Behavior/Tooltip/Decloaking1=This unit is invisible until it attacks.
-Behavior/Tooltip/Decloaking2=This unit is invisible until it attacks.
-Behavior/Tooltip/Decloaking3=This unit is invisible until it attacks.
-Behavior/Tooltip/Decloaking4=This unit is invisible until it attacks.
-Behavior/Tooltip/Decloaking5=This unit is invisible until it attacks.
 Behavior/Tooltip/Dexterity=Dexterity measures your ability to fire your weapon and your finesse with your equipment. Each point increases damage by 2%, attack speed by 1% and ability damage by 1%.
 Behavior/Tooltip/Encumbered=You have too many magazines readied and are encumbered. Drop magazines to return to normal.
 Behavior/Tooltip/EnergyCell=An energy-dense cell made to regenerate your suit.<n/><c val="FF8000">Regenerates 190 energy over 20 seconds.</c>
 Behavior/Tooltip/EnergyLeak=<c val="FF8000">Moderate</c> injury that causes rapid loss of energy and reduced armor efficiency. It is the result of an unidentified foreign organism in the bloodstream.<n/><n/>Causes a loss of <c val="FF0000"><d ref="-Behavior,EnergyLeak,Modification.VitalRegenArray[Energy]" precision="2"/> energy per second</c> and <c val="FF0000"><d ref="1-Behavior,EnergyLeak,Modification.LifeArmorMultiplier*100"/>% armor</c>. Lasts <c val="FF0000">approximately <d ref="Behavior,EnergyLeak,Duration/60"/> minutes</c>.
 Behavior/Tooltip/FirstAidKit=This unit is slowly regenerating life.
-Behavior/Tooltip/FirstAidKitMedic=This unit is slowly regenerating life.
 Behavior/Tooltip/Fitness=Fitness is a comprehensive measurement of your physical strength and endurance. Each point increases health by 8 and health regeneration by 1%.
 Behavior/Tooltip/FlashlightReveal=This unit can see invisible units.
 Behavior/Tooltip/FocusFire=Greatly inceases weapon damage for a short time.
@@ -682,7 +494,6 @@ Behavior/Tooltip/Leadership3T=This unit is being led by a Platoon Leader, increa
 Behavior/Tooltip/Leadership4T=This unit is being led by a Platoon Leader, increasing damage, movespeed, and reload time.
 Behavior/Tooltip/LickerTongue=This unit is trapped by a licker. A teammate must kill the licker to free yourself.
 Behavior/Tooltip/LightFilter=This unit can see invisible units.
-Behavior/Tooltip/LightFilterGhost=This unit can see invisible units.
 Behavior/Tooltip/LocalNational=This unit is a Local National Soldier and suffers from poor training, discipline and equipment.<n/><n/>Decreases <c val="FF0000">damage by <d ref="-Behavior,LocalNational,Modification.DamageDealtFraction[Ranged] * 100"/>%</c>, <c val="FF0000">health by <d ref="-Behavior,LocalNational,Modification.VitalMaxFractionArray[Life] * 100"/>%</c> and <c val="FF0000">energy by <d ref="-Behavior,LocalNational,Modification.VitalMaxFractionArray[Energy] * 100"/>%</c>. Deals <c val="FF0000"><d ref="-Behavior,LocalNational,Modification.DamageDealtAttributeMultiplier[Heroic] * 100"/>% less damage against Heroic units</c> and <c val="FF0000"><d ref="Behavior,LocalNational,DamageResponse.ModifyFraction*100"/>% damage to friendly units</c>.
 Behavior/Tooltip/Mechanical=Mechanical skill is your expertise in the technical aspect of your equipment. Each point increases energy by 15 and energy regeneration by 1%.
 Behavior/Tooltip/Meltdown=This unit will self-destruct opon death.
@@ -1271,7 +1082,7 @@ Button/Tooltip/Sniper=MOS: 11B (Infantry) Role: Rifleman<n/>The infantry riflema
 Button/Tooltip/Spitter=Fast melee creature. Can morph into a Baneling.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
 Button/Tooltip/Sprint=Toggles sprinting on and off. Sprinting increases movement speed by 1 for up to 8 seconds, which slowly drains off. Recovers over up to 15 seconds while not sprinting.<n/><n/><c val="C0C0C0">"Double time!"</c>
 Button/Tooltip/SquadDesignatedMarksman=MOS 11B (Infantry) Role: Squad Designated Marksman<n/>SDMs are hand picked soldiers with excellent performance in marksmanship. They are usually issued special optics or long-range rifles for overwatch.<n/>Abilities:<n/>-Soldier Skills<n/>-Marksmanship<n/>-Rapid Fire<n/>-Marksman Skills<n/>-Monomolecular Wire
-Button/Tooltip/SquadLeaderMini=MOS: 11B (Infantry) Role: Rifleman<n/>The infantry rifleman is a versatile soldier on the battlefield.
+Button/Tooltip/SquadLeader=MOS: 11B (Infantry) Role: Rifleman<n/>The infantry rifleman is a versatile soldier on the battlefield.
 Button/Tooltip/StalkerZombie=Fast melee creature. Can morph into a Baneling.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
 Button/Tooltip/Stealth=Improves cloaking per level. While cloaked, has a 75/110/150 degree detection arc in front of the Cyborg at 6/10/14 range, and improves sight range by 1/2/3.<n/>1 - Cloaking<n/>2 - Allows attacking while cloaked<n/>3 - Improves cloaking energy usage
 Button/Tooltip/StealthOff=Turns off stealth.
@@ -1632,11 +1443,734 @@ DocInfo/PatchNote316=- Removed deprecated English UK localization.
 DocInfo/PatchNote317=
 DocInfo/PatchNote318=Sorry for the long delay. I was not aware 3.0 broke the map.
 DocInfo/PatchNote319=If people show enough support I might pick up development again.
+DocInfo/PatchNote320=-Various trigger refractoring.
+DocInfo/PatchNote321=-Updated deprecated trigger events
+DocInfo/PatchNote322=-Reformatted timer display
+DocInfo/PatchNote323=-Fixed weapon damage display UI overlapping attributes.
+DocInfo/PatchNote324=-Fixed unlockable dialog unit model display. 
+DocInfo/PatchNote325=-Heroes won't appear invisible to players on revive.
+DocInfo/PatchNote326=-Fixed issue with player hit count not working.
+DocInfo/PatchNote327=-Fixed missing hotkeys.
+DocInfo/PatchNote328=-Fixed 1 life mod. Revive can't be used anymore.
+DocInfo/PatchNote329=-QoL: Camo/decal selection will restore when revived & will load from previous game.
+DocInfo/PatchNote330=-QoL: Sprint will cease if hero isn't moving.
+DocInfo/PatchNote331=-Fixed leaper jump animation from getting stuck mid-air.
+DocInfo/PatchNote332=-Fixed undead attack animations.
+DocInfo/PatchNote333=-Fixed undead attacks that didn't apply damage
+DocInfo/PatchNote334=-Garg walk animation fixed 
+DocInfo/PatchNote335=-Undead life bars fixed.
+DocInfo/PatchNote336=-Hero jump won't fail to cast in certain situations.
+DocInfo/PatchNote337=-Cyborg & Cav Scout cloak abililty works correctly.
+DocInfo/PatchNote338=-Fixed a issue that caused the amount of magazine dropped when a hero is killed to be incorrect.
+DocInfo/PatchNote339=-Mission objective will now display completed when thresher maws are killed in ch.2.
+DocInfo/PatchNote340=
 DocInfo/Screenshot01=Read the objectives and focus on them as a team. Remember - teamwork is key!
 DocInfo/ScreenshotHowToPlay01=This is the first screen you will see. It is recommended, as a new player, you vote for "Normal."
 DocInfo/ScreenshotHowToPlay04=Items are spawned randomly around the map. Read the tooltips! They contain vital information about the item - such as an MRL's backblast.
 DocInfo/ScreenshotHowToPlay05=Read the objectives and focus on them as a team. Remember - teamwork is key!
 DocInfo/Website=http://undeadassault.net/
+Effect/Name/30mmChainGunDamage=30 mm Chain Gun Damage
+Effect/Name/30mmChainGunLaunch=30 mm Chain Gun Launch
+Effect/Name/30mmChainGunSA=30 mm Chain Gun SA
+Effect/Name/APEApplyBehavior=APE Apply Behavior
+Effect/Name/APEApplyBehaviorSelf=APE Apply Behavior Self
+Effect/Name/APESet=APE Set
+Effect/Name/ATDamage1=AT Damage 1
+Effect/Name/ATFire1=AT Fire 1
+Effect/Name/ATRocket1=AT Rocket 1
+Effect/Name/AddDisarmable=Add Disarmable
+Effect/Name/AddXP12=Add XP .12
+Effect/Name/AilmentDamage=Ailment Damage
+Effect/Name/ApiaryMissile=Apiary Missile
+Effect/Name/ApiaryWeapon=Apiary Weapon
+Effect/Name/ApplyAI=Apply AI
+Effect/Name/ArachChargeBehavior=Arach Charge Behavior
+Effect/Name/ArachChargeCheck=Arach Charge Check
+Effect/Name/ArachChargeDamage=Arach Charge Damage
+Effect/Name/ArachChargeForce=Arach Charge Force
+Effect/Name/ArachChargePersistent=Arach Charge Persistent
+Effect/Name/ArachChargeTargBehavior=Arach Charge Targ Behavior
+Effect/Name/ArachChargeTargPersist=Arach Charge Targ Persist
+Effect/Name/ArachPersistSet=Arach Persist Set
+Effect/Name/ArachTargetForce=Arach Target Force
+Effect/Name/ArachTargetSet=Arach Target Set
+Effect/Name/ArachnathidChargeSet=Arachnathid Charge Set
+Effect/Name/ArachnathidClawsBehav=Arachnathid Claws Behav
+Effect/Name/ArachnathidClawsDamage=ArachnathidClaws Damage
+Effect/Name/ArachnathidClawsForce=ArachnathidClaws Force
+Effect/Name/ArachnathidClawsPersistent=ArachnathidClaws Persistent
+Effect/Name/ArachnathidClawsSet=ArachnathidClaws Set
+Effect/Name/ArachnathidDeath=Arachnathid Death
+Effect/Name/ArcCellAB=Arc Cell AB
+Effect/Name/AresCharge=Ares Charge
+Effect/Name/AresChargeDieoff=Ares Charge Dieoff
+Effect/Name/AresChargeDieoffPeriod=Ares Charge Dieoff Period
+Effect/Name/AresFist=Ares Fist
+Effect/Name/AspectusBullet=Aspectus Bullet
+Effect/Name/AspectusCFFAIEnum=Aspectus CFF AI Enum
+Effect/Name/AspectusCFFAIOrder=Aspectus CFF AI Order
+Effect/Name/AspectusDamage=Aspectus Damage
+Effect/Name/AssaultRiflePL=Assault Rifle PL
+Effect/Name/BWCycloneMissileAIEnGrp=BW Cyclone Missile AI En Grp
+Effect/Name/BWCycloneMissileAIEnum=BW Cyclone Missile AI Enum
+Effect/Name/BWCycloneMissileAIOrder=BW Cyclone Missile AI Order
+Effect/Name/BWCycloneMissileAISet=BW Cyclone Missile AI Set
+Effect/Name/BarricadeAggro=Barricade Aggro
+Effect/Name/BarricadeAggroDamage=Barricade Aggro Damage
+Effect/Name/BarricadePlace=Barricade Place
+Effect/Name/BeltLinking1=Belt Linking1
+Effect/Name/BinoAIHeroSet=Bino AI Hero Set
+Effect/Name/BinocularAISearchAreaHero=Binocular AI Search Area Hero
+Effect/Name/Binoculars=Binoculars
+Effect/Name/BinocularsMiniReveal=Binoculars Mini Reveal
+Effect/Name/BinocularsOrder=Binoculars AI Order
+Effect/Name/BloodTransfusionApplyBehavior=Blood Transfusion Apply Behavior
+Effect/Name/BloodTransfusionEnergy=Blood Transfusion Energy
+Effect/Name/BloodTransfusionHeal=Blood Transfusion Heal
+Effect/Name/BloodTransfusionPeriodSet=Blood Transfusion Period Set
+Effect/Name/BoomerClaws=Boomer Claws
+Effect/Name/BoomerExplosionDmg=Boomer Explosion Dmg
+Effect/Name/BornToLeadAB=Born To Lead AB
+Effect/Name/BornToLeadEnum=Born To Lead Enum
+Effect/Name/BradleyHEDamage=Bradley HE Damage
+Effect/Name/BradleyHELaunch=Bradley HE Launch
+Effect/Name/BrokenAdd=Broken Add
+Effect/Name/BruchusClaws=Bruchus Claws
+Effect/Name/BulletDrainEnergy=Bullet Drain Energy
+Effect/Name/BulletDrainMineral=Bullet Drain Mineral
+Effect/Name/BurstFireAS=Burst Fire AS
+Effect/Name/BurstFirePause=Burst Fire Pause
+Effect/Name/BurstFireSwitch=Burst Fire Switch
+Effect/Name/CEClusterRocketDamage=CE Cluster Rocket Damage
+Effect/Name/CEClusterRocketFire1=CE Cluster Rocket Fire 1
+Effect/Name/CEClusterRocketFire2=CE Cluster Rocket Fire 2
+Effect/Name/CEClusterRocketFire3=CE Cluster Rocket Fire 3
+Effect/Name/CEClusterRocketFire4=CE Cluster Rocket Fire 4
+Effect/Name/CEClusterRocketImpact=CE Cluster Rocket Impact
+Effect/Name/CEClusterRocketLaunch=CE Cluster Rocket Launch
+Effect/Name/CEClusterRocketStunAB=CE Cluster Rocket Stun AB
+Effect/Name/CEClusterRocketStunSA=CE Cluster Rocket Stun SA
+Effect/Name/CWClusterRocketAISet=CW Cluster Rocket AI Set
+Effect/Name/CWClusterRocketsAIEnumGrp=CW Cluster Rockets AI Enum Grp
+Effect/Name/CWClusterRocketsAIEnumMech=CW Cluster Rockets AI Enum Mech
+Effect/Name/CWClusterRocketsAIOrder=CW Cluster Rockets AI Order
+Effect/Name/CWClusterRocketsAIOrderFilter=CW Cluster Rockets AI Order Filter
+Effect/Name/CacumenSledge=Cacumen Sledge
+Effect/Name/CallForFireAspectus=Call For Fire Aspectus
+Effect/Name/CallForFirePL=Call For Fire PL
+Effect/Name/CallForFirePLLaunch=Call For Fire PL Launch
+Effect/Name/CallforFirePLDamage=Call for Fire PL Damage
+Effect/Name/CavAssaultRifle=Cav Assault Rifle
+Effect/Name/CavBullet=Cav Bullet
+Effect/Name/CavalryScoutLaunchSet=Cavalry Scout Launch Set
+Effect/Name/ChargeAIEnum=Charge AI Enum
+Effect/Name/ChargeAIOrder=Charge AI Order
+Effect/Name/ChargerCharge=Charger Charge
+Effect/Name/ChargerChargeDieoff=Charger Charge Dieoff
+Effect/Name/ChargerChargeDieoffPeriod=Charger Charge Dieoff Period
+Effect/Name/ChargerChargeSet=Charger Charge Set
+Effect/Name/ChargerClaws=Charger Claws
+Effect/Name/ChooseAutomaticRifleman=Choose Automatic Rifleman
+Effect/Name/ChooseCavalryScout=Choose Cavalry Scout
+Effect/Name/ChooseCombatEngineer=Choose Combat Engineer
+Effect/Name/ChooseCombatMedic=Choose Combat Medic
+Effect/Name/ChooseCyborg=Choose Cyborg
+Effect/Name/ChooseFSS=Choose FSS
+Effect/Name/ChooseFlamethrower=Choose Flamethrower
+Effect/Name/ChooseGhost=Choose Ghost
+Effect/Name/ChooseJavelinGunner=Choose Javelin Gunner
+Effect/Name/ChoosePL=Choose PL
+Effect/Name/ChooseRifleman=Choose Rifleman
+Effect/Name/ChooseSDM=Choose SDM
+Effect/Name/ChooseSFAAT=Choose SFAAT
+Effect/Name/ClawsDamage=Claws (Damage)
+Effect/Name/ClaymoreDamage=Claymore Damage
+Effect/Name/ClaymorePlace=Claymore Place
+Effect/Name/ClusterRocketAIOrder=Cluster Rocket AI Order
+Effect/Name/ClusterRocketAIOrderFilter=Cluster Rocket AI Order Filter
+Effect/Name/ClusterRocketAISet=Cluster Rocket AI Set
+Effect/Name/ClusterRocketImpact=Cluster Rocket Impact
+Effect/Name/ClusterRocketImpactShocker=Cluster Rocket Impact Shocker
+Effect/Name/ClusterRocketLaunch=Cluster Rocket Launch
+Effect/Name/ClusterRocketLaunchShocker=Cluster Rocket Launch Shocker
+Effect/Name/ClusterRocketLaunchWalker=Cluster Rocket Launch Walker
+Effect/Name/ClusterRocketShockerDmg=Cluster Rocket Shocker Dmg
+Effect/Name/ClusterRocketStun=Cluster Rocket Stun
+Effect/Name/ClusterRocketStunBehavior=Cluster Rocket Stun Behavior
+Effect/Name/ClusterRocketsAIGroup=Cluster Rockets AI Group
+Effect/Name/ClusterRocketsAIHeroEnum=Cluster Rockets AI Hero Enum
+Effect/Name/ClusterRocketsAIIgnisEnum=Cluster Rockets AI Ignis Enum
+Effect/Name/ClusterRocketsAIIgnisOrder=Cluster Rockets AI Ignis Order
+Effect/Name/ClusterRocketsAIIgnisOrderFilter=Cluster Rockets AI Ignis Order Filter
+Effect/Name/ClusterRocketsAIMech=Cluster Rockets AI Mech
+Effect/Name/ClusterRocketsCombatWalker=Cluster Rockets Combat Walker
+Effect/Name/ClusterRocketsDamage=Cluster Rockets Damage
+Effect/Name/ClusterRocketsFire=Cluster Rockets Fire
+Effect/Name/ClusterRocketsShocker=Cluster Rockets Shocker
+Effect/Name/CogABSelf=Cog AB Self
+Effect/Name/CogSet=Cog Set
+Effect/Name/CognitiveApplyBehavior=Cognitive Apply Behavior
+Effect/Name/CombatEngineerLNLaunchSet=Combat Engineer LN Launch Set 
+Effect/Name/CombatEngineerLaunchSet=Combat Engineer Launch Set
+Effect/Name/CombatEngineerMiniLaunchSet=Combat Engineer Mini Launch Set
+Effect/Name/CombatEngineerMiniShotgun=Combat Engineer Mini Shotgun
+Effect/Name/CombatEngineerMiniShotgun2=Combat Engineer Mini Shotgun
+Effect/Name/CombatEngineerShotgun=Combat Engineer Shotgun
+Effect/Name/CombatMedicBullet=Combat Medic Bullet
+Effect/Name/CombatMedicLaunchSet=Combat Medic Launch Set
+Effect/Name/CombatWalkerLaunchMissile=Combat Walker Launch Missile
+Effect/Name/CombatWalkerMinigunsDamage=Combat Walker Miniguns Damage
+Effect/Name/CommanderBullet=Commander Bullet
+Effect/Name/CommanderRifle=Commander Rifle
+Effect/Name/CommandoTentacleAB=Commando Tentacle AB
+Effect/Name/CommandoTentacleForce=Commando Tentacle Force
+Effect/Name/CommandoTentacleLaunchMissile=Commando Tentacle Launch Missile
+Effect/Name/CommandoTentaclePersistent=Commando Tentacle Persistent
+Effect/Name/CommandoTentacleSet=Commando Tentacle Set
+Effect/Name/CompetitiveStartingXP=Competitive Starting XP
+Effect/Name/ConcentrationAB=Concentration AB
+Effect/Name/ConcentrationEnum=Concentration Enum
+Effect/Name/CougherBehavior=Cougher Behavior
+Effect/Name/CougherDamage=Cougher Damage
+Effect/Name/CougherImpactSA=Cougher Impact SA
+Effect/Name/CougherLaunch=Cougher Launch
+Effect/Name/CrabStingDamage=Crab Sting Damage
+Effect/Name/CreeperClaws=Creeper Claws
+Effect/Name/CriticalShotBonus=Critical Shot Bonus
+Effect/Name/CryoSet=Cryo Set
+Effect/Name/CursedClaws=Cursed Claws
+Effect/Name/CyborgAgilityTOs=Cyborg Agility TOs
+Effect/Name/CyborgMeltdownDamage=Cyborg Meltdown Damage
+Effect/Name/CyborgStealthTOs=Cyborg Stealth TOs
+Effect/Name/CyborgStrengthTOs=Cyborg Strength TOs
+Effect/Name/CyborgTOAgility=Cyborg TO Agility
+Effect/Name/CyborgTOStealth=Cyborg TO Stealth
+Effect/Name/CyborgTOStrength=Cyborg TO Strength
+Effect/Name/CycloneMissileAirSA=Cyclone Missile Air SA
+Effect/Name/CycloneMissileCP=Cyclone Missile CP
+Effect/Name/CycloneMissileDamage=Cyclone Missile Damage
+Effect/Name/CycloneMissileLM=Cyclone Missile LM
+Effect/Name/DMRBullet=DMR Bullet
+Effect/Name/DMRBulletMini=DMR Bullet Mini
+Effect/Name/DMRDamage=DMR Damage
+Effect/Name/DMRLaunchLN=DMR Launch LN
+Effect/Name/Damage1=Damage 1
+Effect/Name/DarreusClaws=Darreus Claws
+Effect/Name/DetonateClaymore=Detonate Claymore
+Effect/Name/Disarm=Disarm
+Effect/Name/Discipline=Discipline
+Effect/Name/Dismiss=Dismiss
+Effect/Name/DisruptorSet=Disruptor Set
+Effect/Name/EelBiteBehav=Eel Bite Behav
+Effect/Name/EelBiteSet=Eel Bite Set
+Effect/Name/EelDamage=Eel Damage
+Effect/Name/EnergyCell=Energy Cell
+Effect/Name/EnergyCellAB=Energy Cell AB
+Effect/Name/EnergyCellSIPU=Energy Cell (SI PU)
+Effect/Name/ExplosiveCharge=Explosive Charge
+Effect/Name/ExplosiveChargeDamage=Explosive Charge Damage
+Effect/Name/FSSBullet=FSS Bullet
+Effect/Name/FSSLaunchSet=FSS Launch Set
+Effect/Name/FTAttack=FT Attack
+Effect/Name/FTRally=FT Rally
+Effect/Name/FieldAidAB=Field Aid AB
+Effect/Name/FieldCameraPlace=Field Camera Place
+Effect/Name/FieldCameraTimedLife=Field Camera Timed Life
+Effect/Name/FirstAidKitBehavior=First Aid Kit Behavior
+Effect/Name/FirstAidKitBehaviorMedic=First Aid Kit Behavior Medic
+Effect/Name/FlamethrowerDamage=Flamethrower Damage
+Effect/Name/FlamethrowerDamageMini=Flamethrower Damage Mini
+Effect/Name/FlamethrowerFlame=Flamethrower Flame
+Effect/Name/FlamethrowerFlameMini=Flamethrower Flame Mini
+Effect/Name/FlamethrowerImpact=Flamethrower Impact
+Effect/Name/FlamethrowerImpactMini=Flamethrower Impact Mini
+Effect/Name/FlamethrowerSearchArea=Flamethrower Search Area
+Effect/Name/FlamethrowerSearchAreaMini=Flamethrower Search Area Mini
+Effect/Name/FlareGunAIEnumHero=Flare Gun AI Enum Hero
+Effect/Name/FlareGunAIOrder=Flare Gun AI Order
+Effect/Name/FlareGunHeight=Flare Gun Height
+Effect/Name/FlareGunImpact=Flare Gun Impact
+Effect/Name/FlareGunLaunchMissile=Flare Gun Launch Missile
+Effect/Name/FlareGunSearchArea=Flare Gun Search Area
+Effect/Name/FlareGunSlowBehav=Flare Gun Slow Behav
+Effect/Name/FlareGunTimedLife=Flare Gun Timed Life
+Effect/Name/FlashAB=Flash AB
+Effect/Name/FracturedLegDamageMove=Fractured Leg Damage Move
+Effect/Name/FracturedLegSet=Fractured Leg Set
+Effect/Name/FragAIEnumGroup=Frag AI Enum Group
+Effect/Name/FragAIEnumGroupLife=Frag AI Enum Group Life
+Effect/Name/FragAIEnumHero=Frag AI Enum Hero
+Effect/Name/FragAIOrder=Frag AI Order
+Effect/Name/FragAIOrderFilter=Frag AI Order Filter
+Effect/Name/FragAIOrderTerran=Frag AI Order Terran
+Effect/Name/FragAISet=Frag AI Set
+Effect/Name/FragGrenade1LaunchMissile=Frag Grenade1 (Launch Missile)
+Effect/Name/FragGrenade3LaunchMissile=Frag Grenade3 (Launch Missile)
+Effect/Name/FragGrenade4LaunchMissile=Frag Grenade4 (Launch Missile)
+Effect/Name/FragGrenadeDamage1=Frag Grenade Damage1
+Effect/Name/FragGrenadeLaunchMissile2=Frag Grenade2 (Launch Missile)
+Effect/Name/FuelDischargeAIEnumGroup=Fuel Discharge AI Enum Group
+Effect/Name/FuelDischargeAIEnumHero=Fuel Discharge AI Enum Hero
+Effect/Name/FuelDischargeAIOrder=Fuel Discharge AI Order
+Effect/Name/FuelDischargeAIOrderFilters=Fuel Discharge AI Order Filters
+Effect/Name/FuelDischargeAISet=Fuel Discharge AI Set
+Effect/Name/FuelDischargeDamage1=Fuel Discharge Damage1
+Effect/Name/FuelSynthesizer=Fuel Synthesizer
+Effect/Name/GFAIEnumHero=GF AI Enum Hero
+Effect/Name/GFAIOrder=GF AI Order
+Effect/Name/GargantuanSledge=Gargantuan Sledge
+Effect/Name/GargoyleClaws=GargoyleClaws
+Effect/Name/GeneratorLeechAB=Generator Leech AB
+Effect/Name/GeneratorLeechSA=Generator Leech SA
+Effect/Name/GeneratorPoweringMUS=Generator Powering MUS
+Effect/Name/GeneratorPoweringMUT=Generator Powering MUT
+Effect/Name/GeneratorPoweringSet=Generator Powering Set
+Effect/Name/GhostCryoLaunchSet=Ghost Cryo Launch Set
+Effect/Name/GhostDisLaunchSet=Ghost Dis Launch Set
+Effect/Name/GhostIncinLaunchSet=Ghost Incin Launch Set
+Effect/Name/GhostLaunchSet=Ghost Launch Set
+Effect/Name/GhostMiniLaunchSet=Ghost Mini Launch Set
+Effect/Name/GhostPlasmaRifleDamage=Ghost Plasma Rifle Damage
+Effect/Name/GluttonAttackDamage=GluttonAttackDamage
+Effect/Name/GourmandAttackDamage=Gourmand Attack Damage
+Effect/Name/GravitonCharge1LaunchMissile=Graviton Charge1 (Launch Missile)
+Effect/Name/GravitonCharge2LaunchMissile=Graviton Charge2 (Launch Missile)
+Effect/Name/GravitonCharge3LaunchMissile=Graviton Charge3 (Launch Missile)
+Effect/Name/GravitonCharge4LaunchMissile=Graviton Charge4 (Launch Missile)
+Effect/Name/GravitonChargeAB=Graviton Charge AB
+Effect/Name/GravitonChargeForce1=Graviton Charge Force1
+Effect/Name/GravitonChargeForce2=Graviton Charge Force2
+Effect/Name/GravitonChargeForce3=Graviton Charge Force3
+Effect/Name/GravitonChargeForce4=Graviton Charge Force4
+Effect/Name/GravitonChargePersistent1=Graviton Charge Persistent1
+Effect/Name/GravitonChargePersistent2=Graviton Charge Persistent2
+Effect/Name/GravitonChargePersistent3=Graviton Charge Persistent3
+Effect/Name/GravitonChargePersistent4=Graviton Charge Persistent4
+Effect/Name/GravitonChargeSearch1=Graviton Charge Search1
+Effect/Name/GravitonChargeSet1=Graviton Charge Set1
+Effect/Name/GravitonChargeSet2=Graviton Charge Set2
+Effect/Name/GravitonChargeSet3=Graviton Charge Set3
+Effect/Name/GravitonChargeSet4=Graviton Charge Set4
+Effect/Name/GrotesqueDamage=Grotesque Damage
+Effect/Name/GroundFlareImpact=Ground Flare Impact
+Effect/Name/GroundFlareLaunchMissile=Ground Flare Launch Missile
+Effect/Name/GroundFlareTimedLife=Ground Flare Timed Life
+Effect/Name/HEDamage1=HE Damage 1
+Effect/Name/HEFire1=HE Fire1
+Effect/Name/HEFire12=HE Fire2
+Effect/Name/HEFire122=HE Fire3
+Effect/Name/HEFire123=HE Fire4
+Effect/Name/HERocket1=HE Rocket 1
+Effect/Name/HERocket2=HE Rocket 2
+Effect/Name/HERocket3=HE Rocket 3
+Effect/Name/HERocket4=HE Rocket 4
+Effect/Name/HatchedParasites=Hatched Parasites
+Effect/Name/HeartbeatEnum=Heartbeat Enum
+Effect/Name/HeartbeatTarget=Heartbeat Target
+Effect/Name/HellfireAIGroup=Hellfire AI Group
+Effect/Name/HellfireAIMech=Hellfire AI Mech
+Effect/Name/HellfireAIOrder=Hellfire AI Order
+Effect/Name/HellfireAIOrderFilter=Hellfire AI Order Filter
+Effect/Name/HellfireAISet=Hellfire AI Set
+Effect/Name/HellfireHunterDamage=Hellfire Hunter Damage
+Effect/Name/HellfireHunterLaunch=Hellfire Hunter Launch
+Effect/Name/HellfireHunterPersist=Hellfire Hunter Persist
+Effect/Name/HeroIncapacitatedApplyBehav=Hero Incapacitated Apply Behav
+Effect/Name/HeroReload=Hero Reload
+Effect/Name/HopperClawsDamage=Hopper Claws (Damage)
+Effect/Name/HorrorAcidDOT=Horror Acid DOT
+Effect/Name/HorrorAcidSearch=Horror Acid Search
+Effect/Name/HorrorAcidSet=Horror Acid Set
+Effect/Name/HorrorAcidSlow=Horror Acid Slow
+Effect/Name/HorrorDamage=Horror Damage
+Effect/Name/HorrorImpactPersist=Horror Impact Persist
+Effect/Name/HorrorLaunchMissile=Horror Launch Missile
+Effect/Name/HunterFist=Hunter Fist
+Effect/Name/HunterRevealPersistent=Hunter Reveal Persistent
+Effect/Name/HunterRoar=Hunter Roar
+Effect/Name/IAPEApplyBehavior=IAPE Apply Behavior
+Effect/Name/IAPEApplyBehaviorSelf=IAPE Apply Behavior Self
+Effect/Name/IAPESet=IAPE Set
+Effect/Name/ICogABSelf=ICog AB Self
+Effect/Name/ICogSet=ICog Set
+Effect/Name/IMBloodTransfusionApplyBehavior=IM Blood Transfusion Apply Behavior
+Effect/Name/IPKABSelf=IPK AB Self
+Effect/Name/IPKApplyBehavior=IPK Apply Behavior
+Effect/Name/IPKSet=IPK Set
+Effect/Name/ISBot=IS Bot
+Effect/Name/ISBotDamage=IS Bot Damage
+Effect/Name/ISBotLaunchMissile=IS Bot Launch Missile
+Effect/Name/ISBotPersistent=IS Bot Persistent
+Effect/Name/ISREnum=ISR Enum
+Effect/Name/IgnisDamageResponse=Ignis Damage Response
+Effect/Name/IgnisFlamethrowerDamage=Ignis Flamethrower Damage
+Effect/Name/ImmediateSmokeImpact=Immediate Smoke Impact
+Effect/Name/ImmediateSmokeLaunch=Immediate Smoke Launch
+Effect/Name/ImmussilusClaws=Immussilus Claws
+Effect/Name/ImprovedCognitiveEnhancementAB=Improved Cognitive Enhancement AB
+Effect/Name/ImprovedNanoInjectionHeal=Improved Nano-Injection Heal
+Effect/Name/IncendiaryRndDoT=Incendiary Rnd DoT
+Effect/Name/IncendiaryRoundApplyBehavior1=Incendiary Round Apply Behavior1
+Effect/Name/IncendiaryRoundBullet=Incendiary Round Bullet
+Effect/Name/IncendiaryRoundCost=Incendiary Round Cost
+Effect/Name/IncendiaryRoundImpact=Incendiary Round Impact
+Effect/Name/IncendiaryRoundSA=Incendiary Round SA
+Effect/Name/IncendiarySet=Incendiary Set
+Effect/Name/InfantryAutoRifle=Infantry Auto Rifle
+Effect/Name/InfantryRiflemanBullet=Infantry Rifleman Bullet
+Effect/Name/InfantryRiflemanRifle=Infantry Rifleman Rifle
+Effect/Name/InfectedBiteDeath=Infected Bite Death
+Effect/Name/InfectedBiteExpireSetChance=Infected Bite Expire Set Chance
+Effect/Name/InfestedSiloExplosionDamage=Infested Silo Explosion Damage
+Effect/Name/InstructorAB=Instructor AB
+Effect/Name/InstructorEnum=Instructor Enum
+Effect/Name/IonBlades=Ion Blades
+Effect/Name/IonBladesDamage=Ion Blades (Damage)
+Effect/Name/IonCannonAIEnum=Ion Cannon AI Enum
+Effect/Name/IonCannonAIOrder=Ion Cannon AI Order
+Effect/Name/IonCannonDamagePeriodic=Ion Cannon Damage Periodic
+Effect/Name/IonCannonDelay=Ion Cannon Delay
+Effect/Name/IonCannonPlace=Ion Cannon Place
+Effect/Name/IonCannonTimedLife=Ion Cannon Timed Life
+Effect/Name/ItemDummy=Item Dummy
+Effect/Name/JAG108Damage=JAG 108 Damage
+Effect/Name/JAG108Damage2=JAG 108 Damage
+Effect/Name/JAG108Damage3=JAG 108 Damage
+Effect/Name/JAG108MissileLaunch=JAG 108 Missile Launch
+Effect/Name/JAG108Switch=JAG 108 Switch
+Effect/Name/JGBackblastDamage=JG Backblast Damage
+Effect/Name/JavGunnerBullet=Jav Gunner Bullet
+Effect/Name/JavGunnerRifle=Jav Gunner Rifle
+Effect/Name/JavelinGunnerBullet=Javelin Gunner Bullet
+Effect/Name/JavelinGunnerLNLaunchSet=Javelin Gunner LN Launch Set
+Effect/Name/JavelinGunnerLaunchSet=Javelin Gunner Launch Set
+Effect/Name/JavelinGunnerMiniLaunchSet=Javelin Gunner Mini Launch Set
+Effect/Name/JumpBehav=Jump Behav
+Effect/Name/JumpDmg=Jump Dmg
+Effect/Name/JumpInjuryBehav=Jump Injury Behav
+Effect/Name/JumpLaunchMissile=Jump Launch Missile
+Effect/Name/JumpPersistentOffset=Jump Persistent Offset
+Effect/Name/JumpSwitch=Jump Switch
+Effect/Name/KineticIntegrator=Kinetic Integrator
+Effect/Name/KrillBite=Krill Bite
+Effect/Name/LLDR=LLDR
+Effect/Name/LNAssaultRifleBullet=Assault Rifle Bullet
+Effect/Name/LNCEShotgunPellet=LN CE Shotgun Pellet
+Effect/Name/LacertiTalonDamage=Lacerti Talon (Damage)
+Effect/Name/LacertiTalonPersistent=Lacerti Talon Persistent
+Effect/Name/LaserDesignator=Laser Designator
+Effect/Name/LeadershipAB1=Leadership AB1
+Effect/Name/LeadershipAB12=Leadership AB2
+Effect/Name/LeadershipAB122=Leadership AB3
+Effect/Name/LeadershipAB1222=Leadership AB4
+Effect/Name/LeadershipDummy=Leadership Dummy
+Effect/Name/LeadershipEnum1=Leadership Enum1
+Effect/Name/LeadershipTarget1=Leadership Target1
+Effect/Name/LeapAIOrder=Leap AI Order
+Effect/Name/LeapAISearch=Leap AI Search
+Effect/Name/LeapEndDummy=Leap End Dummy
+Effect/Name/LeapLaunchMissile=Leap Launch Missile
+Effect/Name/LeapSet2=Leap Set
+Effect/Name/LeaperClaws=Leaper Claws
+Effect/Name/LickerAI=Licker AI
+Effect/Name/LickerClaws=Licker Claws
+Effect/Name/LickerTongueAB=Licker Tongue AB
+Effect/Name/LickerTongueLaunchMissile=Licker Tongue (Launch Missile)
+Effect/Name/LickerTonguePersistent=Licker Tongue Persistent
+Effect/Name/LiftBootsAB=Lift Boots AB
+Effect/Name/LiftBootsInDropHeight=Lift Boots In Drop Height
+Effect/Name/LiftBootsInHeights=Lift Boots In Heights
+Effect/Name/LiftBootsInInitialHeight=Lift Boots In Initial Height
+Effect/Name/LiftBootsLaunchMissile=Lift Boots Launch Missile
+Effect/Name/LiftBootsRB=Lift Boots RB
+Effect/Name/LiftDown=Lift Down
+Effect/Name/LiftUp=Lift Up
+Effect/Name/LividClaws=Livid Claws
+Effect/Name/M1AbramsDamage=M1 Abrams Damage
+Effect/Name/M1AbramsDamageFire=M1 Abrams Damage Fire
+Effect/Name/M1AbramsFireSet=M1 Abrams Fire Set
+Effect/Name/M1AbramsLaunch=M1 Abrams Launch
+Effect/Name/M1SentryGun=M1 Sentry Gun
+Effect/Name/M41SAWBurstPause=M41 SAW Burst Pause
+Effect/Name/MATVDamage=M-ATV Damage
+Effect/Name/MATVTurretLaunch=M-ATV Turret Launch
+Effect/Name/MGBurstPause=MG Burst Pause
+Effect/Name/MGBurstUpgradePause=MG Burst Upgrade Pause
+Effect/Name/MGL1LaunchMissile=MGL1 (Launch Missile)
+Effect/Name/MGLAIEnumGroup=MGL AI Enum Group
+Effect/Name/MGLAIEnumGroupLife=MGL AI Enum Group Life
+Effect/Name/MGLAIEnumHero=MGL AI Enum Hero
+Effect/Name/MGLAIOrder=MGL AI Order
+Effect/Name/MGLAISet=MGL AI Set
+Effect/Name/MGLDamage=MGL Damage
+Effect/Name/MGLLaunch1=MGL Launch 1
+Effect/Name/MGLLaunch2=MGL Launch 2
+Effect/Name/MGLLaunch3=MGL Launch 3
+Effect/Name/MGLLaunch4=MGL Launch 4
+Effect/Name/MK44Place=MK44 Place
+Effect/Name/MK44SentryGun=MK44 Sentry Gun
+Effect/Name/MK44SentryGunLaunchMissile=MK44 Sentry Gun Launch Missile
+Effect/Name/MK79Place=MK79 Place
+Effect/Name/MK79SentryGun=MK79 Sentry Gun
+Effect/Name/MK79SentryGunLaunch=MK79 Sentry Gun Launch
+Effect/Name/MRL1LaunchMissile=MRL1 (Launch Missile)
+Effect/Name/MRLAIEnumMechanical=MRL AI Enum Mechanical
+Effect/Name/MRLAIOrder=MRL AI Order
+Effect/Name/MRLAISet=MRL AI Set
+Effect/Name/MRLBackblastDamage=MRL Backblast Damage
+Effect/Name/MRLDamage1=MRL Damage1
+Effect/Name/MRLFire=MRL Fire
+Effect/Name/MachineGunSwitchCost=Machine Gun Switch Cost
+Effect/Name/Machinegun=Machine Gun
+Effect/Name/MachinegunBullet=Machine Gun Bullet
+Effect/Name/MachinegunBulletImpact=Machine Gun Bullet Impact
+Effect/Name/MachinegunCPMultishot=Machine Gun CP Multishot
+Effect/Name/MachinegunFire=Machine Gun Fire
+Effect/Name/MachinegunSAFar=Machine Gun SA Far
+Effect/Name/MachinegunSANear=Machine Gun SA Near
+Effect/Name/MachinegunSwitchDamage=Machine Gun Switch Damage
+Effect/Name/MachinegunSwitchMissileType=Machine Gun Switch Missile Type
+Effect/Name/MachinegunSwitchNearorFar=Machine Gun Switch Near or Far
+Effect/Name/MachinegunSwitchShotNumber=Machine Gun Switch Shot Number
+Effect/Name/Magazines=Magazines
+Effect/Name/MedicBTAIIO=Medic BT AI IO
+Effect/Name/MedicBTAISA=Medic BT AI SA
+Effect/Name/MedicNanoAIIO=Medic Nano AI IO
+Effect/Name/MedicNanoAISA=Medic Nano AI SA
+Effect/Name/MetasisAttack=Metasis Attack
+Effect/Name/MinervaCharge=Minerva Charge
+Effect/Name/MinervaFist=Minerva Fist
+Effect/Name/MiniFlamerDamageResponse=Mini Flamer Damage Response
+Effect/Name/MinigunBurstPause=Minigun Burst Pause
+Effect/Name/Miss=Miss
+Effect/Name/MonoWireAB1=Mono Wire AB1
+Effect/Name/MonoWireAB2=Mono Wire AB2
+Effect/Name/MonoWireDamage1=Mono Wire Damage1
+Effect/Name/MonoWireDamage2=Mono Wire Damage2
+Effect/Name/MonoWireDamage3=Mono Wire Damage3
+Effect/Name/MonoWireDamage4=Mono Wire Damage4
+Effect/Name/MonoWireLaunch1=Mono Wire Launch1
+Effect/Name/MonoWireOffset1=Mono Wire Offset1
+Effect/Name/MonoWireOffset2=Mono Wire Offset2
+Effect/Name/MonoWireOffset3=Mono Wire Offset3
+Effect/Name/MonoWireSA1=Mono Wire SA1
+Effect/Name/MonoWireSA2=Mono Wire SA2
+Effect/Name/MonoWireSA3=Mono Wire SA3
+Effect/Name/MonoWireSA4=Mono Wire SA4
+Effect/Name/MonoWireSet1=Mono Wire Set1
+Effect/Name/MonoWireSet2=Mono Wire Set2
+Effect/Name/MonoWireSet3=Mono Wire Set3
+Effect/Name/MonoWireSet4=Mono Wire Set4
+Effect/Name/MorbusSludgeDamage=Morbus Sludge Damage
+Effect/Name/MorbusSludgeLaunch=Morbus Sludge Launch
+Effect/Name/MotherDeath=Mother Death
+Effect/Name/MotherFangsDamage=Mother Fangs Damage
+Effect/Name/MotionSensorPlace=Motion Sensor Place
+Effect/Name/MotionSensorTimedLife=Motion Sensor Timed Life
+Effect/Name/MountedFlamethrowerDamage=Mounted Flamethrower Damage
+Effect/Name/MountedFlamethrowerPersistent=Mounted Flamethrower Persistent
+Effect/Name/MountedFlamethrowerSearch=Mounted Flamethrower Search
+Effect/Name/MountedFlamethrowerSet=Mounted Flamethrower Set
+Effect/Name/MuscleRelaxantAB=Muscle Relaxant AB
+Effect/Name/MutantClaws=Mutant Claws
+Effect/Name/NPCReload=NPC Reload
+Effect/Name/NanoInjectionHeal=Nano-Injection Heal
+Effect/Name/NapalmAB1=Napalm AB1
+Effect/Name/NapalmAB2=Napalm AB2
+Effect/Name/NapalmAB3=Napalm AB3
+Effect/Name/NapalmAB4=Napalm AB4
+Effect/Name/NapalmDamageInit1=Napalm Damage Init 1
+Effect/Name/NapalmDoT=Napalm DoT
+Effect/Name/NapalmInitial1=Napalm Initial1
+Effect/Name/NapalmInitial2=Napalm Initial2
+Effect/Name/NapalmInitial3=Napalm Initial3
+Effect/Name/NapalmInitial4=Napalm Initial4
+Effect/Name/NapalmMini=Napalm Mini
+Effect/Name/NapalmSet=Napalm Set
+Effect/Name/OpportunedShot=Opportuned Shot
+Effect/Name/OrbitalSatteliteReconnaissance=Orbital Sattelite Reconnaissance
+Effect/Name/OrbitalStrikeDamage1=Orbital Strike Damage 1
+Effect/Name/OrbitalStrikeDummy=Orbital Strike Dummy
+Effect/Name/OverhaulBrokenRemove=Overhaul Broken Remove
+Effect/Name/OverhaulSearchBroken=Overhaul Search Broken
+Effect/Name/PKABSelf=PK AB Self
+Effect/Name/PKApplyBehavior=PK Apply Behavior
+Effect/Name/PKSet=PK Set
+Effect/Name/ParalysisTrap=Paralysis Trap
+Effect/Name/ParalysisTrapAB=Paralysis Trap AB
+Effect/Name/ParalysisTrapDamage2=Paralysis Trap Damage
+Effect/Name/ParalysisTrapEnum=Paralysis Trap Enum
+Effect/Name/ParalysisTrapForce=Paralysis Trap Force
+Effect/Name/ParalysisTrapPersistent=Paralysis Trap Persistent
+Effect/Name/ParalysisTrapSet=Paralysis Trap Set
+Effect/Name/PhantomTurretLaunch=Phantom Turret Launch
+Effect/Name/PhantomTurretdamage=Phantom Turret (damage)
+Effect/Name/PlagueVectorDeath=Plague Vector Death
+Effect/Name/PlasmRifleMissile=Plasm Rifle Missile
+Effect/Name/PlasmaGrenadeAB=Plasma Grenade AB
+Effect/Name/PlasmaGrenadeDPS=Plasma Grenade DPS
+Effect/Name/PlasmaGrenadeDamage1=Plasma Grenade Damage1
+Effect/Name/PlasmaGrenadeLaunch1=Plasma Grenade Launch1
+Effect/Name/PlasmaGrenadeLaunch2=Plasma Grenade Launch2
+Effect/Name/PlasmaGrenadeLaunch3=Plasma Grenade Launch3
+Effect/Name/PlasmaGrenadeLaunch4=Plasma Grenade Launch4
+Effect/Name/PlasmaGrenadePers1=Plasma Grenade Pers1
+Effect/Name/PlasmaGrenadePers12=Plasma Grenade Pers2
+Effect/Name/PlasmaGrenadePers122=Plasma Grenade Pers3
+Effect/Name/PlasmaGrenadePers1222=Plasma Grenade Pers4
+Effect/Name/PlasmaGrenadeSearchArea=Plasma Grenade Search Area
+Effect/Name/PlasmaGrenadeSet=Plasma Grenade Set
+Effect/Name/PlasmaRifleCryoAB=Plasma Rifle Cryo AB
+Effect/Name/PlasmaRifleDamage=Plasma Rifle Damage
+Effect/Name/PlasmaRifleDisAB=Plasma Rifle Dis AB
+Effect/Name/PlasmaRifleIncAB=Plasma Rifle Inc AB
+Effect/Name/PlasmaRifleMissileCryo=Plasma Rifle Missile Cryo
+Effect/Name/PlasmaRifleMissileDis=Plasma Rifle Missile Dis
+Effect/Name/PlasmaRifleMissileHero=Plasma Rifle Missile Hero
+Effect/Name/PlasmaRifleMissileInc=Plasma Rifle Missile Inc
+Effect/Name/PlatoonLeaderBullet=Platoon Leader Bullet
+Effect/Name/PoliceOfficerRifle=Police Officer Rifle
+Effect/Name/PoliceOfficerRifleBullet=Police Officer Rifle Bullet
+Effect/Name/PoliceOfficerRifleLaunchSet=Police Officer Rifle Launch Set
+Effect/Name/PoliceOfficerShotgun=Police Officer Shotgun
+Effect/Name/PoliceOfficerShotgunBullet=Police Officer Shotgun Bullet
+Effect/Name/PoliceOfficerShotgunLaunchSet=Police Officer Shotgun Launch Set
+Effect/Name/PullAIEnum=Pull AI Enum
+Effect/Name/PullAIOrder=Pull AI Order
+Effect/Name/QuikClot=Quik Clot
+Effect/Name/RailGunDamage=Rail Gun Damage
+Effect/Name/RailGunLaunch=Rail Gun Launch
+Effect/Name/RaisuliClawsdamage=Raisuli Claws (damage)
+Effect/Name/RepairCE=Repair (CE)
+Effect/Name/ReviveModifyUnit=Revive Modify Unit
+Effect/Name/ReviveRemoveIncap=Revive Remove Incap
+Effect/Name/ReviveSearchArea=Revive Search Area
+Effect/Name/ReviveSet=Revive Set
+Effect/Name/RifleButtBehaviorController=Rifle Butt Behavior Controller
+Effect/Name/RifleButtBehaviorControllerCSlam=Rifle Butt Behavior Controller CSlam
+Effect/Name/RifleButtCreatePersistent=Rifle Butt Create Persistent
+Effect/Name/RifleButtDamage=Rifle Butt Damage
+Effect/Name/RifleButtDamageCSlam=Rifle Butt Damage CSlam
+Effect/Name/RifleButtForce=Rifle Butt Force
+Effect/Name/RifleButtSearchArea=Rifle Butt Search Area
+Effect/Name/RifleButtSearchAreaCSlam=Rifle Butt Search Area CSlam
+Effect/Name/RifleButtSearchAreaCyborg=Rifle Butt Search Area Cyborg
+Effect/Name/RifleButtSearchSet=Rifle Butt Search Set
+Effect/Name/RifleButtSearchSetCSlam=Rifle Butt Search Set CSlam
+Effect/Name/RiflemanAssaultRifle=Assault Rifle
+Effect/Name/RiflemanBullet=Rifleman Bullet
+Effect/Name/RiflemanLNLaunchSet=Rifleman LN Launch Set
+Effect/Name/RiflemanLaunchSet=Rifleman Launch Set
+Effect/Name/RiflemanMiniLaunchSet=Rifleman Mini Launch Set
+Effect/Name/RisenClaws=Risen Claws
+Effect/Name/SAMMissileDamage=SAM Missile Damage
+Effect/Name/SAMMissileLaunch=SAM Missile Launch
+Effect/Name/SAMSitePlacement=SAM Site Placement
+Effect/Name/SDMLNLaunchSet=SDM LN Launch Set
+Effect/Name/SDMLaunchSet=SDM Launch Set
+Effect/Name/SDMMiniLaunchSet=SDM Mini Launch Set
+Effect/Name/SFAATLaunchSet=SFAAT Launch Set
+Effect/Name/SFAATShotgun=SFAAT Shotgun
+Effect/Name/SatchelChargePlace=Satchel Charge Place
+Effect/Name/SatchelExplosionDamage=Satchel Explosion Damage
+Effect/Name/SatchelExplosionDamageCE=Satchel Explosion Damage CE
+Effect/Name/SelfAid=Self Aid
+Effect/Name/SelfAidPeriod=Self Aid Period
+Effect/Name/SentryGun50Damage=Sentry Gun .50 Damage
+Effect/Name/SentryGun50LaunchMissile=Sentry Gun .50 Launch Missile
+Effect/Name/SentryGunMMGDamage=Sentry Gun MMG Damage
+Effect/Name/SentryGunMMGLaunchMissile=Sentry Gun MMG Launch Missile
+Effect/Name/SentryGunMount50=Sentry Gun Mount .50
+Effect/Name/SentryGunMountFlamethrower=Sentry Gun Mount Flamethrower
+Effect/Name/SentryGunMountMMG=Sentry Gun Mount MMG
+Effect/Name/ShieldAIOrderIgnis=Shield AI Order Ignis
+Effect/Name/ShieldAIOrderMini=Shield AI Order Mini
+Effect/Name/ShockerChainGun=Shocker Chain Gun
+Effect/Name/ShockerChainGunLaunch=Shocker Chain Gun Launch
+Effect/Name/ShotgunSFAATDamage=Shotgun
+Effect/Name/ShredderClaws=Shredder Claws
+Effect/Name/SmokeGrenadeImpact=Smoke Grenade Impact
+Effect/Name/SmokeGrenadeLaunchMissile=Smoke Grenade Launch Missile
+Effect/Name/SmokeGrenadeSearchArea=Smoke Grenade Search Area
+Effect/Name/SmokeGrenadeSlow=Smoke Grenade Slow
+Effect/Name/SmokeGrenadeTimedLife=Smoke Grenade Timed Life
+Effect/Name/SniperBullet=Sniper Bullet
+Effect/Name/SniperLaunchSet=Sniper Launch Set
+Effect/Name/SniperRifle=Sniper Rifle
+Effect/Name/SoldierSkills1=SoldierSkills1
+Effect/Name/SoldierSkills2=SoldierSkills2
+Effect/Name/SoldierSkills3=SoldierSkills3
+Effect/Name/SoldierSkills4=SoldierSkills4
+Effect/Name/SpawnZombie=Spawn Zombie
+Effect/Name/SpitterDamage=Spitter Damage
+Effect/Name/SpitterImpactBehavior=Spitter Impact Behavior
+Effect/Name/SpitterImpactSearch=Spitter Impact Search
+Effect/Name/SpitterLaunch=Spitter Launch
+Effect/Name/SpitterPersistent=Spitter Persistent
+Effect/Name/Sprint=Sprint
+Effect/Name/SprintAIEnum=Sprint AI Enum
+Effect/Name/SprintAIEnumAres=Sprint AI Enum Ares
+Effect/Name/SprintAIOrder=Sprint AI Order
+Effect/Name/SprintAIOrderAres=Sprint AI Order Ares
+Effect/Name/SprintAIOrderIgnis=Sprint AI Order Ignis
+Effect/Name/SprintDieoff=Sprint Dieoff
+Effect/Name/SprintDieoffPeriod=Sprint Dieoff Period
+Effect/Name/SprintSet=Sprint Set
+Effect/Name/SprintSet2=Ares Charge Set
+Effect/Name/SprintSetNew=Sprint Set New
+Effect/Name/SquadLeaderBullet=Squad Leader Bullet
+Effect/Name/SquadLeaderDamage=Squad Leader Damage
+Effect/Name/StalkerAIEnum=Stalker AI Enum
+Effect/Name/StalkerAIOrder=Stalker AI Order
+Effect/Name/StalkerChargeBehavior=Stalker Charge Behavior
+Effect/Name/StalkerChargePersistent=Stalker Charge Persistent
+Effect/Name/StalkerChargeSet=Stalker Charge Set
+Effect/Name/StalkerHorn=Stalker Horn
+Effect/Name/SteelSaberBullet=Steel Saber Bullet
+Effect/Name/SteelSaberDamage=Steel Saber Damage
+Effect/Name/SuppressiveFireHoldPos=Suppressive Fire Hold Pos
+Effect/Name/SwollenAcidSplashApplyBehavior=Swollen Acid Splash Apply Behavior
+Effect/Name/SwollenClaws=Swollen Claws
+Effect/Name/SwollenExplosionDmg=Swollen Explosion Dmg
+Effect/Name/SwollenExplosionSearch=Swollen Explosion Search
+Effect/Name/TOCryo=TO Cryo
+Effect/Name/TODisruptor=TO Disruptor
+Effect/Name/TOIncendiary=TO Incendiary
+Effect/Name/TOWAIGroup=TOW AI Group
+Effect/Name/TOWAIMassive=TOW AI Massive
+Effect/Name/TOWAIMech=TOW AI Mech
+Effect/Name/TOWAIOrder=TOW AI Order
+Effect/Name/TOWAIOrderFilter=TOW AI Order Filter
+Effect/Name/TOWAISet=TOW AI Set
+Effect/Name/TOWDamage=TOW Damage
+Effect/Name/TOWImpact=TOW Impact
+Effect/Name/TOWLaunch=TOW Launch
+Effect/Name/TOWPersist=TOW Persist
+Effect/Name/TarantulaFangsDamage=Tarantula Fangs Damage
+Effect/Name/ThanatosClaws=Thanatos Claws
+Effect/Name/ThanatosPull=Thanatos Pull
+Effect/Name/ThresherMaw=Thresher Maw
+Effect/Name/ThresherMawAB=Thresher Maw AB
+Effect/Name/ThresherMawDown=Thresher Maw Down
+Effect/Name/ThresherMawOrder=Thresher Maw Order
+Effect/Name/ThresherMawOrderPersistOffset=Thresher Maw Order Persist Offset
+Effect/Name/ThresherMawOrderSA=Thresher Maw Order SA
+Effect/Name/ThresherMawSearchArea=Thresher Maw Search Area
+Effect/Name/ThresherMawUp=Thresher Maw Up
+Effect/Name/TongueAIEnum=Tongue AI Enum
+Effect/Name/TongueAIOrder=Tongue AI Order
+Effect/Name/TurnedClaws=Turned Claws
+Effect/Name/UmbraBulletLaunch=Umbra Bullet Launch
+Effect/Name/UmbraRifleDamage=Umbra Rifle Damage
+Effect/Name/UnburiedClaws=Unburied Claws
+Effect/Name/VesaniaExplosionDmg=Vesania Explosion Dmg
+Effect/Name/VesaniaGLDamage=Vesania GL Damage
+Effect/Name/VesaniaGLLaunch=Vesania GL Launch
+Effect/Name/WhitePhosphorousDoT=White Phosphorous DoT
+Effect/Name/WhitePhosphorousImpact=White Phosphorous Impact
+Effect/Name/WhitePhosphorousLaunch=White Phosphorous Launch
+Effect/Name/WhitePhosphorousTimedLife=White Phosphorous Timed Life
+Effect/Name/ZombieRiseDeath=Zombie Rise Death
 Error/Disarm=Must target packable devices
 Error/DisarmAble=Target cannot be disarmed
 Error/DisarmEnergy=Sentry must have at least 40% energy to disarm
@@ -1689,6 +2223,7 @@ Param/Value/0049EB29=
 Param/Value/00520369=<c val="008000">Ravensword:</c> Air space is clear. CAS authorized.
 Param/Value/00830A4B=: You are being detained, stay calm and do what I say!
 Param/Value/00AC2C53=PMC
+Param/Value/00D5185C=Insane completed with <6 hits, >= 1000 kills, 8 massive kills and IL <= 25.
 Param/Value/010E80CE=default
 Param/Value/011727BB=<c val="00FF00">Stopped sprinting.</c>
 Param/Value/01248864=<c val="008000">Ravensword:</c> Outlaw 6, a Rock Avalanche phantom just crashed in your AO. Detain the crew before the RA get to them.
@@ -1724,6 +2259,7 @@ Param/Value/05A4E708=A Combat Logistics Patrol (CLP, pronounced "clip") is movin
 Param/Value/05BE6571=Satchel Charges
 Param/Value/05C2DB03=KLE completed.
 Param/Value/05F7F67A=<n/>
+Param/Value/060AB96B=WO1
 Param/Value/0639CCFB=Input "<c val="008000">-d ###</c>" to set distribution angle<n/>(degrees, <c val="008000">c</c> for circular or  <c val="008000">0-360</c> for linear engagement).<n/>East=0, North=90, West=180, South=270.
 Param/Value/064E71CB=<c val="008000">Outlaw 6:</c> The only way to destroy them is with satchel charges. Plant 1 satchel charge near each sanies.
 Param/Value/0664952A=Clears chat messages
@@ -1748,11 +2284,13 @@ Param/Value/093C268A=<c val="008000">Mayor:</c> The source? Everywhere. Unfortun
 Param/Value/0946642E=Kill the phantom crew
 Param/Value/095C7D55=Sensors not placed in time.
 Param/Value/096BC083=Competitive
+Param/Value/09D20E0D=Attain 50+ massive kills in a game on hard+ difficulty.
 Param/Value/0A0B4B66= 
 Param/Value/0A195CFE=<c val="0080C0">Fireteams (FTs)</c> are groups of up to 4 players who coordinate together to accomplish the mission. The team leader, or TL, can place objective rally points, or ORPs, by clicking the middle mouse button. ORPs are used to direct the fireteam to a specific location or target.<n/><n/>Learn more about SIs by visiting our website, <c val="008000">undeadassault.net</c>.
 Param/Value/0AB26049=<c val="008000">Ravensword:</c> CAS is on station.
 Param/Value/0AF2BAFE=Please copy the UA3.SC2Bank file from 1-S2-1-1086513 to 1-S2-1-4256394 before next game and try again.
 Param/Value/0B352CA8=</c> 
+Param/Value/0B4D4D2B=Self-Aid heals 35-70 life, and has a chance to cure moderate ailments.
 Param/Value/0B80B77C=Samples not collected in time
 Param/Value/0B86E17C=Escort Operators
 Param/Value/0C0DE698=Survival completed
@@ -1768,6 +2306,7 @@ Param/Value/0D362E4B=Dark Sky is using a bio-resonator to cleanse the AO. The un
 Param/Value/0D57F8D5=Round won
 Param/Value/0DC65D8B=Shells remaining: 
 Param/Value/0DD111BF= 
+Param/Value/0DF230E8=Start at level 3, begin with quik clot, smoke grenades, flares, and an ammo case.
 Param/Value/0E0D5766=RA facility gate
 Param/Value/0E14521B=Kill Plague Vectors
 Param/Value/0E423DC6=<c val="008000">Commissioner:</c> Outlaw 6, I need your help. My police check points need to return to the cities and focus on protecting the main populace. I need you to relieve them and send them back to their main posts.
@@ -1777,6 +2316,7 @@ Param/Value/0E53D9FE=Paste the file in the folder. Remember to keep a backup in 
 Param/Value/0E66DCDF=Patrol destroyed
 Param/Value/0EA8C8A1=Commissioned Officer
 Param/Value/0EAC4472=Hits: 
+Param/Value/0EC21E68=Always Ready
 Param/Value/0EC73D8A= has been killed in action.
 Param/Value/0EF6F40B=<n/>
 Param/Value/0F090162=<c val="008000">Ravensword:</c> A darreus has passed into your AO. He is cutting a swath of destruction across the land. Stop him before he leaves your AO.
@@ -1789,6 +2329,8 @@ Param/Value/0F64E60C=<c val="008000">Soldier:</c> The meeting has begun. Don't l
 Param/Value/1070F2C8=<c val="FF0000">BOSS BATTLE</c><n/>The team that kills the most Class 1 hostiles wins the round.
 Param/Value/107564C0=A Rock Avalanche phantom has crashed in your AO. Detain the crew before the RA get to them.
 Param/Value/10917A05=<c val="008000">Outlaw 6:</c> There are 2 primary population densities outside of Thalim, the highlands just south of Thalim and Guslani Village to the southeast.
+Param/Value/11247B24=, 
+Param/Value/1125D1FF=Veteran
 Param/Value/1125F468=Farmer Akma has been killed.
 Param/Value/115E3EFF=<n/>
 Param/Value/1170D4F4=Next rank: <s val="ChatHelp_Terr">
@@ -1888,6 +2430,7 @@ Param/Value/1DCF7FE3=Darreus less than 66% life
 Param/Value/1DD35CEF=Phantom landed
 Param/Value/1DE4CDED=<c val="008000">Ravensword:</c> The phantom has arrived. Take the samples to the phantom so they can be analyzed.
 Param/Value/1DEAC053=<c val="008000">Soldier:</c> Watch out for any security systems they may still have online. You know how protective the RA are of their work.
+Param/Value/1DF650D6=Rounds<n/>Amount of rounds in current magazine.
 Param/Value/1DF65169=If you have not played Undead Assault 3 for a long time you may need to start it up and save to upgrade your bank format.
 Param/Value/1DF717F1=The local police are having trouble controlling the influx of undead at their TCPs and ECPs. Placing a sentry gun at each one will greatly aid in security.
 Param/Value/1E74C862=<c val="E7A303">
@@ -1918,7 +2461,7 @@ Param/Value/221939FB=MGEN
 Param/Value/225AA498=<c val="008000">Silo successfully disabled</c>
 Param/Value/2263B6B2= has been killed in action.
 Param/Value/226BF541=
-Param/Value/22E488F5=Over 2 deaths and 22 hits sustained
+Param/Value/22E8DB64=:
 Param/Value/22F0ABF8=Boss Battle
 Param/Value/23080C6A=<c val="008000">Saber 7:</c> It's just me and 4 from my Alpha team! We need assistance now or we're all dead!
 Param/Value/238F2560=Enlisted
@@ -1931,6 +2474,7 @@ Param/Value/24C0E3E1=<c val="008000">Soldier:</c> The fog is clearing.
 Param/Value/24EF9DAE= has been killed by 
 Param/Value/25075569=<c val="008000">Operative:</c> RA soldiers! Destroy them!
 Param/Value/251E2FB5=Sanies, a large infection that springs up around tier 1 hot spots, have infested this AO. In order to cleanse this area they must first be destroyed.<n/>Plant a satchel charge at each Sanies in order to destroy them.
+Param/Value/2526C838=<s val="ErrorDisplay">Stopped sprinting.</s>
 Param/Value/257C1576=Escort Convoy
 Param/Value/259666A2=The RA have emplaced snipers in the hills to the northwest, west, and south of the RA facility to stop the operation. Eliminate them before Combat Company arrives.
 Param/Value/25E84047=Deathmatch
@@ -1944,6 +2488,7 @@ Param/Value/263466A0=<c val="008000">Saber 6:</c> Outlaws, our scouts have track
 Param/Value/26601C11=<c val="008000">Soldier:</c> Set up security! Don't let them touch the mayor!
 Param/Value/2672DA46=<c val="FF0000">KIA</c>
 Param/Value/26B4C121=<c val="008000">Mayor:</c> No way! I'm-
+Param/Value/26C09AE0=Awarded to soldiers who attain over 1300 kills and 10 massive kills in a single game.
 Param/Value/26C5BC9C=<c val="008000">RA Operative:</c> We've got this under control. Just stay out of our way, soldiers.
 Param/Value/26ED0EED= 
 Param/Value/26F3DF98=<c val="008000">Soldier:</c> There's dead fighters all over the place. Definitely not Army. Could they be one of the PMCs?
@@ -1953,6 +2498,8 @@ Param/Value/273EA510=Input "-s ##" to set shells per mission (1-10).
 Param/Value/276321A7=<c val="00FF80">Collecting Sample</c>
 Param/Value/27693EC0=<n/>
 Param/Value/2775D343=Rank Set
+Param/Value/277AB114=<c val="FFFFFF">
+Param/Value/27CAF22D= Paused
 Param/Value/27E12F1E=<c val="008000">Outlaw 6:</c> Roger. Outlaws, get moving! If those things mature we'll have a really bad situation on our hands.
 Param/Value/27EF23FE=Default
 Param/Value/27F29D42=<c val="FF0000">Cannot kick yourself.</c>
@@ -1972,6 +2519,7 @@ Param/Value/294BE52D=<c val="77BBBB">CO: </c>
 Param/Value/29C4A446=Bio-Sample retrieved.
 Param/Value/29D5691B=Games Played
 Param/Value/29EC89A4=Mission Time
+Param/Value/2A3F3DF1=1LT
 Param/Value/2A785DE4=<c val="008000">Ravensword:</c> RA assault ETA 1 minute. Be advised, ISR assets have picked up RA attack helicopters. We have procured a mobile SAM site to deal with them. Use it wisely.
 Param/Value/2A796559=Input "<c val="008000">-d ###</c>" to set distribution angle<n/>(degrees, <c val="008000">c</c> for circular or  <c val="008000">0-360</c> for linear engagement).<n/>East=0, North=90, West=180, South=270.
 Param/Value/2A889C0C=<c val="008000">Phantom Pilot:</c> That LZ is too hot! I can't land there!
@@ -1980,6 +2528,7 @@ Param/Value/2AD5E22F=<c val="008000">Ravensword:</c> Our scouts are reporting a 
 Param/Value/2B15A24E=<c val="FF0000"> -RESPAWN</c>
 Param/Value/2B60CAF0= 
 Param/Value/2B987729=
+Param/Value/2B9BA936=Battle Buddy
 Param/Value/2BA63766=<c val="008000">Ravensword:</c> The only way to collapse it is to set up a seismic resonator to collapse the tunnels. We've got one on the way. ETA 5 minutes, out.
 Param/Value/2BD8002D=Conduct KLE With Commissioner
 Param/Value/2C48968D=Apiaries destroyed
@@ -2000,6 +2549,7 @@ Param/Value/2D830EE6=Capturing silos earns points.<n/>Team Points:<n/>
 Param/Value/2D982C4D=<s val="ChatHelp_Prot">Biometric ID merged. XP:</s><s val="ChatHelp_Terr">
 Param/Value/2DCD8BC7=<c val="008000">Soldier:</c> A destroyed city, PMC soldiers, and war crimes. We need to question the survivors.
 Param/Value/2DDFC572=
+Param/Value/2E568923=Infestation Level<n/>A rating on the current level of infestation in this AO. Can be dangerous at high levels.
 Param/Value/2E6ECA87=Round won
 Param/Value/2EACBF1C=/
 Param/Value/2EB1E325=^
@@ -2035,6 +2585,7 @@ Param/Value/31E502A9=Direct Hit
 Param/Value/31FE9A2F=<c val="FF8000">The round is a tie!</c>
 Param/Value/3254D25E=Shadow Convoy
 Param/Value/32681275=Heals: 
+Param/Value/32736391=(Aura) Adds 6% attack speed, .03ms, and improves reload/unjam time by 20%.
 Param/Value/327BE524=The last player alive wins.<n/>Players remaining:<n/>
 Param/Value/32BB0521=Bio-Resonator destroyed
 Param/Value/32CA4A6F=<c val="800080">Dr. Jashan:</c> Continue it. Soon, we'll be the most powerful force in the world, <n/>and the wretched governments will crumble beneath us.
@@ -2060,8 +2611,8 @@ Param/Value/350EBAA9=/
 Param/Value/3535A47B=<c val="FF8040">ms</c>
 Param/Value/35659996=Additional T1 Undead have spawned.
 Param/Value/3565FB4E=Balaad
+Param/Value/35923FD2=Power User
 Param/Value/359564C8=<c val="008000">RA Operative:</c> Central this is Rock 7, the mayor is secure, exfil now.
-Param/Value/3596F866= votekick enabled. Type "-kick 
 Param/Value/35982AD7=Detain the scientists and extract them at the LZ
 Param/Value/35B0390A=Round won
 Param/Value/35C3BDE6=Input "-r ##" to set dispersion radius (2-10).
@@ -2069,13 +2620,16 @@ Param/Value/35C56624=<n/>The team with the most kills by round's end wins.
 Param/Value/35DB3BB0=First SI set to:<c val="FF8000">
 Param/Value/35EB9C2F=<s val="HelpMenuDialogTitle"><c val="0093FF">The Next Morning...</c></s><n/><n/><s val="HelpMenuDialogTitle"><c val="0083FF">AO Thalim has been almost fully cleansed. Regular, aggressive police patrolling has left the undead dwindling and kept the area generally safe. Thalim is rapidly repopulating, and Guslani is being rebuilt.<n/><n/>AO Thalim is the base of operations for reclaiming and cleansing the entire country, and eventually the entire continent. Outlaw Platoon will be remembered in history books for generations.</c>
 Param/Value/361EE2E9=Protect the Bio-Resonator
+Param/Value/363F17C1=Hawkeye
 Param/Value/365AB8ED=<c val="77BBBB">Unknown:</c> Outlaw 6, this AO is under control. RTB.
 Param/Value/3660475E= 
 Param/Value/367BD7DF=Told Akma's Wife
 Param/Value/36858262=Name
+Param/Value/3688F7B8=Start with a random mini.
 Param/Value/369ADD5E=Tier 1 Hostile
 Param/Value/36A33191=<c val="008000">Operative:</c> Contact! Don't let them near the convoy!
 Param/Value/36AAAF27=Press the sq button near your portrait to display vital information about your team.
+Param/Value/36CECB44=Hard completed with <6 hits, >= 800 kills, >=5 massive kills and IL <= 25.
 Param/Value/36E618CA=<c val="008000">Soldier:</c> Darreus has left the AO unhindered. He will move on to destroy many more lives.
 Param/Value/36F23E00=Kills: 
 Param/Value/3718A9F3=)
@@ -2094,6 +2648,7 @@ Param/Value/386536E2=Provide Security for Disabled Bradley
 Param/Value/389AB24D=tough as nails
 Param/Value/396F0282=<c val="FF8040">Combat medic badge unlocked.</c>
 Param/Value/39A321E6=<c val="008000">Soldier:</c> Looks like he hasn't been in here for awhile.
+Param/Value/39A909E0=Save every refugee during the Valor chapter on normal or harder difficulty.
 Param/Value/39DE613B=Phantom Arrival
 Param/Value/39F132C1=Generator powered
 Param/Value/3A31F507= has won the round!
@@ -2102,6 +2657,7 @@ Param/Value/3A726D60=Convoy
 Param/Value/3AD42C04=/
 Param/Value/3AE94359=Mayor not reached in time
 Param/Value/3AF1655B=Team 
+Param/Value/3B33F3C8=<c val="FFFFFF">
 Param/Value/3B4886E6=Grenadier
 Param/Value/3B67F147=<c val="008000">Ravensword Main:</c> Roger, out.
 Param/Value/3B904418= TCPs contained
@@ -2117,6 +2673,7 @@ Param/Value/3C6CF8BE=Tier 1 modifier selected. XP gain increased by 10%, but mos
 Param/Value/3C6E20A8=Next Phantom
 Param/Value/3CAEEF6E= 
 Param/Value/3D1A847C=Default
+Param/Value/3D285434=Magazines<n/>Magazines are used for reloading.
 Param/Value/3D4FB7A7=CW5
 Param/Value/3D8A7680=: 
 Param/Value/3D94CC19=Voted to kick 
@@ -2126,11 +2683,13 @@ Param/Value/3DFD6D71=<c val="008000">Outlaw 6:</c> ISR reports a large force of 
 Param/Value/3E369BCC=All samples collected.
 Param/Value/3E7CA443=<c val="008000">Trucker:</c> Hello!? Is anybody out there? My truck is down and I need assistance!
 Param/Value/3E930036=If you die without a medic, there are periodic reinforcements to keep you in the game.
+Param/Value/3EBC5142=Reduces life by 55%, increases damage 30% and .05ms.
 Param/Value/3EBCAA57=KLE successful
 Param/Value/3EF04B75=Generators powered
 Param/Value/3EF077E1=% 
 Param/Value/3F1C9EA1=BONUS: All sentry guns placed with at least15 seconds spare.
 Param/Value/3F1CF37F=<c val="77BBBB">CO: </c>
+Param/Value/3F25792C=Increases weapon range by 2 and adds 15 range invisible detection.
 Param/Value/3F8E4756=<c val="008000">Soldier:</c> Report in on any contact with the afflicted.
 Param/Value/3F9767A8=<c val="FF0000">
 Param/Value/3FA8933F=Darreus is moving through the country, destroying everything in his path. Kill him before he leaves your AO to end his march of destruction.
@@ -2160,12 +2719,15 @@ Param/Value/43331203=<c val="008000">Ravensword:</c> CAS is on station.
 Param/Value/433576CF=<c val="008000">Soldier:</c> Don't move!
 Param/Value/43500525=<s val="HelpMenuDialogTitle"><c val="0093FF">Two Months Later....</c></s><n/><n/><s val="HelpMenuDialogTitle"><c val="0083FF">The outbreak is coming under control. Each patrol results in less contact with the afflicted. Global peace seems near.<n/><n/>Your platoon is conducting a routine patrol mission into AO Thalim to gather reports on any afflicted...</c>
 Param/Value/4373D718=Sanies
+Param/Value/438094D2=COL
 Param/Value/43B7FF0C=Found war crime
+Param/Value/43EA7A28=tough as nails
 Param/Value/43EFD4D5=Shells: 
 Param/Value/4409DA96=<c val="008000">Soldier:</c> What have you done to control it?
 Param/Value/4428E665=<c val="77BBBB">EN: </c>
 Param/Value/4432A2C2=Cannot attack allies.
 Param/Value/44490C2A=Smoke
+Param/Value/444958CF=<s val="0UI_LCD">N/A
 Param/Value/448A5EF0=<c val="008000">Ravensword:</c> Just get it done. Out.
 Param/Value/44C39B00= <c val="FF8000">Rounds won:</c> 
 Param/Value/44DE00D8= Skill Identifier has been unlocked
@@ -2196,6 +2758,7 @@ Param/Value/48B5F86D=Interval:
 Param/Value/48BA8BBC=<c val="FF8000">Capture cancelled.</c>
 Param/Value/48C53362=<c val="808080">
 Param/Value/49186B43=Collect Graveyard Samples
+Param/Value/49277366=Heavy Armor
 Param/Value/4950B045=The RA facility has been re-occupied and the scientists working there have been conducting experiments on the infected. Detain them so they can be questioned for information regarding the recent outbreak.
 Param/Value/49D6EF77=<c val="0000FF">Dark Sky:</c> Only 1 man in this area had the key to the RA Facility's gate. During the evacuation, he never left the AO.
 Param/Value/49D95E46=<c val="008000">Soldier:</c> Eels have been sucking energy from the generators! Kill them and restore power to the generators before they reproduce any more!
@@ -2218,6 +2781,7 @@ Param/Value/4C0F82B6=Evacuate here
 Param/Value/4C311C0C=<c val="008000">Ravensword:</c> A thick fog is moving into your AO. Use light sources or high ground to retain vision.
 Param/Value/4C34B190=<c val="FF8000">Focus on the objective.</c> Mouse over the objective on the top left of the screen to read more.
 Param/Value/4C612C96= 
+Param/Value/4C8F585E=CW2
 Param/Value/4C9460C1=Search The Thalim Homes
 Param/Value/4C9C45C4=<c val="008000">Outlaw 6:</c> Ravensword Main, requesting sentry guns be air dropped for TCP operations.
 Param/Value/4CB3CB65=<c val="008000">Soldier:</c> We need to move on to the next objective.
@@ -2236,9 +2800,12 @@ Param/Value/4F3C311E=<c val="008000">Outlaw 6:</c> This is a Tier 1 hot spot - w
 Param/Value/4FA37CCF=Scientist Extracted
 Param/Value/4FAC10DF=Gourmand
 Param/Value/4FDDC571= 
+Param/Value/4FF40249=hp 
 Param/Value/4FF75FE8=WO1
+Param/Value/4FFF3ABB=: Reloading!
 Param/Value/50015077=Invalid debug command.
 Param/Value/5023853F=<c val="008000">Soldier:</c> A vehicle has been destroyed!
+Param/Value/50457341=Steel Saber
 Param/Value/50848E58=<c val="008000">Soldier:</c> It seems most of the Guslani refugees survived the journey.
 Param/Value/5095C7C9=Search Westley Adam's House
 Param/Value/50990063=AO Dasdan is completely overrun, and saber platoon is destroyed. Hold out until the phantoms arrive to evacuate the city.
@@ -2250,6 +2817,7 @@ Param/Value/50E1684E=Kills: <s val="ChatHelp_Terr">
 Param/Value/5102F1A7=Competitive mode requires 4+ players.
 Param/Value/512C461A=Toggles weapons hold on/off. With weapons hold on, auto-attacking is disabled.
 Param/Value/515F8C9B=Kills/Deaths/RW
+Param/Value/518904FE=<s val="0UI_LCD">
 Param/Value/51A024E3=Tower 
 Param/Value/51DA1E81=[Rifleman] Improves Frag Grenade and Rifleman Skills.
 Param/Value/51DE838A=RA destroyed
@@ -2257,6 +2825,7 @@ Param/Value/51E8AB9D=<c val="77BBBB">Unknown:</c> Way above your pay grade to be
 Param/Value/51F3C988=<c val="77BBBB">WO: </c>
 Param/Value/5206379E=Bradley fully repaired
 Param/Value/52317597=: You're under arrest! Do what I say or I will use force!
+Param/Value/5292FA19=MSG
 Param/Value/52B37198=<s val="ArcadeFighterScoreTitle">Chapter 3</s><n/><n/><s val="BattleChatPrefix">Love</s>
 Param/Value/53113EC1=Round completed
 Param/Value/532173EF=<c val="FF0000">DEATHMATCH</c>
@@ -2271,16 +2840,20 @@ Param/Value/54C2FDC8=:
 Param/Value/54D96B4F=Saving deactivated due to cheat usage.
 Param/Value/550DECF6=Hits: 
 Param/Value/553F26AC=<c val="008000">Outlaw 6:</c> These guys are crazy. Outlaws, move to the eastern TCP and wait for Saber 6 there. The last thing they need is to lose their commander.
+Param/Value/55617AFB=sh 
 Param/Value/5572AE89=Search the Highlands
 Param/Value/558FC2D0=<c val="008000">Tank Commander:</c> We are being hit too heavily!  NO!<n/>
 Param/Value/559D8FF4=PV2
 Param/Value/55A4AA54=Adds 3 to mechanical skills.
+Param/Value/55A8CF26=Sustain 20 hits and 2 deaths in a single game.
 Param/Value/55D243F2=Functional dialog reset.
 Param/Value/561694EC=Air threat destroyed
+Param/Value/5636887D=<s val="
 Param/Value/563DF7CA=Invasion
 Param/Value/5658657C=<c val="00FF00">The game will end in 15 seconds.</c>
 Param/Value/565EC5D7=: Finally, somebody helps us!
 Param/Value/567B0659=/
+Param/Value/56950E97=Complete survival with <5 hits.
 Param/Value/56993FDE=<c val="008000">Ravensword:</c> There are 3 generators in your AO. They are slowly losing power due to an unknown cause, and the entire AO could lose power in a few days if this is not remedied. Eliminate the problem and repower the generators.
 Param/Value/57353ABA=<c val="008000">Soldier:</c> Evening, sir. We're here to provide additional security for your AO.
 Param/Value/574297E4=Now navigate to the Undead Assault 2015 bank directory.
@@ -2306,6 +2879,7 @@ Param/Value/5979677E=<c val="77BBBB">EN: </c>
 Param/Value/59977701=
 Param/Value/59A431B5=<c val="008000">Soldier:</c> They're all dead. CM.
 Param/Value/59A559ED=Attack or defend the convoy.
+Param/Value/59BB97F6=LTGEN
 Param/Value/59BEE627=: We're leaving, let's go!
 Param/Value/5A28E86F=Dark Sky would be a big help, but the moral implications of their demands fall outside of your ethos. You are warriors - together, no challenge is too tough to overcome. You will find a way on your own.
 Param/Value/5A57DB74=Soldier extracted
@@ -2353,6 +2927,7 @@ Param/Value/6049A7AD=Game completed on hard with no hits: Woodland Tiger camo pa
 Param/Value/6050F3C0=PFC
 Param/Value/6055D966=<c val="008000">Operative:</c> Ambush! Kill them!
 Param/Value/605DC402=<c val="008000">Soldier:</c> We're taking far too long.
+Param/Value/605EAC88=(Aura) Adds 5% bonus damage.
 Param/Value/609030F9=Next rank: <s val="ChatHelp_Terr">
 Param/Value/611691DB=Copy the 40 character long hexadecimal signature value.
 Param/Value/6120187B=<c val="008000">Soldier:</c> What happened here? I've never seen anything like this...
@@ -2367,11 +2942,15 @@ Param/Value/61920E18=Fuel<n/>Fuel is used for your weapon and certain abilities.
 Param/Value/61954A6B=<c val="008000">Outlaw 6:</c> Roger, we'll do everything we can. Outlaws, aggressively defend that convoy. It is imperitive it makes it through unharmed.
 Param/Value/6224F3B8=<c val="FFC600">
 Param/Value/622511DB= 
+Param/Value/627A5432=(
 Param/Value/627C94FD=: Fire in the desync!
+Param/Value/6295431F=Combat Load
 Param/Value/629601BF=Kill the gourmands
+Param/Value/629DE5AB=Increases movement speed by .06.
 Param/Value/63436E19=Ignis is a major threat to this AO's security. Destroy him.
 Param/Value/63783692=<c val="008000">ISR online.</c>
 Param/Value/637DD35D=Survivor saved
+Param/Value/638321CE=1SG
 Param/Value/6399CA7B=Ravensword has procured special equipment for us. Mark 3 LZs for air drop and obtain the equipment.
 Param/Value/63C2CC96=<c val="00FF00">Logged off.</c>
 Param/Value/63D4563F= refugees saved from last group.
@@ -2389,6 +2968,7 @@ Param/Value/65100448=Default
 Param/Value/654FE286=<c val="008000">Outlaw 6:</c> I don't know what was in those trucks, but it was probably very important.
 Param/Value/655782FF=Team 
 Param/Value/658E018E=<c val="00FF00">Next round in 5 seconds...</c>
+Param/Value/65A31BF3=Reduces life by 25%, but increases MS by .1.
 Param/Value/65C80F64=
 Param/Value/65EB9D3D=Tier 1 - Increases XP by 10%. Mostly class 1 and 2 hostiles spawn. Cannot be checked with Outbreak.
 Param/Value/6642316C=<n/>
@@ -2404,9 +2984,11 @@ Param/Value/672F8FC5=Commands
 Param/Value/6734B5DF=<c val="FF0000">Encumbered - too many magazines readied.</c>
 Param/Value/673B5745=Instructor
 Param/Value/67811A8D=<c val="008000">Soldier:</c> There it is. Move out!
+Param/Value/6788F66E=it worked
 Param/Value/679B6C53=<c val="008000">Ravensword:</c> Saber 7, SITREP.
 Param/Value/67B33A12=RA destroyed
 Param/Value/67C7767C=Insufficient Bio-Samples collected.
+Param/Value/67DA9482=Increases energy regeneration by .5/s.
 Param/Value/680DBF62=Sustain 20 hits and 2 deaths in a single game.
 Param/Value/680F67A6=<c val="008000">Soldier:</c> I've detained a scientist.
 Param/Value/6842440F=Activate the seismic resonators
@@ -2469,6 +3051,7 @@ Param/Value/702E8E44=: I knew they'd come!
 Param/Value/70339BB7=With Windows users the path looks some what like this:
 Param/Value/7051E2BE=Tier 1 killed
 Param/Value/707AE009=Night Optic Device (NOD)<n/>Turns on your NOD, enhancing vision at night.
+Param/Value/709E8C49=Awarded to distinguished combat veterans after playing 250 games.
 Param/Value/70D4D071=Rock Avalanche camouflage pattern unlocked.
 Param/Value/7108FFDA=" height = "
 Param/Value/711526C0=Due to limitations with StarCraft II it is not possible to automaticly import your save data.
@@ -2489,6 +3072,7 @@ Param/Value/7381B90C=
 Param/Value/73FEF15C=
 Param/Value/744B4BBF=0
 Param/Value/746A7355=<c val="00FF00">Stopped sprinting.</c>
+Param/Value/748CCDF3=PFC
 Param/Value/74D68F4C=Convoy
 Param/Value/74D77B21=sa
 Param/Value/753F3910=<n/>
@@ -2500,6 +3084,7 @@ Param/Value/7682DB0D=Light Armor
 Param/Value/769902FD=<c val="0000FF">Unknown:</c> This is Dark Sky. We've been watching you since yesterday. You and your men don't stand a chance against what is coming - at least, not alone.
 Param/Value/76AA6841=<c val="008000">Soldier:</c> I found a PERSTAT, this should show us where he is.
 Param/Value/76B4661D=<c val="008000">Soldier:</c> Satchel charge placed! Move, move!
+Param/Value/76CB7C45=0
 Param/Value/76FDFD68=<c val="FF8000">Disable sequence terminated.</c>
 Param/Value/776C0EA9=/
 Param/Value/77A38FE7=<s val="ChatHelp_Prot">WO:</s><s val="ChatHelp_Terr">
@@ -2515,6 +3100,7 @@ Param/Value/78C8FE4D=<c val="FF0000">INVASION</c><n/>Survive the PMC onslaught.
 Param/Value/78FB93F4=Air Threats
 Param/Value/790005CA=Tier 1 hostiles destroyed
 Param/Value/794474FD=<c val="ADADAD">MIA</c>
+Param/Value/79658A4D=LTCOL
 Param/Value/796EBB19=Your AO is recieving higher levels of enemy activity. Escort the mayor to Thalim to ensure his safety.
 Param/Value/7A060096=<c val="008000">Soldier:</c> It seems most of the Guslani refugees survived the journey.
 Param/Value/7A383CD7=Tank and engineers lost
@@ -2532,9 +3118,12 @@ Param/Value/7B855546=Nudge left
 Param/Value/7B904A5A=Sample collected.
 Param/Value/7BB6BDD0=<s val="ArcadeFighterScoreTitle">Chapter 1</s><n/>
 Param/Value/7BBAA040=<c val="008000">Ravensword:</c> Good, now bring them to an extraction point.
+Param/Value/7BD00A8D=g
 Param/Value/7BE76364=Interval: 
+Param/Value/7BEA7748=12% increase in XP gain.
 Param/Value/7BF26DB6=Sniper
 Param/Value/7BFC5B97=CPL
+Param/Value/7C14AE7D=CW3
 Param/Value/7C45AACF=Most sentry guns placed.
 Param/Value/7C55A07E=<c val="FF8000">The round is a tie!</c>
 Param/Value/7C7F9278=Casualty MEDEVACed
@@ -2543,9 +3132,11 @@ Param/Value/7CB5A309=Shells:
 Param/Value/7CDA7A2C=<c val="00FF00">Respawn in 15 seconds...</c>
 Param/Value/7CE1EAE2=<c val="008000">Outlaw 6:</c> Roger, we can handle it.
 Param/Value/7D01C40A= refugees evacuated
+Param/Value/7D0ED0E5=Increases life by 30%, but reduces MS by .1.
 Param/Value/7D2BBC40=Games Played: <s val="ChatHelp_Terr">
 Param/Value/7D4BEB72=<c val="008000">Soldier:</c> Darreus has left the AO but not un-injured. Hopefully someone will put an end to his rampage soon.
 Param/Value/7D8226BC=<c val="800080"><6 hits, >= 1200 kills, 10 massive kills and IL <= 25, Gold Star awarded</c>
+Param/Value/7D9561D0=</s>
 Param/Value/7D97DF77=Find 3 KECs
 Param/Value/7DA14653=<s val="ChatHelp_Prot">Biometric ID not recognized. XP:</s> <s val="ChatHelp_Terr">
 Param/Value/7DABD0FF=<s val="ArcadeFighterScoreTitle">Chapter 1</s><n/>
@@ -2558,6 +3149,7 @@ Param/Value/7E1CE75E=<c val="008000">Battle 6:</c> Convoy proceeding safely. Tha
 Param/Value/7E3C5CC8=: Reloading!
 Param/Value/7E482560= 
 Param/Value/7E658E20=Computer Terminal
+Param/Value/7E700A4A=Start with rifle butt unlocked.
 Param/Value/7E849330=<c val="008000">Ravensword:</c> All our armor assets are stretched to their limits. Air assets will get to you when they can.
 Param/Value/7EACF90D=Must get closer.
 Param/Value/7ECA7CFC=: Shut up and come with me!
@@ -2578,7 +3170,7 @@ Param/Value/8141A326=Leadership level too low for Local National type
 Param/Value/81720FE5= has been promoted to <s val="ArcadeFighterScoreTitle">
 Param/Value/8179E8CA=Soldier extracted
 Param/Value/81CEBD2F=Increases damage with explosives by 30%, and adds 10 shields. IFS explosives do not count.
-Param/Value/824149B3=" to votekick.
+Param/Value/824B7A8E=2LT
 Param/Value/82830690=<c val="008000">Soldier:</c> Satchel charge placed. Get out of there.
 Param/Value/82C0C10F=<c val="008000">Saber 6:</c> Outlaw 6 this is Saber 6, the commander of AO Dasdan. Be advised that 2 Raisulis and other class 2 and 3 hostiles have passed over into your sector.
 Param/Value/82D2710B=<c val="008000">Soldier:</c> We will do everything we can.
@@ -2602,6 +3194,7 @@ Param/Value/84FE9C84=Battle Co Convoy
 Param/Value/8505BFE4=Deaths: 
 Param/Value/85337DA1=Mayor survived
 Param/Value/85512CEA=SGT
+Param/Value/85635C20=Adds 40 life.
 Param/Value/858C77EC=If you have issues unlocking anything feel free to ask other users.
 Param/Value/85AD12EE=Increases life by 30%, but reduces MS by .1.
 Param/Value/85D8B6B9=Kills: 
@@ -2609,6 +3202,7 @@ Param/Value/85E56697=Local National already a suboordinate
 Param/Value/8607D409=<c val="008000">Ravensword Main:</c> Outlaw 6, the mayor wants to meet with his chief of police, however the road is too dangerous. Escort him to Thalim.
 Param/Value/868A4FBE=<c val="008000">Abdul:</c> I need a drink.
 Param/Value/86A1665B=Convoy destroyed
+Param/Value/86BA8747=P
 Param/Value/86D42B09=At least we secured some points. Let us hope it is enough.
 Param/Value/86F382C3=Sanies Time
 Param/Value/870502E8=You need to be closer to a tower.
@@ -2618,6 +3212,7 @@ Param/Value/875ECCF6=,
 Param/Value/87D09835=Default
 Param/Value/87D89234=<c val="008000">Ravensword Main:</c> We need you to search the destroyed city for any remaining civilians, and clear it of hostiles.
 Param/Value/87E5C719=Vehicle destroyed
+Param/Value/8824FA3B=Complete the PMC -rifle epilogue with 30+ PMC kills.
 Param/Value/884BF6AE=Abort codes downloaded
 Param/Value/8870CAE1=<s val="ChatHelp_Prot">Enlisted:</s><s val="ChatHelp_Terr">
 Param/Value/887EDBD6=Mission Time
@@ -2641,14 +3236,17 @@ Param/Value/8A91FEFE=<c val="800080"><6 hits, >= 800 kills, 5 massive kills and 
 Param/Value/8AB9C080=<c val="008000">Soldier:</c> We'll do everything we can. First we -
 Param/Value/8ABEAB6E=Pings team location
 Param/Value/8B1F9C6B=<c val="008000">Scientist</c>
+Param/Value/8B906B81=CPL
 Param/Value/8BB29F37=Second SI set to:<c val="FF8000">
 Param/Value/8BE8315C=<c val="008000">Soldier:</c> Only a few Highland refugees seem to have made it.
+Param/Value/8BF74AE3=m
 Param/Value/8C0A3C38=Rounds<n/>Amount of rounds in current magazine.
 Param/Value/8C3E0C73=Red Tiger camo pattern unlocked.
 Param/Value/8C6F77BB=<c val="FF0000">IDF unavailable.</c>
 Param/Value/8CEB15A9=<c val="800080">Dr. Graham:</c> What of Project Zulu?
 Param/Value/8CF1773F=Functional dialog reset.
 Param/Value/8CF77DAB=<s val="ChallengeDefeatWaveLabelFailed">Commissioned Officer ranks have not been earned yet.</s>
+Param/Value/8D280DEC=/
 Param/Value/8D2DAAD9=<c val="008000">Soldier:</c> Here it is.
 Param/Value/8D3F3C11=<n/>
 Param/Value/8D538655=3 vehicle drivers will move in from the south and take control of the vehicles in the motorpool. Escort them safely.
@@ -2656,11 +3254,13 @@ Param/Value/8D5EB7ED=BGEN
 Param/Value/8D5FBBFD=<c val="008000">Outlaw 6:</c> Roger. Outlaws, we're going to link up with the convoy and escort them through our AO.
 Param/Value/8D9D05CD=<c val="FF0000">Warning: A silo is about to explode!</c>
 Param/Value/8D9FB8B0=Nightmare is the ultimate difficulty. There is no greater challenge than nightmare. This mode is only for a highly skilled team with great emphasis on teamwork. Only strong cohesion will lead to completion of this mode.<n/>The XP reward is very high.
+Param/Value/8DDE1614=Energetic
 Param/Value/8DEA0341=<c val="0000FF">Dark Sky:</c> Run! It's gonna blow! What have you done!?
 Param/Value/8DED321E=Your squad has been tasked with providing security for this AO until evac arrives. ETA 50 minutes.
 Param/Value/8DF1AD29=Gourmands destroyed
 Param/Value/8E195EE2=Hits: <s val="ChatHelp_Terr">
 Param/Value/8E3B34F0=<c val="008000">Ravensword Main:</c> Ravensword 6 wants to conduct a meeting with Outlaw 6 and Saber 6. Saber 6 want to get a hands-on feel for the AO before the meeting.
+Param/Value/8E446CE1=Awarded to exceptional combat medics who heal 22 times in a single game.
 Param/Value/8E470779=<c val="FF8000">
 Param/Value/8E4B45A2= has won the round!
 Param/Value/8E522139=<c val="008000">Ravensword 6:</c> Outlaw 6 this is ravensword 6. We cannot identify the source of that last transmission, however, we suspect they are a PMC. More to follow. Out.
@@ -2673,6 +3273,7 @@ Param/Value/8EED4160=<c val="008000">Pilot:</c> We're here, but we barely made i
 Param/Value/8EFF9265=You need to be closer to a TCP.
 Param/Value/8F26CAB2=Revives: <s val="ChatHelp_Terr">
 Param/Value/8F324CBF=CLP destroyed
+Param/Value/8F35644C=Increases maximum magazine capacity before encumbrance to 24 mags/2400 fuel.
 Param/Value/8F55BA73=% life 
 Param/Value/8F5AE219=<c val="008000">Outlaw 6:</c> The time-stops have detonated! Fight on, outlaws!
 Param/Value/8F7877EF=<c val="E7A303">
@@ -2685,6 +3286,7 @@ Param/Value/90671BA3=
 Param/Value/907C39FA=Round completed
 Param/Value/90B45F74=The mayor wants to conduct a meeting with the chief of police. Escort him to Thalim.
 Param/Value/90BFC31B=<img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height = "22" width = "22" />
+Param/Value/91407C15=Adds 3 to mechanical skills.
 Param/Value/91892EDA=Commands
 Param/Value/91922410=Westley Adams, the former mayor of Thalim, is the only person with key card access for the RA Facility. Search his house for him or his key card.
 Param/Value/91A777D1=<c val="008000">Farmer Akma's Wife:</c> Where's Akma?!
@@ -2692,6 +3294,7 @@ Param/Value/91AEE70D=UA3 bank appears to be damaged.
 Param/Value/91BF153B=Convoy set final
 Param/Value/91D7E1C5=A large force of Tier 1 Hostiles are moving into your AO. They are the last remaining obstacle before this area can be considered cleansed and can be repopulated. Destroy them, and end the infection for these people once and for all.
 Param/Value/91E107B6=Kill the gourmand
+Param/Value/91E34817=<c val="FF0000">
 Param/Value/91FA21A5=<n/>
 Param/Value/923C658B=A group of hostiles are approaching the mayor's manor. Do not let them harm the mayor.
 Param/Value/9247BD66=
@@ -2702,6 +3305,7 @@ Param/Value/92A112D5=Heals: <s val="ChatHelp_Terr">
 Param/Value/92AC9F1C=<s val="ChallengeDefeatWaveLabelFailed">Warrant Officer ranks have not been earned yet.</s>
 Param/Value/9312D7AB=Shells per mission: 
 Param/Value/938E5D20=Not enough magazines.
+Param/Value/9395F27D=Barbaric
 Param/Value/93A75C32=Increases movement speed by .06.
 Param/Value/93AED85A=<n/>
 Param/Value/93D257F7=WO XP: <s val="ChatHelp_Terr">
@@ -2715,6 +3319,7 @@ Param/Value/9478A3C6=Energetic
 Param/Value/94A89AA7=Input "<c val="008000">-i ##</c>" to set interval (seconds, .2-5).
 Param/Value/94ABFB5B=Download Abort Codes
 Param/Value/94CDF9EC=
+Param/Value/94E98DC9=<s val="0UI_LCD">N/A
 Param/Value/9522F429=Combat Walker online
 Param/Value/953D8822=<n/>
 Param/Value/955B9CAB=<c val="FF0000">Fire Mission</c>
@@ -2732,6 +3337,7 @@ Param/Value/96C847C2=<c val="008000">Ravensword:</c> Indirect fire has been task
 Param/Value/9722F3DF=FT
 Param/Value/97345EB1=<c val="008000">Cache [%1%] found.</c>
 Param/Value/973B8CF9=Plague vectors destroyed
+Param/Value/97BAABB3=NM completed with <6 hits, >= 1200 kills, 10 massive kills and IL <= 25.
 Param/Value/97DEC596=)
 Param/Value/97F03FCB=<c val="808080">Unavailable</c>
 Param/Value/97F6FF22=<c val="008000">Outlaw 6:</c> Roger. Outlaws, we're going to move all the civilians in our AO to Thalim. Downloading perstat data now.
@@ -2757,10 +3363,12 @@ Param/Value/99CFCE9A=Kills:
 Param/Value/9A2342F3=Decal changed to:<c val="FF8000">
 Param/Value/9A4864A7=<c val="008000">Outlaw 6:</c> If we're going to retake this AO, we first need to destroy any Sanies that have infested the area.
 Param/Value/9A6B36AA=<c val="FF8000">Capturing silo...</c>
+Param/Value/9AE0A5AD=/40
 Param/Value/9AF2D957= 
 Param/Value/9B11A854=Escort the Guslani villagers
 Param/Value/9B2007C8=(Aura) Adds 6% attack speed, .03ms, and improves reload/unjam time by 20%.
 Param/Value/9B760019=<c val="FF8000">Game over!</c><n/>Thank you for playing <c val="00FF00">Undead Assault 3!</c> Press "<c val="00FF00">sa</c>" to save your experience and unlocks.
+Param/Value/9B7D8B84=CW4
 Param/Value/9B85611D=<c val="008000">Ravensword:</c> Indirect fire is available again.
 Param/Value/9BCF6174=)
 Param/Value/9BF095C0=<c val="008000">Soldier:</c> What the?!
@@ -2775,6 +3383,7 @@ Param/Value/9D15D5D1=<n/>The player last standing wins.
 Param/Value/9D1BF113=<c val="008000">Outlaw 6:</c> A group of refugees are approaching from the east!
 Param/Value/9D24204B=<c val="008000">Soldier:</c> Alright, get the refugees on the vehicles!
 Param/Value/9D286AAA=Rifle modifier selected. XP gain increased by 25%, but only riflemen and medics can be chosen.
+Param/Value/9D4153BF=First round deals double damage.
 Param/Value/9D6DB531=<c val="008000">Pilot:</c> I don't have much time!
 Param/Value/9D7F7108=Increases weapon range by 2 and adds 15 range invisible detection.
 Param/Value/9D89AF4F=<c val="008000">Combat 6:</c> Outlaw this is Combat 6 we have arrived at the RA Facility. Setting up security now.
@@ -2792,6 +3401,7 @@ Param/Value/9EB76214=<c val="FF8040">ms</c>
 Param/Value/9F4F5600=Highlander Home
 Param/Value/9F578424=Before the combat walkers can be used again, they require new Kinetic Energy Capacitors. Find them around the AO.
 Param/Value/9F61838E=<c val="008000">Soldier:</c> Farmer Akma is down!
+Param/Value/9F75F147=Reduces reload and unjam time by 25%.
 Param/Value/9F784A4D=<c val="00FF80">Aspectus:</c> So some soldiers think they are tough? *Sigh* this again. Just like in Africa, a bunch of self-righteous pawns think they can rule the world. This will be quick.
 Param/Value/9FA03715= 
 Param/Value/9FA459F3= <c val="FF8000">Deaths:</c> 
@@ -2816,10 +3426,12 @@ Param/Value/A1B068DF=Put Akma's Wife to rest
 Param/Value/A1B6BE50=The RA have built silos in this AO, causing a terrible regional outbreak. They have apparently been conducting research to learn to control the undead. When you entered the RA facility, someone set all the silos on a timer to explode, which will cause a terrible global outbreak. Manually shut off each silo before it explodes.
 Param/Value/A1E3D3AA=<c val="FF0000">Warning: Not automatically saving due to a loss in rank experience. Any progress made since last save will be lost unless manually saved.</c>
 Param/Value/A1FB7C45=(None)
+Param/Value/A214AFB1=SGT
 Param/Value/A236DD9F=Destroy RA Attack Helicopters
 Param/Value/A246756D=Abdul's truck broke down on the road. Escort him to Thalim so he can be safe.
 Param/Value/A25194CD=: Reloading!
 Param/Value/A28346CA=<c val="008000">Tank Commander:</c> All systems are go. Heading back to security zone.
+Param/Value/A2868178=</s>
 Param/Value/A28C032B=<c val="800080">Over 2,000 kills, Combat Action Badge awarded</c>
 Param/Value/A2A179FC=<c val="008000">Saber Main:</c> All nearby support elements, requesting immediate QRF assistance. Tier 1 hostiles are everywhere. 70% casualties. AO Dasdan is Red Zoned.
 Param/Value/A32E89D5=Destroy RA TCPs (
@@ -2851,6 +3463,7 @@ Param/Value/A64D39F5=<n/>
 Param/Value/A6579463=<c val="FF0000">KIA</c> 
 Param/Value/A658A26F=Infestation Level<n/>A rating on the current level of infestation in this AO. Can be dangerous at high levels.
 Param/Value/A69547C3=<c val="008000">Recommended for new players</c><n/>The easiest mode in the game. Recruit mode offers reduced enemy stats and easier objectives.
+Param/Value/A6F804A4=SPC
 Param/Value/A71D7B68=Kills/Hits/Movespeed/Revives/Heals
 Param/Value/A795E357=Silo not deactivated in time
 Param/Value/A7B3FBC9=Mission Time
@@ -2861,12 +3474,17 @@ Param/Value/A85ADBF7=<c val="FF0000">Warning: Not automatically saving due to a 
 Param/Value/A8620799=Mark LZ
 Param/Value/A880D1AF= set.
 Param/Value/A8E0A37C=Modifiers
+Param/Value/A8EB0449=<c val="FFFF00">
+Param/Value/A8FCF45E=Grenadier
+Param/Value/A9010E2A=Increases damage with explosives by 30%, and adds 10 shields. IFS explosives do not count.
 Param/Value/A9414B50=<n/>
 Param/Value/A98185FA=Combat Engineer
 Param/Value/A9D28518=<c val="008000">Mayor:</c> The chief of police said he's having trouble monitoring the city and controlling the squirters.
 Param/Value/AA2901CC=<c val="008000">Mayor:</c> They are my personal security detachment. I hired them for additional security. What can I help you with?
 Param/Value/AA2B658E=Skill Identifiers (SIs)<n/>SIs are small bonuses applied to your hero. Most are earned through gaining experience, though some are earned under specific circumstances.<n/><n/>You may only use 2 SIs per game.<n/><n/>Learn more about SIs by visiting our website, <c val="008000">undeadassault.net</c>.
 Param/Value/AA4E300A=<img path="Assets\Textures\icon-health-zerg.dds" height = "22" width = "22" /> 
+Param/Value/AA4F3E34=<s height="16">
+Param/Value/AA53915D=)
 Param/Value/AA5C5698=<c val="008000">Outlaw 6:</c> We appreciate the help, but we have nothing for you. If you want to help us, don't expect any kind of compensation in return. We're sucked dry as it is.
 Param/Value/AA5CDF51=Snipers not killed in time
 Param/Value/AA7F1B63=<c val="008000">Outlaw 6:</c> Outlaws, our first priority is reinforcing security of this AO.
@@ -2885,8 +3503,11 @@ Param/Value/ACB836BD= <c val="0000FF">-1 life</c>
 Param/Value/ACFFD7E1= 
 Param/Value/AD1885CE=Thanatos destroyed
 Param/Value/AD2095C9=<c val="008000">Ravensword:</c> A Dark Cloud has moved into your AO. Apparently your Biosphere Defense Silos have been disengaged. We'll air drop new energy batteries for them. Recharge the silos to clear the skies again.
+Param/Value/AD5BF185=Light Armor
 Param/Value/AD5C59E4=Crew Extraction
 Param/Value/ADCBF34D=Despite the RA onslaught, we still have not finished our mission. In order to narrow down the local outbreak source we need to collect bio-samples from the local food supply.
+Param/Value/ADD6DECE=Discipline
+Param/Value/ADF22A64=quick thinking
 Param/Value/ADFA09B3=<s val="ArcadeFighterScoreTitle">
 Param/Value/AE297A67=<c val="008000">Outlaw 6:</c> Alright Dark Sky, we'll give you this key once we control this AO again.
 Param/Value/AE6BE73E=Abort codes not downloaded in time
@@ -2903,6 +3524,7 @@ Param/Value/AF3BE4F2=Heals:
 Param/Value/AF54E3EB=Massive Kills: <s val="ChatHelp_Terr">
 Param/Value/AF781C2F=<s val="0UI_LCD">
 Param/Value/AF83C511=Please copy the UA3.SC2Bank file from 2-S2-1-3756849 to 2-S2-1-355214 before next game and try again.
+Param/Value/AFD2A5C6=Whiz Kid
 Param/Value/AFD8FB77=Twinkle Toes
 Param/Value/AFE12367=Survive the PMC onslaught.
 Param/Value/AFF0DC09=Close this donation dialog.
@@ -2911,10 +3533,13 @@ Param/Value/B038EFCE=
 Param/Value/B073DFBA=Westley Adam's house not searched in time
 Param/Value/B07AD166= 
 Param/Value/B089456E= 
+Param/Value/B0B5BEA5=SMA
 Param/Value/B0D3C9D0=BONUS: All sentry guns placed with at least 1 minute spare.
 Param/Value/B11CFB1B=Rail Gun
 Param/Value/B11D25FE=Round completed
 Param/Value/B185CE0D=<s val="ArcadeFighterScoreTitle">Chapter 1</s><n/><n/><s val="BattleChatPrefix">Fear</s>
+Param/Value/B191D001=Self-Sufficient
+Param/Value/B1B37075= Dead
 Param/Value/B1D69FF1=Retrieve and place 
 Param/Value/B1F8221C=Plague vectors still remain
 Param/Value/B20E90B1=<s val="BossBarHP">
@@ -2923,6 +3548,7 @@ Param/Value/B253732B=<c val="008000">Soldier:</c> Looks like this place has been
 Param/Value/B2B94AE0=<c val="008000">Farmer Akma's Wife:</c> That fool... I told him we should pack out stuff and leave before the undead got here but no, his farm was far too important to him. You know he called them "weak zombies"? So much for that as now look where it has got him...
 Param/Value/B2E59818=<c val="008000">Ravensword:</c> Intel shows they may have under estimated the zombie presence in the area. Some TCPs were not able to be captured.
 Param/Value/B30D327D=Help Dark Sky
+Param/Value/B329D7DF=SFC
 Param/Value/B34ADC2D=<c val="FF8040">ms</c>
 Param/Value/B3A79E64=COL
 Param/Value/B3B89402=" to votekick.
@@ -2981,6 +3607,7 @@ Param/Value/BAC460CF= <c val="FF8000">Rounds won:</c>
 Param/Value/BAEEE9DB=<s val="AiurChefCenterSize22Bold">-
 Param/Value/BAF8529A=Outbreak
 Param/Value/BB05D334=</c>!
+Param/Value/BB1B59E1=(Cav Scout) Adds damage, range, and suppresses weapon.
 Param/Value/BB2CF0CA=<c val="0000FF">Dark Sky:</c> Westley Adams. Apparently he was the mayor of Thalim. Typical of the RA.
 Param/Value/BB620C9F=<c val="77BBBB">XP: </c>
 Param/Value/BB682FED=/
@@ -3003,6 +3630,7 @@ Param/Value/BE288BD4=First you need to navigate to where the old bank is stored.
 Param/Value/BE2F710A=<c val="00FF00">Abort code downloaded.<n/>Logging off.</c>
 Param/Value/BE5737E8=<c val="800080">Dr. Jashan:</c> Do another sweep. Make sure this time.<n/>Get a site team in here and sterilize this place.
 Param/Value/BE65BBAC=Destroy Darreus
+Param/Value/BE98D04B=<c val="FF8000">
 Param/Value/BED8D438=<c val="008000">Soldier:</c> Seems most of the Highland refugees are here.
 Param/Value/BEF3FDC4=Escort the Convoy
 Param/Value/BF0D33DD=<c val="FF0000">Mission failed.</c>
@@ -3017,6 +3645,7 @@ Param/Value/BFB05AB3=Helicopters destroyed
 Param/Value/BFC0B393=<c val="FF8040">ms</c>
 Param/Value/BFE8CD69=The UA3.SC2Bank must come from 2-S2-1-3756849 on the same account you are using.
 Param/Value/C05FB49B= has selected 
+Param/Value/C06148D1= supply
 Param/Value/C06BE319=(none)
 Param/Value/C093CB5B=Search for KEC
 Param/Value/C0B72C6F=Input "-r ##" to set dispersion radius (2-10).
@@ -3043,30 +3672,39 @@ Param/Value/C3033A18=<c val="008000">Civilian</c>
 Param/Value/C30AFF75=)
 Param/Value/C3473B2E=<c val="00FF80">Umbra:</c> A monkey climbs a tree and thinks himself tall. Do you honestly believe that killing a few soldiers would secure you victory?
 Param/Value/C372E397=CPT
+Param/Value/C388D8D9=">
 Param/Value/C38B8D65=<c val="008000">Soldier:</c> There's the Heliport. I want security set up in 30 seconds. We gotta be fast, Outlaws, get to it!
 Param/Value/C3C1B8D4=<c val="FF0000">TEAM DEATHMATCH</c><n/>The team with the most kills by round end wins.
+Param/Value/C3E9879E=Awarded to soldiers who win 4 rounds in competitive mode.
+Param/Value/C45BFE4E=<c val="00FF80">Commander</c>
 Param/Value/C460988E=We must first gain access to the RA facility. Breach the gate with a satchel charge, then we can CM.
 Param/Value/C46229D4=An unexpected level of Javlin Skills was learnt.
 Param/Value/C466E0A2=CW3
 Param/Value/C48C0194=Eliminate Aspectus
 Param/Value/C4B47F24=<n/>
 Param/Value/C4B86F51=Umbra is a highly skilled sniper. Known for being one of the stealthiest warriors on the battlefield, he has killed over 30 high value targets in his day. None have seen him and survived. Destroy him before he destroys you.
+Param/Value/C541DCC3=)  -  
 Param/Value/C54E7038=: But those things are out there!
 Param/Value/C596B085=Destroy the CLP
 Param/Value/C598B1FE=Vehicle proceeded safely
+Param/Value/C5A78B56=MAJ
 Param/Value/C5D51750=Battle Buddy
 Param/Value/C5F018F7=% 
 Param/Value/C5F0FF69=<c val="008000">Police Commissioner:</c> Evening! I could use the help. This city has been under recent attack. Jafahn, about 20 miles east of here, has hit Tier 2 and is spilling into my city.
 Param/Value/C6042969=<c val="FFFF00">Copy this link into your browser to donate to the development team:</c>
 Param/Value/C60D69E5= has killed a Class 1.
+Param/Value/C60E3832=SSG
 Param/Value/C61C449C=<c val="008000">Soldier:</c> Backblast area clear!
+Param/Value/C6214D87=GEN
 Param/Value/C648BBA8=Satchel not placed in time
 Param/Value/C66986F7=Next Phantom
 Param/Value/C68DD0FC=<c val="008000">Soldier:</c> Poor Akma, she must have been infected all this time and would have killed him when he got back.
 Param/Value/C69B94F4=
 Param/Value/C6E97EAE=Rifle
 Param/Value/C6FB3831=<c val="008000">Soldier:</c> Contact!
+Param/Value/C705D451= 
 Param/Value/C711674E=<c val="008000">Soldier:</c> It looks like they were rounding up suspected civilians and killing them here.
+Param/Value/C7240396=CW5
 Param/Value/C746EB8D=<c val="008000">Outlaw 6:</c> My intel is showing a farm between our LZ and the mayor's house. "Akma" is the primary resident. Broadcasting now. Get moving.
 Param/Value/C75CE520=<c val="008000">Saber 6:</c> Outlaw 6 this is Saber 6, the commander of AO Dasdan. Be advised that Raisuli, a class alpha hostile, has passed over into your sector.
 Param/Value/C78C5ADE=Choosing
@@ -3115,8 +3753,10 @@ Param/Value/CC71CC51=1 life
 Param/Value/CC9A18E9=" width = "
 Param/Value/CCA2F7B7=Too many fireteams
 Param/Value/CCA84F3E=<c val="008000">Outlaw 6:</c> Outlaws, get to the phantom, move!
+Param/Value/CCA8D036=Blood in Blood Out
 Param/Value/CCAC383B=Hard
 Param/Value/CCADF197=<s val="Cantina_Text"><c val="00FF00">Access Granted</s></c>
+Param/Value/CCD8CE44= Hidden
 Param/Value/CD1156B3= xp gained.
 Param/Value/CD42176B=<n/>
 Param/Value/CD5D162D=<c val="008000">Soldier:</c> We cannot hold out forever! Who's charging those silos?
@@ -3139,6 +3779,7 @@ Param/Value/CF4CD313=Survivor killed
 Param/Value/CF714611= votekick enabled. Type "-kick 
 Param/Value/CF81DFAB= awarded.
 Param/Value/CFBF0ADD=de
+Param/Value/CFD59F9A=)
 Param/Value/CFE75EC6=1 life modifier selected. XP gain increased by 15%. No revives or reinforcements on death.
 Param/Value/D0203390=<c val="008000">Ravensword:</c> Reinforcements have arrived.
 Param/Value/D0A42436=<c val="008000">Outlaw 6:</c> Roger. Outlaws, get to the mayor's manor and bring him to Thalim.
@@ -3159,6 +3800,7 @@ Param/Value/D2B71924=Reduces life by 25%, but increases MS by .1.
 Param/Value/D2E7379B=Default
 Param/Value/D3098CE0=<c val="008000">Ravensword Main:</c> Outlaw 6, our scanners are showing the city of Balaad, in the southwest portion of your AO, as being completed demolished.
 Param/Value/D320C10E=<s val="ArcadeFighterScoreTitle">Chapter 3</s><n/>
+Param/Value/D320F6FE=PVT
 Param/Value/D33CA5F6=<c val="008000">Soldier:</c> Rock Avalanch soldiers? What are they doing here?
 Param/Value/D358149E=<c val="008000">Mayor:</c> I'll be fine here, thank you. Is that all?
 Param/Value/D37852F7=<c val="008000">Outlaw 6:</c> The convoy has arrived. Escort the convoy through the AO.
@@ -3169,11 +3811,14 @@ Param/Value/D3A32B08=First round deals double damage.
 Param/Value/D3B94753=The RA have combat walkers moving into your AO. They will be difficult to defeat without firepower of our own. To the west of the AO is an old motorpool with unpowered combat walkers. Protect the combat engineers until the combat walkers are ready.
 Param/Value/D3D20CDD=<img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds" height = "13" width = "13" />
 Param/Value/D3F95F74=<c val="FF0000"> -RESPAWN</c>
+Param/Value/D418E5C0=CPT
 Param/Value/D44BBCF4=Awarded to soldiers who attain over 1300 kills and 10 massive kills in a single game.
 Param/Value/D455FB8D=<c val="FF8000">The round is a tie!</c>
 Param/Value/D47F31CE=Escort Saber 6
 Param/Value/D4B37190=: 
 Param/Value/D4B3B4D8=/
+Param/Value/D50B743B=Over 2 deaths and 22 hits sustained
+Param/Value/D525A44C=Sprint
 Param/Value/D55703ED=<c val="008000">Soldier:</c> What's going on?
 Param/Value/D562F3B9=Round tied!
 Param/Value/D56C8BAD=<img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height = "22" width = "22" />
@@ -3181,6 +3826,7 @@ Param/Value/D59471F4=The local police are having trouble controlling the influx 
 Param/Value/D5981836=Mayor safe
 Param/Value/D5A0BF04=/
 Param/Value/D5C239D9=<c val="008000">Soldier:</c> Are you crazy? You'll be overrun in a matter of hours! We need to leave now, sir!
+Param/Value/D5CF1C49=en
 Param/Value/D5E9C8D6=<c val="008000">Soldier:</c> The coward ran! We almost had him.
 Param/Value/D5EE50CA=Detain Dr. Jashan
 Param/Value/D6019A61=<c val="008000">Ravensword Main:</c> Roger, ETA 35 seconds, out.
@@ -3198,9 +3844,11 @@ Param/Value/D750506E=Awarded to distinguished combat veterans after playing 250 
 Param/Value/D7B60412=Infestation level low
 Param/Value/D7C13904=SSG
 Param/Value/D8593DDD=Only one man has access to the RA Facility, and he never left the AO. He is almost guaranteed dead, but his location is unknown. Search the homes in Thalim that employees lived in to find any clues to his location.
+Param/Value/D8E29B59=SGM
 Param/Value/D9005978=Nudge up
 Param/Value/D902F35C=Destroy the Apiaries (
 Param/Value/D92CF6D7=<c val="E7A303">
+Param/Value/D9379810=MGEN
 Param/Value/D93B507C=Must place at RA facility gate.
 Param/Value/D95DE502=Dr Jashan killed
 Param/Value/D969D835=Normal
@@ -3231,12 +3879,15 @@ Param/Value/DB61C7D9=<c val="FFC600">Medals</c>
 Param/Value/DB868C6D=tl
 Param/Value/DB995028=<c val="00FF00">Downloading...18%</c>
 Param/Value/DB9CA9C1= <c val="8000FF">-Tier 1</c>
+Param/Value/DBB9497C=<c val="FF0000">Encumbered - too many magazines readied.</c>
 Param/Value/DBCEF95F=Copy the file UA3.SC2Bank in that directory.
 Param/Value/DBE08D4B=Escort the CLP
 Param/Value/DBE94C62=<c val="008000">Outlaw 6:</c> Ravensword wants us to test the recently buried for signs of the virus, collect a sample, and analyze for the possibility of reanimating the dead.
 Param/Value/DC03593D=Mayor's Manor
 Param/Value/DC1DF080=PVT
 Param/Value/DC33D93D=<c val="008000">Dr Jashan:</c> Hello, my subjects! You must feel important.
+Param/Value/DC3D84FD=Twinkle Toes
+Param/Value/DC6F82E9=Awarded to medics who revive 12 times in a single game.
 Param/Value/DCC3AD69=BONUS: Cleared all TCPs with more than 2 minutes remaining.
 Param/Value/DCC780A5=<s val="ChatHelp_Prot">XP Gained:</s> <s val="ChatHelp_Terr">
 Param/Value/DCF9B464=<c val="008000">Ravensword:</c> Outlaw 6, we are picking up 2 Thresher Maws heading into your AO. Destroy them.
@@ -3248,6 +3899,7 @@ Param/Value/DDCB2342= has won the round!
 Param/Value/DDD97127=
 Param/Value/DDE72C32=Shows your medals.
 Param/Value/DE051D88=<c val="008000">Outlaw 6:</c> A convoy is on it's way to pick up the citizens, and refugees are moving in from AO Dasdan, to the east. Provide security for Thalim and the refugees until the convoy arrives.
+Param/Value/DE228D42=[Combat Medic] Improves Blood Transfusion and Nano-Injection.
 Param/Value/DE3376A2=<c val="800080"><5 hits, Medal of Gallantry awarded</c>
 Param/Value/DE7AD094=You would copy "9A322097DD77CE7D7F2E8EDDECDA6D59B595575F" (without"").
 Param/Value/DE879E16=Eliminate RA Snipers
@@ -3300,6 +3952,7 @@ Param/Value/E4EEA3CF=<s val="ChatHelp_Prot">Biometric ID saved. CO XP:</s> <s va
 Param/Value/E52C3367=% <img path="Assets\Textures\icon-health-zerg.dds" height = "22" width = "22" /> 
 Param/Value/E57EFA54=PMC
 Param/Value/E5AACD58=You can only disarm M1 sentries you own.
+Param/Value/E5CD43EA=,
 Param/Value/E5CDC1A4=WO XP: <s val="ChatHelp_Terr">
 Param/Value/E5DC64CA=<c val="008000">Soldier:</c> We're too late. They're all dead.
 Param/Value/E5EA2962=<c val="0080C0">You are now the team leader.</c>
@@ -3310,8 +3963,10 @@ Param/Value/E67E6387= has joined the fireteam.
 Param/Value/E68602A1=<c val="008000">Farmer Akma:</c> Done, let's move to the next silo.
 Param/Value/E6C52918=<c val="008000">Outlaw 6:</c> Outlaws, this is too big of a decision for me to order you to do. I cannot force you to sacrifice your own integrity. I'll leave it up to you.
 Param/Value/E6DC4FE9=<c val="008000">Pilot:</c> I don't have a lot of fuel. You need to get those casualties here as soon as possible!
+Param/Value/E710EBD0=Born to Lead
 Param/Value/E7241B03=<c val="008000">Farmer Akma:</c> Soldiers? What are you doing here?
 Param/Value/E736F2E0=<c val="FF0000">Mission failed.</c>
+Param/Value/E738063F=PV2
 Param/Value/E783D037=<s val="AiurChefCenterSize22Bold"><c val="77BBBB">Decals</c></s>
 Param/Value/E784128E=RA Convoy
 Param/Value/E79239E7=<
@@ -3343,6 +3998,7 @@ Param/Value/EAD31649=<c val="77BBBB">EN: </c>
 Param/Value/EAF6A37F=Input "-s ##" to set shells per mission (1-10).
 Param/Value/EB0C4584=Thalim
 Param/Value/EB34C878=% <img path="Assets\Textures\icon-health-zerg.dds" height = "13" width = "13" /> 
+Param/Value/EB79E1C2= at (
 Param/Value/EB842F30=Air threat
 Param/Value/EB9BC3D6=Shadow Convoy
 Param/Value/EBA4BA5F=Games Won:<n/>
@@ -3355,6 +4011,7 @@ Param/Value/EC4EA638=<c val="008000">Soldier:</c> Piece of cake.
 Param/Value/EC6A5087=Games Played
 Param/Value/EC6D4DBC=Intellectual
 Param/Value/EC8B27CD= 
+Param/Value/EC932ED9= (
 Param/Value/EC996AC1=Air threat
 Param/Value/ECBACDC6=Distribution: Circular
 Param/Value/ECC05050=Destroy the RA Advance
@@ -3368,6 +4025,7 @@ Param/Value/ED5AEFF8=<c val="0080C0">TL:</c> Rally on <c val="0080C0">me</c>!
 Param/Value/ED5C3CEC=Shells remaining: 
 Param/Value/EDF8179F=<c val="FF8000">Ignis:</c> You think you can burn my vehicles to no consequence? Do you know what you are meddling in?
 Param/Value/EE1FF992=<c val="008000">Soldier:</c> I don't know, but whoever did this has a lot to answer for. Zombies don't do this.
+Param/Value/EE24C454=Instructor
 Param/Value/EE602409=KLE completed.
 Param/Value/EE9494FE=<c val="77BBBB">Unknown:</c> This AO is secure, RTB.
 Param/Value/EEA80F83= 
@@ -3381,6 +4039,7 @@ Param/Value/EF913FFF=Battle Co Convoy
 Param/Value/EFAB43C8=<c val="008000">Soldier:</c> All of the refugees are dead, lets go.
 Param/Value/EFC08090=Distribution: 
 Param/Value/F05041EE=<c val="0000FF">Dark Sky:</c> Before my warriors arrive, we need to get some real metal on the battlefield. To the Northwest is an abandoned JSS from the initial outbreak. There, they have 3 combat walkers.
+Param/Value/F07E3F69=[Rifleman] Improves Frag Grenade and Rifleman Skills.
 Param/Value/F0A9DFEE=KLE not conducted.
 Param/Value/F0D11F3E=Distribution: 
 Param/Value/F0E0CACB=Destroy The RA
@@ -3396,6 +4055,7 @@ Param/Value/F1F8F186=<c val="00FF80">Collection halted.</c>
 Param/Value/F21C6E9F= seconds...
 Param/Value/F22133E7=
 Param/Value/F2575E0A=LTCOL
+Param/Value/F28DE124=BGEN
 Param/Value/F2A2BD09=<c val="008000">Soldier:</c> Downloading location of Mayor's house now. OPNet signal is horrible out here.
 Param/Value/F2AE1916=Distribution: 
 Param/Value/F2B7318C=<c val="008000">Outlaw 6:</c> We don't take orders from just anybody. We're not going anywhere without proper identification.
@@ -3417,6 +4077,7 @@ Param/Value/F53749CD=<n/>
 Param/Value/F53E530D=xp
 Param/Value/F580ED2F=<c val="008000">Outlaw 6:</c> Rock Avalanche.
 Param/Value/F588DD3F=SIs
+Param/Value/F59AFB4E=Start with energy cells, and improves energy cell efficiency by 50%.
 Param/Value/F5D4097C=<c val="00FF00">Now sprinting.</c>
 Param/Value/F5E07D96= has voted for: 
 Param/Value/F60099CC=Create
@@ -3440,7 +4101,9 @@ Param/Value/F7A689B6=<c val="008000">Outlaw 6:</c> Now, let's get out of here.
 Param/Value/F7B6F4A0=Guslani dead
 Param/Value/F801E9E9=<c val="008000">Soldier:</c> Reinforcements have arrived.
 Param/Value/F82227B8=<s val="ArcadeFighterScoreTitle">Chapter 3</s><n/>
+Param/Value/F8260585=reactive fire
 Param/Value/F8369609=
+Param/Value/F83B06EE=CSM
 Param/Value/F85E53EF=Start with rifle butt unlocked.
 Param/Value/F872BED0=Power User
 Param/Value/F884F678=A gourmand entered your AO and has been wreaking havoc in the outlying cities. Destroy it before it causes any more trouble.
@@ -3465,6 +4128,7 @@ Param/Value/FA50D4D0=<c val="800080">Guard:</c> Sir, we've found a hidden flash 
 Param/Value/FA5ABFFE=Mode: 
 Param/Value/FA9DA517=Survive The Assault
 Param/Value/FAAB7EDD=/
+Param/Value/FAD2ADFE=, 
 Param/Value/FAFB75BA=Invalid unit type.
 Param/Value/FB0783CF=<c val="008000">Ravensword Main:</c> Roger, ETA 35 seconds, out.
 Param/Value/FB108BC3=Threasher Maws are destroying everything in the surrounding area. They must be destroyed in order to continue our mission.
@@ -3479,7 +4143,6 @@ Param/Value/FC292915=
 Param/Value/FC39A6A5=<c val="008000">Outlaw 6:</c> Roger. Outlaws, we'll stop them at the TCPs. Move to the TCPs and don't let anything into this AO!
 Param/Value/FC7EA106=Mayor
 Param/Value/FC966DD4=<c val="008000">Outlaw 6:</c> Ravensword, we are still understrength. What assets are available?
-Param/Value/FCAFFDED=
 Param/Value/FCC5F8FB=<c val="0080C0">TL:</c> Attack the <c val="FF8000">
 Param/Value/FCDBD93E=MARPAT camo pattern unlocked.
 Param/Value/FD00DAD9=<s val="ArcadeFighterScoreTitle">Chapter 3</s><n/>
@@ -3503,6 +4166,7 @@ Param/Value/FFAA1EA4=<c val="FF8000">Time-Stop reverted.</c>
 Param/Value/FFC7D2D4=<n/>
 Param/Value/FFC99F4C=<c val="0080C0">Generator powered.</c>
 Param/Value/FFD700FD=<s val="AiurChefCenterSize22Bold"><c val="008000">Camouflage</c></s>
+Param/Value/FFD7666F=Intellectual
 Param/Value/FFE92F5B=<c val="008000">Ravensword Main:</c> In line with official protocol the sentry guns have been set to self destruct in [%1%] unless placed to prevent unauthorized use.
 RequirementNode/Tooltip/And2304769686GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat4GTECountUpgradeTrainingCompleteOnlyTechTreeCheat4=Leadership & Training 4
 RequirementNode/Tooltip/And2411104750EqCountBehaviorDecloaking1CompleteOnlyAtUnit0EqCountBehaviorDecloaking2CompleteOnlyAtUnit0EqCountBehaviorDecloaking3CompleteOnlyAtUnit0EqCountBehaviorDecloaking4CompleteOnlyAtUnit0EqCountBehaviorDecloaking5CompleteOnlyAtUnit0GTECountAbilGhostSkillsCompleteOnlyAtUnit1=Cloak Delay
@@ -3542,6 +4206,7 @@ RequirementNode/Tooltip/GTE1501146480CountUpgradeEngineeringSkillsCompleteOnly1=
 RequirementNode/Tooltip/GTE1791906363CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat3=Soldier Skills level 3
 RequirementNode/Tooltip/GTE1805456185CountUpgradeCASOnStationCompleteOnly1=CAS On Station
 RequirementNode/Tooltip/GTE1860585296CountUpgradeIDFSupportCompleteOnly2=IDF Support 2
+RequirementNode/Tooltip/GTE1918093729CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21=Level 1: Requires Hero Level 3
 RequirementNode/Tooltip/GTE1921614202CountUpgradeSecurityCompleteOnly1=Security Level 1
 RequirementNode/Tooltip/GTE1979772316CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat2=Ghost Skills level 2
 RequirementNode/Tooltip/GTE1989884963CountAbilCombatEnhancementsCompleteOnlyAtUnit4=Combat Enhancements level 4
@@ -3604,7 +4269,7 @@ Unit/LifeArmorName/ZergBuildingArmor=Building Armor
 Unit/LifeArmorName/ZergGroundArmor=Carapace
 Unit/LifeArmorName/ZergLacertiArmor=Zerg Chitinous Plating
 Unit/Name/40mmGrenade=40mm Grenade
-Unit/Name/40mmGrenadeItem=40mm Grenade Item
+Unit/Name/40mmGrenadeItem=40mm Grenade
 Unit/Name/68WCombatMedic=68W Combat Medic
 Unit/Name/74DFlamethrower=74D Flamethrower
 Unit/Name/AH25Hunter=AH-25 Hunter
@@ -3676,6 +4341,8 @@ Unit/Name/Gargoyle=Gargoyle
 Unit/Name/Generator=Generator
 Unit/Name/Ghost2=Ghost
 Unit/Name/Ghost3=Ghost
+Unit/Name/GhostHero=Ghost
+Unit/Name/GhostMini=Ghost
 Unit/Name/Glutton=Glutton
 Unit/Name/Gourmand=Gourmand
 Unit/Name/Grotesque=Grotesque
@@ -3712,12 +4379,12 @@ Unit/Name/Krill=Krill
 Unit/Name/LLDR=LLDR
 Unit/Name/LMTV=LMTV
 Unit/Name/LNAutoRifle=Infantry Rifleman
-Unit/Name/LNAutomaticRifleman=LN Automatic Rifleman
-Unit/Name/LNCombatEngineer=LN Combat Engineer
-Unit/Name/LNJavelinGunner=LN Javelin Gunner
+Unit/Name/LNAutomaticRifleman=Automatic Rifleman
+Unit/Name/LNCombatEngineer=Combat Engineer
+Unit/Name/LNJavelinGunner=Javelin Gunner
 Unit/Name/LNParent=LN Parent
-Unit/Name/LNRifleman=LN Rifleman
-Unit/Name/LNSquadDesignatedMarksman=LN Squad Designated Marksman
+Unit/Name/LNRifleman=Rifleman
+Unit/Name/LNSquadDesignatedMarksman=Squad Designated Marksman
 Unit/Name/Lacerti=Lacerti
 Unit/Name/Leaper=Leaper
 Unit/Name/Licker=Licker
@@ -3783,7 +4450,7 @@ Unit/Name/SmokeGrenadeItem=Smoke Grenade
 Unit/Name/Sniper=Sniper
 Unit/Name/Spitter=Spitter
 Unit/Name/SquadDesignatedMarksman=Squad Designated Marksman
-Unit/Name/SquadLeaderMini=Squad Leader
+Unit/Name/SquadLeader=Squad Leader
 Unit/Name/StalkerZombie=Stalker
 Unit/Name/StynerBR2=Styner BR-2
 Unit/Name/Swarmer=Swarmer

@@ -3609,7 +3609,7 @@
             <Button DefaultButtonFace="LearnAugmentation"/>
         </InfoArray>
         <InfoArray index="Learn4" Abil="Revive">
-            <Button DefaultButtonFace="Revive"/>
+            <Button DefaultButtonFace="Revive" Requirements="Revive"/>
         </InfoArray>
         <InfoArray index="Learn5" Abil="Marksmanship">
             <Button DefaultButtonFace="Marksmanship"/>

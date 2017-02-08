@@ -111,7 +111,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="FSSBullet"/>
+        <Effect value="FSSLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AssaultRifleJavGunner">
         <EditorCategories value="Race:Terran"/>
@@ -131,7 +131,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="JavelinGunnerBullet"/>
+        <Effect value="JavelinGunnerLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AssaultRiflePL">
         <EditorCategories value="Race:Terran"/>
@@ -188,7 +188,7 @@
         <Period value="1.8"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="DMRBulletMini"/>
+        <Effect value="SDMMiniLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DrakeClaws">
         <EditorCategories value="Race:Zerg"/>
@@ -328,7 +328,7 @@
         <MinScanRange value="22"/>
         <Range value="22"/>
         <Period value="1.6"/>
-        <Effect value="DMRLaunchLN"/>
+        <Effect value="SDMLNLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MachineGunCyborg">
         <EditorCategories value="Race:Terran"/>
@@ -424,7 +424,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="PlasmaRifleMissileHero"/>
+        <Effect value="GhostLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PlasmaRifleCryo">
         <EditorCategories value="Race:Terran"/>
@@ -444,7 +444,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="PlasmaRifleMissileCryo"/>
+        <Effect value="GhostCryoLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PlasmaRifleDisruptor">
         <EditorCategories value="Race:Terran"/>
@@ -464,7 +464,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="PlasmaRifleMissileDis"/>
+        <Effect value="GhostDisLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PlasmaRifleIncendiary">
         <EditorCategories value="Race:Terran"/>
@@ -484,7 +484,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="PlasmaRifleMissileInc"/>
+        <Effect value="GhostDisLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ApiarySpores">
         <EditorCategories value="Race:Zerg"/>
@@ -530,7 +530,7 @@
         <Period value="1.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="CombatEngineerShotgun"/>
+        <Effect value="CombatEngineerLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SpitterSpit">
         <EditorCategories value="Race:Zerg"/>
@@ -671,7 +671,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="CombatMedicBullet"/>
+        <Effect value="CombatMedicLaunchSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AssaultRifle3">
@@ -712,7 +712,7 @@
         <Period value="0.25"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="CavBullet"/>
+        <Effect value="CavalryScoutLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DesignatedMarksmanRifle">
         <EditorCategories value="Race:Terran"/>
@@ -732,7 +732,7 @@
         <Period value="1.6"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="DMRBullet"/>
+        <Effect value="SDMLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BruchusClaws">
         <EditorCategories value="Race:Zerg"/>
@@ -843,7 +843,7 @@
         <Period value="1.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="SFAATShotgun"/>
+        <Effect value="SFAATLaunchSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
         <DisplayEffect value="ShotgunSFAATDamage"/>
     </CWeaponLegacy>
@@ -870,7 +870,7 @@
         <MinScanRange value="15"/>
         <Range value="15"/>
         <Period value="0.3"/>
-        <Effect value="LNAssaultRifleBullet"/>
+        <Effect value="RiflemanLNLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ImmussilusClaws">
         <EditorCategories value="Race:Zerg"/>
@@ -898,7 +898,7 @@
         <Period value="0.35"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="JavGunnerBullet"/>
+        <Effect value="JavelinGunnerMiniLaunchSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LeaperClaws">
@@ -927,7 +927,7 @@
         <MinScanRange value="10.5"/>
         <Range value="10.5"/>
         <Period value="1.3"/>
-        <Effect value="LNCEShotgunPellet"/>
+        <Effect value="CombatEngineerLNLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Shotgun">
         <EditorCategories value="Race:Terran"/>
@@ -944,7 +944,7 @@
         <Period value="1.4624"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="CombatEngineerMiniShotgun"/>
+        <Effect value="CombatEngineerMiniLaunchSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SniperRifle">
@@ -962,7 +962,7 @@
         <Period value="4.6"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="SniperBullet"/>
+        <Effect value="SniperLaunchSet"/>
         <Options index="DisplayCooldown" value="1"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
     </CWeaponLegacy>
@@ -1175,7 +1175,7 @@
         <Period value="0.325"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="InfantryRiflemanBullet"/>
+        <Effect value="RiflemanMiniLaunchSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HorrorAcidSpores">
@@ -1242,6 +1242,7 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Buttons\Weapons\MANTEL-75.dds"/>
         <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
         <MinScanRange value="15"/>
         <Range value="15"/>
         <RangeSlop value="3"/>
@@ -1252,8 +1253,7 @@
         <Period value="0.35"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="PoliceOfficerRifleBullet"/>
-        <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <Effect value="PoliceOfficerRifleLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MutantClaws">
         <EditorCategories value="Race:Zerg"/>
@@ -1279,7 +1279,7 @@
         <Period value="1.5"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="PoliceOfficerRifleShotgunBullet"/>
+        <Effect value="PoliceOfficerShotgunLaunchSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TarantulaFangs">
@@ -1371,7 +1371,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="RiflemanBullet"/>
+        <Effect value="RiflemanLaunchSet"/>
         <Cost>
             <Resource index="Minerals" value="1"/>
             <Resource index="Custom" value="1"/>

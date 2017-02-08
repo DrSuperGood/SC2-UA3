@@ -73,6 +73,7 @@
     </CItem>
     <CItemAbil id="LLDR">
         <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
         <Class value="Misc"/>
         <Requirements value="CASOnStation"/>
     </CItemAbil>
