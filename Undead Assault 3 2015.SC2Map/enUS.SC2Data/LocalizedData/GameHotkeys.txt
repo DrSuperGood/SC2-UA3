@@ -29,6 +29,7 @@ Button/Hotkey/ClusterRockets=R
 Button/Hotkey/ClusterRocketsLN=R
 Button/Hotkey/ClusterRocketsMini=R
 Button/Hotkey/CognitiveEnhancement=R
+Button/Hotkey/CombatEnhancements=C
 Button/Hotkey/CryoRounds=C
 Button/Hotkey/CycloneMissiles2=R
 Button/Hotkey/Disarm=X

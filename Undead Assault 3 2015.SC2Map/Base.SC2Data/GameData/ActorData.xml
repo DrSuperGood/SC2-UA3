@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CActorUnit id="ColonistShip">
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+    </CActorUnit>
+    <CActorSound id="HunterRoar" parent="SoundOneShot">
+        <On Terms="Effect.HunterRoar.Start" Send="Create"/>
+    </CActorSound>
     <CActorUnit id="68WCombatMedic" parent="GenericUnitBase" unitName="68WCombatMedic">
         <Macros value="UnloadDropAnim"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
@@ -800,8 +807,8 @@
         <Macros value="ZergBurrowStandardAnimMacro"/>
         <Macros value="ZergSmallBurrowEffects"/>
         <On index="50" Terms="ActorCreation" Send="Create InfestedCivilian_Moan"/>
-        <On index="51" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="52" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="51" Terms="WeaponStart.GargoyleClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="52" Terms="WeaponStop.GargoyleClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
         <On index="55" removed="1"/>
@@ -1030,6 +1037,10 @@
         <On index="6" Terms="Signal.*.TreeCreep" Send="AnimBracketStart Death Death,Creep Dead,Creep IGNORE"/>
         <On index="7" removed="1"/>
     </CActorDoodad>
+    <CActorSound id="LeaperJump" parent="SoundOneShot">
+        <On Terms="Effect.LeapLaunchMissile.Launch" Send="Create"/>
+        <Sound value="LeaperLeap"/>
+    </CActorSound>
     <CActorUnit id="InfantryRifleman" parent="GenericUnitBase" unitName="InfantryRifleman">
         <Macros value="UnloadDropAnim"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
@@ -1879,7 +1890,7 @@
             <Image value="Assets\Textures\Wireframe-Terran-Marine.dds"/>
         </Wireframe>
     </CActorUnit>
-    <CActorUnit id="SquadLeader2" parent="GenericUnitBase" unitName="SquadLeaderMini">
+    <CActorUnit id="SquadLeader2" parent="GenericUnitBase" unitName="SquadLeader">
         <Macros value="UnloadDropAnim"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.AssaultRifleSLMini; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
@@ -2782,9 +2793,6 @@
         <SoundArray index="Attack" value="InfestedSwarm_Attack"/>
         <SoundArray index="Pissed" value="InfestedSwarm_Pissed"/>
         <SoundArray index="Movement" value="Evolution_SwarmHostLocust_Single"/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,128,0"/>
-        </StatusColors>
         <UnitFlags index="StandAnimBirthVariation" value="0"/>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
         <VitalColors index="Shields">
@@ -2841,9 +2849,6 @@
         <Wireframe>
             <Image value="Assets\Textures\Wireframe-Critter-MatriarchSnowBeast.dds"/>
         </Wireframe>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,128,0"/>
-        </StatusColors>
         <VitalColors index="Shields">
             <ColorArray value="255,0,128,0"/>
         </VitalColors>
@@ -3112,9 +3117,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedgaurdian.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-lurker.dds"/>
@@ -3131,8 +3133,8 @@
         <On index="2" Terms="UnitRevive.ArachnidMother"/>
         <On index="3" Terms="UnitConstruction.ArachnidMother.Start"/>
         <On index="4" Terms="UnitConstruction.ArachnidMother.Finish"/>
-        <On index="50" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="51" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="50" Terms="WeaponStart.MotherFangs.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.MotherFangs.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -3225,16 +3227,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-lurker.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-lurker.dds"/>
@@ -3251,8 +3243,8 @@
         <On index="2" Terms="UnitRevive.Cacumen"/>
         <On index="3" Terms="UnitConstruction.Cacumen"/>
         <On index="4" Terms="UnitConstruction.Cacumen"/>
-        <On index="50" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="51" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="50" Terms="WeaponStart.CacumenSledge.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.CacumenSledge.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -3345,9 +3337,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
         <WalkAnimMoveSpeed value="45"/>
     </CActorUnit>
     <CActorUnit id="Creeper" parent="Zergling" unitName="Creeper">
@@ -3362,8 +3351,8 @@
         <On index="3" Terms="UnitConstruction.Creeper.Start"/>
         <On index="4" Terms="UnitConstruction.Creeper.Finish"/>
         <On index="5" Terms="UnitConstruction.Creeper.Finish"/>
-        <On index="50" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="51" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="50" Terms="WeaponStart.CreeperClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.CreeperClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -3456,9 +3445,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Darreus" parent="Zergling" unitName="Darreus">
         <Macros index="2" value="UnloadDropAnim"/>
@@ -3471,8 +3457,8 @@
         <On index="2" Terms="UnitRevive.Darreus"/>
         <On index="3" Terms="UnitConstruction.Darreus"/>
         <On index="4" Terms="UnitConstruction.Darreus"/>
-        <On index="50" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="51" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="50" Terms="WeaponStart.DarreusClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.DarreusClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -3566,16 +3552,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Gargantuan" parent="Zergling" unitName="Gargantuan">
         <Macros index="2" value="UnloadDropAnim"/>
@@ -3588,8 +3564,8 @@
         <On index="2" Terms="UnitRevive.Gargantuan"/>
         <On index="3" Terms="UnitConstruction.Gargantuan"/>
         <On index="4" Terms="UnitConstruction.Gargantuan"/>
-        <On index="50" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="51" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="50" Terms="WeaponStart.GargantuanSledge.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.GargantuanSledge.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -3682,10 +3658,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
-        <WalkAnimMoveSpeed value="15"/>
     </CActorUnit>
     <CActorUnit id="Leaper" parent="Zergling" unitName="Leaper">
         <Macros index="2" value="UnloadDropAnim"/>
@@ -3701,47 +3673,18 @@
         <On index="50" Terms="ActorCreation" Send="SetTintColor 255,62,62"/>
         <On index="51" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
         <On index="52" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
-        <On index="53" removed="1"/>
-        <On index="54" removed="1"/>
-        <On index="55" removed="1"/>
-        <On index="56" removed="1"/>
-        <On index="57" removed="1"/>
-        <On index="58" removed="1"/>
-        <On index="59" removed="1"/>
-        <On index="60" removed="1"/>
-        <On index="61" removed="1"/>
-        <On index="62" removed="1"/>
-        <On index="63" removed="1"/>
-        <On index="64" removed="1"/>
-        <On index="65" removed="1"/>
-        <On index="66" removed="1"/>
-        <On index="67" removed="1"/>
-        <On index="68" removed="1"/>
-        <On index="69" removed="1"/>
-        <On index="70" removed="1"/>
-        <On index="71" removed="1"/>
-        <On index="72" removed="1"/>
-        <On index="73" removed="1"/>
-        <On index="74" removed="1"/>
-        <On index="75" removed="1"/>
-        <On index="76" removed="1"/>
-        <On index="77" removed="1"/>
-        <On index="78" removed="1"/>
-        <On index="79" removed="1"/>
-        <On index="80" removed="1"/>
-        <On index="81" removed="1"/>
-        <On index="82" removed="1"/>
-        <On index="83" removed="1"/>
-        <On index="84" removed="1"/>
-        <On index="85" removed="1"/>
-        <On index="86" removed="1"/>
-        <On index="87" removed="1"/>
-        <On index="88" removed="1"/>
-        <On index="89" removed="1"/>
-        <On index="90" removed="1"/>
-        <On index="91" removed="1"/>
-        <On index="92" removed="1"/>
-        <On index="93" removed="1"/>
+        <On index="53" Terms="Effect.LeapLaunchMissile.Start" Send="AnimBracketStart Jump Jump,Start Jump Jump,End 0 1.000000 AsDuration"/>
+        <On index="54" Terms="Effect.LeapLaunchMissile.Start" Send="AnimBlendTimeApply 0.100000"/>
+        <On index="55" Terms="Effect.LeapLaunchMissile.Start" Send="StatusSet JumpState 1"/>
+        <On index="56" Terms="Effect.LeapEndDummy.Start" Send="AnimBlendTimeApply"/>
+        <On index="57" Terms="Effect.LeapEndDummy.Start" Send="TimerSet 0.200000 LandDownDelay"/>
+        <On index="58" Terms="Effect.LeapEndDummy.Start" Send="StatusSet JumpState 0"/>
+        <On index="59" Terms="TimerExpired; TimerName LandDownDelay" Send="AnimBracketStop Jump"/>
+        <On index="60" Terms="Effect.LeapEndDummy.Start" Send="AnimBlendTimeApply"/>
+        <On index="61" Terms="Effect.LeapEndDummy.Start" Send="TimerSet 0.100000 LandUpDelay"/>
+        <On index="62" Terms="Effect.LeapEndDummy.Start" Send="StatusSet JumpState 0"/>
+        <On index="63" Terms="TimerExpired; TimerName LandUpDelay" Send="AnimBracketStop Jump"/>
+        <On index="64" Terms="Abil.Leap.SourceCastStart" Send="Create Sound"/>
         <Model value="Licker"/>
         <Scale value="1.200000"/>
         <AnimBlendTime value="0.100000"/>
@@ -3793,9 +3736,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Licker" parent="Zergling" unitName="Licker">
         <Macros index="2" value="UnloadDropAnim"/>
@@ -3902,16 +3842,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Tarantula" parent="Zergling" unitName="Tarantula">
         <Macros index="2" value="UnloadDropAnim"/>
@@ -3924,8 +3854,8 @@
         <On index="2" Terms="UnitRevive.Tarantula"/>
         <On index="3" Terms="UnitConstruction.Tarantula.Start"/>
         <On index="4" Terms="UnitConstruction.Tarantula.Finish"/>
-        <On index="50" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="51" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="50" Terms="WeaponStart.TarantulaFangs.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.TarantulaFangs.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -4019,16 +3949,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-lurker.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-lurker.dds"/>
@@ -6995,7 +6915,7 @@
         <On Terms="UnitDeath" Send="Destroy"/>
         <On Terms="UnitBirth.PlatoonLeader" Send="Create"/>
         <On Terms="UnitBirth.Commander" Send="Create"/>
-        <On Terms="UnitBirth.SquadLeaderMini" Send="Create"/>
+        <On Terms="UnitBirth.SquadLeader" Send="Create"/>
         <On Terms="UnitBirth.CavalryScout" Send="Create"/>
         <On Terms="UnitBirth.LNJavelinGunner" Send="Create"/>
         <On Terms="UnitBirth.LNRifleman" Send="Create"/>
@@ -13547,7 +13467,7 @@
             <Image value="Assets\Textures\Wireframe-Terran-Marine.dds"/>
         </Wireframe>
     </CActorUnit>
-    <CActorAction id="PoliceOfficerAttackShotgun" parent="GenericAttack" effectImpact="PoliceOfficerShotgun" effectLaunch="PoliceOfficerRifleShotgunBullet">
+    <CActorAction id="PoliceOfficerAttackShotgun" parent="GenericAttack" effectImpact="PoliceOfficerShotgun" effectLaunch="PoliceOfficerShotgunBullet">
         <LaunchAssets Model="GhostAttackLaunch" Scale="1.500000" Sound="Shotgun_AttackLaunch"/>
         <ContainerAssets Model="MarineBunkerAttackLaunch" Sound="Marine_BunkerAttackLaunch"/>
         <Beam value="HydraliskAttack2Beam"/>
@@ -15967,16 +15887,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-infestedcolonist.dds"/>
@@ -16088,16 +15998,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-infestedcolonist.dds"/>
@@ -16213,16 +16113,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Grotesque" parent="Zergling" unitName="Grotesque">
         <On index="0" Terms="UnitBirth.Grotesque" Send="Create"/>
@@ -16380,9 +16270,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Hopper" parent="Zergling" unitName="Hopper">
         <On index="0" Terms="UnitBirth.Hopper"/>
@@ -16406,8 +16293,8 @@
         <On index="63" Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgradedDeathByEviscerate" Send="DeathCustomize UpgradedEviscerate"/>
         <On index="64" Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgraded" Send="DeathCustomize Upgrade"/>
         <On index="65" Terms="UnitDeathCustomize; ValidateUnit IsKillerPhantasm" Send="DeathCustomize Hallucination"/>
-        <On index="66" removed="1"/>
-        <On index="67" removed="1"/>
+        <On index="66" Terms="WeaponStart.HopperClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="67" Terms="WeaponStop.HopperClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="68" removed="1"/>
         <On index="69" removed="1"/>
         <On index="70" removed="1"/>
@@ -16488,16 +16375,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Livid" parent="Zergling" unitName="Livid">
         <On index="0" Terms="UnitBirth.Livid" Send="Create SoundEmitter Livid_Ambience"/>
@@ -16505,8 +16382,8 @@
         <On index="2" Terms="UnitRevive.Livid"/>
         <On index="3" Terms="UnitConstruction.Livid.Start"/>
         <On index="4" Terms="UnitConstruction.Livid.Finish"/>
-        <On index="50" removed="1"/>
-        <On index="51" removed="1"/>
+        <On index="50" Terms="WeaponStart.LividClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.LividClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -16608,16 +16485,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Crab" parent="Zergling" unitName="Crab">
         <On index="0" Terms="UnitBirth.Crab"/>
@@ -16625,8 +16492,8 @@
         <On index="2" Terms="UnitRevive.Crab"/>
         <On index="3" Terms="UnitConstruction.Crab.Start"/>
         <On index="4" Terms="UnitConstruction.Crab.Finish"/>
-        <On index="50" removed="1"/>
-        <On index="51" removed="1"/>
+        <On index="50" Terms="WeaponStart.CrabSting.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.CrabSting.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -16728,16 +16595,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Hunter" parent="Zergling" unitName="Hunter">
         <On index="0" Terms="UnitBirth.Hunter"/>
@@ -16747,8 +16604,8 @@
         <On index="4" Terms="UnitConstruction.Hunter"/>
         <On index="50" Terms="Behavior.AresChargeDieoff.Create" Send="AnimGroupApply Fast Fast {} Instant"/>
         <On index="51" Terms="Behavior.AresChargeDieoff.Destroy" Send="AnimGroupRemoveAll"/>
-        <On index="52" removed="1"/>
-        <On index="53" removed="1"/>
+        <On index="52" Terms="WeaponStart.HunterFist.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="53" Terms="WeaponStop.HunterFist.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="54" removed="1"/>
         <On index="55" removed="1"/>
         <On index="56" removed="1"/>
@@ -16854,9 +16711,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Bruchus" parent="Zergling" unitName="Bruchus">
         <On index="0" Terms="UnitBirth.Bruchus"/>
@@ -16866,8 +16720,8 @@
         <On index="4" Terms="UnitConstruction.Bruchus"/>
         <On index="46" Send="AnimBracketStart Attack Attack,Cover"/>
         <On index="50" Terms="ActorCreation" Send="SetTintColor 182,207,35"/>
-        <On index="51" removed="1"/>
-        <On index="52" removed="1"/>
+        <On index="51" Terms="WeaponStart.BruchusClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="52" Terms="WeaponStop.BruchusClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
         <On index="55" removed="1"/>
@@ -16972,16 +16826,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Pooch" parent="Zergling" unitName="Pooch">
         <On index="0" Terms="UnitBirth.Pooch"/>
@@ -16993,8 +16837,8 @@
         <On index="51" Terms="ActorCreation" Send="TextureSelectById ZombieNorm"/>
         <On index="52" Terms="ActorCreation" Send="TextureSelectById ZombieSpec"/>
         <On index="53" Terms="ActorCreation" Send="AnimGroupApply Fast"/>
-        <On index="54" removed="1"/>
-        <On index="55" removed="1"/>
+        <On index="54" Terms="WeaponStart.MutantClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="55" Terms="WeaponStop.MutantClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="56" removed="1"/>
         <On index="57" removed="1"/>
         <On index="58" removed="1"/>
@@ -17091,9 +16935,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Spitter" parent="Zergling" unitName="Spitter">
         <On index="0" Terms="UnitBirth.Spitter" Send="Create SoundEmitter Livid_Ambience"/>
@@ -17208,9 +17049,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="StalkerZombie" parent="Zergling" unitName="StalkerZombie">
         <On index="0" Terms="UnitBirth.StalkerZombie" Send="Create SoundEmitter StalkerZombie_Ambience"/>
@@ -17320,16 +17158,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
     </CActorUnit>
     <CActorUnit id="Swollen" parent="Zergling" unitName="Swollen">
@@ -17339,8 +17167,8 @@
         <On index="3" Terms="UnitConstruction.Swollen.Start"/>
         <On index="4" Terms="UnitConstruction.Swollen.Finish"/>
         <On index="50" Terms="ActorCreation.Swollen" Send="SetTintColor 170,255,170"/>
-        <On index="51" removed="1"/>
-        <On index="52" removed="1"/>
+        <On index="51" Terms="WeaponStart.SwollenClaws.AttackStart" Send="AnimBracketStart Attack"/>
+        <On index="52" Terms="WeaponStop.SwollenClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
         <On index="55" removed="1"/>
@@ -17439,16 +17267,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-infestedcolonist.dds"/>
@@ -17677,8 +17495,8 @@
         <On index="59" Terms="UnitDeath" Send="TimerSet 2.200000 death"/>
         <On index="60" Terms="TimerExpired; TimerName death" Send="AnimSetPausedAll"/>
         <On index="61" Terms="TimerExpired; TimerName death" Send="SetOpacity 0.000000 5.000000 op"/>
-        <On index="62" removed="1"/>
-        <On index="63" removed="1"/>
+        <On index="62" Terms="WeaponStart.GluttonAttack.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="63" Terms="WeaponStop.GluttonAttack.AttackStop"/>
         <On index="64" removed="1"/>
         <On index="65" removed="1"/>
         <On index="66" removed="1"/>
@@ -17768,9 +17586,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Boomer" parent="Zergling" unitName="Boomer">
         <On index="0" Terms="UnitBirth.Boomer" Send="Create SoundEmitter Boomer_Ambience"/>
@@ -17779,8 +17594,8 @@
         <On index="3" Terms="UnitConstruction.Boomer.Start"/>
         <On index="4" Terms="UnitConstruction.Boomer.Finish"/>
         <On index="50" Terms="ActorCreation.Boomer" Send="SetTintColor 255,149,149"/>
-        <On index="51" removed="1"/>
-        <On index="52" removed="1"/>
+        <On index="51" Terms="WeaponStart.BoomerClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="52" Terms="WeaponStop.BoomerClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
         <On index="55" removed="1"/>
@@ -17880,9 +17695,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-infestedcolonist.dds"/>
@@ -17894,8 +17706,8 @@
         <On index="2" Terms="UnitRevive.Cursed"/>
         <On index="3" Terms="UnitConstruction.Cursed.Start"/>
         <On index="4" Terms="UnitConstruction.Cursed.Finish"/>
-        <On index="50" removed="1"/>
-        <On index="51" removed="1"/>
+        <On index="50" Terms="WeaponStart.CursedClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.CursedClaws.AttackStop" Send="ActionDamagePhysics"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -17993,16 +17805,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-infestedcolonist.dds"/>
@@ -18030,8 +17832,8 @@
         <On index="63" Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgradedDeathByEviscerate" Send="DeathCustomize UpgradedEviscerate"/>
         <On index="64" Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgraded" Send="DeathCustomize Upgrade"/>
         <On index="65" Terms="UnitDeathCustomize; ValidateUnit IsKillerPhantasm" Send="DeathCustomize Hallucination"/>
-        <On index="66" removed="1"/>
-        <On index="67" removed="1"/>
+        <On index="66" Terms="WeaponStart.RaisuliClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="67" Terms="WeaponStop.RaisuliClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="68" removed="1"/>
         <On index="69" removed="1"/>
         <On index="70" removed="1"/>
@@ -18109,9 +17911,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Charger" parent="Zergling" unitName="Charger">
         <On index="0" Terms="UnitBirth.Charger"/>
@@ -18135,8 +17934,8 @@
         <On index="63" Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgradedDeathByEviscerate" Send="DeathCustomize UpgradedEviscerate"/>
         <On index="64" Terms="UnitDeathCustomize; ValidateUnit ZerglingUpgraded" Send="DeathCustomize Upgrade"/>
         <On index="65" Terms="UnitDeathCustomize; ValidateUnit IsKillerPhantasm" Send="DeathCustomize Hallucination"/>
-        <On index="66" removed="1"/>
-        <On index="67" removed="1"/>
+        <On index="66" Terms="WeaponStart.ChargerClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="67" Terms="WeaponStop.ChargerClaws.AttackStop" Send="ActionDamagePhysics"/>
         <On index="68" removed="1"/>
         <On index="69" removed="1"/>
         <On index="70" removed="1"/>
@@ -18213,9 +18012,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Risen" parent="Zergling" unitName="Risen">
         <On index="0" Terms="UnitBirth.Risen" Send="Create SoundEmitter InfestedCivilian_Moan"/>
@@ -18313,9 +18109,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
         <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
         <Wireframe>
             <Image index="0" value="Assets\Textures\wireframe-zerg-infestedcolonist.dds"/>
@@ -18430,9 +18223,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,0,0,255"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="Thanatos" parent="Zergling" unitName="Thanatos">
         <On index="0" Terms="UnitBirth.Thanatos"/>
@@ -18440,8 +18230,8 @@
         <On index="2" Terms="UnitRevive.Thanatos"/>
         <On index="3" Terms="UnitConstruction.Thanatos"/>
         <On index="4" Terms="UnitConstruction.Thanatos"/>
-        <On index="50" removed="1"/>
-        <On index="51" removed="1"/>
+        <On index="50" Terms="WeaponStart.ThanatosClaws.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="51" Terms="WeaponStop.ThanatosClaws.AttackStop" Send="AnimBracketStop Attack"/>
         <On index="52" removed="1"/>
         <On index="53" removed="1"/>
         <On index="54" removed="1"/>
@@ -18541,16 +18331,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <CActorUnit id="ThresherMaw" parent="Zergling" unitName="ThresherMaw">
         <On index="0" Terms="UnitBirth.ThresherMaw"/>
@@ -18664,16 +18444,6 @@
         <SoundArray index="Click" value=""/>
         <SoundArray index="ClickError" value=""/>
         <SoundArray index="Highlight" value=""/>
-        <StatusColors index="Life" BackgroundColor="100,0,0,0" EmptyColor="100,80,80,80">
-            <ColorArray index="0" value="100,208,34,0"/>
-            <ColorArray index="1" value="100,208,34,0"/>
-            <ColorArray index="2" value="100,229,129,0"/>
-            <ColorArray index="3" value="100,229,129,0"/>
-            <ColorArray index="4" value="100,229,221,0"/>
-            <ColorArray index="5" value="100,229,221,0"/>
-            <ColorArray index="6" value="100,22,229,0"/>
-            <ColorArray index="7" value="100,22,229,0"/>
-        </StatusColors>
     </CActorUnit>
     <!--                                                                                         -->
     <CActorAction id="ZerglingAttack"/>

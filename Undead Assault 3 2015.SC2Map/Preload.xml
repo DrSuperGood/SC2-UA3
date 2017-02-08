@@ -11,23 +11,22 @@
 <Asset path="assets\textures\ui_frame_small_base_zerg.dds" Type="Image"/>
 <Asset path="textures\medals\mdlgood conduct medal.dds" Type="Image"/>
 <Asset path="assets\textures\ui_storymode_subtitle_frame.dds" Type="Image"/>
-<Asset path="textures\medals\mdlsilver star.dds" Type="Image"/>
 <Asset path="textures\medals\mdlgold star.dds" Type="Image"/>
 <Asset path="textures\medals\mdlcombat action medal.dds" Type="Image"/>
+<Asset path="textures\medals\mdlsilver star.dds" Type="Image"/>
 <Asset path="assets\textures\btn-tips-hotkeys.dds" Type="Image"/>
 <Asset path="assets\textures\ui_tip_questionmark.dds" Type="Image"/>
 <Asset path="textures\medals\mdlmeritorious service medal.dds" Type="Image"/>
 <Asset path="assets\textures\btn-tips-biosample.dds" Type="Image"/>
-<Asset path="textures\medals\mdlmedal of valor.dds" Type="Image"/>
 <Asset path="assets\textures\ui_mission_frame_massege.dds" Type="Image"/>
+<Asset path="textures\medals\mdlmedal of valor.dds" Type="Image"/>
 <Asset path="assets\textures\btn-techupgrade-terran-fullborecanisterammo.dds" Type="Image"/>
 <Asset path="assets\textures\btn-icon-dominion.dds" Type="Image"/>
 <Asset path="assets\textures\btn-ability-terran-holdfire.dds" Type="Image"/>
 <Asset path="assets\custom icons\icon-mags.dds" Type="Image"/>
-<Asset path="assets\textures\ui_ingame_subpanel2.dds" Type="Image"/>
 <Asset path="assets\textures\fireball_10.dds" Type="Image"/>
-<Asset path="assets\textures\ui_hots_icon_generic_infestation.dds" Type="Image"/>
 <Asset path="assets\textures\btn-research-terran-microfiltering.dds" Type="Image"/>
+<Asset path="assets\textures\ui_hots_icon_generic_infestation.dds" Type="Image"/>
 <Asset path="assets\textures\fireball_10.lvl0" Type="Image"/>
 <Asset path="assets\textures\ui_ingame_hotscampaign_unitstatus_healthbar.dds" Type="Image"/>
 <Asset path="assets\textures\ui_ingame_resourcesharing_frame_message.dds" Type="Image"/>
@@ -249,7 +248,6 @@
 <Behavior id="TimeStopped"/>
 <Behavior id="UnknownBehavior"/>
 <Behavior id="Plus1MS"/>
-<Behavior id="CWClusterRocketsAI"/>
 <Behavior id="Darreus"/>
 <Behavior id="ClusterRocketsAIIgnis"/>
 <Behavior id="BornToLead"/>
@@ -292,7 +290,6 @@
 <Behavior id="Jammed"/>
 <Behavior id="aidummyhelicopterrf"/>
 <Behavior id="aidummychainjag"/>
-<Effect id="ExplosiveChargeDamage"/>
 <Effect id="FlareGunLaunchMissile"/>
 <Effect id="OrbitalSatteliteReconnaissance"/>
 <Effect id="OrbitalStrikeDamage1"/>
@@ -446,7 +443,6 @@
 <Sound id="DarknessFalls"/>
 <Sound id="EarRinging"/>
 <Sound id="IDFIncoming"/>
-<Sound id="LeaperLeap"/>
 <Sound id="NODOff"/>
 <Sound id="NODOn"/>
 <Sound id="OctoCamo"/>
@@ -454,7 +450,6 @@
 <Sound id="CASImpact"/>
 <Sound id="Darkness"/>
 <Sound id="Heartbeat"/>
-<Sound id="HunterRoar"/>
 <Sound id="charginghandle"/>
 <Sound id="noammo"/>
 <Sound id="magout"/>
@@ -495,7 +490,7 @@
 <Unit id="M1Abrams"/>
 <Unit id="M241MMG"/>
 <Unit id="M5MAR"/>
-<Unit id="SquadLeaderMini"/>
+<Unit id="SquadLeader"/>
 <Unit id="TimeStop"/>
 <Unit id="USMCR"/>
 <Unit id="Umbra"/>
@@ -571,6 +566,10 @@
 <Unit id="Thanatos"/>
 <Unit id="Zombie"/>
 <Unit id="Zulu"/>
+<Weapon id="PlasmaRifleCryo"/>
+<Weapon id="PlasmaRifle"/>
+<Weapon id="PlasmaRifleDisruptor"/>
+<Weapon id="PlasmaRifleIncendiary"/>
 <Weapon id="IncendiaryRounds"/>
 <Weapon id="MachineGun"/>
 <Weapon id="30mmChainGun"/>

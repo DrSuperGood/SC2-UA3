@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <!-- Increase Panel Size To Fit Attribute Text -->
+    <Frame type="InfoPanel" name="GameUI/UIContainer/ConsoleUIContainer/InfoPanel" file="GameUI">
+        <Width val="650"/>
+        <Anchor side="Right" relative="$parent" pos="Mid" offset="200"/>
+    </Frame>
+
+    <Frame type="InfoPaneHero" name="GameUI/UIContainer/ConsoleUIContainer/InfoPanel/InfoPaneHero" file="GameUI">
+        <Anchor side="Right" relative="$parent" pos="Min" offset="600"/>
+
+        <Frame type="Label" name="ArmorLabel">
+            <Anchor side="Top" relative="$parent/ArmorIcon" pos="Min" offset="8"/>
+        </Frame>
+
+        <Frame type="Label" name="InfoLabel">
+            <Style val="@@InfoPaneHeroArmor"/>
+            <Anchor side="Top" relative="$parent/ArmorIcon" pos="Max" offset="-15"/>
+            <Anchor side="Left" relative="$parent/ArmorIcon" pos="Min" offset="44"/>
+        </Frame>
+
+        <Frame type="EquipmentIcon" name="ArmorIcon" template="EquipmentIcon/EquipmentIconTemplate">
+            <Width val="32"/>
+            <Height val="32"/>
+            <Texture val="@@UI/ButtonBorderNormal" Layer="1"/>
+            <Anchor side="Top" relative="$parent/WeaponIcon" pos="Max" offset="2"/>
+            <Anchor side="Left" relative="$parent/WeaponIcon" pos="Min" offset="0"/>
+
+            <Frame type="Image" name="EquipmentIconBorder">
+                <Visible val="false"/>
+            </Frame>
+        </Frame>
+
+        <Frame type="Label" name="NameLabel">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="3"/>
+        </Frame>
+
+        <Frame type="Label" name="TypeLabel">
+            <Anchor side="Top" relative="$parent/ExperienceBar" pos="Max" offset="114"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="-20"/>
+            <Visible val="true"/>
+        </Frame>
+
+        <Frame type="EquipmentIcon" name="WeaponIcon" template="EquipmentIcon/EquipmentIconTemplate">
+            <LayerCount val="3"/>
+            <LayerVisible val="false" Layer="2"/>
+            <Anchor side="Top" relative="$parent/ExperienceBar" pos="Max" offset="15"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="-12"/>
+
+            <Frame type="Image" name="EquipmentIconBorder">
+                <Visible val="false"/>
+            </Frame>
+        </Frame>
+
+        <Frame type="Label" name="AttributeLabel1">
+            <Anchor side="Left" relative="$parent/ExperienceBar" pos="Mid" offset="110"/>
+        </Frame>
+
+        <Frame type="Label" name="AttributeLabel2">
+            <Anchor side="Top" relative="$parent/AttributeLabel1" pos="Max" offset="8"/>
+        </Frame>
+
+        <Frame type="Label" name="AttributeLabel3">
+            <Anchor side="Top" relative="$parent/AttributeLabel2" pos="Max" offset="8"/>
+        </Frame>
+    </Frame>
+
+    <!--Hide non hero weapon/armor borders-->
+    <Frame type="EquipmentIcon" name="EquipmentIconTemplate" file="EquipmentIcon">
+        <Frame type="Label" name="LevelLabel">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Image" name="EquipmentIconBorder">
+            <Visible val="false"/>
+        </Frame>
+    </Frame>
+</Desc>

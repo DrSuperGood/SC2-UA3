@@ -426,7 +426,7 @@
     </CRequirement>
     <CRequirement id="Revive">
         <EditorCategories value="Race:Terran,TechType:Ability"/>
-        <NodeArray index="Use" Link="GTECountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21"/>
+        <NodeArray index="Use" Link="GTE1918093729CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21"/>
         <NodeArray index="Show" Link="AndLTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3EqCountUpgrade1LifeCompleteOnly0"/>
     </CRequirement>
     <CRequirement id="AUG05">

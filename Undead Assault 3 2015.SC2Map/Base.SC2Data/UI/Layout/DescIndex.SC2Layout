@@ -2,5 +2,5 @@
 <Desc>
     <Include path="UI/Layout/UA3UILayout.SC2Layout"/>
     <Include path="UI/Layout/CustomUnitStatusBar.SC2Layout"/>
-    <Include path="UI/Layout/WeaponIcon.SC2Layout"/>
+    <Include path="UI/Layout/InfoPanelOverride.SC2Layout"/>
 </Desc>

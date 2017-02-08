@@ -5,6 +5,15 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HunterRoarAI">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <DamageResponse Chance="0.1" Handled="HunterRoar">
+            <Cost>
+                <Cooldown TimeUse="180"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="BWCycloneMissileAI">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -519,6 +528,7 @@
             <StateFlags index="Cloak" value="1"/>
             <StateFlags index="Passive" value="1"/>
         </Modification>
+        <DisableValidatorArray value="NotAttacking"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Charge">
         <InfoIcon value="Buttons/BTNRush.dds"/>
@@ -1727,6 +1737,7 @@
                 </Cost>
             </DeathResponse>
         </Modification>
+        <DisableValidatorArray value="NotAttacking"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Stealth2">
         <Cost>
@@ -2055,6 +2066,7 @@
                 <Cooldown Link="Behavior/Camouflage1"/>
             </Cost>
         </DamageResponse>
+        <DisableValidatorArray value="NotAttacking"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Camouflage3">
         <Alignment value="Positive"/>
@@ -2081,6 +2093,7 @@
                 <Cooldown Link="Behavior/Camouflage1"/>
             </Cost>
         </DamageResponse>
+        <DisableValidatorArray value="NotAttacking"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Camouflage4">
         <Alignment value="Positive"/>
@@ -2107,6 +2120,7 @@
                 <Cooldown Link="Behavior/Camouflage1"/>
             </Cost>
         </DamageResponse>
+        <DisableValidatorArray value="NotAttacking"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Darreus">
         <Cost>
@@ -3485,7 +3499,7 @@
         <DisableValidatorArray value="LNReloadAIEnum"/>
         <DisableValidatorArray value="LNReloadAILowEnergy"/>
         <Period value="5"/>
-        <PeriodicEffect value="LNReloadAIOrder"/>
+        <PeriodicEffect value="NPCReload"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="IncendiaryRound1">
         <InfoIcon value="Buttons\Abilities\BTNIncendiary.dds"/>
@@ -4759,10 +4773,6 @@
         <VeterancyLevelArray MinVeterancyXP="65">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4770,10 +4780,6 @@
         <VeterancyLevelArray MinVeterancyXP="140">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4781,10 +4787,6 @@
         <VeterancyLevelArray MinVeterancyXP="220">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4792,10 +4794,6 @@
         <VeterancyLevelArray MinVeterancyXP="300">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4803,10 +4801,6 @@
         <VeterancyLevelArray MinVeterancyXP="400">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4814,10 +4808,6 @@
         <VeterancyLevelArray MinVeterancyXP="520">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4825,10 +4815,6 @@
         <VeterancyLevelArray MinVeterancyXP="635">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4836,10 +4822,6 @@
         <VeterancyLevelArray MinVeterancyXP="750">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4847,10 +4829,6 @@
         <VeterancyLevelArray MinVeterancyXP="885">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4858,10 +4836,6 @@
         <VeterancyLevelArray MinVeterancyXP="1010">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4869,10 +4843,6 @@
         <VeterancyLevelArray MinVeterancyXP="1200">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4880,10 +4850,6 @@
         <VeterancyLevelArray MinVeterancyXP="1360">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4891,10 +4857,6 @@
         <VeterancyLevelArray MinVeterancyXP="1490">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4902,10 +4864,6 @@
         <VeterancyLevelArray MinVeterancyXP="1630">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4913,10 +4871,6 @@
         <VeterancyLevelArray MinVeterancyXP="1810">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4924,10 +4878,6 @@
         <VeterancyLevelArray MinVeterancyXP="1980">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4935,10 +4885,6 @@
         <VeterancyLevelArray MinVeterancyXP="2115">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4946,10 +4892,6 @@
         <VeterancyLevelArray MinVeterancyXP="2350">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4957,10 +4899,6 @@
         <VeterancyLevelArray MinVeterancyXP="2525">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
@@ -4968,10 +4906,6 @@
         <VeterancyLevelArray MinVeterancyXP="2800">
             <Modification>
                 <DeathResponse>
-                    <Cost>
-                        <Charge Link="" Location="Abil"/>
-                        <Cooldown Link="" Location="Abil"/>
-                    </Cost>
                     <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>

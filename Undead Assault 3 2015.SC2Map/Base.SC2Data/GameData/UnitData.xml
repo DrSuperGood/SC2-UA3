@@ -264,15 +264,21 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="ApplyAI"/>
     </CUnit>
     <CUnit id="AH25Hunter" parent="Banshee">
         <Name value="Unit/Name/AH25Hunter"/>
         <Description value="Button/Tooltip/AH25Hunter"/>
+        <FlagArray index="UseLineOfSight" value="0"/>
         <Attributes index="Light" value="0"/>
         <Attributes index="Armored" value="1"/>
         <LifeStart value="1100"/>
         <LifeMax value="1100"/>
         <LifeArmor value="6"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
+        <Speed value="3.25"/>
         <StationaryTurningRate value="180"/>
         <TurningRate value="180"/>
         <Sight value="15"/>
@@ -299,11 +305,6 @@
         <GlossaryWeakArray index="0" removed="1"/>
         <GlossaryWeakArray index="1" removed="1"/>
         <GlossaryWeakArray index="2" removed="1"/>
-        <EnergyStart value="0"/>
-        <EnergyMax value="0"/>
-        <EnergyRegenRate value="0"/>
-        <Speed value="3.25"/>
-        <FlagArray index="UseLineOfSight" value="0"/>
     </CUnit>
     <CUnit id="Archon">
         <AbilArray index="6" removed="1"/>
@@ -512,12 +513,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="CasterDummy">
         <Race value="Terr"/>
@@ -590,6 +591,7 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
@@ -606,7 +608,6 @@
             <Charge Link="FragGrenade/Revive"/>
             <Cooldown Link="FragGrenade/Revive"/>
         </ReviveInfoBase>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="CombatEngineer">
         <Description value="Button/Tooltip/12BCombatEngineer"/>
@@ -1589,6 +1590,7 @@
         <Mob value="Campaign"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <PlaneArray index="Ground" value="1"/>
+        <PushPriority value="20"/>
         <Collide index="Ground" value="1"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Biological" value="1"/>
@@ -1629,7 +1631,6 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <GlossaryCategory value="Unit/Category/ZergUnits"/>
         <GlossaryPriority value="95"/>
-        <PushPriority value="20"/>
     </CUnit>
     <CUnit id="HopperPlaceholder" parent="PLACEHOLDER">
         <DeathRevealRadius value="3"/>
@@ -1655,12 +1656,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="ICBMSilo">
         <Description value=""/>
@@ -1788,6 +1789,20 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="ApplyAI"/>
+    </CUnit>
+    <CUnit id="InfestedCivilian">
+        <LifeStart value="160"/>
+        <LifeMax value="160"/>
+        <LifeRegenRate value="1"/>
+        <Speed value="2"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
+        <KillXP value="4"/>
+        <AbilArray index="3" removed="1"/>
+        <WeaponArray index="0" Link="MutantClaws"/>
+        <SeparationRadius value="0.5"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
     </CUnit>
     <CUnit id="LNSquadDesignatedMarksman" parent="LNParent">
         <Name value="Unit/Name/LNSquadDesignatedMarksman"/>
@@ -1921,12 +1936,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="ISBot" parent="Banshee">
         <Name value="Unit/Name/ISBot"/>
@@ -2212,6 +2227,7 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="ApplyAI"/>
     </CUnit>
     <CUnit id="JavelinGunner2">
         <DeathTime value="-1"/>
@@ -2466,12 +2482,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="M135Minigun" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -2479,12 +2495,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="M1Abrams">
         <DeathRevealRadius value="3"/>
@@ -2614,16 +2630,17 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Morbus" parent="Infestor">
         <Name value="Unit/Name/Morbus"/>
         <Description value="Button/Tooltip/Morbus"/>
+        <PushPriority value="12"/>
         <Attributes index="Psionic" value="0"/>
         <LifeStart value="1200"/>
         <LifeMax value="1200"/>
@@ -2664,7 +2681,6 @@
         <GlossaryWeakArray index="1" removed="1"/>
         <GlossaryWeakArray index="2" removed="1"/>
         <GlossaryWeakArray index="3" removed="1"/>
-        <PushPriority value="12"/>
     </CUnit>
     <CUnit id="MotionSensor" parent="AutoTurret">
         <Name value="Unit/Name/MotionSensor"/>
@@ -3028,6 +3044,7 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
@@ -3037,7 +3054,6 @@
         <HotkeyAlias value="FragGrenade"/>
         <SelectAlias value="FragGrenade"/>
         <SubgroupAlias value="FragGrenade"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="SOFAR" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -3045,12 +3061,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="SatchelChargeCE" parent="AutoTurret">
         <Name value="Unit/Name/SatchelChargeCE"/>
@@ -3097,12 +3113,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Shell" parent="MISSILE">
         <Race value="Terr"/>
@@ -3112,7 +3128,7 @@
         <Race value="Terr"/>
         <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
     </CUnit>
-    <CUnit id="SquadLeaderMini">
+    <CUnit id="SquadLeader">
         <DeathRevealRadius value="3"/>
         <Race value="Terr"/>
         <Mob value="Multiplayer"/>
@@ -3250,12 +3266,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Umbra" parent="Ghost">
         <Name value="Unit/Name/Umbra"/>
@@ -3266,14 +3282,17 @@
         <Attributes index="Massive" value="1"/>
         <LifeStart value="900"/>
         <LifeMax value="900"/>
+        <LifeRegenRate value="0.5"/>
         <Speed value="3.5"/>
         <Sight value="15"/>
+        <KillXP value="60"/>
         <AbilArray index="3" Link="IonCannonGhost"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
         <AbilArray index="8" removed="1"/>
+        <BehaviorArray Link="IonCannonAI"/>
         <WeaponArray index="0" Link="UmbraRifle"/>
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
@@ -3297,9 +3316,6 @@
             <Charge Link="Umbra/Revive"/>
             <Cooldown Link="Umbra/Revive"/>
         </ReviveInfoBase>
-        <LifeRegenRate value="0.5"/>
-        <KillXP value="60"/>
-        <BehaviorArray Link="IonCannonAI"/>
     </CUnit>
     <CUnit id="Unburied">
         <DeathRevealRadius value="3"/>
@@ -3327,6 +3343,7 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
+        <BehaviorArray Link="KeenSense"/>
         <WeaponArray Link="UnburiedClaws"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -3342,7 +3359,6 @@
         <MinimapRadius value="0.375"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <TacticalAI value="InfestedCivilian"/>
-        <BehaviorArray Link="KeenSense"/>
     </CUnit>
     <CUnit id="Vesania" parent="Marauder">
         <Name value="Unit/Name/Vesania"/>
@@ -3353,6 +3369,7 @@
         <LifeMax value="2500"/>
         <LifeArmor value="10"/>
         <Speed value="2.8515"/>
+        <KillXP value="65"/>
         <BehaviorArray Link="VesaniaExplode"/>
         <WeaponArray index="0" Link="VesaniaGrenadeLauncher"/>
         <TacticalAI value="Vesania"/>
@@ -3371,7 +3388,6 @@
             <Charge Link="Vesania/Revive"/>
             <Cooldown Link="Vesania/Revive"/>
         </ReviveInfoBase>
-        <KillXP value="65"/>
     </CUnit>
     <CUnit id="Shocker" parent="Banshee">
         <Name value="Unit/Name/Shocker"/>
@@ -3418,12 +3434,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Metasis">
         <DeathRevealRadius value="3"/>
@@ -3543,12 +3559,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="BioResonator">
         <Description value=""/>
@@ -3619,12 +3635,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="MonoWire" parent="MISSILE">
         <Name value="Unit/Name/HydraliskGroundWeapon"/>
@@ -3653,12 +3669,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="FlamethrowerFlame" parent="MISSILE">
         <Name value="Unit/Name/HydraliskGroundWeapon"/>
@@ -4067,6 +4083,7 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
+        <BehaviorArray Link="KeenSense"/>
         <WeaponArray Link="ImmussilusClaws"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -4077,14 +4094,13 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
         </CardLayouts>
         <Radius value="1"/>
+        <SeparationRadius value="1"/>
         <CargoSize value="1"/>
         <SubgroupPriority value="57"/>
         <MinimapRadius value="0.375"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <GlossaryCategory value="Unit/Category/ZergUnits"/>
         <GlossaryPriority value="95"/>
-        <SeparationRadius value="1"/>
-        <BehaviorArray Link="KeenSense"/>
     </CUnit>
     <CUnit id="LNCombatEngineer" parent="LNParent">
         <Name value="Unit/Name/LNCombatEngineer"/>
@@ -4122,6 +4138,8 @@
     </CUnit>
     <CUnit id="LNRifleman" parent="LNParent">
         <Name value="Unit/Name/LNRifleman"/>
+        <EnergyStart value="60"/>
+        <EnergyMax value="60"/>
         <AbilArray Link="MiniInventoryRifle"/>
         <AbilArray Link="FiremodeLN"/>
         <AbilArray Link="FragGrenadeLN"/>
@@ -4139,8 +4157,6 @@
             <LayoutButtons Face="FiremodeBurst" Type="AbilCmd" AbilCmd="FiremodeLN,On" Row="1" Column="1"/>
             <LayoutButtons Face="FiremodeSemi" Type="AbilCmd" AbilCmd="FiremodeLN,Off" Row="1" Column="1"/>
         </CardLayouts>
-        <EnergyStart value="60"/>
-        <EnergyMax value="60"/>
     </CUnit>
     <CUnit id="LNAutomaticRifleman" parent="LNParent">
         <Name value="Unit/Name/LNAutomaticRifleman"/>
@@ -4163,6 +4179,8 @@
     </CUnit>
     <CUnit id="LNJavelinGunner" parent="LNParent">
         <Name value="Unit/Name/LNJavelinGunner"/>
+        <EnergyStart value="60"/>
+        <EnergyMax value="60"/>
         <AbilArray Link="MiniInventoryRifle"/>
         <AbilArray Link="FiremodeLN"/>
         <AbilArray Link="HERocketLN"/>
@@ -4180,8 +4198,6 @@
             <LayoutButtons Face="FiremodeBurst" Type="AbilCmd" AbilCmd="FiremodeLN,On" Row="1" Column="1"/>
             <LayoutButtons Face="FiremodeSemi" Type="AbilCmd" AbilCmd="FiremodeLN,Off" Row="1" Column="1"/>
         </CardLayouts>
-        <EnergyStart value="60"/>
-        <EnergyMax value="60"/>
     </CUnit>
     <CUnit id="M41SAW" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -4264,6 +4280,7 @@
         <Collide index="Structure" value="0"/>
         <Collide index="RoachBurrow" value="0"/>
         <Collide index="ForceField" value="0"/>
+        <EffectArray index="Death" value="ExplosiveChargeDamage"/>
     </CUnit>
     <CUnit id="FieldCamera" parent="AutoTurret">
         <Name value="Unit/Name/FieldCamera"/>
@@ -4313,12 +4330,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <Attributes index="Psionic" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Casualty" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -4470,12 +4487,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="MGL" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -4483,12 +4500,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="40mmGrenadeItem" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -4496,13 +4513,13 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
         <Item value="40mmGrenade"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="FlareGun" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -5052,13 +5069,13 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
         <Item value="SmokeGrenade"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="InfantryAutomaticRifleman">
         <DeathRevealRadius value="3"/>
@@ -5192,6 +5209,7 @@
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventoryShotgun"/>
         <AbilArray Link="Prone"/>
+        <BehaviorArray Link="XPSharing"/>
         <WeaponArray Link="Shotgun"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -5239,7 +5257,7 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="XPSharing"/>
+        <EffectArray index="Birth" value="ApplyAI"/>
     </CUnit>
     <CUnit id="Planet">
         <Description value=""/>
@@ -5318,6 +5336,7 @@
         <AbilArray Link="Binoculars"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="Prone"/>
+        <BehaviorArray Link="XPSharing"/>
         <WeaponArray Link="SniperRifle"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -5365,7 +5384,6 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="XPSharing"/>
     </CUnit>
     <CUnit id="MetalGateStraightHorizontalBF">
         <FlagArray index="Invulnerable" value="1"/>
@@ -5394,6 +5412,7 @@
         <CostResource index="Minerals" value="200"/>
         <AttackTargetPriority value="11"/>
         <KillXP value="15"/>
+        <EffectArray index="Death" value="PlagueVectorDeath"/>
         <Radius value="1.75"/>
         <SeparationRadius value="2"/>
         <Footprint value="Footprint3x3Contour"/>
@@ -5492,12 +5511,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="KineticIntegrator" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -5505,12 +5524,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Krill">
         <DeathRevealRadius value="3"/>
@@ -5535,6 +5554,7 @@
         <Sight value="15"/>
         <Height value="2"/>
         <VisionHeight value="3"/>
+        <Food value="-1"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
@@ -5542,6 +5562,7 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
+        <BehaviorArray Link="KeenSense2"/>
         <WeaponArray Link="KrillBite"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -5557,8 +5578,6 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <GlossaryCategory value="Unit/Category/ZergUnits"/>
         <GlossaryPriority value="95"/>
-        <Food value="-1"/>
-        <BehaviorArray Link="KeenSense2"/>
     </CUnit>
     <CUnit id="CombatMedic">
         <Description value="Button/Tooltip/68WCombatMedic"/>
@@ -5708,7 +5727,6 @@
             <LayoutButtons Face="ImprovedAnabolicPerformanceEnhancement" Type="AbilCmd" AbilCmd="ImprovedAnabolicPerformanceEnhancement,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="AnabolicPerformanceEnhancement" Type="AbilCmd" AbilCmd="AnabolicPerformanceEnhancement,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Revive" Type="AbilCmd" AbilCmd="Revive,Execute" Row="2" Column="4"/>
-            <LayoutButtons Face="Marksmanship" Type="Passive" Requirements="MarksmanshipMedic1M" Row="2" Column="4"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
@@ -5801,12 +5819,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="AutomaticRifleman">
         <DeathTime value="-1"/>
@@ -6094,12 +6112,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Turned">
         <DeathRevealRadius value="3"/>
@@ -6118,6 +6136,7 @@
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
         <Sight value="15"/>
+        <Food value="-1"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
@@ -6126,6 +6145,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <WeaponArray Link="TurnedClaws"/>
+        <EffectArray index="Death" value="ZombieRiseDeath"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Row="0" Column="0"/>
@@ -6145,7 +6165,6 @@
         <GlossaryWeakArray value="Bunker"/>
         <GlossaryWeakArray value="Firebat"/>
         <GlossaryWeakArray value="Hellion"/>
-        <Food value="-1"/>
     </CUnit>
     <CUnit id="Shredder">
         <DeathRevealRadius value="3"/>
@@ -6169,6 +6188,7 @@
         <Sight value="15"/>
         <Height value="2"/>
         <VisionHeight value="3"/>
+        <Food value="-1"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
@@ -6176,6 +6196,7 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
+        <BehaviorArray Link="KeenSense2"/>
         <WeaponArray Link="ShredderClaws"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -6186,15 +6207,13 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
         </CardLayouts>
         <Radius value="0.6875"/>
+        <SeparationRadius value="0.7"/>
         <CargoSize value="1"/>
         <SubgroupPriority value="57"/>
         <MinimapRadius value="0.375"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <GlossaryCategory value="Unit/Category/ZergUnits"/>
         <GlossaryPriority value="95"/>
-        <Food value="-1"/>
-        <SeparationRadius value="0.7"/>
-        <BehaviorArray Link="KeenSense2"/>
     </CUnit>
     <CUnit id="HK42" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -6202,12 +6221,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Gargoyle">
         <DeathRevealRadius value="3"/>
@@ -6231,6 +6250,7 @@
         <Sight value="15"/>
         <Height value="2"/>
         <VisionHeight value="3"/>
+        <Food value="-1"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
@@ -6238,6 +6258,7 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
+        <BehaviorArray Link="KeenSense2"/>
         <WeaponArray Link="GargoyleClaws"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -6248,15 +6269,13 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
         </CardLayouts>
         <Radius value="0.6875"/>
+        <SeparationRadius value="0.7"/>
         <CargoSize value="1"/>
         <SubgroupPriority value="57"/>
         <MinimapRadius value="0.375"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <GlossaryCategory value="Unit/Category/ZergUnits"/>
         <GlossaryPriority value="95"/>
-        <Food value="-1"/>
-        <SeparationRadius value="0.7"/>
-        <BehaviorArray Link="KeenSense2"/>
     </CUnit>
     <CUnit id="OPA" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -6264,12 +6283,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="PoliceOfficerShotgun">
         <DeathRevealRadius value="3"/>
@@ -6309,6 +6328,7 @@
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="Jump"/>
+        <BehaviorArray Link="XPSharing"/>
         <WeaponArray Link="PoliceOfficerShotgun"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -6349,7 +6369,6 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="XPSharing"/>
     </CUnit>
     <CUnit id="SPCS" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -6357,26 +6376,26 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="StynerBR2" parent="ITEM">
+        <Description value="Button/Tooltip/StynerBR-2"/>
         <FlagArray index="Unclickable" value="0"/>
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Description value="Button/Tooltip/StynerBR-2"/>
     </CUnit>
     <CUnit id="MK44SentryGun2" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -6471,12 +6490,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="GroundFlare">
         <Race value="Terr"/>
@@ -6606,6 +6625,7 @@
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="Jump"/>
+        <BehaviorArray Link="XPSharing"/>
         <WeaponArray Link="PoliceOfficerRifle"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -6646,7 +6666,6 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="XPSharing"/>
     </CUnit>
     <CUnit id="Mayor">
         <DeathRevealRadius value="3"/>
@@ -6700,6 +6719,10 @@
         <Footprint value="Footprint4x4"/>
         <PlacementFootprint value="Footprint4x4"/>
         <FlagArray index="Invulnerable" value="1"/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Colossus" value="0"/>
+        <Collide index="Structure" value="0"/>
     </CUnit>
     <CUnit id="ColonistShipFlying">
         <LifeStart value="1200"/>
@@ -6827,6 +6850,7 @@
         <Mover value="Fly"/>
     </CUnit>
     <CUnit id="Glutton">
+        <DeathTime value="4.5"/>
         <DeathRevealRadius value="3"/>
         <Race value="Zerg"/>
         <Mob value="Campaign"/>
@@ -6842,7 +6866,10 @@
         <Speed value="2.1992"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
         <Sight value="15"/>
+        <Food value="-1"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
@@ -6867,10 +6894,6 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <GlossaryCategory value="Unit/Category/ZergUnits"/>
         <GlossaryPriority value="95"/>
-        <StationaryTurningRate value="360"/>
-        <TurningRate value="360"/>
-        <Food value="-1"/>
-        <DeathTime value="4.5"/>
     </CUnit>
     <CUnit id="Magazines" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -6904,12 +6927,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <Attributes index="Psionic" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="MetalGateDiagonalULBR">
         <FlagArray index="Invulnerable" value="1"/>
@@ -6920,13 +6943,13 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
         <Item value="SalineSyringe"/>
-        <Attributes index="Psionic" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Civilian">
         <LifeStart value="200"/>
@@ -7099,19 +7122,6 @@
         <Speed value="1.6484"/>
         <LifeRegenRate value="0.5"/>
     </CUnit>
-    <CUnit id="InfestedCivilian">
-        <LifeStart value="160"/>
-        <LifeMax value="160"/>
-        <LifeRegenRate value="1"/>
-        <Speed value="2"/>
-        <KillXP value="4"/>
-        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
-        <Sight value="15"/>
-        <AbilArray index="3" removed="1"/>
-        <SeparationRadius value="0.5"/>
-        <WeaponArray index="0" Link="MutantClaws"/>
-        <Food value="-1"/>
-    </CUnit>
     <CUnit id="InfantryRifleman">
         <DeathRevealRadius value="3"/>
         <Race value="Terr"/>
@@ -7156,6 +7166,7 @@
         <AbilArray Link="FlareGunItem"/>
         <AbilArray Link="FragGrenadeMini"/>
         <AbilArray Link="Prone"/>
+        <BehaviorArray Link="XPSharing"/>
         <WeaponArray Link="InfantryRiflemanRifle"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -7202,7 +7213,6 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="XPSharing"/>
     </CUnit>
     <CUnit id="TerranDropPod">
         <FogVisibility value="Hidden"/>
@@ -7215,8 +7225,12 @@
         <Attributes index="Robotic" value="1"/>
         <LifeStart value="1800"/>
         <LifeMax value="1800"/>
+        <LifeArmor value="10"/>
+        <Sight value="15"/>
+        <KillXP value="50"/>
         <AbilArray index="3" Link="ClusterRocketsCombatWalker"/>
         <BehaviorArray index="0" Link="BurstFire"/>
+        <BehaviorArray Link="CWClusterRocketsAI"/>
         <WeaponArray index="0" Link="CombatWalkerMiniguns"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="ClusterRocketsMini" AbilCmd="ClusterRocketsCombatWalker,Execute" Column="4"/>
@@ -7233,9 +7247,6 @@
             <Charge Link="CombatWalker/Revive"/>
             <Cooldown Link="CombatWalker/Revive"/>
         </ReviveInfoBase>
-        <LifeArmor value="10"/>
-        <Sight value="15"/>
-        <KillXP value="50"/>
     </CUnit>
     <CUnit id="Horror">
         <DeathRevealRadius value="3"/>
@@ -7355,6 +7366,7 @@
         <GlossaryPriority value="126"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TauntDuration index="Dance" value="5"/>
+        <EffectArray index="Birth" value="ApplyAI"/>
     </CUnit>
     <CUnit id="WhitePhosphorous">
         <Race value="Terr"/>
@@ -7381,9 +7393,9 @@
     <CUnit id="Commando" parent="Zergling">
         <Name value="Unit/Name/Commando"/>
         <Description value="Button/Tooltip/Commando"/>
-        <WeaponArray index="0" Link="ImpalingTentacle"/>
         <LifeStart value="600"/>
         <LifeMax value="600"/>
+        <LifeArmor value="4"/>
         <Speed value="2.1992"/>
         <Sight value="15"/>
         <Food value="-1"/>
@@ -7393,6 +7405,7 @@
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <WeaponArray index="0" Link="ImpalingTentacle"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -7404,12 +7417,10 @@
         </CardLayouts>
         <Radius value="0.3125"/>
         <SeparationRadius value="0.5"/>
-        <LifeArmor value="4"/>
     </CUnit>
     <CUnit id="Cougher" parent="Zergling">
         <Name value="Unit/Name/Cougher"/>
         <Description value="Button/Tooltip/Cougher"/>
-        <WeaponArray index="0" Link="RisenClaws"/>
         <LifeStart value="100"/>
         <LifeMax value="100"/>
         <Speed value="1.8007"/>
@@ -7421,6 +7432,7 @@
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <WeaponArray index="0" Link="RisenClaws"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -7446,15 +7458,15 @@
         <LifeRegenRate value="2"/>
         <Mover value="Fly"/>
         <Speed value="2.5"/>
-        <KillXP value="7"/>
-        <WeaponArray index="0" Link="DrakeClaws"/>
         <Sight value="15"/>
         <Food value="-1"/>
+        <KillXP value="7"/>
         <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <WeaponArray index="0" Link="DrakeClaws"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -7476,17 +7488,6 @@
         <LifeRegenRate value="1"/>
         <Mover value="CliffJumper"/>
         <Speed value="3.8007"/>
-        <BehaviorArray Link="HopperJump"/>
-        <WeaponArray index="0" Link="HopperClaws"/>
-        <HotkeyAlias value="Raisuli"/>
-        <SelectAlias value="Hopper"/>
-        <SubgroupAlias value="Hopper"/>
-        <GlossaryStrongArray index="0" removed="1"/>
-        <GlossaryStrongArray index="1" removed="1"/>
-        <GlossaryStrongArray index="2" removed="1"/>
-        <GlossaryWeakArray index="0" removed="1"/>
-        <GlossaryWeakArray index="1" removed="1"/>
-        <GlossaryWeakArray index="2" removed="1"/>
         <Sight value="15"/>
         <Food value="-1"/>
         <KillXP value="3"/>
@@ -7495,6 +7496,8 @@
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="HopperJump"/>
+        <WeaponArray index="0" Link="HopperClaws"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -7506,6 +7509,15 @@
         </CardLayouts>
         <Radius value="0.3125"/>
         <SeparationRadius value="0.5"/>
+        <HotkeyAlias value="Raisuli"/>
+        <SelectAlias value="Hopper"/>
+        <SubgroupAlias value="Hopper"/>
+        <GlossaryStrongArray index="0" removed="1"/>
+        <GlossaryStrongArray index="1" removed="1"/>
+        <GlossaryStrongArray index="2" removed="1"/>
+        <GlossaryWeakArray index="0" removed="1"/>
+        <GlossaryWeakArray index="1" removed="1"/>
+        <GlossaryWeakArray index="2" removed="1"/>
     </CUnit>
     <CUnit id="Livid" parent="Zergling">
         <Name value="Unit/Name/Livid"/>
@@ -7519,9 +7531,25 @@
         <LifeArmor value="15"/>
         <LifeRegenRate value="75"/>
         <Speed value="3.1992"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
         <KillXP value="80"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
         <BehaviorArray Link="KeenSense"/>
         <WeaponArray index="0" Link="LividClaws"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="1"/>
         <SeparationRadius value="1"/>
         <TacticalAI value="Livid"/>
@@ -7534,27 +7562,12 @@
             <Charge Link="Livid/Revive"/>
             <Cooldown Link="Livid/Revive"/>
         </ReviveInfoBase>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
     </CUnit>
     <CUnit id="Minerva" parent="Zergling">
         <Name value="Unit/Name/Minerva"/>
         <Description value="Button/Tooltip/Minerva"/>
         <ReviveType value="Minerva"/>
+        <PushPriority value="15"/>
         <Attributes index="Light" value="0"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Massive" value="1"/>
@@ -7564,6 +7577,7 @@
         <Speed value="3"/>
         <StationaryTurningRate value="360"/>
         <TurningRate value="360"/>
+        <Sight value="15"/>
         <Food value="0"/>
         <KillXP value="300"/>
         <AbilArray index="3" Link="Leap"/>
@@ -7596,8 +7610,6 @@
             <Charge Link="Minerva/Revive"/>
             <Cooldown Link="Minerva/Revive"/>
         </ReviveInfoBase>
-        <PushPriority value="15"/>
-        <Sight value="15"/>
     </CUnit>
     <CUnit id="Crab" parent="Zergling">
         <Name value="Unit/Name/Crab"/>
@@ -7607,25 +7619,15 @@
         <LifeMax value="90"/>
         <LifeRegenRate value="1"/>
         <Speed value="2.6015"/>
-        <KillXP value="10"/>
-        <WeaponArray index="0" Link="CrabSting"/>
-        <TacticalAI value="Crab"/>
-        <LeaderAlias value="Crab"/>
-        <HotkeyAlias value="Crab"/>
-        <SelectAlias value="Crab"/>
-        <SubgroupAlias value="Crab"/>
-        <AIEvaluateAlias value="Crab"/>
-        <ReviveInfoBase>
-            <Charge Link="Crab/Revive"/>
-            <Cooldown Link="Crab/Revive"/>
-        </ReviveInfoBase>
         <Sight value="15"/>
         <Food value="-1"/>
+        <KillXP value="10"/>
         <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <WeaponArray index="0" Link="CrabSting"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -7637,11 +7639,24 @@
         </CardLayouts>
         <Radius value="0.3125"/>
         <SeparationRadius value="0.5"/>
+        <TacticalAI value="Crab"/>
+        <LeaderAlias value="Crab"/>
+        <HotkeyAlias value="Crab"/>
+        <SelectAlias value="Crab"/>
+        <SubgroupAlias value="Crab"/>
+        <AIEvaluateAlias value="Crab"/>
+        <ReviveInfoBase>
+            <Charge Link="Crab/Revive"/>
+            <Cooldown Link="Crab/Revive"/>
+        </ReviveInfoBase>
     </CUnit>
     <CUnit id="Cacumen" parent="Zergling">
         <Name value="Unit/Name/Cacumen"/>
         <ReviveType value="Cacumen"/>
         <PlaneArray index="Air" value="1"/>
+        <PushPriority value="20"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="ForceField" value="0"/>
         <Attributes index="Light" value="0"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Massive" value="1"/>
@@ -7652,8 +7667,25 @@
         <Speed value="3.3984"/>
         <StationaryTurningRate value="360"/>
         <TurningRate value="360"/>
+        <Sight value="15"/>
+        <Food value="0"/>
         <KillXP value="800"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense"/>
         <WeaponArray index="0" Link="CacumenSledge"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="2"/>
         <SeparationRadius value="2"/>
         <TacticalAI value="Cacumen"/>
@@ -7672,26 +7704,6 @@
             <Charge Link="Cacumen/Revive"/>
             <Cooldown Link="Cacumen/Revive"/>
         </ReviveInfoBase>
-        <Food value="0"/>
-        <Collide index="Ground" value="0"/>
-        <Collide index="ForceField" value="0"/>
-        <BehaviorArray Link="KeenSense"/>
-        <PushPriority value="20"/>
-        <Sight value="15"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
     </CUnit>
     <CUnit id="Licker" parent="Zergling">
         <Name value="Unit/Name/Licker"/>
@@ -7701,13 +7713,17 @@
         <LifeMax value="350"/>
         <LifeRegenRate value="4"/>
         <Speed value="2"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
         <KillXP value="9"/>
         <AbilArray index="3" Link="LickerTongue"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense"/>
         <WeaponArray index="0" Link="LickerClaws"/>
+        <EffectArray index="Birth" value="LickerAI"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="NeuralParasite" AbilCmd="LickerTongue,Execute" Column="4"/>
             <LayoutButtons index="6" removed="1"/>
@@ -7717,6 +7733,8 @@
             <LayoutButtons index="10" removed="1"/>
             <LayoutButtons index="11" removed="1"/>
         </CardLayouts>
+        <Radius value="0.3125"/>
+        <SeparationRadius value="0.5"/>
         <TacticalAI value="Licker"/>
         <LeaderAlias value="Licker"/>
         <HotkeyAlias value="Licker"/>
@@ -7727,15 +7745,11 @@
             <Charge Link="Licker/Revive"/>
             <Cooldown Link="Licker/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="KeenSense"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <Radius value="0.3125"/>
-        <SeparationRadius value="0.5"/>
     </CUnit>
     <CUnit id="Gargantuan" parent="Zergling">
         <Name value="Unit/Name/Gargantuan"/>
         <ReviveType value="Gargantuan"/>
+        <PushPriority value="15"/>
         <Attributes index="Light" value="0"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Massive" value="1"/>
@@ -7745,9 +7759,25 @@
         <Speed value="2.8203"/>
         <StationaryTurningRate value="360"/>
         <TurningRate value="360"/>
+        <Sight value="15"/>
         <Food value="0"/>
         <KillXP value="300"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense"/>
         <WeaponArray index="0" Link="GargantuanSledge"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="3"/>
         <SeparationRadius value="3"/>
         <TacticalAI value="Gargantuan"/>
@@ -7766,28 +7796,12 @@
             <Charge Link="Gargantuan/Revive"/>
             <Cooldown Link="Gargantuan/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="KeenSense"/>
-        <PushPriority value="15"/>
-        <Sight value="15"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
     </CUnit>
     <CUnit id="Hunter" parent="Zergling">
         <Name value="Unit/Name/Hunter"/>
         <Description value="Button/Tooltip/Hunter"/>
         <ReviveType value="Hunter"/>
+        <PushPriority value="11"/>
         <Attributes index="Light" value="0"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Massive" value="1"/>
@@ -7798,12 +7812,17 @@
         <Speed value="2.8984"/>
         <StationaryTurningRate value="360"/>
         <TurningRate value="360"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
         <KillXP value="35"/>
         <AbilArray index="3" Link="AresCharge"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense"/>
+        <BehaviorArray Link="UndeadSprintAIAres"/>
+        <BehaviorArray Link="HunterRoarAI"/>
         <WeaponArray index="0" Link="HunterFist"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="Sprint" Type="Undefined" AbilCmd="AresCharge,Execute" Row="0"/>
@@ -7826,11 +7845,6 @@
             <Charge Link="Hunter/Revive"/>
             <Cooldown Link="Hunter/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="KeenSense"/>
-        <BehaviorArray Link="UndeadSprintAIAres"/>
-        <PushPriority value="11"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
     </CUnit>
     <CUnit id="Darreus" parent="Zergling">
         <Name value="Unit/Name/Darreus"/>
@@ -7901,7 +7915,15 @@
         <Speed value="2.8984"/>
         <StationaryTurningRate value="360"/>
         <TurningRate value="360"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
         <KillXP value="20"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense2"/>
         <WeaponArray index="0" Link="BruchusClaws"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="Sprint" Type="Undefined" AbilCmd="AresCharge,Execute" Row="0"/>
@@ -7924,14 +7946,6 @@
             <Charge Link="Bruchus/Revive"/>
             <Cooldown Link="Bruchus/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="KeenSense2"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
     </CUnit>
     <CUnit id="Leaper" parent="Zergling">
         <Name value="Unit/Name/Leaper"/>
@@ -7941,6 +7955,8 @@
         <LifeMax value="375"/>
         <LifeRegenRate value="1"/>
         <Speed value="2.3007"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
         <KillXP value="11"/>
         <AbilArray index="3" Link="Leap"/>
         <AbilArray index="4" removed="1"/>
@@ -7958,6 +7974,7 @@
             <LayoutButtons index="10" removed="1"/>
             <LayoutButtons index="11" removed="1"/>
         </CardLayouts>
+        <Radius value="0.3125"/>
         <SeparationRadius value="0.9"/>
         <TacticalAI value="Leaper"/>
         <LeaderAlias value="Leaper"/>
@@ -7969,9 +7986,6 @@
             <Charge Link="Leaper/Revive"/>
             <Cooldown Link="Leaper/Revive"/>
         </ReviveInfoBase>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <Radius value="0.3125"/>
     </CUnit>
     <CUnit id="Pooch" parent="Zergling">
         <Name value="Unit/Name/Pooch"/>
@@ -7981,8 +7995,25 @@
         <LifeMax value="175"/>
         <LifeRegenRate value="1"/>
         <Speed value="3.3007"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
         <WeaponArray index="0" Link="MutantClaws"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="0.4375"/>
+        <SeparationRadius value="0.5"/>
         <ScoreResult value=""/>
         <TacticalAI value="Charger"/>
         <LeaderAlias value="Pooch"/>
@@ -8002,23 +8033,6 @@
             <Charge Link="Charger/Revive"/>
             <Cooldown Link="Charger/Revive"/>
         </ReviveInfoBase>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
-        <SeparationRadius value="0.5"/>
     </CUnit>
     <CUnit id="Spitter" parent="Zergling">
         <Name value="Unit/Name/Spitter"/>
@@ -8031,9 +8045,25 @@
         <LifeArmor value="10"/>
         <LifeRegenRate value="35"/>
         <Speed value="2"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
         <KillXP value="24"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
         <BehaviorArray Link="SwollenExplode"/>
         <WeaponArray index="0" Link="SpitterSpit"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="1"/>
         <SeparationRadius value="1"/>
         <TacticalAI value="Livid"/>
@@ -8046,22 +8076,6 @@
             <Charge Link="Livid/Revive"/>
             <Cooldown Link="Livid/Revive"/>
         </ReviveInfoBase>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
     </CUnit>
     <CUnit id="StalkerZombie" parent="Zergling">
         <Name value="Unit/Name/StalkerZombie"/>
@@ -8073,6 +8087,8 @@
         <LifeStart value="1400"/>
         <LifeMax value="1400"/>
         <Speed value="3"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
         <KillXP value="15"/>
         <AbilArray index="3" Link="StalkerCharge"/>
         <AbilArray index="4" removed="1"/>
@@ -8102,8 +8118,6 @@
             <Charge Link="StalkerZombie/Revive"/>
             <Cooldown Link="StalkerZombie/Revive"/>
         </ReviveInfoBase>
-        <Sight value="15"/>
-        <Food value="-1"/>
     </CUnit>
     <CUnit id="Swollen" parent="Zergling">
         <Name value="Unit/Name/Swollen"/>
@@ -8111,9 +8125,27 @@
         <ReviveType value="Swollen"/>
         <LifeStart value="425"/>
         <LifeMax value="425"/>
+        <LifeRegenRate value="1.1992"/>
         <Speed value="2.5"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
+        <KillXP value="9"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
         <BehaviorArray Link="SwollenExplode"/>
         <WeaponArray index="0" Link="SwollenClaws"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="1"/>
         <SeparationRadius value="1"/>
         <TacticalAI value="Swollen"/>
@@ -8126,24 +8158,6 @@
             <Charge Link="Swollen/Revive"/>
             <Cooldown Link="Swollen/Revive"/>
         </ReviveInfoBase>
-        <KillXP value="9"/>
-        <LifeRegenRate value="1.1992"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
     </CUnit>
     <CUnit id="Creeper" parent="Zergling">
         <Name value="Unit/Name/Creeper"/>
@@ -8153,25 +8167,16 @@
         <LifeMax value="225"/>
         <LifeRegenRate value="1"/>
         <Speed value="2"/>
-        <KillXP value="6"/>
-        <WeaponArray index="0" Link="CreeperClaws"/>
-        <TacticalAI value="Creeper"/>
-        <LeaderAlias value="Creeper"/>
-        <HotkeyAlias value="Creeper"/>
-        <SelectAlias value="Creeper"/>
-        <SubgroupAlias value="Creeper"/>
-        <AIEvaluateAlias value="Creeper"/>
-        <ReviveInfoBase>
-            <Charge Link="Creeper/Revive"/>
-            <Cooldown Link="Creeper/Revive"/>
-        </ReviveInfoBase>
         <Sight value="15"/>
         <Food value="-1"/>
+        <KillXP value="6"/>
         <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <WeaponArray index="0" Link="CreeperClaws"/>
+        <EffectArray index="Death" value="ZombieRiseDeath"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -8183,6 +8188,16 @@
         </CardLayouts>
         <Radius value="0.3125"/>
         <SeparationRadius value="0.5"/>
+        <TacticalAI value="Creeper"/>
+        <LeaderAlias value="Creeper"/>
+        <HotkeyAlias value="Creeper"/>
+        <SelectAlias value="Creeper"/>
+        <SubgroupAlias value="Creeper"/>
+        <AIEvaluateAlias value="Creeper"/>
+        <ReviveInfoBase>
+            <Charge Link="Creeper/Revive"/>
+            <Cooldown Link="Creeper/Revive"/>
+        </ReviveInfoBase>
     </CUnit>
     <CUnit id="Boomer" parent="Zergling">
         <Name value="Unit/Name/Boomer"/>
@@ -8190,9 +8205,27 @@
         <ReviveType value="Boomer"/>
         <LifeStart value="350"/>
         <LifeMax value="350"/>
+        <LifeRegenRate value="1"/>
         <Speed value="2.6796"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
+        <KillXP value="8"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
         <BehaviorArray Link="BoomerExplode"/>
         <WeaponArray index="0" Link="BoomerClaws"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="0.625"/>
         <SeparationRadius value="1"/>
         <TacticalAI value="Boomer"/>
@@ -8205,15 +8238,27 @@
             <Charge Link="Boomer/Revive"/>
             <Cooldown Link="Boomer/Revive"/>
         </ReviveInfoBase>
-        <KillXP value="8"/>
-        <LifeRegenRate value="1"/>
+    </CUnit>
+    <CUnit id="Cursed" parent="Zergling">
+        <Name value="Unit/Name/Cursed"/>
+        <Description value="Button/Tooltip/Cursed"/>
+        <ReviveType value="Cursed"/>
+        <PushPriority value="11"/>
+        <Attributes index="Light" value="0"/>
+        <Attributes index="Armored" value="1"/>
+        <LifeStart value="3200"/>
+        <LifeMax value="3200"/>
+        <Speed value="2.8007"/>
         <Sight value="15"/>
         <Food value="-1"/>
+        <KillXP value="19"/>
         <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense"/>
+        <WeaponArray index="0" Link="CursedClaws"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -8223,15 +8268,6 @@
             <LayoutButtons index="10" removed="1"/>
             <LayoutButtons index="11" removed="1"/>
         </CardLayouts>
-    </CUnit>
-    <CUnit id="Cursed" parent="Zergling">
-        <Name value="Unit/Name/Cursed"/>
-        <Description value="Button/Tooltip/Cursed"/>
-        <ReviveType value="Cursed"/>
-        <LifeStart value="3200"/>
-        <LifeMax value="3200"/>
-        <Speed value="2.8007"/>
-        <WeaponArray index="0" Link="CursedClaws"/>
         <Radius value="1"/>
         <SeparationRadius value="1"/>
         <TacticalAI value="Cursed"/>
@@ -8244,27 +8280,6 @@
             <Charge Link="Cursed/Revive"/>
             <Cooldown Link="Cursed/Revive"/>
         </ReviveInfoBase>
-        <KillXP value="19"/>
-        <BehaviorArray Link="KeenSense"/>
-        <Attributes index="Light" value="0"/>
-        <Attributes index="Armored" value="1"/>
-        <PushPriority value="11"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
     </CUnit>
     <CUnit id="Tarantula" parent="Zergling">
         <Name value="Unit/Name/Tarantula"/>
@@ -8274,25 +8289,15 @@
         <LifeMax value="40"/>
         <LifeRegenRate value="1"/>
         <Speed value="2.6992"/>
-        <KillXP value="2"/>
-        <WeaponArray index="0" Link="TarantulaFangs"/>
-        <TacticalAI value="Tarantula"/>
-        <LeaderAlias value="Tarantula"/>
-        <HotkeyAlias value="Tarantula"/>
-        <SelectAlias value="Tarantula"/>
-        <SubgroupAlias value="Tarantula"/>
-        <AIEvaluateAlias value="Tarantula"/>
-        <ReviveInfoBase>
-            <Charge Link="Tarantula/Revive"/>
-            <Cooldown Link="Tarantula/Revive"/>
-        </ReviveInfoBase>
         <Sight value="15"/>
         <Food value="-1"/>
+        <KillXP value="2"/>
         <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <WeaponArray index="0" Link="TarantulaFangs"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -8304,48 +8309,40 @@
         </CardLayouts>
         <Radius value="0.3125"/>
         <SeparationRadius value="0.5"/>
+        <TacticalAI value="Tarantula"/>
+        <LeaderAlias value="Tarantula"/>
+        <HotkeyAlias value="Tarantula"/>
+        <SelectAlias value="Tarantula"/>
+        <SubgroupAlias value="Tarantula"/>
+        <AIEvaluateAlias value="Tarantula"/>
+        <ReviveInfoBase>
+            <Charge Link="Tarantula/Revive"/>
+            <Cooldown Link="Tarantula/Revive"/>
+        </ReviveInfoBase>
     </CUnit>
     <CUnit id="Raisuli" parent="Zergling">
         <Name value="Unit/Name/Raisuli"/>
         <Description value="Button/Tooltip/Raisuli"/>
         <ReviveType value="Raisuli"/>
+        <Attributes index="Light" value="0"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Massive" value="1"/>
         <LifeStart value="7000"/>
         <LifeMax value="7000"/>
         <LifeRegenRate value="1"/>
         <Speed value="2.6992"/>
-        <KillXP value="75"/>
-        <WeaponArray index="0" Link="RaisuliClaws"/>
-        <TacticalAI value="Raisuli"/>
-        <LeaderAlias value="Raisuli"/>
-        <HotkeyAlias value="Raisuli"/>
-        <SelectAlias value="Raisuli"/>
-        <SubgroupAlias value="Raisuli"/>
-        <AIEvaluateAlias value="Raisuli"/>
-        <ReviveInfoBase>
-            <Charge Link="Raisuli/Revive"/>
-            <Cooldown Link="Raisuli/Revive"/>
-        </ReviveInfoBase>
-        <Attributes index="Light" value="0"/>
-        <Attributes index="Armored" value="1"/>
-        <Attributes index="Massive" value="1"/>
         <StationaryTurningRate value="360"/>
         <TurningRate value="360"/>
-        <Radius value="1"/>
-        <SeparationRadius value="1"/>
-        <GlossaryStrongArray index="0" removed="1"/>
-        <GlossaryStrongArray index="1" removed="1"/>
-        <GlossaryStrongArray index="2" removed="1"/>
-        <GlossaryWeakArray index="0" removed="1"/>
-        <GlossaryWeakArray index="1" removed="1"/>
-        <GlossaryWeakArray index="2" removed="1"/>
-        <BehaviorArray Link="KeenSense"/>
         <Sight value="15"/>
         <Food value="-1"/>
+        <KillXP value="75"/>
         <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense"/>
+        <WeaponArray index="0" Link="RaisuliClaws"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -8355,20 +8352,66 @@
             <LayoutButtons index="10" removed="1"/>
             <LayoutButtons index="11" removed="1"/>
         </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <TacticalAI value="Raisuli"/>
+        <LeaderAlias value="Raisuli"/>
+        <HotkeyAlias value="Raisuli"/>
+        <SelectAlias value="Raisuli"/>
+        <SubgroupAlias value="Raisuli"/>
+        <GlossaryStrongArray index="0" removed="1"/>
+        <GlossaryStrongArray index="1" removed="1"/>
+        <GlossaryStrongArray index="2" removed="1"/>
+        <GlossaryWeakArray index="0" removed="1"/>
+        <GlossaryWeakArray index="1" removed="1"/>
+        <GlossaryWeakArray index="2" removed="1"/>
+        <AIEvaluateAlias value="Raisuli"/>
+        <ReviveInfoBase>
+            <Charge Link="Raisuli/Revive"/>
+            <Cooldown Link="Raisuli/Revive"/>
+        </ReviveInfoBase>
     </CUnit>
     <CUnit id="Arachnathid" parent="Zergling">
         <Name value="Unit/Name/Arachnathid"/>
         <ReviveType value="Arachnathid"/>
+        <PlaneArray index="Air" value="1"/>
+        <PushPriority value="15"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="ForceField" value="0"/>
+        <Collide index="Flying" value="1"/>
         <Attributes index="Light" value="0"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Massive" value="1"/>
         <LifeStart value="15000"/>
         <LifeMax value="15000"/>
         <LifeRegenRate value="4"/>
+        <Mover value="Arachnathid"/>
         <Speed value="3.1992"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
         <Sight value="15"/>
+        <Food value="0"/>
         <KillXP value="235"/>
+        <AbilArray index="3" Link="ArachnathidCharge"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="UndeadChargeAI"/>
+        <BehaviorArray Link="KeenSense"/>
         <WeaponArray index="0" Link="ArachnathidClaws"/>
+        <EffectArray index="Death" value="ArachnathidDeath"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="DeepTunnel" AbilCmd="ArachnathidCharge,Execute" Column="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
+        <Radius value="0"/>
+        <SeparationRadius value="0.5"/>
         <TacticalAI value="Arachnathid"/>
         <LeaderAlias value="Arachnathid"/>
         <HotkeyAlias value="Arachnathid"/>
@@ -8379,33 +8422,6 @@
             <Charge Link="Arachnathid/Revive"/>
             <Cooldown Link="Arachnathid/Revive"/>
         </ReviveInfoBase>
-        <AbilArray index="3" Link="ArachnathidCharge"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" Face="DeepTunnel" AbilCmd="ArachnathidCharge,Execute" Column="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
-        <PlaneArray index="Air" value="1"/>
-        <Collide index="Ground" value="0"/>
-        <Collide index="ForceField" value="0"/>
-        <Collide index="Flying" value="1"/>
-        <Mover value="Arachnathid"/>
-        <StationaryTurningRate value="180"/>
-        <TurningRate value="180"/>
-        <Radius value="0"/>
-        <Food value="0"/>
-        <BehaviorArray Link="UndeadChargeAI"/>
-        <BehaviorArray Link="KeenSense"/>
-        <PushPriority value="15"/>
-        <SeparationRadius value="0.5"/>
     </CUnit>
     <CUnit id="Charger" parent="Zergling">
         <Name value="Unit/Name/Charger"/>
@@ -8417,9 +8433,27 @@
         <LifeMax value="400"/>
         <LifeRegenRate value="1"/>
         <Speed value="2.6992"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
         <KillXP value="24"/>
+        <AbilArray index="3" Link="ChargerCharge"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense2"/>
         <WeaponArray index="0" Link="ChargerClaws"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="Sprint" AbilCmd="ChargerCharge,Execute" Column="4"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="0.4375"/>
+        <SeparationRadius value="0.5"/>
         <TacticalAI value="Charger"/>
         <LeaderAlias value="Charger"/>
         <HotkeyAlias value="Charger"/>
@@ -8430,28 +8464,11 @@
             <Charge Link="Charger/Revive"/>
             <Cooldown Link="Charger/Revive"/>
         </ReviveInfoBase>
-        <AbilArray index="3" Link="ChargerCharge"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" Face="Sprint" AbilCmd="ChargerCharge,Execute" Column="4"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
-        <BehaviorArray Link="KeenSense2"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <SeparationRadius value="0.5"/>
     </CUnit>
     <CUnit id="Ares" parent="Zergling">
         <Name value="Unit/Name/Ares"/>
         <ReviveType value="Ares"/>
+        <PushPriority value="15"/>
         <Attributes index="Light" value="0"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Massive" value="1"/>
@@ -8461,12 +8478,16 @@
         <Speed value="2.8007"/>
         <StationaryTurningRate value="360"/>
         <TurningRate value="360"/>
+        <Sight value="15"/>
+        <Food value="0"/>
         <KillXP value="300"/>
         <AbilArray index="3" Link="AresCharge"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <BehaviorArray Link="KeenSense"/>
+        <BehaviorArray Link="UndeadSprintAIAres"/>
         <WeaponArray index="0" Link="AresFist"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="Sprint" Type="Undefined" AbilCmd="AresCharge,Execute" Row="0"/>
@@ -8489,11 +8510,6 @@
             <Charge Link="Ares/Revive"/>
             <Cooldown Link="Ares/Revive"/>
         </ReviveInfoBase>
-        <Food value="0"/>
-        <BehaviorArray Link="KeenSense"/>
-        <BehaviorArray Link="UndeadSprintAIAres"/>
-        <PushPriority value="15"/>
-        <Sight value="15"/>
     </CUnit>
     <CUnit id="ArachnidMother" parent="Zergling">
         <Name value="Unit/Name/ArachnidMother"/>
@@ -8502,25 +8518,16 @@
         <LifeMax value="700"/>
         <LifeRegenRate value="1"/>
         <Speed value="2.6015"/>
-        <KillXP value="20"/>
-        <WeaponArray index="0" Link="MotherFangs"/>
-        <TacticalAI value="ArachnidMother"/>
-        <LeaderAlias value="ArachnidMother"/>
-        <HotkeyAlias value="ArachnidMother"/>
-        <SelectAlias value="ArachnidMother"/>
-        <SubgroupAlias value="ArachnidMother"/>
-        <AIEvaluateAlias value="ArachnidMother"/>
-        <ReviveInfoBase>
-            <Charge Link="ArachnidMother/Revive"/>
-            <Cooldown Link="ArachnidMother/Revive"/>
-        </ReviveInfoBase>
         <Sight value="15"/>
         <Food value="-1"/>
+        <KillXP value="20"/>
         <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <WeaponArray index="0" Link="MotherFangs"/>
+        <EffectArray index="Death" value="MotherDeath"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -8532,6 +8539,16 @@
         </CardLayouts>
         <Radius value="0.3125"/>
         <SeparationRadius value="0.5"/>
+        <TacticalAI value="ArachnidMother"/>
+        <LeaderAlias value="ArachnidMother"/>
+        <HotkeyAlias value="ArachnidMother"/>
+        <SelectAlias value="ArachnidMother"/>
+        <SubgroupAlias value="ArachnidMother"/>
+        <AIEvaluateAlias value="ArachnidMother"/>
+        <ReviveInfoBase>
+            <Charge Link="ArachnidMother/Revive"/>
+            <Cooldown Link="ArachnidMother/Revive"/>
+        </ReviveInfoBase>
     </CUnit>
     <CUnit id="Risen" parent="Zergling">
         <Name value="Unit/Name/Risen"/>
@@ -8540,7 +8557,24 @@
         <LifeStart value="315"/>
         <LifeMax value="315"/>
         <Speed value="2.1992"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
         <WeaponArray index="0" Link="RisenClaws"/>
+        <EffectArray index="Death" value="ZombieRiseDeath"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+        </CardLayouts>
         <Radius value="0.5"/>
         <SeparationRadius value="0.7"/>
         <TacticalAI value="Risen"/>
@@ -8553,22 +8587,6 @@
             <Charge Link="Risen/Revive"/>
             <Cooldown Link="Risen/Revive"/>
         </ReviveInfoBase>
-        <Sight value="15"/>
-        <Food value="-1"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" removed="1"/>
-            <LayoutButtons index="6" removed="1"/>
-            <LayoutButtons index="7" removed="1"/>
-            <LayoutButtons index="8" removed="1"/>
-            <LayoutButtons index="9" removed="1"/>
-            <LayoutButtons index="10" removed="1"/>
-            <LayoutButtons index="11" removed="1"/>
-        </CardLayouts>
     </CUnit>
     <CUnit id="Eel" parent="Zergling">
         <Name value="Unit/Name/Eel"/>
@@ -8578,25 +8596,15 @@
         <LifeMax value="85"/>
         <LifeRegenRate value="1"/>
         <Speed value="3"/>
-        <KillXP value="2"/>
-        <WeaponArray index="0" Link="EelBite"/>
-        <TacticalAI value="Eel"/>
-        <LeaderAlias value="Eel"/>
-        <HotkeyAlias value="Eel"/>
-        <SelectAlias value="Eel"/>
-        <SubgroupAlias value="Eel"/>
-        <AIEvaluateAlias value="Eel"/>
-        <ReviveInfoBase>
-            <Charge Link="Eel/Revive"/>
-            <Cooldown Link="Eel/Revive"/>
-        </ReviveInfoBase>
         <Sight value="15"/>
         <Food value="-1"/>
+        <KillXP value="2"/>
         <AbilArray index="3" removed="1"/>
         <AbilArray index="4" removed="1"/>
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
+        <WeaponArray index="0" Link="EelBite"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -8608,6 +8616,16 @@
         </CardLayouts>
         <Radius value="0.3125"/>
         <SeparationRadius value="0.5"/>
+        <TacticalAI value="Eel"/>
+        <LeaderAlias value="Eel"/>
+        <HotkeyAlias value="Eel"/>
+        <SelectAlias value="Eel"/>
+        <SubgroupAlias value="Eel"/>
+        <AIEvaluateAlias value="Eel"/>
+        <ReviveInfoBase>
+            <Charge Link="Eel/Revive"/>
+            <Cooldown Link="Eel/Revive"/>
+        </ReviveInfoBase>
     </CUnit>
     <CUnit id="Thanatos" parent="Zergling">
         <Name value="Unit/Name/Thanatos"/>
@@ -8624,6 +8642,7 @@
         <Speed value="5"/>
         <StationaryTurningRate value="360"/>
         <TurningRate value="360"/>
+        <Sight value="15"/>
         <Food value="0"/>
         <KillXP value="250"/>
         <AbilArray index="3" Link="ThanatosPull"/>
@@ -8653,12 +8672,12 @@
         <GlossaryWeakArray index="1" removed="1"/>
         <GlossaryWeakArray index="2" removed="1"/>
         <AIEvaluateAlias value="Darreus"/>
-        <Sight value="15"/>
     </CUnit>
     <CUnit id="ThresherMaw" parent="Zergling">
         <Name value="Unit/Name/ThresherMaw"/>
         <Description value=""/>
         <ReviveType value="ThresherMaw"/>
+        <PushPriority value="25"/>
         <Collide index="Ground" value="0"/>
         <Collide index="ForceField" value="0"/>
         <Attributes index="Light" value="0"/>
@@ -8671,9 +8690,15 @@
         <Speed value="3.6015"/>
         <StationaryTurningRate value="135"/>
         <TurningRate value="135"/>
+        <Sight value="15"/>
         <Height value="0.5"/>
         <Food value="0"/>
         <KillXP value="300"/>
+        <AbilArray index="3" removed="1"/>
+        <AbilArray index="4" removed="1"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
         <BehaviorArray Link="KeenSense"/>
         <BehaviorArray Link="ThresherMaw"/>
         <BehaviorArray Link="ThresherMawOrder"/>
@@ -8708,13 +8733,6 @@
             <Charge Link="Ares/Revive"/>
             <Cooldown Link="Ares/Revive"/>
         </ReviveInfoBase>
-        <PushPriority value="25"/>
-        <Sight value="15"/>
-        <AbilArray index="3" removed="1"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <AbilArray index="7" removed="1"/>
     </CUnit>
     <CUnit id="Zombie" parent="Zergling">
         <Name value="Unit/Name/Zombie"/>
@@ -8732,6 +8750,7 @@
         <AbilArray index="7" removed="1"/>
         <BehaviorArray index="0" removed="1"/>
         <WeaponArray index="0" Link="ZombieClaws"/>
+        <EffectArray index="Death" value="ZombieRiseDeath"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -8784,6 +8803,7 @@
         <AbilArray Link="Warpable"/>
         <AbilArray Link="ProgressRally"/>
         <AbilArray Link="Charge"/>
+        <BehaviorArray Link="KeenSense"/>
         <WeaponArray Link="IonBlades"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -8814,6 +8834,5 @@
         </Fidget>
         <TauntDuration index="Cheer" value="5"/>
         <TauntDuration index="Dance" value="5"/>
-        <BehaviorArray Link="KeenSense"/>
     </CUnit>
 </Catalog>
