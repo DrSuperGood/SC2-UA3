@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CValidatorUnitCompareAbilLevel id="MonoWire1">
+        <WhichUnit Value="Caster"/>
+        <AbilLink value="MonomolecularWire"/>
+    </CValidatorUnitCompareAbilLevel>
+    <CValidatorUnitCompareAbilLevel id="MonoWire2">
+        <WhichUnit Value="Caster"/>
+        <AbilLink value="MonomolecularWire"/>
+        <Value value="1"/>
+    </CValidatorUnitCompareAbilLevel>
+    <CValidatorUnitCompareAbilLevel id="MonoWire3">
+        <WhichUnit Value="Caster"/>
+        <AbilLink value="MonomolecularWire"/>
+        <Value value="2"/>
+        <Compare value="LE"/>
+    </CValidatorUnitCompareAbilLevel>
+    <CValidatorUnitCompareAbilLevel id="MonoWire33">
+        <WhichUnit Value="Caster"/>
+        <AbilLink value="MonomolecularWire"/>
+        <Value value="2"/>
+    </CValidatorUnitCompareAbilLevel>
+    <CValidatorUnitCompareAbilLevel id="MonoWire32">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <AbilLink value="MonomolecularWire"/>
+        <Value value="2"/>
+    </CValidatorUnitCompareAbilLevel>
     <CValidatorUnitCompareBehaviorCount id="AilmentELeak">
         <Compare value="GE"/>
         <Value value="1"/>
@@ -45,6 +71,21 @@
         <Value value="1"/>
         <Vital value="Energy"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="HasSteelSaber">
+        <WhichUnit Value="Source"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="STS"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareAbilLevel id="MonoWire4">
+        <WhichUnit Value="Caster"/>
+        <AbilLink value="MonomolecularWire"/>
+        <Value value="3"/>
+    </CValidatorUnitCompareAbilLevel>
+    <CValidatorUnitCompareBehaviorCount id="NotSteelSaber">
+        <WhichUnit Value="Source"/>
+        <Behavior value="STS"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="IsBroken">
         <Compare value="GT"/>
         <Behavior value="Broken"/>
@@ -59,7 +100,7 @@
         <Types index="Building" value="0"/>
     </CValidatorLocationPathable>
     <CValidatorPlayerCompareResource id="Minerals1">
-        <WhichPlayer Value="Caster"/>
+        <WhichPlayer Value="Source"/>
         <Compare value="LT"/>
         <Value value="1"/>
     </CValidatorPlayerCompareResource>
@@ -534,4 +575,8 @@
         <CombineArray value="IncendiaryRound4"/>
         <CombineArray value="IncendiaryRoundLN"/>
     </CValidatorCombine>
+    <CValidatorUnitType id="UnitisCavScout">
+        <WhichUnit Value="Source"/>
+        <Value value="CavalryScout"/>
+    </CValidatorUnitType>
 </Catalog>

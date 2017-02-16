@@ -237,9 +237,18 @@
                 <CountUse value="1"/>
                 <Link value="Abil/LNRocket"/>
                 <Location value="Unit"/>
-                <TimeUse value="90"/>
+                <TimeStart value="180"/>
+                <TimeUse value="180"/>
             </Charge>
-            <Cooldown Link="Abil/LNRocket" Location="Unit" TimeUse="10"/>
+            <Cooldown Link="Abil/LNRocket" Location="Unit"/>
+        </Cost>
+        <Cost>
+            <Charge Link="" TimeStart="180" TimeUse="180"/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link="" TimeStart="180" TimeUse="180"/>
+            <Cooldown Link=""/>
         </Cost>
         <Range value="50"/>
         <CastIntroTime value="1.05"/>
@@ -2381,10 +2390,10 @@
     </CAbilEffectInstant>
     <CAbilEffectTarget id="MonomolecularWire">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Effect index="0" value="MonoWireOffset1"/>
-        <Effect value="MonoWireOffset2"/>
-        <Effect value="MonoWireOffset2"/>
-        <Effect value="MonoWireOffset3"/>
+        <Effect index="0" value="MonomolecularWireCreatePersist"/>
+        <Effect value="MonomolecularWireCreatePersist"/>
+        <Effect value="MonomolecularWireCreatePersist"/>
+        <Effect value="MonomolecularWireCreatePersist"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Cost>
             <Vital index="Energy" value="95"/>
@@ -2407,9 +2416,9 @@
             <Cooldown Link="Abil/Binoculars" TimeUse="25"/>
         </Cost>
         <Range value="17"/>
-        <Range value="20"/>
-        <Range value="20"/>
-        <Range value="24"/>
+        <Range value="17"/>
+        <Range value="17"/>
+        <Range value="17"/>
         <AutoCastFilters value="-;Player,Ally,Neutral,Visible"/>
         <UseMarkerArray index="Approach" value="0"/>
         <UseMarkerArray index="Prep" value="0"/>
@@ -2418,8 +2427,11 @@
         <ValidatedArray index="Prep" value="0"/>
         <ValidatedArray index="Channel" value="0"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MonomolecularWire"/>
-        <FinishTime value="0.3"/>
-        <CursorEffect value="MonoWireSA1"/>
+        <FinishTime value="0.45"/>
+        <CursorEffect value="MonomolecularWireSearchArea"/>
+        <CastIntroTime value="0.3"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="MonomolecularWire"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="BinocularsCav">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -2967,7 +2979,7 @@
         <Cost>
             <Cooldown TimeUse="5"/>
         </Cost>
-        <Range value="2"/>
+        <Range value="500"/>
         <CastIntroTime value="0.01"/>
         <ShowProgressArray index="Cast" value="1"/>
         <ValidatedArray index="Channel" value="0"/>
@@ -3307,9 +3319,18 @@
                 <CountUse value="1"/>
                 <Link value="Abil/LNRocket"/>
                 <Location value="Unit"/>
-                <TimeUse value="90"/>
+                <TimeStart value="180"/>
+                <TimeUse value="180"/>
             </Charge>
-            <Cooldown Link="Abil/LNRocket" Location="Unit" TimeUse="10"/>
+            <Cooldown Link="Abil/LNRocket" Location="Unit"/>
+        </Cost>
+        <Cost>
+            <Charge Link="" TimeStart="180" TimeUse="180"/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link="" TimeStart="180" TimeUse="180"/>
+            <Cooldown Link=""/>
         </Cost>
         <Range value="50"/>
         <CastIntroTime value="1.05"/>
@@ -3553,7 +3574,6 @@
         <LevelButtonName value="Abil/Name/Revive"/>
         <LevelButtonTooltip value="Abil/Tooltip/Revive1"/>
         <LevelButtonTooltip value="Abil/Tooltip/Revive2"/>
-        <LevelButtonTooltip value="Abil/Tooltip/Revive3"/>
         <EffectRange index="0" removed="1"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Revive">
             <Flags index="ShowInGlossary" value="0"/>

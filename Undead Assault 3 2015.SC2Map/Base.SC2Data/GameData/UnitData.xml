@@ -173,6 +173,8 @@
         </Fidget>
         <TauntDuration index="Cheer" value="5"/>
         <TauntDuration index="Dance" value="5"/>
+        <LifeArmorDisplayFlags index="CollapseBuffed" value="1"/>
+        <SpeedDisplayFlags index="CollapseBuffed" value="1"/>
     </CUnit>
     <CUnit id="74DFlamethrower">
         <DeathRevealRadius value="3"/>
@@ -216,6 +218,7 @@
         <AbilArray Link="FuelDischargeMini"/>
         <AbilArray Link="Prone"/>
         <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="74DFlamethrower"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -230,7 +233,6 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -264,7 +266,8 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <EffectArray index="Birth" value="ApplyAI"/>
+        <EffectArray index="Birth" value="EquipFlamethrowerSet"/>
+        <EffectArray index="Death" value="UnequipFlamethrowerSet"/>
     </CUnit>
     <CUnit id="AH25Hunter" parent="Banshee">
         <Name value="Unit/Name/AH25Hunter"/>
@@ -314,18 +317,64 @@
         <AbilArray index="13" removed="1"/>
         <AbilArray index="14" removed="1"/>
     </CUnit>
+    <CUnit id="Civilian">
+        <FlagArray index="Unclickable" value="0"/>
+        <FlagArray index="Unhighlightable" value="0"/>
+        <FlagArray index="Untargetable" value="0"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeRegenRate value="0.5"/>
+        <Speed value="1.6484"/>
+        <AttackTargetPriority value="5"/>
+        <WeaponArray index="0" removed="1"/>
+    </CUnit>
+    <CUnit id="CivilianFemale">
+        <FlagArray index="Unclickable" value="0"/>
+        <FlagArray index="Unhighlightable" value="0"/>
+        <FlagArray index="Untargetable" value="0"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeRegenRate value="0.5"/>
+        <Speed value="1.6484"/>
+        <AttackTargetPriority value="5"/>
+        <WeaponArray index="0" removed="1"/>
+    </CUnit>
+    <CUnit id="ColonistShip">
+        <FlagArray index="Invulnerable" value="1"/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Colossus" value="0"/>
+        <Collide index="Structure" value="0"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <AbilArray Link="attack"/>
+        <WeaponArray Link="PhantomTurret" Turret="PhantomTurret"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+    </CUnit>
+    <CUnit id="ColonistShipFlying">
+        <FlagArray index="Invulnerable" value="1"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <Speed value="5"/>
+        <Acceleration value="3"/>
+        <Sight value="15"/>
+        <Height value="7"/>
+        <AbilArray Link="attack"/>
+        <WeaponArray Link="PhantomTurret" Turret="PhantomTurret"/>
+    </CUnit>
     <CUnit id="DURounds" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="ATRocket" parent="MISSILE">
         <Race value="Terr"/>
@@ -350,8 +399,6 @@
         <LifeArmor value="7"/>
         <LifeRegenRate value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
-        <EnergyStart value="60"/>
-        <EnergyMax value="60"/>
         <Speed value="2.8984"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
@@ -501,12 +548,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="BioSample" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -609,50 +656,16 @@
             <Cooldown Link="FragGrenade/Revive"/>
         </ReviveInfoBase>
     </CUnit>
-    <CUnit id="CombatEngineer">
+    <CUnit id="CombatEngineer" parent="TemplateMOS">
+        <Name value="Unit/Name/CombatEngineer"/>
         <Description value="Button/Tooltip/12BCombatEngineer"/>
-        <DeathTime value="-1"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+        <DeathRevealFilters value="Visible;Player,Ally,Neutral,Missile,Dead,Hidden"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
-        <LifeStart value="420"/>
-        <LifeMax value="420"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
-        <Speed value="2.914"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryShotgun"/>
-        <AbilArray Link="LearnAbilitiesCombatEngineer"/>
-        <AbilArray Link="SoldierSkills"/>
+        <AbilArray index="3" Link="HeroInventoryShotgun"/>
+        <AbilArray index="4" Link="LearnAbilitiesCombatEngineer"/>
+        <AbilArray index="5" Link="SoldierSkills"/>
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="ImmediateRemedialAction"/>
@@ -673,11 +686,6 @@
         <AbilArray Link="SatchelCharge"/>
         <AbilArray Link="Overhaul"/>
         <AbilArray Link="Prone"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="RifleButt"/>
         <BehaviorArray Link="SoldierSkills1"/>
         <BehaviorArray Link="SoldierSkills2"/>
@@ -688,14 +696,9 @@
         <BehaviorArray Link="Security3"/>
         <BehaviorArray Link="Security4"/>
         <BehaviorArray Link="MarksmanshipMedic"/>
-        <WeaponArray Link="ShotgunCE"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="ShotgunCE"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesCombatEngineer"/>
@@ -703,11 +706,12 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons>
+            <LayoutButtons index="6">
                 <Face value="SoldierSkillsLevel4"/>
                 <Type value="Passive"/>
                 <Behavior value="SoldierSkills4"/>
                 <Requirements value="SoldierSkills04"/>
+                <SubmenuCardId value=""/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -744,18 +748,16 @@
             <LayoutButtons Face="Barricade" Type="AbilCmd" AbilCmd="Barricade,Execute" Row="1" Column="2"/>
             <LayoutButtons Face="SatchelChargeCE" Type="AbilCmd" AbilCmd="SatchelCharge,Execute" Row="2" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="LearnSoldierSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesCombatEngineer,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="ClusterRockets" Type="AbilCmd" AbilCmd="LearnAbilitiesCombatEngineer,Learn2" Row="0" Column="1"/>
             <LayoutButtons Face="Security" Type="AbilCmd" AbilCmd="LearnAbilitiesCombatEngineer,Learn3" Row="0" Column="2"/>
             <LayoutButtons Face="EngineeringSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesCombatEngineer,Learn4" Row="0" Column="3"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons index="3" Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAid,Execute" Row="1" Column="0"/>
@@ -781,81 +783,33 @@
             </LayoutButtons>
             <LayoutButtons Face="Overhaul" Type="AbilCmd" AbilCmd="Overhaul,Execute" Row="2" Column="2"/>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipShotgun"/>
+        <EffectArray index="Death" value="UnequipShotgun"/>
+        <EffectArray index="Revive" value="EquipShotgun"/>
     </CUnit>
-    <CUnit id="Cyborg">
-        <DeathTime value="-1"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+    <CUnit id="Cyborg" parent="TemplateMOS">
+        <Name value="Unit/Name/Cyborg"/>
+        <DeathRevealFilters value="Visible;Player,Ally,Neutral,Missile,Dead,Hidden"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
         <PushPriority value="11"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
         <LifeStart value="445"/>
         <LifeMax value="445"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
         <Speed value="3"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="50"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryMG"/>
-        <AbilArray Link="LearnAbilitiesCyborg"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray index="3" Link="HeroInventoryMG"/>
+        <AbilArray index="4" Link="LearnAbilitiesCyborg"/>
+        <AbilArray index="5" Link="Reload"/>
         <AbilArray Link="ImmediateRemedialAction"/>
         <AbilArray Link="DropMagazine"/>
         <AbilArray Link="SuppressiveFire"/>
@@ -870,23 +824,13 @@
         <AbilArray Link="CyborgMeltdown"/>
         <AbilArray Link="CyborgFlareGun"/>
         <AbilArray Link="FieldCameraCyborg"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="MGBurst"/>
         <BehaviorArray Link="RifleButtCyborg"/>
         <BehaviorArray Link="RifleButtCyborg2"/>
         <BehaviorArray Link="RifleButtCyborgCharging"/>
-        <WeaponArray Link="MachineGunCyborg"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="MachineGunCyborg"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesCyborg"/>
@@ -894,7 +838,14 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons Face="ClusterRockets" Type="AbilCmd" AbilCmd="ClusterRockets,Execute" Row="2" Column="0"/>
+            <LayoutButtons index="6">
+                <Face value="ClusterRockets"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="ClusterRockets,Execute"/>
+                <SubmenuCardId value=""/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
             <LayoutButtons Face="AdditionalActions" Type="Submenu" SubmenuCardId="0003" Row="1" Column="3"/>
             <LayoutButtons Face="SuppressiveFire" Type="AbilCmd" AbilCmd="SuppressiveFire,On" Row="2" Column="1"/>
             <LayoutButtons Face="SuppressiveFireOff" Type="AbilCmd" AbilCmd="SuppressiveFire,Off" Row="2" Column="1"/>
@@ -908,53 +859,34 @@
             <LayoutButtons Face="Meltdown" Type="AbilCmd" AbilCmd="CyborgMeltdown,On" Row="2" Column="4"/>
             <LayoutButtons Face="MeltdownOff" Type="AbilCmd" AbilCmd="CyborgMeltdown,Off" Row="2" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="ClusterRockets" Type="AbilCmd" AbilCmd="LearnAbilitiesCyborg,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="SuppressiveFire" Type="AbilCmd" AbilCmd="LearnAbilitiesCyborg,Learn2" Row="0" Column="1"/>
             <LayoutButtons Face="Strength" Type="AbilCmd" AbilCmd="LearnAbilitiesCyborg,Learn3" Row="0" Column="2"/>
             <LayoutButtons Face="Stealth" Type="AbilCmd" AbilCmd="LearnAbilitiesCyborg,Learn4" Row="0" Column="3"/>
             <LayoutButtons Face="Agility" Type="AbilCmd" AbilCmd="LearnAbilitiesCyborg,Learn5" Row="0" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons index="3" Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="FieldCameraSDM" Type="AbilCmd" AbilCmd="FieldCameraCyborg,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="FlareGun" Type="AbilCmd" AbilCmd="CyborgFlareGun,Execute" Row="2" Column="1"/>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipCyborgSet"/>
+        <EffectArray index="Death" value="UnequipCyborgSet"/>
+        <EffectArray index="Revive" value="EquipCyborgSet"/>
     </CUnit>
     <CUnit id="DrJashan">
         <DeathRevealRadius value="3"/>
@@ -1023,51 +955,15 @@
         <HotkeyAlias value="FlareGunFlare"/>
         <AIEvaluateAlias value="FlareGunFlare"/>
     </CUnit>
-    <CUnit id="FireSupportSpecialist">
-        <DeathTime value="-1"/>
-        <DeathRevealFilters value="Visible;Enemy,Missile,Hidden"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+    <CUnit id="FireSupportSpecialist" parent="TemplateMOS">
+        <Name value="Unit/Name/FireSupportSpecialist"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
-        <LifeStart value="420"/>
-        <LifeMax value="420"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
-        <Speed value="2.914"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="50"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryRifle"/>
-        <AbilArray Link="LearnAbilitiesFSS"/>
-        <AbilArray Link="SoldierSkills"/>
+        <AbilArray index="3" Link="HeroInventoryRifle"/>
+        <AbilArray index="4" Link="LearnAbilitiesFSS"/>
+        <AbilArray index="5" Link="SoldierSkills"/>
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="ImmediateRemedialAction"/>
@@ -1088,25 +984,15 @@
         <AbilArray Link="LaserDesignatorFSS"/>
         <AbilArray Link="CallforCAS"/>
         <AbilArray Link="AttackWeaponsTeam"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="RifleButt"/>
         <BehaviorArray Link="MarksmanshipMedic"/>
         <BehaviorArray Link="SoldierSkills1"/>
         <BehaviorArray Link="SoldierSkills2"/>
         <BehaviorArray Link="SoldierSkills3"/>
         <BehaviorArray Link="SoldierSkills4"/>
-        <WeaponArray Link="AssaultRifle4"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="AssaultRifle4"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesFSS"/>
@@ -1114,11 +1000,12 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons>
+            <LayoutButtons index="6">
                 <Face value="SoldierSkillsLevel4"/>
                 <Type value="Passive"/>
                 <Behavior value="SoldierSkills4"/>
                 <Requirements value="SoldierSkills04"/>
+                <SubmenuCardId value=""/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -1155,18 +1042,16 @@
             <LayoutButtons Face="OrbitalSatteliteReconnaissance" Type="AbilCmd" AbilCmd="OrbitalSatteliteReconnaissance,Execute" Row="2" Column="2"/>
             <LayoutButtons Face="OrbitalStrike" Type="AbilCmd" AbilCmd="OrbitalStrike,Execute" Row="2" Column="3"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="LearnSoldierSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesFSS,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="CallForFireFSS" Type="AbilCmd" AbilCmd="LearnAbilitiesFSS,Learn2" Row="0" Column="1"/>
             <LayoutButtons Face="IndirectFireSupport" Type="AbilCmd" AbilCmd="LearnAbilitiesFSS,Learn4" Row="0" Column="3"/>
             <LayoutButtons Face="JointFiresObserver" Type="AbilCmd" AbilCmd="LearnAbilitiesFSS,Learn3" Row="0" Column="2"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons index="3" Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAid,Execute" Row="1" Column="0"/>
@@ -1194,35 +1079,18 @@
                 <Column value="3"/>
             </LayoutButtons>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipFSSSet"/>
+        <EffectArray index="Death" value="UnequipFSSSet"/>
+        <EffectArray index="Revive" value="EquipFSSSet"/>
     </CUnit>
     <CUnit id="FTRallyPoint">
         <FlagArray index="Turnable" value="0"/>
@@ -1279,51 +1147,15 @@
         <LeaderAlias value=""/>
         <HotkeyAlias value=""/>
     </CUnit>
-    <CUnit id="GhostHero">
-        <DeathTime value="-1"/>
-        <DeathRevealFilters value="Visible;Enemy,Missile,Hidden"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+    <CUnit id="GhostHero" parent="TemplateMOS">
+        <Name value="Unit/Name/GhostHero"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
-        <LifeStart value="420"/>
-        <LifeMax value="420"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
-        <Speed value="2.914"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="50"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryPlasma"/>
-        <AbilArray Link="LearnAbilitiesGhost"/>
-        <AbilArray Link="PlasmaGrenade"/>
+        <AbilArray index="3" Link="HeroInventoryPlasma"/>
+        <AbilArray index="4" Link="LearnAbilitiesGhost"/>
+        <AbilArray index="5" Link="PlasmaGrenade"/>
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="Marksmanship"/>
@@ -1342,11 +1174,6 @@
         <AbilArray Link="CryoRounds"/>
         <AbilArray Link="IncendiaryRoundsGhost"/>
         <AbilArray Link="LaserDesignatorGhost"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="Marksmanship1"/>
         <BehaviorArray Link="Marksmanship2"/>
         <BehaviorArray Link="Marksmanship3"/>
@@ -1355,14 +1182,9 @@
         <BehaviorArray Link="LightFilterGhost"/>
         <BehaviorArray Link="ISR"/>
         <BehaviorArray Link="Cloaking"/>
-        <WeaponArray Link="PlasmaRifle"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="PlasmaRifle"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesGhost"/>
@@ -1370,7 +1192,6 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons Face="AdditionalActions" Type="Submenu" SubmenuCardId="0003" Row="1" Column="3"/>
             <LayoutButtons Face="LaserDesignatorPL" Type="AbilCmd" AbilCmd="LaserDesignatorGhost,Execute" Row="2" Column="1"/>
             <LayoutButtons>
                 <Face value="Marksmanship"/>
@@ -1412,18 +1233,16 @@
             <LayoutButtons Face="PlasmaGrenade" Type="AbilCmd" AbilCmd="PlasmaGrenade,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="IonCannon" Type="AbilCmd" AbilCmd="IonCannon,Execute" Row="2" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="PlasmaGrenade" Type="AbilCmd" AbilCmd="LearnAbilitiesGhost,Learn2" Row="0" Column="2"/>
             <LayoutButtons Face="Marksmanship" Type="AbilCmd" AbilCmd="LearnAbilitiesGhost,Learn3" Row="0" Column="1"/>
             <LayoutButtons Face="GhostSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesGhost,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="CombatEnhancements" Type="AbilCmd" AbilCmd="LearnAbilitiesGhost,Learn4" Row="0" Column="3"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="2"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons index="3" Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="DisruptorRounds" Type="AbilCmd" AbilCmd="DisruptorRounds,On" Row="2" Column="0"/>
@@ -1457,35 +1276,18 @@
                 <Column value="4"/>
             </LayoutButtons>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipGhostSet"/>
+        <EffectArray index="Death" value="UnequipGhostSet"/>
+        <EffectArray index="Revive" value="EquipGhostSet"/>
     </CUnit>
     <CUnit id="GhostMini">
         <DeathRevealRadius value="3"/>
@@ -1506,7 +1308,6 @@
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
         <EnergyStart value="80"/>
         <EnergyMax value="80"/>
-        <EnergyRegenRate value="3"/>
         <Speed value="2.8984"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
@@ -1536,6 +1337,7 @@
         <AbilArray Link="IonCannonGhost"/>
         <BehaviorArray Link="XPSharing"/>
         <BehaviorArray Link="LightFilter"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="GhostPlasmaRifleMini"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -1550,8 +1352,9 @@
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Type="AbilCmd" Row="0" Column="4"/>
-            <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="1" Column="0"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
+            <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
         </CardLayouts>
         <Radius value="0.375"/>
         <SeparationRadius value="0.375"/>
@@ -1582,6 +1385,8 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipGhostSet"/>
+        <EffectArray index="Death" value="UnequipGhostSet"/>
     </CUnit>
     <CUnit id="Grotesque">
         <DeathTime value="8.5"/>
@@ -1741,6 +1546,7 @@
         <AbilArray Link="BloodTransfusionMini"/>
         <AbilArray Link="NanoInjectionMini"/>
         <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="InfantryRiflemanRifle"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -1789,7 +1595,8 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <EffectArray index="Birth" value="ApplyAI"/>
+        <EffectArray index="Birth" value="EquipCombatMedicSet"/>
+        <EffectArray index="Death" value="UnequipCombatMedicSet"/>
     </CUnit>
     <CUnit id="InfestedCivilian">
         <LifeStart value="160"/>
@@ -1823,6 +1630,8 @@
             <LayoutButtons Face="MarksmanSkillsLN" Type="Passive" Behavior="MarksmanSkills2" Row="2" Column="2"/>
             <LayoutButtons Face="FieldCameraLN" Type="AbilCmd" AbilCmd="FieldCameraLN,Execute" Row="1" Column="1"/>
         </CardLayouts>
+        <EffectArray index="Birth" value="EquipDMR"/>
+        <EffectArray index="Death" value="UnequipDMR"/>
     </CUnit>
     <CUnit id="Apiary">
         <DeathRevealRadius value="3"/>
@@ -1923,12 +1732,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="IPR" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -2025,6 +1834,7 @@
         <AbilArray Link="Binoculars"/>
         <AbilArray Link="Prone"/>
         <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="DMR"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -2072,6 +1882,8 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipDMR"/>
+        <EffectArray index="Death" value="UnequipDMR"/>
     </CUnit>
     <CUnit id="IonCannon" parent="AutoTurret">
         <Name value="Unit/Name/IonCannon"/>
@@ -2180,6 +1992,7 @@
         <AbilArray Link="MiniInventoryRifle"/>
         <AbilArray Link="Prone"/>
         <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="AssaultRifleJavGun"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -2227,53 +2040,20 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <EffectArray index="Birth" value="ApplyAI"/>
+        <EffectArray index="Birth" value="EquipJavelinGunnerLNSet"/>
+        <EffectArray index="Death" value="UnequipJavelinGunnerLNSet"/>
     </CUnit>
-    <CUnit id="JavelinGunner2">
-        <DeathTime value="-1"/>
-        <DeathRevealFilters value="Visible;Enemy,Missile,Hidden"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+    <CUnit id="JavelinGunner2" parent="TemplateMOS">
+        <Name value="Unit/Name/JavelinGunner2"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
         <LifeStart value="410"/>
         <LifeMax value="410"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
-        <Speed value="2.914"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="50"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryRifle"/>
-        <AbilArray Link="LearnAbilitiesJavelinGunner"/>
-        <AbilArray Link="SoldierSkills"/>
+        <AbilArray index="3" Link="HeroInventoryRifle"/>
+        <AbilArray index="4" Link="LearnAbilitiesJavelinGunner"/>
+        <AbilArray index="5" Link="SoldierSkills"/>
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="ImmediateRemedialAction"/>
@@ -2290,25 +2070,15 @@
         <AbilArray Link="Disarm"/>
         <AbilArray Link="PlaceExplosiveCharge"/>
         <AbilArray Link="Prone"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="RifleButt"/>
         <BehaviorArray Link="SoldierSkills1"/>
         <BehaviorArray Link="SoldierSkills2"/>
         <BehaviorArray Link="SoldierSkills3"/>
         <BehaviorArray Link="SoldierSkills4"/>
         <BehaviorArray Link="MarksmanshipMedic"/>
-        <WeaponArray Link="AssaultRifleJavGunner"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="AssaultRifleJavGunner"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesJavelinGunner"/>
@@ -2316,11 +2086,12 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons>
+            <LayoutButtons index="6">
                 <Face value="SoldierSkillsLevel4"/>
                 <Type value="Passive"/>
                 <Behavior value="SoldierSkills4"/>
                 <Requirements value="SoldierSkills04"/>
+                <SubmenuCardId value=""/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -2357,18 +2128,16 @@
             <LayoutButtons Face="ParalysisTrap" Type="AbilCmd" AbilCmd="ParalysisTrap,Execute" Row="1" Column="1"/>
             <LayoutButtons Face="Claymore" Type="AbilCmd" AbilCmd="Claymore,Execute" Row="1" Column="2"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="LearnSoldierSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesJavelinGunner,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="JavelinSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesJavelinGunner,Learn2" Row="0" Column="3"/>
             <LayoutButtons Face="HERocket" Type="AbilCmd" AbilCmd="LearnAbilitiesJavelinGunner,Learn3" Row="0" Column="1"/>
             <LayoutButtons Face="ATRocket" Type="AbilCmd" AbilCmd="LearnAbilitiesJavelinGunner,Learn4" Row="0" Column="2"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons index="3" Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAid,Execute" Row="1" Column="0"/>
@@ -2394,35 +2163,18 @@
                 <Column value="1"/>
             </LayoutButtons>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipJavelinGunnerSet"/>
+        <EffectArray index="Death" value="UnequipJavelinGunnerSet"/>
+        <EffectArray index="Revive" value="EquipJavelinGunnerSet"/>
     </CUnit>
     <CUnit id="LMTV">
         <DeathRevealRadius value="3"/>
@@ -2533,6 +2285,7 @@
         <AbilArray Link="move"/>
         <AbilArray Link="Rally"/>
         <BehaviorArray Link="LightFilter"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="120mmL44M256SmoothboreCannon" Turret="BradleyTurret"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -2617,12 +2370,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="M5MAR" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -2775,51 +2528,15 @@
         <Name value="Unit/Name/HydraliskGroundWeapon"/>
         <Mover value="BulletMover"/>
     </CUnit>
-    <CUnit id="PlatoonLeader">
-        <DeathTime value="-1"/>
-        <DeathRevealFilters value="Visible;Enemy,Missile,Hidden"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+    <CUnit id="PlatoonLeader" parent="TemplateMOS">
+        <Name value="Unit/Name/PlatoonLeader"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
-        <LifeStart value="420"/>
-        <LifeMax value="420"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
-        <Speed value="2.914"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="50"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryRifle"/>
-        <AbilArray Link="LearnAbilitiesPlatoonLeader"/>
-        <AbilArray Link="SoldierSkills"/>
+        <AbilArray index="3" Link="HeroInventoryRifle"/>
+        <AbilArray index="4" Link="LearnAbilitiesPlatoonLeader"/>
+        <AbilArray index="5" Link="SoldierSkills"/>
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="ImmediateRemedialAction"/>
@@ -2836,11 +2553,6 @@
         <AbilArray Link="PlasmaGrenade"/>
         <AbilArray Link="Prone"/>
         <AbilArray Link="Concentration"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="RifleButt"/>
         <BehaviorArray Link="Marksmanship1"/>
         <BehaviorArray Link="Marksmanship2"/>
@@ -2850,14 +2562,9 @@
         <BehaviorArray Link="SoldierSkills2"/>
         <BehaviorArray Link="SoldierSkills3"/>
         <BehaviorArray Link="SoldierSkills4"/>
-        <WeaponArray Link="AssaultRiflePL"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="AssaultRiflePL"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesPlatoonLeader"/>
@@ -2865,11 +2572,12 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons>
+            <LayoutButtons index="6">
                 <Face value="SoldierSkillsLevel4"/>
                 <Type value="Passive"/>
                 <Behavior value="SoldierSkills4"/>
                 <Requirements value="SoldierSkills04"/>
+                <SubmenuCardId value=""/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -2938,18 +2646,16 @@
             <LayoutButtons Face="LaserDesignatorPL" Type="AbilCmd" AbilCmd="LaserDesignatorPL,Execute" Row="1" Column="2"/>
             <LayoutButtons Face="PlasmaGrenade" Type="AbilCmd" AbilCmd="PlasmaGrenade,Execute" Row="2" Column="3"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="LearnSoldierSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesPlatoonLeader,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="Marksmanship" Type="AbilCmd" AbilCmd="LearnAbilitiesPlatoonLeader,Learn3" Row="0" Column="1"/>
             <LayoutButtons Face="LeadershipSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesPlatoonLeader,Learn4" Row="0" Column="3"/>
             <LayoutButtons Face="PlasmaGrenade" Type="AbilCmd" AbilCmd="LearnAbilitiesPlatoonLeader,Learn2" Row="0" Column="2"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons index="3" Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAid,Execute" Row="1" Column="0"/>
@@ -2966,35 +2672,18 @@
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="1" Column="2"/>
             <LayoutButtons Face="Concentration" Type="AbilCmd" AbilCmd="Concentration,On" Row="1" Column="3"/>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipPlatoonLeaderSet"/>
+        <EffectArray index="Death" value="UnequipPlatoonLeaderSet"/>
+        <EffectArray index="Revive" value="EquipPlatoonLeaderSet"/>
     </CUnit>
     <CUnit id="SAMMissile" parent="MISSILE">
         <Race value="Terr"/>
@@ -3006,6 +2695,9 @@
         <Description value="Button/Tooltip/SAMSite"/>
         <LifeStart value="3500"/>
         <LifeMax value="3500"/>
+        <LifeArmor value="8"/>
+        <EnergyStart value="4"/>
+        <EnergyMax value="4"/>
         <Sight value="15"/>
         <AbilArray index="0" Link="stop"/>
         <AbilArray index="1" Link="attack"/>
@@ -3033,9 +2725,6 @@
         </CardLayouts>
         <Footprint value="Footprint1x1Contour"/>
         <PlacementFootprint value="Footprint1x1"/>
-        <LifeArmor value="8"/>
-        <EnergyStart value="4"/>
-        <EnergyMax value="4"/>
     </CUnit>
     <CUnit id="SAMSitePacked" parent="ITEM">
         <ReviveType value="FragGrenade"/>
@@ -3177,6 +2866,8 @@
         <BehaviorArray Link="XPSharing"/>
         <BehaviorArray Link="FragAIGrouporHero"/>
         <WeaponArray Link="AssaultRifleSLMini"/>
+        <EffectArray index="Birth" value="EquipSquadLeaderSet"/>
+        <EffectArray index="Death" value="UnequipSquadLeaderSet"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
@@ -3316,6 +3007,9 @@
             <Charge Link="Umbra/Revive"/>
             <Cooldown Link="Umbra/Revive"/>
         </ReviveInfoBase>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
     </CUnit>
     <CUnit id="Unburied">
         <DeathRevealRadius value="3"/>
@@ -3498,6 +3192,7 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
@@ -3514,7 +3209,6 @@
             <Charge Link="FragGrenade/Revive"/>
             <Cooldown Link="FragGrenade/Revive"/>
         </ReviveInfoBase>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="MK79SentryGun" parent="AutoTurret">
         <Name value="Unit/Name/MK79SentryGun"/>
@@ -3645,10 +3339,6 @@
     <CUnit id="MonoWire" parent="MISSILE">
         <Name value="Unit/Name/HydraliskGroundWeapon"/>
         <Mover value="MonoWireMover"/>
-        <BehaviorArray Link="MonoWireMissile1"/>
-        <BehaviorArray Link="MonoWireMissile2"/>
-        <BehaviorArray Link="MonoWireMissile3"/>
-        <BehaviorArray Link="MonoWireMissile4"/>
     </CUnit>
     <CUnit id="IDMR2" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -3656,12 +3346,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="ISS7" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -3689,51 +3379,15 @@
             <Cooldown Link="BulletRound/Revive"/>
         </ReviveInfoBase>
     </CUnit>
-    <CUnit id="SquadDesignatedMarksman">
-        <DeathTime value="-1"/>
-        <DeathRevealFilters value="Visible;Enemy,Missile,Hidden"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+    <CUnit id="SquadDesignatedMarksman" parent="TemplateMOS">
+        <Name value="Unit/Name/SquadDesignatedMarksman"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
-        <LifeStart value="420"/>
-        <LifeMax value="420"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
-        <Speed value="2.914"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="50"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventorySDM"/>
-        <AbilArray Link="LearnAbilitiesSDM"/>
-        <AbilArray Link="SoldierSkills"/>
+        <AbilArray index="3" Link="HeroInventorySDM"/>
+        <AbilArray index="4" Link="LearnAbilitiesSDM"/>
+        <AbilArray index="5" Link="SoldierSkills"/>
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="ImmediateRemedialAction"/>
@@ -3749,11 +3403,6 @@
         <AbilArray Link="RapidFire"/>
         <AbilArray Link="MonomolecularWire"/>
         <AbilArray Link="Prone"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="RifleButt"/>
         <BehaviorArray Link="Marksmanship1"/>
         <BehaviorArray Link="Marksmanship2"/>
@@ -3764,14 +3413,9 @@
         <BehaviorArray Link="SoldierSkills3"/>
         <BehaviorArray Link="SoldierSkills4"/>
         <BehaviorArray Link="OpportunedShot"/>
-        <WeaponArray Link="DesignatedMarksmanRifle"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="DesignatedMarksmanRifle"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesSDM"/>
@@ -3779,11 +3423,12 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons>
+            <LayoutButtons index="6">
                 <Face value="SoldierSkillsLevel4"/>
                 <Type value="Passive"/>
                 <Behavior value="SoldierSkills4"/>
                 <Requirements value="SoldierSkills04"/>
+                <SubmenuCardId value=""/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -3852,19 +3497,17 @@
             <LayoutButtons Face="RapidFireOff" Type="AbilCmd" AbilCmd="RapidFire,Off" Row="2" Column="3"/>
             <LayoutButtons Face="MonomolecularWire" Type="AbilCmd" AbilCmd="MonomolecularWire,Execute" Row="2" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="LearnSoldierSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesSDM,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="MarksmanSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesSDM,Learn2" Row="0" Column="2"/>
             <LayoutButtons Face="Marksmanship" Type="AbilCmd" AbilCmd="LearnAbilitiesSDM,Learn3" Row="0" Column="1"/>
             <LayoutButtons Face="RapidFire" Type="AbilCmd" AbilCmd="LearnAbilitiesSDM,Learn4" Row="0" Column="3"/>
             <LayoutButtons Face="MonomolecularWire" Type="AbilCmd" AbilCmd="LearnAbilitiesSDM,Learn5" Row="0" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons index="3" Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAid,Execute" Row="1" Column="0"/>
@@ -3879,35 +3522,18 @@
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="1" Column="1"/>
             <LayoutButtons Face="OpportunedShot" Type="Passive" Requirements="MarksmanSkills3M" Row="2" Column="1"/>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipSDMSet"/>
+        <EffectArray index="Death" value="UnequipSDMSet"/>
+        <EffectArray index="Revive" value="EquipSDMSet"/>
     </CUnit>
     <CUnit id="Lacerti">
         <DeathRevealRadius value="3"/>
@@ -4118,6 +3744,8 @@
             <LayoutButtons Face="M1SentryGunLN" Type="AbilCmd" AbilCmd="M1SentryGunLN,Execute" Row="2" Column="2"/>
             <LayoutButtons Face="BarricadeLN" Type="AbilCmd" AbilCmd="BarricadeLN,Execute" Row="1" Column="2"/>
         </CardLayouts>
+        <EffectArray index="Birth" value="EquipShotgun"/>
+        <EffectArray index="Death" value="UnequipShotgun"/>
     </CUnit>
     <CUnit id="DestructibleGateStraightHorizontalBFLowered">
         <FlagArray index="Unselectable" value="0"/>
@@ -4129,12 +3757,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="LNRifleman" parent="LNParent">
         <Name value="Unit/Name/LNRifleman"/>
@@ -4157,6 +3785,8 @@
             <LayoutButtons Face="FiremodeBurst" Type="AbilCmd" AbilCmd="FiremodeLN,On" Row="1" Column="1"/>
             <LayoutButtons Face="FiremodeSemi" Type="AbilCmd" AbilCmd="FiremodeLN,Off" Row="1" Column="1"/>
         </CardLayouts>
+        <EffectArray index="Birth" value="EquipRifle"/>
+        <EffectArray index="Death" value="UnequipRifle"/>
     </CUnit>
     <CUnit id="LNAutomaticRifleman" parent="LNParent">
         <Name value="Unit/Name/LNAutomaticRifleman"/>
@@ -4176,6 +3806,8 @@
             <LayoutButtons Face="SuppressiveFireLN" Type="AbilCmd" AbilCmd="SuppressiveFireLN,On" Row="2" Column="2"/>
             <LayoutButtons Face="SuppressiveFireOff" Type="AbilCmd" AbilCmd="SuppressiveFireLN,Off" Row="2" Column="2"/>
         </CardLayouts>
+        <EffectArray index="Birth" value="EquipAutomaticRiflemanSet"/>
+        <EffectArray index="Death" value="UnequipAutomaticRiflemanSet"/>
     </CUnit>
     <CUnit id="LNJavelinGunner" parent="LNParent">
         <Name value="Unit/Name/LNJavelinGunner"/>
@@ -4198,6 +3830,8 @@
             <LayoutButtons Face="FiremodeBurst" Type="AbilCmd" AbilCmd="FiremodeLN,On" Row="1" Column="1"/>
             <LayoutButtons Face="FiremodeSemi" Type="AbilCmd" AbilCmd="FiremodeLN,Off" Row="1" Column="1"/>
         </CardLayouts>
+        <EffectArray index="Birth" value="EquipJavelinGunnerLNSet"/>
+        <EffectArray index="Death" value="UnequipJavelinGunnerLNSet"/>
     </CUnit>
     <CUnit id="M41SAW" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -4205,12 +3839,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="ExplosiveCharge" parent="ITEM">
         <ReviveType value="FragGrenade"/>
@@ -4219,6 +3853,7 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
@@ -4234,7 +3869,6 @@
             <Charge Link="FragGrenade/Revive"/>
             <Cooldown Link="FragGrenade/Revive"/>
         </ReviveInfoBase>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="ExplosiveChargeUnit" parent="AutoTurret">
         <Name value="Unit/Name/ExplosiveChargeUnit"/>
@@ -4342,12 +3976,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Commander">
         <DeathRevealRadius value="3"/>
@@ -4356,6 +3990,7 @@
         <FlagArray index="PreventDestroy" value="1"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <PlaneArray index="Ground" value="1"/>
+        <PushPriority value="11"/>
         <Collide index="Ground" value="1"/>
         <Collide index="ForceField" value="1"/>
         <Attributes index="Light" value="1"/>
@@ -4391,7 +4026,12 @@
         <AbilArray Link="MiniInventoryRifle"/>
         <AbilArray Link="FragGrenadeMini"/>
         <AbilArray Link="Prone"/>
+        <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="FragAIGrouporHero"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="AssaultRifle3"/>
+        <EffectArray index="Birth" value="EquipCommanderSet"/>
+        <EffectArray index="Death" value="UnequipCommanderSet"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
@@ -4438,9 +4078,6 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <BehaviorArray Link="XPSharing"/>
-        <BehaviorArray Link="FragAIGrouporHero"/>
-        <PushPriority value="11"/>
     </CUnit>
     <CUnit id="DestructibleGateStraightHorizontalBF">
         <FlagArray index="Invulnerable" value="1"/>
@@ -4451,12 +4088,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="FlareGunFlare">
         <FlagArray index="Turnable" value="0"/>
@@ -4527,12 +4164,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="Hull">
         <Description value=""/>
@@ -4580,52 +4217,19 @@
         <FlagArray index="Untargetable" value="0"/>
         <FlagArray index="Invulnerable" value="1"/>
     </CUnit>
-    <CUnit id="Flamethrower">
+    <CUnit id="Flamethrower" parent="TemplateMOS">
+        <Name value="Unit/Name/Flamethrower"/>
         <Description value="Button/Tooltip/74DFlamethrower"/>
-        <DeathTime value="-1"/>
-        <DeathRevealFilters value="Visible;Enemy,Missile,Hidden"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
         <LifeStart value="435"/>
         <LifeMax value="435"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
         <Speed value="2.8984"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="50"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryFlame"/>
-        <AbilArray Link="Sprint"/>
-        <AbilArray Link="Jump"/>
+        <AbilArray index="3" Link="HeroInventoryFlame"/>
+        <AbilArray index="4" Link="Sprint"/>
+        <AbilArray index="5" Link="Jump"/>
         <AbilArray Link="LearnAbilitiesFlamethrower"/>
         <AbilArray Link="Napalm"/>
         <AbilArray Link="PlasmaShield"/>
@@ -4636,24 +4240,14 @@
         <AbilArray Link="Prone"/>
         <AbilArray Link="SoldierSkills"/>
         <AbilArray Link="PerformSelfAid"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="SoldierSkills1"/>
         <BehaviorArray Link="SoldierSkills2"/>
         <BehaviorArray Link="SoldierSkills3"/>
         <BehaviorArray Link="SoldierSkills4"/>
         <BehaviorArray Link="RifleButt"/>
-        <WeaponArray Link="Flamethrower"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="Flamethrower"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesFlamethrower"/>
@@ -4661,7 +4255,6 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons Face="AdditionalActions" Type="Submenu" SubmenuCardId="0003" Row="1" Column="3"/>
             <LayoutButtons>
                 <Face value="SoldierSkillsLevel4"/>
                 <Type value="Passive"/>
@@ -4703,19 +4296,16 @@
             <LayoutButtons Face="FuelDischarge" Type="AbilCmd" AbilCmd="FuelDischarge,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="GravitonCharge" Type="AbilCmd" AbilCmd="GravitonCharge,Execute" Row="2" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="LearnSoldierSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesFlamethrower,Learn5" Row="0" Column="0"/>
             <LayoutButtons Face="Napalm" Type="AbilCmd" AbilCmd="LearnAbilitiesFlamethrower,Learn1" Row="0" Column="1"/>
             <LayoutButtons Face="PlasmaShield" Type="AbilCmd" AbilCmd="LearnAbilitiesFlamethrower,Learn2" Row="0" Column="2"/>
             <LayoutButtons Face="FuelDischarge" Type="AbilCmd" AbilCmd="LearnAbilitiesFlamethrower,Learn3" Row="0" Column="3"/>
             <LayoutButtons Face="GravitonCharge" Type="AbilCmd" AbilCmd="LearnAbilitiesFlamethrower,Learn4" Row="0" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="1"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="3" Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="FuelSynthesizer" Type="AbilCmd" AbilCmd="FuelSynthesizer,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAid,Execute" Row="1" Column="0"/>
@@ -4728,35 +4318,18 @@
                 <Column value="1"/>
             </LayoutButtons>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipFlamethrowerSet"/>
+        <EffectArray index="Death" value="UnequipFlamethrowerSet"/>
+        <EffectArray index="Revive" value="EquipFlamethrowerSet"/>
     </CUnit>
     <CUnit id="LickerTongue" parent="MISSILE_INVULNERABLE">
         <Race value="Zerg"/>
@@ -4912,6 +4485,9 @@
             </LayoutButtons>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="1" Column="1"/>
         </CardLayouts>
+        <EffectArray index="Birth" value="EquipSFAATSet"/>
+        <EffectArray index="Death" value="UnequipSFAATSet"/>
+        <EffectArray index="Revive" value="EquipSFAATSet"/>
     </CUnit>
     <CUnit id="CavalryScout" parent="TemplateMOS">
         <Name value="Unit/Name/CavalryScout"/>
@@ -5059,6 +4635,9 @@
             <LayoutButtons Face="MotionSensor" Type="AbilCmd" AbilCmd="MotionSensorCS,Execute" Row="1" Column="3"/>
             <LayoutButtons Face="FlareGun2" Type="AbilCmd" AbilCmd="FlareGunCS,Execute" Row="1" Column="4"/>
         </CardLayouts>
+        <EffectArray index="Birth" value="EquipCavalryScoutSet"/>
+        <EffectArray index="Death" value="UnequipCavalryScoutSet"/>
+        <EffectArray index="Revive" value="EquipCavalryScoutSet"/>
     </CUnit>
     <CUnit id="SecurityGateStraightHorizontalBFLowered">
         <FlagArray index="Invulnerable" value="1"/>
@@ -5120,6 +4699,7 @@
         <AbilArray Link="Prone"/>
         <BehaviorArray Link="MGBurst"/>
         <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="SquadAutomaticWeapon"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -5166,6 +4746,8 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipAutomaticRiflemanSet"/>
+        <EffectArray index="Death" value="UnequipAutomaticRiflemanSet"/>
     </CUnit>
     <CUnit id="CombatEngineerMini">
         <DeathRevealRadius value="3"/>
@@ -5210,6 +4792,7 @@
         <AbilArray Link="MiniInventoryShotgun"/>
         <AbilArray Link="Prone"/>
         <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="Shotgun"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -5257,7 +4840,8 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
-        <EffectArray index="Birth" value="ApplyAI"/>
+        <EffectArray index="Birth" value="EquipShotgun"/>
+        <EffectArray index="Death" value="UnequipShotgun"/>
     </CUnit>
     <CUnit id="Planet">
         <Description value=""/>
@@ -5337,6 +4921,7 @@
         <AbilArray Link="Jump"/>
         <AbilArray Link="Prone"/>
         <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="SniperRifle"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -5384,6 +4969,8 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipDMR"/>
+        <EffectArray index="Death" value="UnequipDMR"/>
     </CUnit>
     <CUnit id="MetalGateStraightHorizontalBF">
         <FlagArray index="Invulnerable" value="1"/>
@@ -5459,6 +5046,7 @@
         <BehaviorArray Link="MGBurst"/>
         <BehaviorArray Link="LightFilter"/>
         <BehaviorArray Link="TOWAIGroupMechMassive"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="M242BushmasterHE" Turret="BradleyTurret"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -5497,13 +5085,13 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
         <Item value="GroundFlare"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="MuscleRelaxant" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -5579,50 +5167,17 @@
         <GlossaryCategory value="Unit/Category/ZergUnits"/>
         <GlossaryPriority value="95"/>
     </CUnit>
-    <CUnit id="CombatMedic">
+    <CUnit id="CombatMedic" parent="TemplateMOS">
+        <Name value="Unit/Name/CombatMedic"/>
         <Description value="Button/Tooltip/68WCombatMedic"/>
-        <DeathTime value="-1"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+        <DeathRevealFilters value="Visible;Player,Ally,Neutral,Missile,Dead,Hidden"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
-        <LifeStart value="420"/>
-        <LifeMax value="420"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
         <Speed value="2.8984"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryRifle"/>
-        <AbilArray Link="LearnAbilitiesCombatMedic"/>
-        <AbilArray Link="SoldierSkills"/>
+        <AbilArray index="3" Link="HeroInventoryRifle"/>
+        <AbilArray index="4" Link="LearnAbilitiesCombatMedic"/>
+        <AbilArray index="5" Link="SoldierSkills"/>
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="ImmediateRemedialAction"/>
@@ -5648,11 +5203,6 @@
         <AbilArray Link="Prone"/>
         <AbilArray Link="FragGrenadeMedic"/>
         <AbilArray Link="FlareGunWO5"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="RifleButt"/>
         <BehaviorArray Link="SoldierSkills1"/>
         <BehaviorArray Link="SoldierSkills2"/>
@@ -5668,14 +5218,9 @@
         <BehaviorArray Link="Augmentation4"/>
         <BehaviorArray Link="Augmentation5"/>
         <BehaviorArray Link="MarksmanshipMedic"/>
-        <WeaponArray Link="AssaultRifle2"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="AssaultRifle2"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesCombatMedic"/>
@@ -5683,11 +5228,12 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons>
+            <LayoutButtons index="6">
                 <Face value="SoldierSkillsLevel4"/>
                 <Type value="Passive"/>
                 <Behavior value="SoldierSkills4"/>
                 <Requirements value="SoldierSkills04"/>
+                <SubmenuCardId value=""/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -5728,18 +5274,16 @@
             <LayoutButtons Face="AnabolicPerformanceEnhancement" Type="AbilCmd" AbilCmd="AnabolicPerformanceEnhancement,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Revive" Type="AbilCmd" AbilCmd="Revive,Execute" Row="2" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="LearnSoldierSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesCombatMedic,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="LearnFirstAid" Type="AbilCmd" AbilCmd="LearnAbilitiesCombatMedic,Learn2" Row="0" Column="1"/>
             <LayoutButtons Face="LearnAugmentation" Type="AbilCmd" AbilCmd="LearnAbilitiesCombatMedic,Learn3" Row="0" Column="2"/>
             <LayoutButtons Face="Revive" Type="AbilCmd" AbilCmd="LearnAbilitiesCombatMedic,Learn4" Row="0" Column="3"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons index="3" Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAid,Execute" Row="1" Column="0"/>
@@ -5766,35 +5310,18 @@
                 <Column value="1"/>
             </LayoutButtons>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipCombatMedicSet"/>
+        <EffectArray index="Death" value="UnequipCombatMedicSet"/>
+        <EffectArray index="Revive" value="EquipCombatMedicSet"/>
     </CUnit>
     <CUnit id="BradleyHERound" parent="MISSILE">
         <Name value="Unit/Name/HydraliskGroundWeapon"/>
@@ -5806,12 +5333,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="KevlarBodyArmor" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -5826,50 +5353,17 @@
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
     </CUnit>
-    <CUnit id="AutomaticRifleman">
-        <DeathTime value="-1"/>
-        <DeathRevealRadius value="3"/>
-        <DeathRevealDuration value="-1"/>
-        <DeathRevealType value="Vision"/>
-        <Race value="Terr"/>
+    <CUnit id="AutomaticRifleman" parent="TemplateMOS">
+        <Name value="Unit/Name/AutomaticRifleman"/>
+        <DeathRevealFilters value="Visible;Player,Ally,Neutral,Missile,Dead,Hidden"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Light" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Heroic" value="1"/>
-        <LifeStart value="420"/>
-        <LifeMax value="420"/>
-        <LifeArmor value="1"/>
-        <LifeRegenRate value="0.25"/>
-        <LifeArmorName value="Unit/LifeArmorName/LandWarriorSystemLight"/>
-        <EnergyStart value="190"/>
-        <EnergyMax value="190"/>
-        <EnergyRegenRate value="1.4492"/>
         <Speed value="2.8593"/>
-        <Acceleration value="1000"/>
-        <LateralAcceleration value="46.0625"/>
-        <StationaryTurningRate value="999.8437"/>
-        <TurningRate value="999.8437"/>
-        <Sight value="15"/>
-        <Food value="-1"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="50"/>
         <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="100"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="HeroInventoryMG"/>
-        <AbilArray Link="LearnAbilitiesAutomaticRifleman"/>
-        <AbilArray Link="SoldierSkills"/>
+        <AbilArray index="3" Link="HeroInventoryMG"/>
+        <AbilArray index="4" Link="LearnAbilitiesAutomaticRifleman"/>
+        <AbilArray index="5" Link="SoldierSkills"/>
         <AbilArray Link="Sprint"/>
         <AbilArray Link="Reload"/>
         <AbilArray Link="ImmediateRemedialAction"/>
@@ -5882,11 +5376,6 @@
         <AbilArray Link="IncendiaryRounds"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="Prone"/>
-        <BehaviorArray Link="HeroLevels"/>
-        <BehaviorArray Link="Fitness"/>
-        <BehaviorArray Link="Dexterity"/>
-        <BehaviorArray Link="Mechanical"/>
-        <BehaviorArray Link="StartingStats"/>
         <BehaviorArray Link="RifleButt"/>
         <BehaviorArray Link="MGBurst"/>
         <BehaviorArray Link="MGBurstUpgrade"/>
@@ -5894,14 +5383,9 @@
         <BehaviorArray Link="SoldierSkills2"/>
         <BehaviorArray Link="SoldierSkills3"/>
         <BehaviorArray Link="SoldierSkills4"/>
-        <WeaponArray Link="MachineGun"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons>
+        <WeaponArray index="0" Link="MachineGun"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
                 <Face value="LearnAbilities"/>
                 <Type value="Submenu"/>
                 <SubmenuAbilState value="LearnAbilitiesAutomaticRifleman"/>
@@ -5909,11 +5393,12 @@
                 <Row value="1"/>
                 <Column value="4"/>
             </LayoutButtons>
-            <LayoutButtons>
+            <LayoutButtons index="6">
                 <Face value="SoldierSkillsLevel4"/>
                 <Type value="Passive"/>
                 <Behavior value="SoldierSkills4"/>
                 <Requirements value="SoldierSkills04"/>
+                <SubmenuCardId value=""/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -5981,19 +5466,17 @@
             <LayoutButtons Face="IncendiaryRounds" Type="AbilCmd" AbilCmd="IncendiaryRounds,On" Row="2" Column="4"/>
             <LayoutButtons Face="IncendiaryRoundsOff" Type="AbilCmd" AbilCmd="IncendiaryRounds,Off" Row="2" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0002">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        <CardLayouts index="1" CardId="0002">
             <LayoutButtons Face="LearnSoldierSkills" Type="AbilCmd" AbilCmd="LearnAbilitiesAutomaticRifleman,Learn1" Row="0" Column="0"/>
             <LayoutButtons Face="Marksmanship" Type="AbilCmd" AbilCmd="LearnAbilitiesAutomaticRifleman,Learn3" Row="0" Column="1"/>
             <LayoutButtons Face="SuppressiveFire" Type="AbilCmd" AbilCmd="LearnAbilitiesAutomaticRifleman,Learn2" Row="0" Column="2"/>
             <LayoutButtons Face="BeltLinking" Type="AbilCmd" AbilCmd="LearnAbilitiesAutomaticRifleman,Learn4" Row="0" Column="3"/>
             <LayoutButtons Face="IncendiaryRounds" Type="AbilCmd" AbilCmd="LearnAbilitiesAutomaticRifleman,Learn5" Row="0" Column="4"/>
         </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-            <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Row="0" Column="0"/>
-            <LayoutButtons Row="0" Column="0"/>
+        <CardLayouts index="2" CardId="0003">
+            <LayoutButtons index="1" Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="3" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="ImmediateRemedialAction" Type="AbilCmd" AbilCmd="ImmediateRemedialAction,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="DropMagazine" Type="AbilCmd" AbilCmd="DropMagazine,Execute" Row="0" Column="3"/>
@@ -6017,35 +5500,18 @@
                 <Column value="4"/>
             </LayoutButtons>
         </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
         <ScoreMake value="50"/>
-        <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="15"/>
-        <MinimapRadius value="0.375"/>
-        <EditorCategories value="ObjectType:Hero,ObjectFamily:Melee"/>
         <TacticalAI value="Marine"/>
-        <Item value="8SlotBag"/>
-        <HotkeyAlias value="Marine"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="21"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <KillDisplay value="Always"/>
         <AIEvaluateAlias value="Marine"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipAutomaticRiflemanSet"/>
+        <EffectArray index="Death" value="UnequipAutomaticRiflemanSet"/>
+        <EffectArray index="Revive" value="EquipAutomaticRiflemanSet"/>
     </CUnit>
     <CUnit id="SecurityGateStraightHorizontalBF">
         <FlagArray index="Invulnerable" value="1"/>
@@ -6402,12 +5868,12 @@
         <FlagArray index="Unhighlightable" value="0"/>
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="MK44SentryGunPacked" parent="ITEM">
         <ReviveType value="FragGrenade"/>
@@ -6416,6 +5882,7 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
@@ -6432,7 +5899,6 @@
             <Charge Link="FragGrenade/Revive"/>
             <Cooldown Link="FragGrenade/Revive"/>
         </ReviveInfoBase>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="MK44SentryGun" parent="AutoTurret">
         <Name value="Unit/Name/MK44SentryGun"/>
@@ -6478,12 +5944,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
         <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="BMDD" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -6711,30 +6177,6 @@
             <ChanceArray index="Turn" value="33"/>
         </Fidget>
     </CUnit>
-    <CUnit id="ColonistShip">
-        <LifeStart value="1200"/>
-        <LifeMax value="1200"/>
-        <AbilArray Link="attack"/>
-        <WeaponArray Link="PhantomTurret" Turret="PhantomTurret"/>
-        <Footprint value="Footprint4x4"/>
-        <PlacementFootprint value="Footprint4x4"/>
-        <FlagArray index="Invulnerable" value="1"/>
-        <Collide index="Burrow" value="0"/>
-        <Collide index="Ground" value="0"/>
-        <Collide index="Colossus" value="0"/>
-        <Collide index="Structure" value="0"/>
-    </CUnit>
-    <CUnit id="ColonistShipFlying">
-        <LifeStart value="1200"/>
-        <LifeMax value="1200"/>
-        <Speed value="5"/>
-        <Acceleration value="3"/>
-        <Sight value="15"/>
-        <Height value="7"/>
-        <AbilArray Link="attack"/>
-        <WeaponArray Link="PhantomTurret" Turret="PhantomTurret"/>
-        <FlagArray index="Invulnerable" value="1"/>
-    </CUnit>
     <CUnit id="ColonistTransport">
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
@@ -6751,11 +6193,13 @@
         <Mover value="BulletMover"/>
     </CUnit>
     <CUnit id="Gourmand">
+        <DeathTime value="8.5"/>
         <DeathRevealRadius value="3"/>
         <Race value="Zerg"/>
         <Mob value="Campaign"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <PlaneArray index="Ground" value="1"/>
+        <PushPriority value="15"/>
         <Collide index="Ground" value="1"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Biological" value="1"/>
@@ -6770,6 +6214,7 @@
         <StationaryTurningRate value="180"/>
         <TurningRate value="180"/>
         <Sight value="15"/>
+        <Food value="-1"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
@@ -6777,6 +6222,7 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
+        <BehaviorArray Link="KeenSense"/>
         <WeaponArray Link="GourmandAttack"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -6794,10 +6240,6 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
         <GlossaryCategory value="Unit/Category/ZergUnits"/>
         <GlossaryPriority value="95"/>
-        <Food value="-1"/>
-        <DeathTime value="8.5"/>
-        <BehaviorArray Link="KeenSense"/>
-        <PushPriority value="15"/>
     </CUnit>
     <CUnit id="HeroSelector">
         <Race value="Terr"/>
@@ -6901,12 +6343,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <Attributes index="Psionic" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="FragGrenade" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -6914,12 +6356,12 @@
         <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="Invulnerable" value="0"/>
         <FlagArray index="ShowResources" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Attributes index="Psionic" value="1"/>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
-        <Attributes index="Psionic" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
     </CUnit>
     <CUnit id="AmmoCase" parent="ITEM">
         <FlagArray index="Unclickable" value="0"/>
@@ -6950,17 +6392,6 @@
         <Radius value="0.1875"/>
         <SeparationRadius value="0.2"/>
         <Item value="SalineSyringe"/>
-    </CUnit>
-    <CUnit id="Civilian">
-        <LifeStart value="200"/>
-        <LifeMax value="200"/>
-        <AttackTargetPriority value="5"/>
-        <WeaponArray index="0" removed="1"/>
-        <FlagArray index="Unclickable" value="0"/>
-        <FlagArray index="Unhighlightable" value="0"/>
-        <FlagArray index="Untargetable" value="0"/>
-        <Speed value="1.6484"/>
-        <LifeRegenRate value="0.5"/>
     </CUnit>
     <CUnit id="Rifleman" parent="TemplateMOS">
         <Name value="Unit/Name/Rifleman"/>
@@ -7110,17 +6541,9 @@
             </LayoutButtons>
             <LayoutButtons Face="FlareGun" Type="AbilCmd" AbilCmd="FlareGunWO5,Execute" Row="2" Column="2"/>
         </CardLayouts>
-    </CUnit>
-    <CUnit id="CivilianFemale">
-        <LifeStart value="200"/>
-        <LifeMax value="200"/>
-        <AttackTargetPriority value="5"/>
-        <WeaponArray index="0" removed="1"/>
-        <FlagArray index="Unclickable" value="0"/>
-        <FlagArray index="Unhighlightable" value="0"/>
-        <FlagArray index="Untargetable" value="0"/>
-        <Speed value="1.6484"/>
-        <LifeRegenRate value="0.5"/>
+        <EffectArray index="Birth" value="EquipRiflemanSet"/>
+        <EffectArray index="Death" value="UnequipRifleSet"/>
+        <EffectArray index="Revive" value="EquipRifleSet"/>
     </CUnit>
     <CUnit id="InfantryRifleman">
         <DeathRevealRadius value="3"/>
@@ -7167,6 +6590,7 @@
         <AbilArray Link="FragGrenadeMini"/>
         <AbilArray Link="Prone"/>
         <BehaviorArray Link="XPSharing"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="InfantryRiflemanRifle"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -7213,6 +6637,8 @@
             <Charge Link="Marine/Revive"/>
             <Cooldown Link="Marine/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="EquipRifle"/>
+        <EffectArray index="Death" value="UnequipRifle"/>
     </CUnit>
     <CUnit id="TerranDropPod">
         <FogVisibility value="Hidden"/>
@@ -7231,6 +6657,7 @@
         <AbilArray index="3" Link="ClusterRocketsCombatWalker"/>
         <BehaviorArray index="0" Link="BurstFire"/>
         <BehaviorArray Link="CWClusterRocketsAI"/>
+        <BehaviorArray Link="ApplyAI"/>
         <WeaponArray index="0" Link="CombatWalkerMiniguns"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="ClusterRocketsMini" AbilCmd="ClusterRocketsCombatWalker,Execute" Column="4"/>
@@ -7367,6 +6794,8 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TauntDuration index="Dance" value="5"/>
         <EffectArray index="Birth" value="ApplyAI"/>
+        <BehaviorArray Link="ApplyAI"/>
+        <BehaviorArray Link="BWCycloneMissileAI"/>
     </CUnit>
     <CUnit id="WhitePhosphorous">
         <Race value="Terr"/>
@@ -7466,7 +6895,7 @@
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
-        <WeaponArray index="0" Link="DrakeClaws"/>
+        <WeaponArray index="0" Link="DrakeBite"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -7477,7 +6906,7 @@
             <LayoutButtons index="11" removed="1"/>
         </CardLayouts>
         <Radius value="0.3125"/>
-        <SeparationRadius value="0.5"/>
+        <SeparationRadius value="1.25"/>
     </CUnit>
     <CUnit id="Hopper" parent="Zergling">
         <Name value="Unit/Name/Hopper"/>
@@ -8002,7 +7431,7 @@
         <AbilArray index="5" removed="1"/>
         <AbilArray index="6" removed="1"/>
         <AbilArray index="7" removed="1"/>
-        <WeaponArray index="0" Link="MutantClaws"/>
+        <WeaponArray index="0" Link="PoochBite"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -8464,6 +7893,7 @@
             <Charge Link="Charger/Revive"/>
             <Cooldown Link="Charger/Revive"/>
         </ReviveInfoBase>
+        <EffectArray index="Birth" value="ChargerAI"/>
     </CUnit>
     <CUnit id="Ares" parent="Zergling">
         <Name value="Unit/Name/Ares"/>

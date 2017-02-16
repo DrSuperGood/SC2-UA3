@@ -220,7 +220,8 @@ Abil/Name/immediateSmoke=immediate Smoke
 Abil/Tooltip/Overhaul=Revives a nearby dead soldier.<n/>Level 1: 7 second delay<n/>Level 2: 6 second delay<n/>Level 3: 5 second delay<n/>
 Abil/Tooltip/Overhaul1=Revives a nearby dead soldier.<n/>Level 1: 7 second delay<n/>Level 2: 6 second delay<n/>Level 3: 5 second delay<n/>
 Abil/Tooltip/Overhaul3=Revives a nearby dead soldier.<n/>Level 1: 7 second delay<n/>Level 2: 6 second delay<n/>Level 3: 5 second delay<n/>
-Abil/Tooltip/Revive1=Revives a nearby dead soldier.<n/>Level 1: 7 second delay<n/>Level 2: 6 second delay<n/>Level 3: 5 second delay<n/>
+Abil/Tooltip/Revive1=Revive a fallen comrade so that they can fight once again. It is thanks to the advances of modern technology and many years studying medicine that this is possible.<n/><n/>Restore <c val="00FF00">a nearby friendly dead hero</c> to <c val="00FF00">life with full health</c>. Has considerable <c val="FF0000">casting time</c>. <c val="00FF00">Casting time</c>, <c val="00FF00">cooldown</c> and <c val="00FF00">energy cost</c> improve with level.<n/><n/>Level 1: <c val="FF0000"><d ref="Abil,Revive,CastIntroTime[0]" precision="2"/> second casting delay</c>, <c val="FF0000"><d ref="Abil,Revive,Cost[0].Cooldown.TimeUse"/> second cooldown</c> and <c val="FF0000"><d ref="Abil,Revive,Cost[0].Vital[Energy]"/> energy cost</c>.<n/>Level 2: <c val="FF0000"><d ref="Abil,Revive,CastIntroTime[1]" precision="2"/> second casting delay</c>, <c val="FF0000"><d ref="Abil,Revive,Cost[1].Cooldown.TimeUse"/> second cooldown</c> and <c val="FF0000"><d ref="Abil,Revive,Cost[1].Vital[Energy]"/> energy cost</c>.<n/>Level 3: <c val="FF0000"><d ref="Abil,Revive,CastIntroTime[2]" precision="2"/> second casting delay</c>, <c val="FF0000"><d ref="Abil,Revive,Cost[2].Cooldown.TimeUse"/> second cooldown</c> and <c val="FF0000"><d ref="Abil,Revive,Cost[2].Vital[Energy]"/> energy cost</c>.<n/><n/><c val="FF0000">Unable to act</c> when casting.<n/><c val="00FF00">Friendly protection</c> recommended for safe use.
+Abil/Tooltip/Revive2=Revive a fallen comrade so that they can fight once again. It is thanks to the advances of modern technology and many years studying medicine that this is possible.<n/><n/>Restore <c val="00FF00">a nearby friendly dead hero</c> to <c val="00FF00">life with full health</c>. Has considerable <c val="FF0000">casting time</c>. <c val="00FF00">Casting time</c>, <c val="00FF00">cooldown</c> and <c val="00FF00">energy cost</c> improve with level.<n/><n/>Level 1: <c val="FF0000"><d ref="Abil,Revive,CastIntroTime[0]" precision="2"/> second casting delay</c>, <c val="FF0000"><d ref="Abil,Revive,Cost[0].Cooldown.TimeUse"/> second cooldown</c> and <c val="FF0000"><d ref="Abil,Revive,Cost[0].Vital[Energy]"/> energy cost</c>.<n/>Level 2: <c val="FF0000"><d ref="Abil,Revive,CastIntroTime[1]" precision="2"/> second casting delay</c>, <c val="FF0000"><d ref="Abil,Revive,Cost[1].Cooldown.TimeUse"/> second cooldown</c> and <c val="FF0000"><d ref="Abil,Revive,Cost[1].Vital[Energy]"/> energy cost</c>.<n/>Level 3: <c val="FF0000"><d ref="Abil,Revive,CastIntroTime[2]" precision="2"/> second casting delay</c>, <c val="FF0000"><d ref="Abil,Revive,Cost[2].Cooldown.TimeUse"/> second cooldown</c> and <c val="FF0000"><d ref="Abil,Revive,Cost[2].Vital[Energy]"/> energy cost</c>.<n/><n/><c val="FF0000">Unable to act</c> when casting.<n/><c val="00FF00">Friendly protection</c> recommended for safe use.
 Abil/Tooltip/Revive3=Revives a nearby dead soldier.<n/>Level 1: 7 second delay<n/>Level 2: 6 second delay<n/>Level 3: 5 second delay<n/>
 Ability/Tooltip/Revive=Revives a nearby dead soldier after 7 seconds.
 Actor/Highlight/40mmGrenades=<s val="ABChoiceReplayButtonText">40mm Grenades</s>
@@ -291,6 +292,7 @@ Behavior/Name/Agility2=Agility 2
 Behavior/Name/Agility3=Agility 3
 Behavior/Name/AimAssist=Aim Assist
 Behavior/Name/AnabolicPerformanceEnhancement=Anabolic Performance Enhancement
+Behavior/Name/ApplyAI=Apply AI
 Behavior/Name/ArcCell=Arc Cell
 Behavior/Name/BloodTransfusion=Blood Transfusion
 Behavior/Name/BornToLeadTarget=Born To Lead
@@ -375,10 +377,6 @@ Behavior/Name/M92Torrent=M92 Torrent
 Behavior/Name/Mechanical=Mechanical
 Behavior/Name/Meltdown=Meltdown
 Behavior/Name/MinorLacerations=Minor Lacerations
-Behavior/Name/MonoWireMissile1=Mono Wire Missile1
-Behavior/Name/MonoWireMissile2=Mono Wire Missile2
-Behavior/Name/MonoWireMissile3=Mono Wire Missile3
-Behavior/Name/MonoWireMissile4=Mono Wire Missile4
 Behavior/Name/MonomolecularWire1=Monomolecular Wire
 Behavior/Name/MonomolecularWire2=Monomolecular Wire
 Behavior/Name/Mounted50Cal=Mounted .50 Cal
@@ -495,13 +493,10 @@ Behavior/Tooltip/Leadership4T=This unit is being led by a Platoon Leader, increa
 Behavior/Tooltip/LickerTongue=This unit is trapped by a licker. A teammate must kill the licker to free yourself.
 Behavior/Tooltip/LightFilter=This unit can see invisible units.
 Behavior/Tooltip/LocalNational=This unit is a Local National Soldier and suffers from poor training, discipline and equipment.<n/><n/>Decreases <c val="FF0000">damage by <d ref="-Behavior,LocalNational,Modification.DamageDealtFraction[Ranged] * 100"/>%</c>, <c val="FF0000">health by <d ref="-Behavior,LocalNational,Modification.VitalMaxFractionArray[Life] * 100"/>%</c> and <c val="FF0000">energy by <d ref="-Behavior,LocalNational,Modification.VitalMaxFractionArray[Energy] * 100"/>%</c>. Deals <c val="FF0000"><d ref="-Behavior,LocalNational,Modification.DamageDealtAttributeMultiplier[Heroic] * 100"/>% less damage against Heroic units</c> and <c val="FF0000"><d ref="Behavior,LocalNational,DamageResponse.ModifyFraction*100"/>% damage to friendly units</c>.
+Behavior/Tooltip/M5MAR=The M5 MAR, or Multipurpose Assault Rifle, is an assault rifle with an underslung grenade launcher capable of launching a variety of grenade types.<n/><n/><c val="FF8000">Adds 25% increased damage and 2 range.</c><n/><n/>Launches a 40mm grenade at the target point, dealing 600 damage.<n/><n/><c val="FF0000">Explosives hurt allies.</c>
 Behavior/Tooltip/Mechanical=Mechanical skill is your expertise in the technical aspect of your equipment. Each point increases energy by 15 and energy regeneration by 1%.
 Behavior/Tooltip/Meltdown=This unit will self-destruct opon death.
 Behavior/Tooltip/MinorLacerations=<c val="FFFF00">Minor</c> injury that causes slight loss of life, mobility and combat effectiveness. It is caused by light bleeding.<n/><n/>Causes a loss of<c val="FF0000"> <d ref="-Behavior,MinorLacerations,Modification.VitalRegenArray[Life]" precision="2"/> life per second</c>, <c val="FF0000"><d ref="1-Behavior,MinorLacerations,Modification.MoveSpeedMultiplier*100"/>% movement speed</c> and <c val="FF0000"><d ref="1-Behavior,MinorLacerations,Modification.AttackSpeedMultiplier*100"/>% attack speed</c>. Lasts <c val="FF0000">approximately <d ref="Behavior,MinorLacerations,Duration"/> seconds</c>.<n/><n/>Deals <c val="FF0000">about <d ref="-Behavior,MinorLacerations,Modification.VitalRegenArray[Life]*Behavior,MinorLacerations,Duration"/> damage</c> in total so is not life threatening.<n/>Easily cured by using <c val="00FF00">Self Aid ability</c>.
-Behavior/Tooltip/MonoWireMissile1=This unit has been stunned by a monomolecuar wire.
-Behavior/Tooltip/MonoWireMissile2=This unit has been stunned by a monomolecuar wire.
-Behavior/Tooltip/MonoWireMissile3=This unit has been stunned by a monomolecuar wire.
-Behavior/Tooltip/MonoWireMissile4=This unit has been stunned by a monomolecuar wire.
 Behavior/Tooltip/MonomolecularWire1=This unit has been stunned by a monomolecuar wire.
 Behavior/Tooltip/MonomolecularWire2=This unit has been stunned by a monomolecuar wire.
 Behavior/Tooltip/Mutation=This unit has been mutated from a high infestation level.
@@ -527,7 +522,9 @@ Behavior/Tooltip/RapidFire2=Attack speed greatly increased at the cost of impare
 Behavior/Tooltip/RapidFire3=Attack speed greatly increased at the cost of impared movement and range and continious energy drain.
 Behavior/Tooltip/RapidFire4=Attack speed greatly increased at the cost of impared movement and range and continious energy drain.
 Behavior/Tooltip/RapidFireLN=Attack speed greatly increased at the cost of impared movement and range.
+Behavior/Tooltip/SOFAR=The Special Operations Forces Assault Rifle (SOF - AR) was developed in the 2050s to accomodate the rapid fielding advancement of SOF gear. The SOF-AR is modular and accurate.<n/><c val="FF8000">Increases damage by 50%, range by 3, reduces reload time by 15%, and increases critical chance by 7.5% (-3 dice sides).</c>
 Behavior/Tooltip/SelfPreservation=This unit is trying to keep alive by avoiding conflict.<n/><n/>Gains <c val="00FF00">10%</c> <c val="FF8000">movement speed</c> and <c val="00FF00">invulnerability</c> at the cost of being <c val="FF0000">unable to attack</c>. Duration depends on the total level of SFAAT leadership.<n/>
+Behavior/Tooltip/SmokeGrenade=The Smoke reduces unit movement speed by 50%, attack range by 4 and limits maximum sight to 13.
 Behavior/Tooltip/Spawned=This unit just spawned.
 Behavior/Tooltip/SpitterAcid=This unit has been splashed by a Spitter, causing a reduction in movement speed and damage over time.
 Behavior/Tooltip/SuppressiveFire1=Increases attack speed at the cost of restricted movement and continious energy loss.
@@ -539,6 +536,7 @@ Behavior/Tooltip/TimeStopped=This unit has been hit by a time-stop.
 Behavior/Tooltip/Training1=This unit has improved combat strength by being trained.<n/><n/>Improves <c val="FF8000">ranged damage</c> by <c val="00FF00"><d ref="Behavior,Training1,Modification.DamageDealtFraction[Ranged] * 100"/>%</c>, <c val="FF8000">energy</c> by <c val="00FF00"><d ref="Behavior,Training1,Modification.VitalMaxFractionArray[Energy] * 100"/>%</c>, <c val="FF8000">maximum life</c> by <c val="00FF00"><d ref="Behavior,Training1,Modification.VitalMaxFractionArray[Life] * 100"/>%</c>, <c val="FF8000">movement speed</c> by <c val="00FF00"><d ref="Behavior,Training1,Modification.MoveSpeedBonus" precision="2"/></c> and <c val="FF8000">reload time</c> by <c val="00FF00">0.6 seconds</c>.
 Behavior/Tooltip/Training2=This unit has improved combat strength by being trained.<n/><n/>Improves <c val="FF8000">ranged damage</c> by <c val="00FF00"><d ref="Behavior,Training2,Modification.DamageDealtFraction[Ranged] * 100"/>%</c>, <c val="FF8000">energy</c> by <c val="00FF00"><d ref="Behavior,Training2,Modification.VitalMaxFractionArray[Energy] * 100"/>%</c>, <c val="FF8000">maximum life</c> by <c val="00FF00"><d ref="Behavior,Training2,Modification.VitalMaxFractionArray[Life] * 100"/>%</c>, <c val="FF8000">movement speed</c> by <c val="00FF00"><d ref="Behavior,Training2,Modification.MoveSpeedBonus" precision="2"/></c> and <c val="FF8000">reload time</c> by <c val="00FF00">1.5 seconds</c>.
 Behavior/Tooltip/TraumaticBrainInjury=<c val="FF8000">Moderate</c> injury that causes disorientation and loss of vision. Caused by a massive blow to the head.<n/><n/>Causes a loss of <c val="FF0000"><d ref="1-Behavior,TraumaticBrainInjury,Modification.AccelerationMultiplier*100"/>% acceleration</c> and <c val="FF0000"><d ref="-Behavior,TraumaticBrainInjury,Modification.WeaponRange"/> weapon range</c>. Limits <c val="FF0000">maximum sight range to <d ref="Behavior,TraumaticBrainInjury,Modification.SightMaximum"/></c>. Causes <c val="FF0000">player camera to shake slightly</c>. Lasts <c val="FF0000">approximately <d ref="Behavior,TraumaticBrainInjury,Duration/60" precision="1"/> minutes</c>.<n/><n/>Sight reduction can be countered by <c val="00FF00">other units or flares</c>.
+Behavior/Tooltip/USMCR=The US MCR (United States Marine Corps Rifle) is the standard issue USMC weapon. It has almost no recoil, allowing a far greater rate of fire.<n/><n/><c val="FF8000">Increases attack speed by 40%.</c>
 Behavior/Tooltip/Unpowered=This machine is off.
 Behavior/Tooltip/WeaponLock=Your weapons have been temporarily disabled.
 Behavior/Tooltip/WeaponsHold=Disables auto-attacking.
@@ -787,7 +785,7 @@ Button/Tooltip/18OCyborg=MOS: 18O Role: Cyborg<n/>Cyborgs are a new addition to 
 Button/Tooltip/40mmGrenadeItem=Shoots a 40mm grenade at the target point, dealing 600 damage.<n/><c val="FF0000">Explosives hurt allies.</c>
 Button/Tooltip/40mmGrenades=Loads grenades into an MGL.
 Button/Tooltip/68WCombatMedic=MOS: 68W (Healthcare Specialist)<n/>The Health Care Specialist is primarily responsible for providing emergency medical treatment, limited primary care and health protection and evacuation from a point of injury or illness. Health Care Specialists are often called "combat medics" in the Army, because some Soldiers in this MOS are assigned to deploy with Army combat units, and provide emergency medical treatment directly on the battlefield. Other Heath Care Specialists are assigned to military hospitals and clinics to assist doctors and nurses with the health care needs of patients.<n/><n/><n/>Abilities:<n/>-Soldier Skills<n/>-First Aid<n/>-Augmentation<n/>-Revive
-Button/Tooltip/74DFlamethrower=MOS: 74D (CBRN) Role: Flamethrower<n/> The flamethrowers were reintroduced during the initial outbreaks after their proven effectiveness in combat. The ethics were pushed aside since the afflicted generally do not feel pain.<n/>Skills:<n/>-Fuel Discharge<n/>-Plasma Shield<n/>-Graviton Charge<n/>-Napalm
+Button/Tooltip/74DFlamethrower=MOS: 74D (CBRN) Role: Flamethrower<n/> The flamethrowers were reintroduced during the initial outbreaks after their proven effectiveness in combat. The ethics were pushed aside since the afflicted generally do not feel pain.<n/>Abilities:<n/>-Soldier Skills<n/>-Fuel Discharge<n/>-Plasma Shield<n/>-Graviton Charge<n/>-Napalm
 Button/Tooltip/AH25Hunter=Tactical-strike aircraft.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/APRounds=Special rounds with a tungsten core designed to penetrate armor.<n/><n/><c val="FF8000"> Increases damage by <d ref="Behavior,APRounds,Modification[0].DamageDealtFraction[Ranged] * 100" precision="2"/>%.</c><n/>
 Button/Tooltip/ATRocket=Fires an AT rocket at the target point, dealing damage in a small area. Improves cast time, range and cooldown with each level.<n/>Level 1 - 3000 damage<n/>Level 2 - 4500 damage<n/>Level 3 - 6000 damage<n/>Level 4 - 7500 damage<n/><n/><c val="FF0000">Explosion damages allies and items.<n/>Backblast damages allies.</c>
@@ -1112,7 +1110,7 @@ DOCSTR_0000=Insert Text
 Disarm=
 DismissRecent=Cannot dismiss units that have been recently trained.
 DocInfo/Author=illidan92/composure #200
-DocInfo/DescLong=The third instalment of the Undead Assault zombie survival games currently maintained by a GIT at https://github.com/DrSuperGood/SC2-UA3. Use teamwork and creativity to complete missions and slay the undead.<n/><n/>The official US community at...<n/>battlenet://starcraft/group/1/235887
+DocInfo/DescLong=The third installment of the Undead Assault zombie survival games currently maintained by a GIT at https://github.com/DrSuperGood/SC2-UA3. Use teamwork and creativity to complete missions and slay the undead.<n/><n/>The official US community at...<n/>battlenet://starcraft/group/1/235887
 DocInfo/DescShort=2, 5, 12
 DocInfo/HowToPlayAdvanced00=If you die, a combat medic can revive you.
 DocInfo/HowToPlayAdvanced01=If all the combat medics are dead, there are respawns and reinforcements at certain points in the game.
@@ -1443,27 +1441,53 @@ DocInfo/PatchNote316=- Removed deprecated English UK localization.
 DocInfo/PatchNote317=
 DocInfo/PatchNote318=Sorry for the long delay. I was not aware 3.0 broke the map.
 DocInfo/PatchNote319=If people show enough support I might pick up development again.
-DocInfo/PatchNote320=-Various trigger refractoring.
-DocInfo/PatchNote321=-Updated deprecated trigger events
-DocInfo/PatchNote322=-Reformatted timer display
-DocInfo/PatchNote323=-Fixed weapon damage display UI overlapping attributes.
-DocInfo/PatchNote324=-Fixed unlockable dialog unit model display. 
-DocInfo/PatchNote325=-Heroes won't appear invisible to players on revive.
-DocInfo/PatchNote326=-Fixed issue with player hit count not working.
-DocInfo/PatchNote327=-Fixed missing hotkeys.
-DocInfo/PatchNote328=-Fixed 1 life mod. Revive can't be used anymore.
-DocInfo/PatchNote329=-QoL: Camo/decal selection will restore when revived & will load from previous game.
-DocInfo/PatchNote330=-QoL: Sprint will cease if hero isn't moving.
-DocInfo/PatchNote331=-Fixed leaper jump animation from getting stuck mid-air.
-DocInfo/PatchNote332=-Fixed undead attack animations.
-DocInfo/PatchNote333=-Fixed undead attacks that didn't apply damage
-DocInfo/PatchNote334=-Garg walk animation fixed 
-DocInfo/PatchNote335=-Undead life bars fixed.
-DocInfo/PatchNote336=-Hero jump won't fail to cast in certain situations.
-DocInfo/PatchNote337=-Cyborg & Cav Scout cloak abililty works correctly.
-DocInfo/PatchNote338=-Fixed a issue that caused the amount of magazine dropped when a hero is killed to be incorrect.
-DocInfo/PatchNote339=-Mission objective will now display completed when thresher maws are killed in ch.2.
-DocInfo/PatchNote340=
+DocInfo/PatchNote320=-Patch by RedCell5-
+DocInfo/PatchNote321=
+DocInfo/PatchNote322=-Various trigger refractoring.
+DocInfo/PatchNote323=-Updated deprecated trigger events.
+DocInfo/PatchNote324=-Reformatted timer display.
+DocInfo/PatchNote325=-Fixed weapon damage display UI overlapping attributes.
+DocInfo/PatchNote326=-Fixed unlockable dialog unit model display. 
+DocInfo/PatchNote327=-Heroes won't appear invisible to players on revive.
+DocInfo/PatchNote328=-Fixed issue with player hit count not working.
+DocInfo/PatchNote329=-Fixed missing hotkeys.
+DocInfo/PatchNote330=-Fixed 1 life mod. Revive can't be used anymore.
+DocInfo/PatchNote331=-QoL: Camo/decal selection will restore when revived & will load from previous game.
+DocInfo/PatchNote332=-QoL: Sprint will cease if hero isn't moving.
+DocInfo/PatchNote333=-Fixed leaper jump animation from getting stuck mid-air.
+DocInfo/PatchNote334=-Fixed undead attack animations.
+DocInfo/PatchNote335=-Fixed undead attacks that didn't apply damage
+DocInfo/PatchNote336=-Garg walk animation fixed 
+DocInfo/PatchNote337=-Undead life bars fixed.
+DocInfo/PatchNote338=-Hero jump won't fail to cast in certain situations.
+DocInfo/PatchNote339=-Cyborg & Cav Scout cloak abililty works correctly.
+DocInfo/PatchNote340=-Fixed a issue that caused the amount of magazine dropped when a hero is killed to be incorrect.
+DocInfo/PatchNote341=-Mission objective will now display completed when thresher maws are killed in ch.2.
+DocInfo/PatchNote342=-Patch by RedCell5-
+DocInfo/PatchNote343=
+DocInfo/PatchNote344=-Map credits added to F10 tips section.
+DocInfo/PatchNote345=-Updated asset mod.
+DocInfo/PatchNote346=-Reformatted custom loading bar.
+DocInfo/PatchNote347=-Reduced lag from spawns.
+DocInfo/PatchNote348=-Undead commando tentacle weapon fixed. 
+DocInfo/PatchNote349=-Undead attack sounds fixed.
+DocInfo/PatchNote350=-Spam clicking will no longer break fireteam dialog.
+DocInfo/PatchNote351=-Level up animation lag reduced.
+DocInfo/PatchNote352=-Unit panel movement speed display is now consistent with HUD ms display. 
+DocInfo/PatchNote353=-Resized text labels on HUD.
+DocInfo/PatchNote354=-Resized status dialog.
+DocInfo/PatchNote355=-Energy bar added to status dialog.
+DocInfo/PatchNote356=-Fixed attachment models that would desync.
+DocInfo/PatchNote357=-Weapon models now switch out correctly. 
+DocInfo/PatchNote358=-Cleaned up various actor data errors.
+DocInfo/PatchNote359=-Cleaned up requirement tooltips.
+DocInfo/PatchNote360=-Fixed missing hotkeys.
+DocInfo/PatchNote361=-Fixed ln charge ability cooldowns.
+DocInfo/PatchNote362=-Fixed several ability tooltips.
+DocInfo/PatchNote363=-Monomecular wire now applies correct damage.
+DocInfo/PatchNote364=-Monomecular wire backblast bug fixed.
+DocInfo/PatchNote365=-Fixed vesania & mk79 impact animation.
+DocInfo/PatchNote366=-Ch.1 farmer akma mission fixed.
 DocInfo/Screenshot01=Read the objectives and focus on them as a team. Remember - teamwork is key!
 DocInfo/ScreenshotHowToPlay01=This is the first screen you will see. It is recommended, as a new player, you vote for "Normal."
 DocInfo/ScreenshotHowToPlay04=Items are spawned randomly around the map. Read the tooltips! They contain vital information about the item - such as an MRL's backblast.
@@ -1483,7 +1507,6 @@ Effect/Name/AddXP12=Add XP .12
 Effect/Name/AilmentDamage=Ailment Damage
 Effect/Name/ApiaryMissile=Apiary Missile
 Effect/Name/ApiaryWeapon=Apiary Weapon
-Effect/Name/ApplyAI=Apply AI
 Effect/Name/ArachChargeBehavior=Arach Charge Behavior
 Effect/Name/ArachChargeCheck=Arach Charge Check
 Effect/Name/ArachChargeDamage=Arach Charge Damage
@@ -1563,8 +1586,10 @@ Effect/Name/CallforFirePLDamage=Call for Fire PL Damage
 Effect/Name/CavAssaultRifle=Cav Assault Rifle
 Effect/Name/CavBullet=Cav Bullet
 Effect/Name/CavalryScoutLaunchSet=Cavalry Scout Launch Set
+Effect/Name/CavalryScoutLaunchSteelSaberSet=Cavalry Scout Launch Steel Saber Set
 Effect/Name/ChargeAIEnum=Charge AI Enum
 Effect/Name/ChargeAIOrder=Charge AI Order
+Effect/Name/ChargerAI=Charger AI
 Effect/Name/ChargerCharge=Charger Charge
 Effect/Name/ChargerChargeDieoff=Charger Charge Dieoff
 Effect/Name/ChargerChargeDieoffPeriod=Charger Charge Dieoff Period
@@ -1621,6 +1646,7 @@ Effect/Name/CombatMedicLaunchSet=Combat Medic Launch Set
 Effect/Name/CombatWalkerLaunchMissile=Combat Walker Launch Missile
 Effect/Name/CombatWalkerMinigunsDamage=Combat Walker Miniguns Damage
 Effect/Name/CommanderBullet=Commander Bullet
+Effect/Name/CommanderLaunchSet=Commander Launch Set
 Effect/Name/CommanderRifle=Commander Rifle
 Effect/Name/CommandoTentacleAB=Commando Tentacle AB
 Effect/Name/CommandoTentacleForce=Commando Tentacle Force
@@ -1667,6 +1693,47 @@ Effect/Name/EelDamage=Eel Damage
 Effect/Name/EnergyCell=Energy Cell
 Effect/Name/EnergyCellAB=Energy Cell AB
 Effect/Name/EnergyCellSIPU=Energy Cell (SI PU)
+Effect/Name/EquipAmmoBackPack=Equip Ammo Back Pack
+Effect/Name/EquipArrayPack=Equip Array Pack
+Effect/Name/EquipAutomaticRiflemanSet=Equip Automatic Rifleman Set
+Effect/Name/EquipBackPack=Equip Back Pack
+Effect/Name/EquipBinoculars=Equip Binoculars
+Effect/Name/EquipCavalryScoutSet=Equip Cavalry Scout Set
+Effect/Name/EquipCombatMedicSet=Equip Combat Medic Set
+Effect/Name/EquipCommanderSet=Equip Commander Set
+Effect/Name/EquipCommsHeadset=Equip Comms Headset
+Effect/Name/EquipCommsPack=Equip Comms Pack
+Effect/Name/EquipCyborgSet=Equip Cyborg Set
+Effect/Name/EquipDMR=Equip DMR
+Effect/Name/EquipFSSSet=Equip FSS Set
+Effect/Name/EquipFlamethrower=Equip Flamethrower
+Effect/Name/EquipFlamethrowerFlame=Equip Flamethrower Flame
+Effect/Name/EquipFlamethrowerLight=Equip Flamethrower Light
+Effect/Name/EquipFlamethrowerMask=Equip Flamethrower Mask
+Effect/Name/EquipFlamethrowerSet=Equip Flamethrower Set
+Effect/Name/EquipGhostSet=Equip Ghost Set
+Effect/Name/EquipJavelinGunnerLNSet=Equip Javelin Gunner LN Set
+Effect/Name/EquipJavelinGunnerSet=Equip Javelin Gunner Set
+Effect/Name/EquipMachineGun=Equip Machine Gun
+Effect/Name/EquipMedicChemicals=Equip Medic Chemicals
+Effect/Name/EquipMedicalScanVisor=Equip Medical Scan Visor
+Effect/Name/EquipPistol=Equip Pistol
+Effect/Name/EquipPlasmaRifle=Equip Plasma Rifle
+Effect/Name/EquipPlatoonLeaderSet=Equip Platoon Leader Set
+Effect/Name/EquipRifle=Equip Rifle
+Effect/Name/EquipRifleSet=Equip Rifle Set
+Effect/Name/EquipRiflemanSet=Equip Rifleman Set
+Effect/Name/EquipSDMSet=Equip SDM Set
+Effect/Name/EquipSFAATSet=Equip SFAAT Set
+Effect/Name/EquipScoutVisor=Equip Scout Visor
+Effect/Name/EquipShield=Equip Shield
+Effect/Name/EquipShotgun=Equip Shotgun
+Effect/Name/EquipSquadLeaderSet=Equip Squad Leader Set
+Effect/Name/EquipStandardVisionVisor=Equip Standard Vision Visor
+Effect/Name/EquipSteelSaber=Equip Steel Saber
+Effect/Name/EquipTacticalVisor=Equip Tactical Visor
+Effect/Name/EquipTankPack=Equip Tank Pack
+Effect/Name/EquipWaistPack=Equip Waist Pack
 Effect/Name/ExplosiveCharge=Explosive Charge
 Effect/Name/ExplosiveChargeDamage=Explosive Charge Damage
 Effect/Name/FSSBullet=FSS Bullet
@@ -1949,18 +2016,10 @@ Effect/Name/MonoWireDamage1=Mono Wire Damage1
 Effect/Name/MonoWireDamage2=Mono Wire Damage2
 Effect/Name/MonoWireDamage3=Mono Wire Damage3
 Effect/Name/MonoWireDamage4=Mono Wire Damage4
-Effect/Name/MonoWireLaunch1=Mono Wire Launch1
-Effect/Name/MonoWireOffset1=Mono Wire Offset1
-Effect/Name/MonoWireOffset2=Mono Wire Offset2
-Effect/Name/MonoWireOffset3=Mono Wire Offset3
-Effect/Name/MonoWireSA1=Mono Wire SA1
-Effect/Name/MonoWireSA2=Mono Wire SA2
-Effect/Name/MonoWireSA3=Mono Wire SA3
-Effect/Name/MonoWireSA4=Mono Wire SA4
-Effect/Name/MonoWireSet1=Mono Wire Set1
-Effect/Name/MonoWireSet2=Mono Wire Set2
-Effect/Name/MonoWireSet3=Mono Wire Set3
-Effect/Name/MonoWireSet4=Mono Wire Set4
+Effect/Name/MonoWireLaunch=Mono Wire Launch
+Effect/Name/MonomolecularWireCreatePersist=Monomolecular Wire Create Persist
+Effect/Name/MonomolecularWireSearchArea=Monomolecular Wire Search Area
+Effect/Name/MonomolecularWireSet=Monomolecular Wire Set
 Effect/Name/MorbusSludgeDamage=Morbus Sludge Damage
 Effect/Name/MorbusSludgeLaunch=Morbus Sludge Launch
 Effect/Name/MotherDeath=Mother Death
@@ -2120,6 +2179,7 @@ Effect/Name/SprintSet2=Ares Charge Set
 Effect/Name/SprintSetNew=Sprint Set New
 Effect/Name/SquadLeaderBullet=Squad Leader Bullet
 Effect/Name/SquadLeaderDamage=Squad Leader Damage
+Effect/Name/SquadLeaderLaunchSet=Squad Leader Launch Set
 Effect/Name/StalkerAIEnum=Stalker AI Enum
 Effect/Name/StalkerAIOrder=Stalker AI Order
 Effect/Name/StalkerChargeBehavior=Stalker Charge Behavior
@@ -2163,6 +2223,47 @@ Effect/Name/TurnedClaws=Turned Claws
 Effect/Name/UmbraBulletLaunch=Umbra Bullet Launch
 Effect/Name/UmbraRifleDamage=Umbra Rifle Damage
 Effect/Name/UnburiedClaws=Unburied Claws
+Effect/Name/UnequipAmmoBackPack=Unequip Ammo Back Pack
+Effect/Name/UnequipArrayPack=Unequip Array Pack
+Effect/Name/UnequipAutomaticRiflemanSet=Unequip Automatic Rifleman Set
+Effect/Name/UnequipBackPack=Unequip Back Pack
+Effect/Name/UnequipBinoculars=Unequip Binoculars
+Effect/Name/UnequipCavalryScoutSet=Unequip Cavalry Scout Set
+Effect/Name/UnequipCombatMedicSet=Unequip Combat Medic Set
+Effect/Name/UnequipCommanderSet=Unequip Commander Set
+Effect/Name/UnequipCommsHeadset=Unequip Comms Headset
+Effect/Name/UnequipCommsPack=Unequip Comms Pack
+Effect/Name/UnequipCyborgSet=Unequip Cyborg Set
+Effect/Name/UnequipDMR=Unequip DMR
+Effect/Name/UnequipFSSSet=Unequip FSS Set
+Effect/Name/UnequipFlamethrower=Unequip Flamethrower
+Effect/Name/UnequipFlamethrowerFlame=Unequip Flamethrower Flame
+Effect/Name/UnequipFlamethrowerLight=Unequip Flamethrower Light
+Effect/Name/UnequipFlamethrowerMask=Unequip Flamethrower Mask
+Effect/Name/UnequipFlamethrowerSet=Unequip Flamethrower Set
+Effect/Name/UnequipGhostSet=Unequip Ghost Set
+Effect/Name/UnequipJavelinGunnerLNSet=Unequip Javelin Gunner LN Set
+Effect/Name/UnequipJavelinGunnerSet=Unequip Javelin Gunner Set
+Effect/Name/UnequipMachineGun=Unequip Machine Gun
+Effect/Name/UnequipMedicChemicals=Unequip Medic Chemicals
+Effect/Name/UnequipMedicalScanVisor=Unequip Medical Scan Visor
+Effect/Name/UnequipPistol=Unequip Pistol
+Effect/Name/UnequipPlasmaRifle=Unequip Plasma Rifle
+Effect/Name/UnequipPlatoonLeaderSet=Unequip Platoon Leader Set
+Effect/Name/UnequipRifle=Unequip Rifle
+Effect/Name/UnequipRifleSet=Unequip Rifle Set
+Effect/Name/UnequipRiflemanSet=Unequip Rifleman Set
+Effect/Name/UnequipSDMSet=Unequip SDM Set
+Effect/Name/UnequipSFAATSet=Unequip SFAAT Set
+Effect/Name/UnequipScoutVisor=Unequip Scout Visor
+Effect/Name/UnequipShield=Unequip Shield
+Effect/Name/UnequipShotgun=Unequip Shotgun
+Effect/Name/UnequipSquadLeaderSet=Unequip Squad Leader Set
+Effect/Name/UnequipStandardVisionVisor=Unequip Standard Vision Visor
+Effect/Name/UnequipSteelSaber=Unequip Steel Saber
+Effect/Name/UnequipTacticalVisor=Unequip Tactical Visor
+Effect/Name/UnequipTankPack=Unequip Tank Pack
+Effect/Name/UnequipWaistPack=Unequip Waist Pack
 Effect/Name/VesaniaExplosionDmg=Vesania Explosion Dmg
 Effect/Name/VesaniaGLDamage=Vesania GL Damage
 Effect/Name/VesaniaGLLaunch=Vesania GL Launch
@@ -2219,6 +2320,7 @@ NoJumpInWalls=Cannot jump into walls
 Overhaul=Must target a broken unit
 Param/Value/00021BFC=Survivor killed
 Param/Value/00134FBA=Default
+Param/Value/00289B08=<c val="00FF80">Special thanks to:</c><n/><n/><c val="00FF80">illidan92:</c> <c val="FFFFFF">Creator of Undead Assault 3.</c><n/><c val="00FF80">Commlink:</c><c val="FFFFFF"> Models & textures.</c><n/><c val="00FF80">DrSuperGood:</c> <c val="FFFFFF">Maintaining original UA3 map.  https://github.com/DrSuperGood/SC2-UA3</c><n/><c val="00FF80">Delphinium & Nanakey: </c><c val="FFFFFF">Open source asset mod.</c><n/><n/><c val="00FF80">Anyone who has contributed patches via github.</c>
 Param/Value/0049EB29=
 Param/Value/00520369=<c val="008000">Ravensword:</c> Air space is clear. CAS authorized.
 Param/Value/00830A4B=: You are being detained, stay calm and do what I say!
@@ -2230,6 +2332,8 @@ Param/Value/01248864=<c val="008000">Ravensword:</c> Outlaw 6, a Rock Avalanche 
 Param/Value/01355BD2=<c val="008000">Soldier:</c> All the Highland refugees made it safely.
 Param/Value/014FFC94=<s val="AiurChefCenterSize22Bold">
 Param/Value/015F9BED=All TCPs not relieved
+Param/Value/0199EEF4=Commands
+Param/Value/01BD181B=</c>!
 Param/Value/01EE824E=Out of shells.
 Param/Value/01F06C60= Skill Identifier has been unlocked
 Param/Value/01F5436B=Team Deathmatch
@@ -2239,6 +2343,7 @@ Param/Value/026CC27C=
 Param/Value/02B0B05B=SFC
 Param/Value/0325BDEB=
 Param/Value/03405ED6=<c val="008000">Soldier:</c> Contact! I'm taking fire!
+Param/Value/037D9467=<c val="0080C0">You are now the team leader.</c>
 Param/Value/03B74353=Default
 Param/Value/03C8C4FD=<c val="00FF80">Aspectus:</c> How did you...?
 Param/Value/03E368D3=The RA have taken a more aggressive approach to take the AO. They are sending in combat vehicles to flush you out. Use range and explosives to your advantage. Rocket launchers are an excellent way to destroy enemy vehicles.
@@ -2255,6 +2360,7 @@ Param/Value/0539EE70=<n/>
 Param/Value/0544675B=<c val="008000">Outlaw 6:</c> Good job escorting that convoy.
 Param/Value/054C3DBA=<img path="Assets\Textures\icon-health-zerg.dds" height = "22" width = "22" /> 
 Param/Value/0557E792=Invalid level.
+Param/Value/0581ABF1=Map Credits
 Param/Value/05A4E708=A Combat Logistics Patrol (CLP, pronounced "clip") is moving through your AO to resupply Dasdan. Dasdan is seeing heavy hostile activity, and desperately needs this resupply. Escort the CLP through your AO.
 Param/Value/05BE6571=Satchel Charges
 Param/Value/05C2DB03=KLE completed.
@@ -2271,8 +2377,10 @@ Param/Value/06C9438A=TCP
 Param/Value/06E92262=Steel Saber
 Param/Value/06EFD955=Before we can shut down the time-bombs, we must first download the abort codes from each RA facility computer terminal.
 Param/Value/06FF6867=<c val="008000">Ravensword:</c> Outlaw 6, air assets are on the way. However, they cannot support you until all air threats are destroyed. There are 2 main aerial threats in your AO. Destroy them.
+Param/Value/074DA8D4=Too many fireteams
 Param/Value/077195B0=: 
 Param/Value/07D0B592=<c val="008000">Outlaw 6:</c> AO Dasdan has been overrun, and Ravensword wants us to evacuate this AO.
+Param/Value/07FAD41F=
 Param/Value/081C8355=Avg Game Time: <s val="ChatHelp_Terr">
 Param/Value/087D5CEA=A level of Leadership was learnt that has no LN Data
 Param/Value/08886B3D=To kick 
@@ -2286,7 +2394,6 @@ Param/Value/095C7D55=Sensors not placed in time.
 Param/Value/096BC083=Competitive
 Param/Value/09D20E0D=Attain 50+ massive kills in a game on hard+ difficulty.
 Param/Value/0A0B4B66= 
-Param/Value/0A195CFE=<c val="0080C0">Fireteams (FTs)</c> are groups of up to 4 players who coordinate together to accomplish the mission. The team leader, or TL, can place objective rally points, or ORPs, by clicking the middle mouse button. ORPs are used to direct the fireteam to a specific location or target.<n/><n/>Learn more about SIs by visiting our website, <c val="008000">undeadassault.net</c>.
 Param/Value/0AB26049=<c val="008000">Ravensword:</c> CAS is on station.
 Param/Value/0AF2BAFE=Please copy the UA3.SC2Bank file from 1-S2-1-1086513 to 1-S2-1-4256394 before next game and try again.
 Param/Value/0B352CA8=</c> 
@@ -2401,7 +2508,6 @@ Param/Value/1A0A8090=PMC mode pits you against PMCs. This mode focuses less on t
 Param/Value/1A68A9F3=Enlisted XP: <s val="ChatHelp_Terr">
 Param/Value/1A8B9AC2=Interval: 
 Param/Value/1AC4A120=Round completed
-Param/Value/1AE134A3=Bravo
 Param/Value/1AEBD02C=Gather reports on the afflicted.
 Param/Value/1AFE88B1=, 
 Param/Value/1B25A10C=<c val="008000">Soldier:</c> The sky is clearing.
@@ -2434,7 +2540,6 @@ Param/Value/1DF650D6=Rounds<n/>Amount of rounds in current magazine.
 Param/Value/1DF65169=If you have not played Undead Assault 3 for a long time you may need to start it up and save to upgrade your bank format.
 Param/Value/1DF717F1=The local police are having trouble controlling the influx of undead at their TCPs and ECPs. Placing a sentry gun at each one will greatly aid in security.
 Param/Value/1E74C862=<c val="E7A303">
-Param/Value/1E83BB43=Already in a fireteam
 Param/Value/1E9F1690=<c val="008000">Outlaw 6:</c> Outlaws, our first priority is reinforcing security of this AO.
 Param/Value/1F0B21EB=<c val="008000">Ravensword:</c> To the west of your AO is a small abandoned motorpool. A few combat vehicles remain. We'll air drop engineers to operate them.
 Param/Value/1F19C6C5=Mission Time
@@ -2461,6 +2566,7 @@ Param/Value/221939FB=MGEN
 Param/Value/225AA498=<c val="008000">Silo successfully disabled</c>
 Param/Value/2263B6B2= has been killed in action.
 Param/Value/226BF541=
+Param/Value/227C0B10=Already in a fireteam
 Param/Value/22E8DB64=:
 Param/Value/22F0ABF8=Boss Battle
 Param/Value/23080C6A=<c val="008000">Saber 7:</c> It's just me and 4 from my Alpha team! We need assistance now or we're all dead!
@@ -2474,7 +2580,6 @@ Param/Value/24C0E3E1=<c val="008000">Soldier:</c> The fog is clearing.
 Param/Value/24EF9DAE= has been killed by 
 Param/Value/25075569=<c val="008000">Operative:</c> RA soldiers! Destroy them!
 Param/Value/251E2FB5=Sanies, a large infection that springs up around tier 1 hot spots, have infested this AO. In order to cleanse this area they must first be destroyed.<n/>Plant a satchel charge at each Sanies in order to destroy them.
-Param/Value/2526C838=<s val="ErrorDisplay">Stopped sprinting.</s>
 Param/Value/257C1576=Escort Convoy
 Param/Value/259666A2=The RA have emplaced snipers in the hills to the northwest, west, and south of the RA facility to stop the operation. Eliminate them before Combat Company arrives.
 Param/Value/25E84047=Deathmatch
@@ -2557,7 +2662,7 @@ Param/Value/2EB38D5F=Team
 Param/Value/2EB3A030=With Mac users the path looks some what like this:
 Param/Value/2ECF3841=Outbreak modifier selected. XP gain increased by 10%, but mostly masses of class 3 hostiles spawn.
 Param/Value/2EDB4ECC=\Banks\
-Param/Value/2EE76CE7=K
+Param/Value/2EE76CE7=
 Param/Value/2EF1283D=KEC found
 Param/Value/2EF97179= 
 Param/Value/2F3B6C3A=The villagers of Guslani are in a very poorly defended location. Escort them to Thalim.
@@ -2626,6 +2731,7 @@ Param/Value/3660475E=
 Param/Value/367BD7DF=Told Akma's Wife
 Param/Value/36858262=Name
 Param/Value/3688F7B8=Start with a random mini.
+Param/Value/3689A94E=(TL) 
 Param/Value/369ADD5E=Tier 1 Hostile
 Param/Value/36A33191=<c val="008000">Operative:</c> Contact! Don't let them near the convoy!
 Param/Value/36AAAF27=Press the sq button near your portrait to display vital information about your team.
@@ -2708,8 +2814,8 @@ Param/Value/4133C7D8=: Thank you so much!
 Param/Value/41422984=<c val="008000">Engineer:</c> Nothing appears wrong with the tank. Did you call us out here just to start the engine?!
 Param/Value/41905C40=Silo
 Param/Value/41CB3CA8=<c val="0000FF">Dark Sky:</c> You don't have to enter yourself. Just help us locate a simple key card. We'll do the rest. Higher command doesn't even need to know about it.
+Param/Value/4210CFA0=(None)
 Param/Value/422878FF= 
-Param/Value/423F1732=Cannot carry more than 1 aim assist.
 Param/Value/424637D4=TCP 
 Param/Value/42A69E0C=
 Param/Value/42A9E408=<c val="008000">Saber Main:</c> We'll be overrun in 5. We need immediate assistance.
@@ -2752,6 +2858,7 @@ Param/Value/47F514DF=<c val="FF0000">TEAM DEATHMATCH</c>
 Param/Value/47FDD387=<c val="FF0000">TEAM DEATHMATCH</c>
 Param/Value/481228C9=<s val="ArcadeFighterScoreTitle">
 Param/Value/484852F2=<s val="ChatHelp_Prot">WO:</s><s val="ChatHelp_Terr">
+Param/Value/48817F78=<c val="0080C0">You are now the team leader.</c>
 Param/Value/4891B8DB=[Combat Medic] Improves Blood Transfusion and Nano-Injection.
 Param/Value/48993446=<c val="008000">Soldier:</c> She's turning, take her down fast!
 Param/Value/48B5F86D=Interval: 
@@ -2771,7 +2878,6 @@ Param/Value/4AF0123B=Macintosh HD/Users/[Username]/Library/Application Support/B
 Param/Value/4B0DC76D=<c val="800080">Dr. Graham:</c> Looks like a military raid.<n/>This entire research facility has been compromised.
 Param/Value/4B2EDF8D=Recruit
 Param/Value/4B321CBB=
-Param/Value/4B4A757D= has left the fireteam.
 Param/Value/4B73E1C1=<c val="008000">Ravensword:</c> A phantom has arrived.
 Param/Value/4B7D91AC=There is an unknown threat lurking in the darkness. Destroy it before it destroys you.
 Param/Value/4B97E578=Save every refugee during the Valor chapter on normal or harder difficulty.
@@ -2784,6 +2890,7 @@ Param/Value/4C612C96=
 Param/Value/4C8F585E=CW2
 Param/Value/4C9460C1=Search The Thalim Homes
 Param/Value/4C9C45C4=<c val="008000">Outlaw 6:</c> Ravensword Main, requesting sentry guns be air dropped for TCP operations.
+Param/Value/4CB2DA96=<c val="0080C0">TL:</c> Rally on <c val="0080C0">me</c>!
 Param/Value/4CB3CB65=<c val="008000">Soldier:</c> We need to move on to the next objective.
 Param/Value/4CEA5546=Normal is recommended for players who have completed the game on recruit.<n/>Even for veteran players, teamwork is required to optimally complete this mode.
 Param/Value/4CEB0373=Default
@@ -2792,6 +2899,7 @@ Param/Value/4D48D76E=Plague Vectors have been spawning in your AO. Kill them bef
 Param/Value/4D6446BE=<img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height = "13" width = "13" />
 Param/Value/4D7EAC3E=MIA 
 Param/Value/4D8370B8=<n/>
+Param/Value/4DA71CF1= has joined the fireteam.
 Param/Value/4E856855=<c val="008000">Ravensword:</c> Those samples should be sufficient to identify the cause.
 Param/Value/4E86B27F=Score: 
 Param/Value/4EF13B77=TCP overrun
@@ -2810,7 +2918,6 @@ Param/Value/50848E58=<c val="008000">Soldier:</c> It seems most of the Guslani r
 Param/Value/5095C7C9=Search Westley Adam's House
 Param/Value/50990063=AO Dasdan is completely overrun, and saber platoon is destroyed. Hold out until the phantoms arrive to evacuate the city.
 Param/Value/509CA5EB= XP 
-Param/Value/50A22249=Creates a fireteam
 Param/Value/50A2FEB5=Escort Drivers
 Param/Value/50A4EF69=<n/>The team last standing wins.
 Param/Value/50E1684E=Kills: <s val="ChatHelp_Terr">
@@ -2859,6 +2966,7 @@ Param/Value/57353ABA=<c val="008000">Soldier:</c> Evening, sir. We're here to pr
 Param/Value/574297E4=Now navigate to the Undead Assault 2015 bank directory.
 Param/Value/5745C656=<c val="008000">Soldier:</c> Just doing our part. We've recieved reports of a minor outbreak in this area. Do you know the source?
 Param/Value/575B421C=All progress made will be merged when import is sucessful so no need to exit immediatly.<n/>Type "-help import" for more information.
+Param/Value/576A9F80=+
 Param/Value/577B754B=The entered signature must be 40 character long capital hexadecimal.
 Param/Value/5795296D=1SG
 Param/Value/579B9707=<img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height = "13" width = "13" />
@@ -2936,6 +3044,7 @@ Param/Value/612AEA1E=<c val="FF0000">A silo has only 40 seconds remaining!</c>
 Param/Value/615431AE=Combat bonus
 Param/Value/61626925=Farmer Akma not reached in time.
 Param/Value/616AC023=: You're coming with us!
+Param/Value/616DC592=<c val="0080C0">TL:</c> Attack the <c val="FF8000">
 Param/Value/61864263=/
 Param/Value/618EF10E=The Saber AO has extremely high levels of activity, and their MEDEVAC status is red. They are handing over their casualties at the eastern TCP. Retrieve them and bring them to the MEDEVAC.
 Param/Value/61920E18=Fuel<n/>Fuel is used for your weapon and certain abilities.
@@ -2959,7 +3068,6 @@ Param/Value/6410F4D3= <c val="FF8000">Kills:</c>
 Param/Value/6418461B=TCP not contained
 Param/Value/64215F6F=Kills/Deaths/Rounds Won
 Param/Value/643FCD40=Possible Employee Home
-Param/Value/64419FBA=Only 4 soldiers per fireteam
 Param/Value/6456DF83=: You're under arrest!
 Param/Value/64CD3442=Power Generators
 Param/Value/64EF781F=<c val="008000">Soldier:</c> Alright, we've got the abort codes. Let's get moving to those Time-Stops.
@@ -2971,6 +3079,7 @@ Param/Value/658E018E=<c val="00FF00">Next round in 5 seconds...</c>
 Param/Value/65A31BF3=Reduces life by 25%, but increases MS by .1.
 Param/Value/65C80F64=
 Param/Value/65EB9D3D=Tier 1 - Increases XP by 10%. Mostly class 1 and 2 hostiles spawn. Cannot be checked with Outbreak.
+Param/Value/661D2199=Alpha
 Param/Value/6642316C=<n/>
 Param/Value/66591DE9=Adds 40 life.
 Param/Value/6669B2B0=Tank partially recovered
@@ -2984,7 +3093,6 @@ Param/Value/672F8FC5=Commands
 Param/Value/6734B5DF=<c val="FF0000">Encumbered - too many magazines readied.</c>
 Param/Value/673B5745=Instructor
 Param/Value/67811A8D=<c val="008000">Soldier:</c> There it is. Move out!
-Param/Value/6788F66E=it worked
 Param/Value/679B6C53=<c val="008000">Ravensword:</c> Saber 7, SITREP.
 Param/Value/67B33A12=RA destroyed
 Param/Value/67C7767C=Insufficient Bio-Samples collected.
@@ -2997,7 +3105,6 @@ Param/Value/686E87A8=Close
 Param/Value/6880C588=LLDR
 Param/Value/68A1F698=The game mode affects nearly every aspect of gameplay. The harder the mode, the more enemies that spawn, the tougher they are, and the faster they are. Missions will become more difficult, but award more XP.
 Param/Value/68CE2C01=Farmer Akma
-Param/Value/68D83DC8=<c val="0080C0">TL:</c> Rally on <c val="0080C0">
 Param/Value/6900DD88=Radius: 
 Param/Value/69A7CBAD=Tier 1
 Param/Value/6A3D3633=<c val="FF0000">Direct Hit</c>
@@ -3028,7 +3135,6 @@ Param/Value/6D46EEAB=Escort the Mayor to Thalim
 Param/Value/6D4DEC28=Minerva
 Param/Value/6D508AB3=Leave the AO
 Param/Value/6D8039A9= 
-Param/Value/6D836DC0=Alpha
 Param/Value/6DCED7D1=<n/>
 Param/Value/6E1921CB=)
 Param/Value/6E3D235A=/
@@ -3036,6 +3142,7 @@ Param/Value/6E69AC23=RA decal unlocked.
 Param/Value/6E6CA469=<c val="008000">Ravensword Main:</c> Outlaw 6, we need to test the food and water supply for signs of the T virus.
 Param/Value/6E9AE2F3=The team with the most kills wins.<n/>Team Kill Count:<n/>
 Param/Value/6EA2C5C2=<c val="008000">Battle 7:</c> Turn off the road up here. Let's take a little shortcut.
+Param/Value/6ED6F1F0=Create
 Param/Value/6EE353D4=<c val="008000">Soldier:</c> Alright let's set up security.
 Param/Value/6EF7B591=(None)
 Param/Value/6F43297D=<n/>
@@ -3078,7 +3185,6 @@ Param/Value/74D77B21=sa
 Param/Value/753F3910=<n/>
 Param/Value/761010A0=The RA has reached the phantom crew. Eliminate them.
 Param/Value/761AE3FB=Awarded to medics who revive 12 times in a single game.
-Param/Value/762BC8F3=Delta
 Param/Value/76354AAF=<c val="008000">Ravensword:</c> The RA assault has arrived, however, we have grave news. The RA have placed time-stops around the AO. If they explode, they will slow time nearly to a halt for all but the RA.
 Param/Value/7682DB0D=Light Armor
 Param/Value/769902FD=<c val="0000FF">Unknown:</c> This is Dark Sky. We've been watching you since yesterday. You and your men don't stand a chance against what is coming - at least, not alone.
@@ -3087,7 +3193,7 @@ Param/Value/76B4661D=<c val="008000">Soldier:</c> Satchel charge placed! Move, m
 Param/Value/76CB7C45=0
 Param/Value/76FDFD68=<c val="FF8000">Disable sequence terminated.</c>
 Param/Value/776C0EA9=/
-Param/Value/77A38FE7=<s val="ChatHelp_Prot">WO:</s><s val="ChatHelp_Terr">
+Param/Value/77A38FE7=<s val="ChatHelp_Prot">WO:</s><s val="ChatHelp_Terr"> 
 Param/Value/77BB61E3=Crewmember extracted
 Param/Value/77E6C89F=Veteran
 Param/Value/7827FD46=<c val="008000">Outlaw 6:</c> I knew they wouldn't let us down. Get to those LZs and grab that supplies, men!
@@ -3156,6 +3262,7 @@ Param/Value/7ECA7CFC=: Shut up and come with me!
 Param/Value/7EDC2B26=<c val="800000">THIS IS A BETA OF THE NEXT RELEASE VERSION.<n/>ALL PROGRESS MADE WITH THIS VERSION WILL BE LOST.</c>
 Param/Value/7F21EEF7=/
 Param/Value/7F3079E9=<c val="00FF80">Umbra:</c> Your blindness will show itself soon enough.
+Param/Value/7F310616=<c val="FF0000">Warning: Not automatically saving due to a loss in rank experience. Any progress made since last save will be lost unless manually saved.</c>
 Param/Value/7F7969A3=<n/>The player with the most kills by round's end wins.
 Param/Value/7FA959CA=Silo
 Param/Value/80075FAE=<c val="008000">Outlaw 6:</c> New mission: Detain Dr. Jashan. Find him!
@@ -3170,6 +3277,7 @@ Param/Value/8141A326=Leadership level too low for Local National type
 Param/Value/81720FE5= has been promoted to <s val="ArcadeFighterScoreTitle">
 Param/Value/8179E8CA=Soldier extracted
 Param/Value/81CEBD2F=Increases damage with explosives by 30%, and adds 10 shields. IFS explosives do not count.
+Param/Value/8210E0FA=RA 
 Param/Value/824B7A8E=2LT
 Param/Value/82830690=<c val="008000">Soldier:</c> Satchel charge placed. Get out of there.
 Param/Value/82C0C10F=<c val="008000">Saber 6:</c> Outlaw 6 this is Saber 6, the commander of AO Dasdan. Be advised that 2 Raisulis and other class 2 and 3 hostiles have passed over into your sector.
@@ -3178,13 +3286,12 @@ Param/Value/82F20D72=<c val="008000">Soldier:</c> I found a civilian.
 Param/Value/83067467=Your bank should then be imported with all progress transfered.
 Param/Value/83069A3B=
 Param/Value/83350CE3=Complete the PMC -rifle epilogue with 30+ PMC kills.
+Param/Value/835B46E3= has left the fireteam.
 Param/Value/83C22746=NM completed with <6 hits, >= 1200 kills, 10 massive kills and IL <= 25.
 Param/Value/83DBD5CA=Destroy All Tier 1 Hostiles
 Param/Value/8406280D=<c val="008000">Soldier:</c> Let's get moving. It will be night soon, and illum is low.
-Param/Value/84176C1C=<c val="0080C0">You are now the team leader.</c>
 Param/Value/84499F8B=<s val="ArcadeFighterScoreTitle">Chapter 2</s><n/>
 Param/Value/84564957=Nudge down
-Param/Value/8471DF92=Join
 Param/Value/8487B11A=However to conserve your hard earned progress Undead Assault 2015 comes with an importation utility.
 Param/Value/84C3FDFD=In game use the "-import UA3 [signature]" command.
 Param/Value/84CBAA4B=Tank recovered
@@ -3214,7 +3321,7 @@ Param/Value/87D89234=<c val="008000">Ravensword Main:</c> We need you to search 
 Param/Value/87E5C719=Vehicle destroyed
 Param/Value/8824FA3B=Complete the PMC -rifle epilogue with 30+ PMC kills.
 Param/Value/884BF6AE=Abort codes downloaded
-Param/Value/8870CAE1=<s val="ChatHelp_Prot">Enlisted:</s><s val="ChatHelp_Terr">
+Param/Value/8870CAE1=<s val="ChatHelp_Prot">Enlisted:</s><s val="ChatHelp_Terr"> 
 Param/Value/887EDBD6=Mission Time
 Param/Value/88D25115=Civilians evacuated
 Param/Value/8917BB87=<n/>
@@ -3229,7 +3336,6 @@ Param/Value/899FC422=<c val="008000">Soldier:</c> It looks like at least a few G
 Param/Value/89F536FF=<c val="008000">Battle 7:</c> ETA 12 mikes.
 Param/Value/8A0AD94A=Hero
 Param/Value/8A478CD0=<c val="008000">Soldier:</c> Abdul is dead!
-Param/Value/8A7106F7=Sprint
 Param/Value/8A73DAF5=<c val="008000">Tank Commander:</c> We just hit a boomer and can't move. We need assistance!
 Param/Value/8A7D0181= 
 Param/Value/8A91FEFE=<c val="800080"><6 hits, >= 800 kills, 5 massive kills and IL <= 25, Bronze Star awarded</c>
@@ -3277,16 +3383,17 @@ Param/Value/8F35644C=Increases maximum magazine capacity before encumbrance to 2
 Param/Value/8F55BA73=% life 
 Param/Value/8F5AE219=<c val="008000">Outlaw 6:</c> The time-stops have detonated! Fight on, outlaws!
 Param/Value/8F7877EF=<c val="E7A303">
-Param/Value/8F791B6B=</c>!
 Param/Value/8F803558=<c val="FF0000">Ion Cannon detected.</c>
 Param/Value/8FC496E6=<c val="008000">Outlaw 6:</c> Outlaws, we're going to need samples from the local silos.
 Param/Value/9013EC4F=<c val="008000">Ravensword 6:</c> Roger. This is very abnormal...no PMC has been reported to be operating around here in 10 years. I wonder what the RA are doing in this AO. We'll investigate and contact you soon.
 Param/Value/905ACFD2=<c val="008000">Ravensword:</c> We'll air drop a satchel charge IOT breach the RA Facility gate. ETA 30 seconds. Good luck, out.
 Param/Value/90671BA3= 
 Param/Value/907C39FA=Round completed
+Param/Value/90A780C5=<s val="ChatHelp_Prot">Officer:</s><s val="ChatHelp_Terr"> 
 Param/Value/90B45F74=The mayor wants to conduct a meeting with the chief of police. Escort him to Thalim.
 Param/Value/90BFC31B=<img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height = "22" width = "22" />
 Param/Value/91407C15=Adds 3 to mechanical skills.
+Param/Value/915AF581=SIs
 Param/Value/91892EDA=Commands
 Param/Value/91922410=Westley Adams, the former mayor of Thalim, is the only person with key card access for the RA Facility. Search his house for him or his key card.
 Param/Value/91A777D1=<c val="008000">Farmer Akma's Wife:</c> Where's Akma?!
@@ -3295,7 +3402,7 @@ Param/Value/91BF153B=Convoy set final
 Param/Value/91D7E1C5=A large force of Tier 1 Hostiles are moving into your AO. They are the last remaining obstacle before this area can be considered cleansed and can be repopulated. Destroy them, and end the infection for these people once and for all.
 Param/Value/91E107B6=Kill the gourmand
 Param/Value/91E34817=<c val="FF0000">
-Param/Value/91FA21A5=<n/>
+Param/Value/91FA21A5=</n>
 Param/Value/923C658B=A group of hostiles are approaching the mayor's manor. Do not let them harm the mayor.
 Param/Value/9247BD66=
 Param/Value/9255F8D0=
@@ -3330,11 +3437,10 @@ Param/Value/959720C5=You are on team
 Param/Value/95BB25EB=<c val="00FF00">Logging in.</c>
 Param/Value/95BD6FAA=Round completed
 Param/Value/95DECDFA= has been teamkilled killed by 
-Param/Value/962487B0=Shows/hides the fireteam dialog
 Param/Value/963092D6= has been killed in action.
+Param/Value/9674B6E8=<c val="0080C0">Fireteams (FTs)</c> are groups of up to 4 players who coordinate together to accomplish the mission. The team leader, or TL, can place objective rally points, or ORPs, by clicking the middle mouse button. ORPs are used to direct the fireteam to a specific location or target.<n/><n/>Learn more about SIs by visiting our website, <c val="008000">undeadassault.net</c>.
 Param/Value/96801415=<c val="0000FF">Unknown:</c> Looks like you could use some assistance, soldiers.
 Param/Value/96C847C2=<c val="008000">Ravensword:</c> Indirect fire has been tasked with supporting another AO, and will be unavailable for some time.
-Param/Value/9722F3DF=FT
 Param/Value/97345EB1=<c val="008000">Cache [%1%] found.</c>
 Param/Value/973B8CF9=Plague vectors destroyed
 Param/Value/97BAABB3=NM completed with <6 hits, >= 1200 kills, 10 massive kills and IL <= 25.
@@ -3361,6 +3467,7 @@ Param/Value/99679D69=<c val="008000">Soldier:</c> It seems most of the Guslani r
 Param/Value/99808ACD=<s val="AiurChefCenterSize22Bold">
 Param/Value/99CFCE9A=Kills: 
 Param/Value/9A2342F3=Decal changed to:<c val="FF8000">
+Param/Value/9A466FB9=Only 4 soldiers per fireteam
 Param/Value/9A4864A7=<c val="008000">Outlaw 6:</c> If we're going to retake this AO, we first need to destroy any Sanies that have infested the area.
 Param/Value/9A6B36AA=<c val="FF8000">Capturing silo...</c>
 Param/Value/9AE0A5AD=/40
@@ -3391,12 +3498,14 @@ Param/Value/9D907F22=Before we conduct security operations, we must get a feel f
 Param/Value/9D9CB64E=<c val="008000">Soldier:</c> Let's go! We're going to escort you to Thalim!
 Param/Value/9DC07233=Relieve TCPs (
 Param/Value/9DD90619= <c val="DDDD00">-Rifle</c>
+Param/Value/9DE0DCE6=Creates a fireteam
 Param/Value/9DFBA144=The RA are going to assault you until the time stops detonate.
 Param/Value/9DFF6B03=Awarded to soldiers who win 4 rounds in competitive mode.
 Param/Value/9E1FD4D9=<img path="
 Param/Value/9E56A086=<img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds" height = "22" width = "22" />
 Param/Value/9E920C27=<c val="008000">Outlaw 6:</c> Outlaws, get ready for force-on-force combat. Retain a minimum 5m spread. Remember, they can see our light sources, too, so stay away from flares. Good luck, out.
 Param/Value/9E99A425=Wait for the seismic resonator to arrive
+Param/Value/9EB1EF8F=<c val="0080C0">You are now the team leader.</c>
 Param/Value/9EB76214=<c val="FF8040">ms</c>
 Param/Value/9F4F5600=Highlander Home
 Param/Value/9F578424=Before the combat walkers can be used again, they require new Kinetic Energy Capacitors. Find them around the AO.
@@ -3405,6 +3514,7 @@ Param/Value/9F75F147=Reduces reload and unjam time by 25%.
 Param/Value/9F784A4D=<c val="00FF80">Aspectus:</c> So some soldiers think they are tough? *Sigh* this again. Just like in Africa, a bunch of self-righteous pawns think they can rule the world. This will be quick.
 Param/Value/9FA03715= 
 Param/Value/9FA459F3= <c val="FF8000">Deaths:</c> 
+Param/Value/9FAD62A2=player revmoed
 Param/Value/9FC3B634=<s val="ArcadeFighterScoreTitle">Chapter 3</s><n/><n/><s val="BattleChatPrefix"><c val="77BBBB">Nihil Moderabile</c></s>
 Param/Value/9FC959B5=Vehicle proceeded safely
 Param/Value/A07CC903=<c val="008000">Ravensword:</c> The resonators have been air-dropped. Retrieve and activate them to destroy the tunnel systems.
@@ -3442,6 +3552,7 @@ Param/Value/A3A9C24E=<c val="008000">Soldier:</c> Everybody! We need to leave fo
 Param/Value/A3FEAAFB=Over 12 revives in a single game
 Param/Value/A4066C17=<c val="008000">Soldier:</c> Alright let's get to those sensors. We need to place them in the highest locations in the AO. Maps show a water tower and 2 antennae as the highest points.
 Param/Value/A443E8ED=<c val="FF0000">SILO RUSH</c><n/>Capturing silos earns points.
+Param/Value/A4770E49=<c val="0080C0">TL:</c> Move here!
 Param/Value/A484BBD3=Before the operation, your squad has been tasked with gaining access to the RA facility. Search the RA Outpost for a key card or a computer that can be hacked to provide access. Proceed with caution, as their security systems may be online.
 Param/Value/A48FC239=<c val="008000">Soldier:</c> We need to move on to the next objective.
 Param/Value/A4CBD80E=<c val="00FF00">Stopped sprinting.</c>
@@ -3464,6 +3575,7 @@ Param/Value/A6579463=<c val="FF0000">KIA</c>
 Param/Value/A658A26F=Infestation Level<n/>A rating on the current level of infestation in this AO. Can be dangerous at high levels.
 Param/Value/A69547C3=<c val="008000">Recommended for new players</c><n/>The easiest mode in the game. Recruit mode offers reduced enemy stats and easier objectives.
 Param/Value/A6F804A4=SPC
+Param/Value/A700D2D7=FT
 Param/Value/A71D7B68=Kills/Hits/Movespeed/Revives/Heals
 Param/Value/A795E357=Silo not deactivated in time
 Param/Value/A7B3FBC9=Mission Time
@@ -3511,7 +3623,7 @@ Param/Value/ADF22A64=quick thinking
 Param/Value/ADFA09B3=<s val="ArcadeFighterScoreTitle">
 Param/Value/AE297A67=<c val="008000">Outlaw 6:</c> Alright Dark Sky, we'll give you this key once we control this AO again.
 Param/Value/AE6BE73E=Abort codes not downloaded in time
-Param/Value/AE97DC7D=K/H/MS/Re/He
+Param/Value/AE97DC7D=<c val="CB97FF">K</c>/<c val="8080FF">H</c>/<c val="FF8040">MS</c>/<c val="FFFF00">Re</c>/<c val="00FF80">He</c>
 Param/Value/AEA741AE=SAS camo pattern unlocked.
 Param/Value/AEB269E1= 
 Param/Value/AEB7A034=<c val="008000">Outlaw 6:</c> A group of refugees are approaching from the east!
@@ -3582,6 +3694,7 @@ Param/Value/B7A20DE1=<c val="008000">Ravensword:</c> Saber 7, SITREP.
 Param/Value/B7A9BD23=Commander successfully escorted
 Param/Value/B7B2E02B=The player with the most kills wins.<n/>Player kills:<n/>
 Param/Value/B7EE6751=<s val="ChatHelp_Prot">Biometric ID saved. Enlisted XP:</s> <s val="ChatHelp_Terr">
+Param/Value/B7F11E43=RA 
 Param/Value/B8321F1B=
 Param/Value/B85ABA66=MSG
 Param/Value/B88AA247=<c val="008000">Ravensword:</c> Outlaw 6, AO Dasdan is completely overrun, and Saber platoon is wiped out. We're going to evacuate your AO before Dasdan spills over.
@@ -3606,12 +3719,12 @@ Param/Value/BAAB90CF=Crewmember extracted
 Param/Value/BAC460CF= <c val="FF8000">Rounds won:</c> 
 Param/Value/BAEEE9DB=<s val="AiurChefCenterSize22Bold">-
 Param/Value/BAF8529A=Outbreak
-Param/Value/BB05D334=</c>!
 Param/Value/BB1B59E1=(Cav Scout) Adds damage, range, and suppresses weapon.
 Param/Value/BB2CF0CA=<c val="0000FF">Dark Sky:</c> Westley Adams. Apparently he was the mayor of Thalim. Typical of the RA.
 Param/Value/BB620C9F=<c val="77BBBB">XP: </c>
 Param/Value/BB682FED=/
 Param/Value/BBAB192B=<s val="HelpMenuDialogTitle"><c val="008080">1 Month Later...</c></s><n/><n/><s val="HelpMenuDialogTitle"><c val="008080">The outbreak has suddenly exploded in the past month, sourced in Central Asia.<n/><n/>The Votum Branch of the DoD, dedicated to finding a vaccine, received an anonymous report that the RA had been researching a vaccine in your previous AO, but abandoned it.<n/><n/>Believing this may lead to an advancement in their own research, they are sending Combat Company to infiltrate the RA facility and find any information on this vaccine. Your squad is sent in first as the advance party to identify any major threats.</s>
+Param/Value/BC67D146=Delta
 Param/Value/BC915366=cl
 Param/Value/BCAEB1A7=Hits: <s val="ChatHelp_Terr">
 Param/Value/BCBD131A=<c val="00FF00">Downloading...34%</c>
@@ -3647,6 +3760,7 @@ Param/Value/BFE8CD69=The UA3.SC2Bank must come from 2-S2-1-3756849 on the same a
 Param/Value/C05FB49B= has selected 
 Param/Value/C06148D1= supply
 Param/Value/C06BE319=(none)
+Param/Value/C08784AB=Bravo
 Param/Value/C093CB5B=Search for KEC
 Param/Value/C0B72C6F=Input "-r ##" to set dispersion radius (2-10).
 Param/Value/C103BDDD=Secure LZs
@@ -3668,6 +3782,7 @@ Param/Value/C2A238A4=<c val="0000FF">Dark Sky:</c> Don't worry, mine have.
 Param/Value/C2D7B72B=Darreus less than 10% life
 Param/Value/C2E186E4=Respawning in 
 Param/Value/C2E18FF0=The UA3.SC2Bank must come from 1-S2-1-1086513 on the same account you are using.
+Param/Value/C2FF873A=<c val="0080C0">TL:</c> Rally on <c val="0080C0">
 Param/Value/C3033A18=<c val="008000">Civilian</c>
 Param/Value/C30AFF75=)
 Param/Value/C3473B2E=<c val="00FF80">Umbra:</c> A monkey climbs a tree and thinks himself tall. Do you honestly believe that killing a few soldiers would secure you victory?
@@ -3732,6 +3847,7 @@ Param/Value/CA3A31CD=Magazines<n/>Magazines are used for reloading.
 Param/Value/CA464DFD=Survived round
 Param/Value/CA5ECC50=<c val="008000">Ravensword:</c> Outlaws, a large number of RA flamethrowers will probably be entering your AO. Use flares and whatever assets you have to kill them before they get close.
 Param/Value/CA7C73FB=All refugees saved
+Param/Value/CA8D2347=<c val="00FF00">Stopped sprinting.</c>
 Param/Value/CA8E3135=Conduct KLE With Mayor
 Param/Value/CAE5EC5B=Default
 Param/Value/CB0C31D9=Start with energy cells, and improves energy cell efficiency by 50%.
@@ -3743,7 +3859,6 @@ Param/Value/CB7AE69F=Meeting completed
 Param/Value/CB83D9DE=: This is the US Army, we're here to rescue you, let's go!
 Param/Value/CBD18A9C= <c val="FF0000">-Outbreak</c>
 Param/Value/CBD294B3=Sentry 
-Param/Value/CBEAC976=Join/leave this fireteam
 Param/Value/CC425B6F=Balaad was recently destroyed by unknown causes. Search the city for survivors, and escort them to Thalim in the northern portion of your AO.<n/>-To gain control of a civilian, right click them
 Param/Value/CC528258=<c val="008000">Shocker 17:</c>  I've got visual contact. Payload on the way.
 Param/Value/CC5DA70D=<c val="FF8040">You have been revived.</c>
@@ -3751,7 +3866,6 @@ Param/Value/CC6CD4D5=<c val="00FF00">Downloading...59%</c>
 Param/Value/CC6EF0AF=There are 3 generators in the AO. For an unknown reason, they have begun to lose power. Eliminate the source and repower the generators, or the AO will lose power in a few days.<n/><n/><c val="77BBBB">-Power up a generator with your suit by approaching it</c>
 Param/Value/CC71CC51=1 life
 Param/Value/CC9A18E9=" width = "
-Param/Value/CCA2F7B7=Too many fireteams
 Param/Value/CCA84F3E=<c val="008000">Outlaw 6:</c> Outlaws, get to the phantom, move!
 Param/Value/CCA8D036=Blood in Blood Out
 Param/Value/CCAC383B=Hard
@@ -3770,7 +3884,6 @@ Param/Value/CDFCA602=Nightmare
 Param/Value/CE170384=<c val="800080">Dr. Jashan:</c> What happened here?
 Param/Value/CE3587D0=Relieve TCPs (
 Param/Value/CE6DB1B5=
-Param/Value/CE932DCD=<c val="0080C0">TL:</c> Move here!
 Param/Value/CEC01256=Finally start up a session of Undead Assault 3 2015 online.
 Param/Value/CED75662=Distribution: Circular
 Param/Value/CF29EC34=Generator
@@ -3928,9 +4041,10 @@ Param/Value/E17425A7=Displays information about yourself
 Param/Value/E178981C=<c val="008000">Soldier:</c> We need to move on to the next objective.
 Param/Value/E17F2707=<s val="Cantina_Text"><c val="00FF00">Welcome to the Rock Avalanche Network!<n/>Select a task:<n/>>Outpost #74 automated defense system<n/>>Regional network connectivity<n/>>Destroy the world<n/>>Download gate access to CAC<n/>>Multi-user projects</s></c>
 Param/Value/E18464F2= has been designated.
+Param/Value/E1ABA759=Shows/hides the fireteam dialog
 Param/Value/E1D48302=3 Dark Sky operators will approach from the south and move up to the combat walkers. Provide security for them as they move.
 Param/Value/E2088998=Search Balaad
-Param/Value/E21ED683=Charlie
+Param/Value/E2291868=</c>!
 Param/Value/E2425F33=<c val="008000">Outlaw 6:</c> That convoy got beat up pretty hard. I hope Dasdan will hold out.
 Param/Value/E2570AA1=Time-Stops reverted
 Param/Value/E25CC009=<img path="Assets\Textures\btn-ability-zerg-banelingspooge.dds" height = "22" width = "22" />
@@ -3955,11 +4069,10 @@ Param/Value/E5AACD58=You can only disarm M1 sentries you own.
 Param/Value/E5CD43EA=,
 Param/Value/E5CDC1A4=WO XP: <s val="ChatHelp_Terr">
 Param/Value/E5DC64CA=<c val="008000">Soldier:</c> We're too late. They're all dead.
-Param/Value/E5EA2962=<c val="0080C0">You are now the team leader.</c>
 Param/Value/E5FA5809=The fireteam dialog is accessable via the <c val="0080C0">FT</c> button in the bottom left portion of the screen.<n/><n/>Fireteams are teams of up to 4 players who interact closely with one another. The team members can see eachother on the map, and the fireteam leader can place <c val="0080C0">Objective Rally Points</c> with the middle mouse button to organize his fireteam's movement and coordination.
+Param/Value/E6511A4A=Join/leave this fireteam
 Param/Value/E651AB63=<c val="FF0000">KIA</c> 
 Param/Value/E658F6EC=<c val="008000">Saber 7:</c> We'll drop them off at the east TCP. Thank you, god speed.
-Param/Value/E67E6387= has joined the fireteam.
 Param/Value/E68602A1=<c val="008000">Farmer Akma:</c> Done, let's move to the next silo.
 Param/Value/E6C52918=<c val="008000">Outlaw 6:</c> Outlaws, this is too big of a decision for me to order you to do. I cannot force you to sacrifice your own integrity. I'll leave it up to you.
 Param/Value/E6DC4FE9=<c val="008000">Pilot:</c> I don't have a lot of fuel. You need to get those casualties here as soon as possible!
@@ -3972,7 +4085,6 @@ Param/Value/E784128E=RA Convoy
 Param/Value/E79239E7=<
 Param/Value/E7F1EB49= has killed himself.
 Param/Value/E82FBB8C=Radius: 
-Param/Value/E83C922B=<s val="ChatHelp_Prot">Officer:</s><s val="ChatHelp_Terr">
 Param/Value/E848F66B=Saving disabled.
 Param/Value/E85E4A47=<c val="008000">Ravensword Main:</c> Outlaw 6, our sattelite imaging is picking up a RA convoy moving through your AO. Destroy it to stricken their supply lines.
 Param/Value/E868A632=Provide security for the TCPs
@@ -4008,7 +4120,7 @@ Param/Value/EBF21479=un
 Param/Value/EBFAA0F6=Ravensword needs to test the local water and food supply for the T-Virus. Mr. Akma's farm is the largest farm in the AO, and his mineral silos will be used to collect samples.
 Param/Value/EC46F432=<c val="008000">Saber 7:</c> Outlaw 6 this is Saber 7. We're experiencing increasing levels of activity, and the MEDEVAC status for our AO is red. Requesting to hand over our casualties to you for MEDEVAC.
 Param/Value/EC4EA638=<c val="008000">Soldier:</c> Piece of cake.
-Param/Value/EC6A5087=Games Played
+Param/Value/EC6A5087=Games
 Param/Value/EC6D4DBC=Intellectual
 Param/Value/EC8B27CD= 
 Param/Value/EC932ED9= (
@@ -4021,7 +4133,6 @@ Param/Value/ECFCCCDD=Crewmember killed
 Param/Value/ED356FD5=<c val="00FF80">Sample collected.</c>
 Param/Value/ED426C6C=Bear Claw decal unlocked.
 Param/Value/ED4F0984=: Frag out!
-Param/Value/ED5AEFF8=<c val="0080C0">TL:</c> Rally on <c val="0080C0">me</c>!
 Param/Value/ED5C3CEC=Shells remaining: 
 Param/Value/EDF8179F=<c val="FF8000">Ignis:</c> You think you can burn my vehicles to no consequence? Do you know what you are meddling in?
 Param/Value/EE1FF992=<c val="008000">Soldier:</c> I don't know, but whoever did this has a lot to answer for. Zombies don't do this.
@@ -4054,6 +4165,7 @@ Param/Value/F1D677FB=Collect Graveyard Samples (
 Param/Value/F1F8F186=<c val="00FF80">Collection halted.</c>
 Param/Value/F21C6E9F= seconds...
 Param/Value/F22133E7=
+Param/Value/F2482BD0=Charlie
 Param/Value/F2575E0A=LTCOL
 Param/Value/F28DE124=BGEN
 Param/Value/F2A2BD09=<c val="008000">Soldier:</c> Downloading location of Mayor's house now. OPNet signal is horrible out here.
@@ -4080,7 +4192,6 @@ Param/Value/F588DD3F=SIs
 Param/Value/F59AFB4E=Start with energy cells, and improves energy cell efficiency by 50%.
 Param/Value/F5D4097C=<c val="00FF00">Now sprinting.</c>
 Param/Value/F5E07D96= has voted for: 
-Param/Value/F60099CC=Create
 Param/Value/F6216AEC=<s val="ChatHelp_Prot">Enlisted:</s><s val="ChatHelp_Terr">
 Param/Value/F623157B=
 Param/Value/F624BF94=Generators powered up
@@ -4092,10 +4203,8 @@ Param/Value/F67543CD=Mission Time
 Param/Value/F68D9145=shell
 Param/Value/F698B799=Escort Refugees
 Param/Value/F6D0479C=Shows an exclamation mark above your hero.
-Param/Value/F6D670C3=(TL) 
 Param/Value/F6FBF97E=Combat bonus
-Param/Value/F7453FC4=<n/>
-Param/Value/F78170C0=<c val="0080C0">You are now the team leader.</c>
+Param/Value/F7453FC4=</n>
 Param/Value/F78BE136=v
 Param/Value/F7A689B6=<c val="008000">Outlaw 6:</c> Now, let's get out of here.
 Param/Value/F7B6F4A0=Guslani dead
@@ -4143,7 +4252,6 @@ Param/Value/FC292915=
 Param/Value/FC39A6A5=<c val="008000">Outlaw 6:</c> Roger. Outlaws, we'll stop them at the TCPs. Move to the TCPs and don't let anything into this AO!
 Param/Value/FC7EA106=Mayor
 Param/Value/FC966DD4=<c val="008000">Outlaw 6:</c> Ravensword, we are still understrength. What assets are available?
-Param/Value/FCC5F8FB=<c val="0080C0">TL:</c> Attack the <c val="FF8000">
 Param/Value/FCDBD93E=MARPAT camo pattern unlocked.
 Param/Value/FD00DAD9=<s val="ArcadeFighterScoreTitle">Chapter 3</s><n/>
 Param/Value/FD197D38=Crewmember killed
@@ -4168,10 +4276,13 @@ Param/Value/FFC99F4C=<c val="0080C0">Generator powered.</c>
 Param/Value/FFD700FD=<s val="AiurChefCenterSize22Bold"><c val="008000">Camouflage</c></s>
 Param/Value/FFD7666F=Intellectual
 Param/Value/FFE92F5B=<c val="008000">Ravensword Main:</c> In line with official protocol the sentry guns have been set to self destruct in [%1%] unless placed to prevent unauthorized use.
+RequirementNode/Tooltip/And2121746728GTE2121746728CountUpgradeTrainingCompleteOnlyTechTreeCheat1LT3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3=Training 1
 RequirementNode/Tooltip/And2304769686GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat4GTECountUpgradeTrainingCompleteOnlyTechTreeCheat4=Leadership & Training 4
 RequirementNode/Tooltip/And2411104750EqCountBehaviorDecloaking1CompleteOnlyAtUnit0EqCountBehaviorDecloaking2CompleteOnlyAtUnit0EqCountBehaviorDecloaking3CompleteOnlyAtUnit0EqCountBehaviorDecloaking4CompleteOnlyAtUnit0EqCountBehaviorDecloaking5CompleteOnlyAtUnit0GTECountAbilGhostSkillsCompleteOnlyAtUnit1=Cloak Delay
 RequirementNode/Tooltip/And3863654470GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2=Soldier Skills 4 and Marksmanship 2
+RequirementNode/Tooltip/CountAbilSoldierSkillsCompleteOnlyAtUnit389129910TechTreeCheat=Soldier Skills Level 3
 RequirementNode/Tooltip/CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheat=Level 1: Requires Hero Level 3
+RequirementNode/Tooltip/Eq1091882887CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat4=Marksmanship Level 4
 RequirementNode/Tooltip/Eq1126111820CountUpgradeSSGCompleteOnlyTechTreeCheat1=SSG
 RequirementNode/Tooltip/Eq1315196357CountUpgradePFCCompleteOnlyTechTreeCheat1=PFC
 RequirementNode/Tooltip/Eq1342765758CountUpgradeSFCEnCompleteOnlyTechTreeCheat1=SFC, Enlisted
@@ -4179,13 +4290,22 @@ RequirementNode/Tooltip/Eq1529213028CountUpgradeBarbaricCompleteOnly1=SI Barbari
 RequirementNode/Tooltip/Eq1805456185CountUpgradeCASOnStationCompleteOnlyTechTreeCheat1=CAS On Station
 RequirementNode/Tooltip/Eq2092276232CountUpgradeMSGCompleteOnlyTechTreeCheat1=MSG
 RequirementNode/Tooltip/Eq2276327908CountBehaviorStrength3CompleteOnlyAtUnit1=Strength 3
+RequirementNode/Tooltip/Eq2432695962CountUpgradeCPLCompleteOnlyTechTreeCheat1=CPL
+RequirementNode/Tooltip/Eq2462162057CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5=Augmentation Level 5
+RequirementNode/Tooltip/Eq2506488513CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2=Augmentation Level 2
+RequirementNode/Tooltip/Eq2821025729CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4=Soldier Skills Level 4
+RequirementNode/Tooltip/Eq2879198198CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2=Marksmanship Level 2
+RequirementNode/Tooltip/Eq2892571211CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1=Augmentation Level 1
 RequirementNode/Tooltip/Eq307393282CountBehaviorProneCompleteOnlyAtUnit0=Not Prone
 RequirementNode/Tooltip/Eq3185170552CountUpgradeCPTCompleteOnlyTechTreeCheat1=CPT
 RequirementNode/Tooltip/Eq3230784200CountUpgradeRifleModeCompleteOnly0=Not Rifle
+RequirementNode/Tooltip/Eq3343152956CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4=Augmentation Level 4
 RequirementNode/Tooltip/Eq3501222248CountBehaviorAgility3CompleteOnlyAtUnit1=Agility 3 Active
 RequirementNode/Tooltip/Eq3550057370CountUpgradeCSMCompleteOnlyTechTreeCheat1=CSM
+RequirementNode/Tooltip/Eq3723031100CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat3=Marksmanship Level 3
 RequirementNode/Tooltip/Eq3793755040CountUnitISBotQueuedOrBetter0=Max 1 IS Bot
 RequirementNode/Tooltip/Eq3823691090CountUpgrade1LTCompleteOnlyTechTreeCheat1=1LT
+RequirementNode/Tooltip/Eq3824807800CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2=Soldier Skills Level 2
 RequirementNode/Tooltip/Eq3888807122CountUpgradeWO3CompleteOnlyTechTreeCheat1=WO3
 RequirementNode/Tooltip/Eq3972752984CountUpgradeWO5CompleteOnlyTechTreeCheat1=WO5
 RequirementNode/Tooltip/Eq4143660971CountBehaviorStealth2CompleteOnlyAtUnit1=Stealth Active
@@ -4195,54 +4315,93 @@ RequirementNode/Tooltip/Eq457914689CountUpgrade1SGCompleteOnlyTechTreeCheat1=1SG
 RequirementNode/Tooltip/Eq474972807CountUpgradeSGMCompleteOnlyTechTreeCheat1=SGM
 RequirementNode/Tooltip/Eq505824172CountUpgradeWO2CompleteOnlyTechTreeCheat1=WO2
 RequirementNode/Tooltip/Eq518497321CountBehaviorChargeCompleteOnlyAtUnit1=Charging
+RequirementNode/Tooltip/Eq529531359CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1=Marksmanship Level 1
+RequirementNode/Tooltip/Eq567023099CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3=Augmentation Level 3
+RequirementNode/Tooltip/Eq605371476CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1=Soldier Skills Level 1
 RequirementNode/Tooltip/Eq861056159CountUpgradeSkiesClearCompleteOnlyTechTreeCheat1=Authorization
 RequirementNode/Tooltip/Eq92015944CountUpgradeMGENCompleteOnlyTechTreeCheat1=MGEN
 RequirementNode/Tooltip/Eq981512461CountUnitM1SentryGunQueuedOrBetter0=Max 1 Sentry Gun
+RequirementNode/Tooltip/GTE1088855040CountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1=Napalm Level 1
 RequirementNode/Tooltip/GTE1102934219CountAbilCyborgStealthCompleteOnlyAtUnit3=Stealth 3
+RequirementNode/Tooltip/GTE119275194CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4=First Aid Level 4
 RequirementNode/Tooltip/GTE1300418668CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat4=Ghost Skills level 4
 RequirementNode/Tooltip/GTE1310947799CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat3=Javelin Skills level 3
 RequirementNode/Tooltip/GTE1397761057CountAbilOrbitalStrikeCompleteOnlyAtUnit3=JFO 3
 RequirementNode/Tooltip/GTE1501146480CountUpgradeEngineeringSkillsCompleteOnly1=Engineering Skills level 1
+RequirementNode/Tooltip/GTE1619583487CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat1=Leadership Skills Level 1
 RequirementNode/Tooltip/GTE1791906363CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat3=Soldier Skills level 3
 RequirementNode/Tooltip/GTE1805456185CountUpgradeCASOnStationCompleteOnly1=CAS On Station
+RequirementNode/Tooltip/GTE1809330113CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4=Rifleman Skills Level 4
 RequirementNode/Tooltip/GTE1860585296CountUpgradeIDFSupportCompleteOnly2=IDF Support 2
 RequirementNode/Tooltip/GTE1918093729CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21=Level 1: Requires Hero Level 3
+RequirementNode/Tooltip/GTE1919610661CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat4=Reconaissance Skills Level 4
 RequirementNode/Tooltip/GTE1921614202CountUpgradeSecurityCompleteOnly1=Security Level 1
 RequirementNode/Tooltip/GTE1979772316CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat2=Ghost Skills level 2
 RequirementNode/Tooltip/GTE1989884963CountAbilCombatEnhancementsCompleteOnlyAtUnit4=Combat Enhancements level 4
+RequirementNode/Tooltip/GTE2121746728CountUpgradeTrainingCompleteOnlyTechTreeCheat1=Training 1
+RequirementNode/Tooltip/GTE2127053401CountUpgradeLeadershipCompleteOnlyTechTreeCheat4=Leadership Level 4
+RequirementNode/Tooltip/GTE2201648162CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat4=Leadership Skills Level 4
 RequirementNode/Tooltip/GTE2213874053CountAbilCombatEnhancementsCompleteOnlyAtUnit2=Combat Enhancements level 2
 RequirementNode/Tooltip/GTE2276327908CountAbilCyborgStrengthCompleteOnlyAtUnit3=Strength 3
+RequirementNode/Tooltip/GTE2318366529CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat3=Marksman Skills Level 3
 RequirementNode/Tooltip/GTE2373625175CountUpgradeEngineeringSkillsCompleteOnly3=Security 3
+RequirementNode/Tooltip/GTE2415045778CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat1=Reconaissance Skills Level 1
+RequirementNode/Tooltip/GTE2415934315CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat3=Reconaissance Skills Level 3
 RequirementNode/Tooltip/GTE2420255148CountAbilOrbitalStrikeCompleteOnlyAtUnit1=JFO 1
 RequirementNode/Tooltip/GTE2425553789CountUpgradeIDFSupportCompleteOnly3=IDF Support 3
+RequirementNode/Tooltip/GTE2462162057CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5=Augmentation Level 5
 RequirementNode/Tooltip/GTE2495743555CountAbilCombatEnhancementsCompleteOnlyAtUnit3=Combat Enhancements level 3
+RequirementNode/Tooltip/GTE2506488513CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2=Augmentation Level 2
 RequirementNode/Tooltip/GTE2516338816CountAbilOrbitalStrikeCompleteOnlyAtUnit2=JFO 2
 RequirementNode/Tooltip/GTE2593853111CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4=Soldier Skills level 4
 RequirementNode/Tooltip/GTE2687546691CountUpgradeSecurityCompleteOnly2=Security 2
 RequirementNode/Tooltip/GTE2708380730CountAbilOrbitalStrikeCompleteOnlyAtUnit4=JFO 4
 RequirementNode/Tooltip/GTE2791772819CountAbilCyborgStrengthCompleteOnlyAtUnit3=Strength level 3
+RequirementNode/Tooltip/GTE2821025729CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4=Soldier Skills Level 4
+RequirementNode/Tooltip/GTE2892571211CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1=Augmentation Level 1
 RequirementNode/Tooltip/GTE2925036810CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat3=Ghost Skills level 3
 RequirementNode/Tooltip/GTE3063185261CountAbilCyborgAgilityCompleteOnlyAtUnit3=Agility 3
+RequirementNode/Tooltip/GTE3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3=Training 3
+RequirementNode/Tooltip/GTE3293826747CountUpgradeTrainingCompleteOnlyTechTreeCheat2=Training 2
+RequirementNode/Tooltip/GTE3343152956CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4=Augmentation Level 4
 RequirementNode/Tooltip/GTE3447350149CountAbilSecurityCompleteOnlyAtUnit2=Security Level 2
 RequirementNode/Tooltip/GTE3447350149CountUpgradeSecurityCompleteOnly2=Security Level 2
 RequirementNode/Tooltip/GTE3476359170CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat2=Javelin Skills level 2
+RequirementNode/Tooltip/GTE3506875869CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat2=Reconaissance Skills Level 2
+RequirementNode/Tooltip/GTE3509451132CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat1=Rifleman Skills Level 1
 RequirementNode/Tooltip/GTE3564591396CountAbilOrbitalStrikeCompleteOnlyAtUnit5=JFO 5
+RequirementNode/Tooltip/GTE3674476840CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat2=Rifleman Skills Level 2
+RequirementNode/Tooltip/GTE3722802059CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat2=Marksman Skills Level 2
 RequirementNode/Tooltip/GTE3737081613CountUpgradeEngineeringSkillsCompleteOnly2=Engineering Skills level 2
+RequirementNode/Tooltip/GTE378448441CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat3=Leadership Skills Level 3
+RequirementNode/Tooltip/GTE380389238CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat3=Rifleman Skills Level 3
+RequirementNode/Tooltip/GTE3824807800CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2=Soldier Skills Level 2
 RequirementNode/Tooltip/GTE3855879615CountUpgradeSecurityCompleteOnly3=Security Level 3
 RequirementNode/Tooltip/GTE3896639198CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat1=Ghost Skills level 1
 RequirementNode/Tooltip/GTE3923531317CountUpgradeEngineeringSkillsCompleteOnly4=Engineering Skills 4
 RequirementNode/Tooltip/GTE4002722016CountUpgradeEngineeringSkillsCompleteOnly3=Engineering Skills level 3
+RequirementNode/Tooltip/GTE4004373163CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat2=First Aid Level 2
+RequirementNode/Tooltip/GTE4016420288CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3=First Aid Level 3
+RequirementNode/Tooltip/GTE4026750960CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat1=First Aid Level 1
 RequirementNode/Tooltip/GTE4031064180CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat1=Javelin Skills level 1
 RequirementNode/Tooltip/GTE404353804CountUpgradeIDFSupportCompleteOnly5=IDF Support 5
 RequirementNode/Tooltip/GTE4144293025CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat5=Ghost Skills level 5
+RequirementNode/Tooltip/GTE4146920530CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat1=Marksman Skills Level 1
 RequirementNode/Tooltip/GTE4209075357CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat4=Javelin Skills level 4
 RequirementNode/Tooltip/GTE4257896482CountAbilCombatEnhancementsCompleteOnlyAtUnit1=Combat Enhancements level 1
 RequirementNode/Tooltip/GTE473313262CountAbilSecurityCompleteOnlyAtUnit4=Security Level 4
 RequirementNode/Tooltip/GTE473313262CountUpgradeSecurityCompleteOnly4=Security Level 4
 RequirementNode/Tooltip/GTE524278969CountUpgradeIDFSupportCompleteOnly4=IDF Support 4
+RequirementNode/Tooltip/GTE529531359CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1=Marksmanship Level 1
+RequirementNode/Tooltip/GTE535010406CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat2=Leadership Skills Level 2
+RequirementNode/Tooltip/GTE567023099CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3=Augmentation Level 3
+RequirementNode/Tooltip/GTE579486704CountUpgradeLeadershipCompleteOnlyTechTreeCheat2=Leadership Level 2
+RequirementNode/Tooltip/GTE605371476CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1=Soldier Skills Level 1
+RequirementNode/Tooltip/GTE879857690CountUpgradeTrainingCompleteOnlyTechTreeCheat4=Training 4
 RequirementNode/Tooltip/GTE89067501CountUpgradeEngineeringSkillsCompleteOnly4=Engineering Skills level 4
 RequirementNode/Tooltip/GTE893805867CountUpgradeIDFSupportCompleteOnly1=IDF Support 1
 RequirementNode/Tooltip/LT223606906CountAbilSecurityCompleteOnlyAtUnit4=Security Level 1-3
+RequirementNode/Tooltip/LT3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3=Training 3
 RequirementNode/Tooltip/LT3916787485CountUnitSatchelChargeCEQueuedOrBetter1=Max 1 satchel charge
 RequirementNode/Tooltip/LT643609641CountUnitBarricadeQueuedOrBetter3=Max 3 barricades
 RequirementNode/Tooltip/LTE1461848182CountUnitM1SentryGunQueuedOrBetter1=Max 2 Sentry Guns
@@ -4250,6 +4409,7 @@ RequirementNode/Tooltip/Or311064107EqCountBehaviorStrength1CompleteOnlyAtUnit1Eq
 RequirementNode/Tooltip/Or4143660971EqCountBehaviorStealth1CompleteOnlyAtUnit1Eq4143660971CountBehaviorStealth2CompleteOnlyAtUnit1Eq4143660971CountBehaviorStealth3CompleteOnlyAtUnit1=Stealth Active
 RequirementNode/Tooltip/Or4277935258EqCountBehaviorStealth2CompleteOnlyAtUnit1EqCountBehaviorStealth3CompleteOnlyAtUnit1=Stealth 2 or 3 Active
 Revive SA Error=No nearby patients
+UI/PingPanel/SelectOnMyWay=Move Here
 UI/PlayerMessage/HasLeftTheGame=%player% is IMDC.
 UI/PlayerMessage/ResourceSplit=
 UI/Researching=
@@ -4543,7 +4703,7 @@ Weapon/Name/DMR=DMR
 Weapon/Name/DMRLN=DMR
 Weapon/Name/DarreusClaws=Darreus Claws
 Weapon/Name/DesignatedMarksmanRifle=Designated Marksman Rifle
-Weapon/Name/DrakeClaws=Drake Claws
+Weapon/Name/DrakeBite=Drake Bite
 Weapon/Name/EelBite=Eel Bite
 Weapon/Name/Flamethrower=Flamethrower
 Weapon/Name/GargantuanSledge=Gargantuan Sledge
@@ -4592,6 +4752,7 @@ Weapon/Name/PlasmaRifleDisruptor=Plasma Rifle Disruptor
 Weapon/Name/PlasmaRifleIncendiary=Plasma Rifle Incendiary
 Weapon/Name/PoliceOfficerRifle=Police Officer Rifle
 Weapon/Name/PoliceOfficerShotgun=Police Officer Shotgun
+Weapon/Name/PoochBite=Pooch Bite
 Weapon/Name/RaisuliClaws=RaisuliClaws
 Weapon/Name/RifleButt=Rifle Butt
 Weapon/Name/RisenClaws=Risen Claws
