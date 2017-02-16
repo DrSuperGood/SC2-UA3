@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CTexture id="CamoLN">
+        <File value="Textures\Armour_LNCamo_diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="IgnisADiffuse">
+        <File value="Assets\Textures\charrocklarge_diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="IgnisAEmissive">
+        <File value="Assets\Textures\charrocklarge_emissive.dds"/>
+        <Slot value="main.emissive"/>
+    </CTexture>
+    <CTexture id="IgnisASpecular">
+        <File value="Assets\Textures\charrocklarge_normal.dds"/>
+        <Slot value="main.specular"/>
+    </CTexture>
+    <CTexture id="IgnisBDiffuse">
+        <File value="Assets\Textures\charcrystalhuge_diffuse.dds"/>
+        <Slot value="head.diffuse"/>
+    </CTexture>
+    <CTexture id="IgnisBEmissive">
+        <File value="Assets\Textures\charcrystalhuge_emissive_all.dds"/>
+        <Slot value="head.emissive"/>
+    </CTexture>
+    <CTexture id="IgnisBSpecular">
+        <File value="Assets\Textures\charcrystalhuge_specular.dds"/>
+        <Slot value="head.specular"/>
+    </CTexture>
+    <CTexture id="VesaniaADiffuse">
+        <File value="Assets\Textures\korhal_buildings_diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="VesaniaAEmissive">
+        <File value="Assets\Textures\korhal_buildings_glow.dds"/>
+        <Slot value="main.emissive"/>
+    </CTexture>
+    <CTexture id="VesaniaASpecular">
+        <File value="Assets\Textures\korhal_buildings_specular.dds"/>
+        <Slot value="main.specular"/>
+    </CTexture>
     <CTexture id="AGRIAConcrete">
         <File value="Assets\Textures\agria_concrete_low.dds"/>
         <Slot value="main.diffuse"/>

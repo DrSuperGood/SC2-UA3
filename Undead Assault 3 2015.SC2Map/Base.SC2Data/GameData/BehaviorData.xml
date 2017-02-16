@@ -5,6 +5,107 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ApplyAI">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipAmmoBackPack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipArrayPack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipBackPack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipBinoculars">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipCommsHeadset">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipCommsPack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipFlamethrowerLight">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipFlamethrowerMask">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipDMR">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipFlamethrower">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipMedicChemicals">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipMachineGun">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipMedicalScanVisor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipPistol">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipScoutVisor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipPlasmaRifle">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipRifle">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="NotSteelSaber"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipShield">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipStandardVisionVisor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipShotgun">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipTacticalVisor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipTankPack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipWaistPack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EquipFlamethrowerFlame">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HunterRoarAI">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
@@ -149,6 +250,8 @@
         <InfoFlags index="Hidden" value="1"/>
         <DisableValidatorArray value="HasMGBurstUpgraded"/>
         <Modification AttackSpeedMultiplier="1.1"/>
+        <InitialEffect value="UnequipMachineGun"/>
+        <FinalEffect value="EquipMachineGun"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MarksmanSkillsLN">
         <InfoFlags index="Hidden" value="1"/>
@@ -227,6 +330,11 @@
         <InitialEffect value="SuppressiveFireHoldPos"/>
         <Modification MoveSpeedMaximum="1" AttackSpeedMultiplier="2" WeaponRange="-6"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="STS">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="SelfPreservation">
         <InfoIcon value="Buttons/BTNSprint.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -234,7 +342,6 @@
         <Modification MoveSpeedMultiplier="1.1">
             <StateFlags index="Invulnerable" value="1"/>
             <WeaponDisableArray value="SquadAutomaticWeaponLN"/>
-            <WeaponDisableArray value="AssaultRifleJav"/>
             <WeaponDisableArray value="IncendiaryRoundsLN"/>
             <WeaponDisableArray value="LNShotgun"/>
             <WeaponDisableArray value="LNAssaultRifle"/>
@@ -931,12 +1038,16 @@
         <Modification MoveSpeedMultiplier="0.95" AttackSpeedMultiplier="0.7">
             <DamageDealtFraction index="Ranged" value="0.85"/>
         </Modification>
+        <InitialEffect value="UnequipDMR"/>
+        <FinalEffect value="EquipDMR"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="IPR">
         <Alignment value="Positive"/>
         <InfoIcon value="Buttons\Weapons\BTNIPR.dds"/>
         <Modification AttackSpeedMultiplier="1.35"/>
         <Tooltip value="Button/Tooltip/IPR"/>
+        <InitialEffect value="UnequipPlasmaRifle"/>
+        <FinalEffect value="EquipPlasmaRifle"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ISBotRockets">
         <BehaviorFlags index="Permanent" value="1"/>
@@ -1270,6 +1381,8 @@
             <BehaviorLinkDisableArray value="MGBurst"/>
         </Modification>
         <Tooltip value="Button/Tooltip/M135Minigun"/>
+        <InitialEffect value="UnequipMachineGun"/>
+        <FinalEffect value="EquipMachineGun"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="M241MMG">
         <Alignment value="Positive"/>
@@ -1278,6 +1391,8 @@
             <DamageDealtFraction index="Ranged" value="0.25"/>
         </Modification>
         <Tooltip value="Button/Tooltip/M241MMG"/>
+        <InitialEffect value="UnequipMachineGun"/>
+        <FinalEffect value="EquipMachineGun"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="M41SAW">
         <Alignment value="Positive"/>
@@ -1288,6 +1403,8 @@
             <BehaviorLinkDisableArray value="MGBurst"/>
         </Modification>
         <Tooltip value="Button/Tooltip/M41SAW"/>
+        <InitialEffect value="UnequipMachineGun"/>
+        <FinalEffect value="EquipMachineGun"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="M5MAR">
         <Alignment value="Positive"/>
@@ -1295,6 +1412,8 @@
         <Modification WeaponRange="2" DetectArc="0" RadarArc="0">
             <DamageDealtFraction index="Ranged" value="0.25"/>
         </Modification>
+        <InitialEffect value="UnequipRifleSet"/>
+        <FinalEffect value="EquipRifleSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MRLAIHeroMechanical">
         <InfoFlags index="Hidden" value="1"/>
@@ -1586,10 +1705,13 @@
         <Modification WeaponRange="3">
             <DamageDealtFraction index="Ranged" value="0.5"/>
         </Modification>
+        <InitialEffect value="UnequipRifleSet"/>
+        <FinalEffect value="EquipRifleSet"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="STSPlaceholder">
+    <CBehaviorBuff id="EquipSteelSaber">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="HasSteelSaber"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Security1">
         <Cost>
@@ -1941,6 +2063,8 @@
         <Alignment value="Positive"/>
         <InfoIcon value="Buttons/BTNUSMCR.dds"/>
         <Modification AttackSpeedMultiplier="1.4"/>
+        <InitialEffect value="UnequipRifleSet"/>
+        <FinalEffect value="EquipRifleSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior">
         <InfoFlags index="Hidden" value="1"/>
@@ -2027,12 +2151,16 @@
         <InfoIcon value="Buttons\Weapons\IDMR2.dds"/>
         <Modification AttackSpeedMultiplier="1.18"/>
         <Tooltip value="Button/Tooltip/IDMR2"/>
+        <InitialEffect value="UnequipDMR"/>
+        <FinalEffect value="EquipDMR"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ISS7">
         <Alignment value="Positive"/>
         <InfoIcon value="Buttons\Weapons\ISS-7.dds"/>
         <Modification AttackSpeedMultiplier="1.3"/>
         <Tooltip value="Button/Tooltip/ISS7"/>
+        <InitialEffect value="UnequipShotgun"/>
+        <FinalEffect value="EquipShotgun"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MinervaCharge">
         <InfoFlags index="Hidden" value="1"/>
@@ -2212,54 +2340,6 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="MonoWireMissile2">
-        <Cost>
-            <Charge Link="Behavior/MonomolecularWire1"/>
-            <Cooldown Link="Behavior/MonomolecularWire1"/>
-        </Cost>
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Requirements value="MonoWire2"/>
-        <Period value="0.02"/>
-        <PeriodicEffect value="MonoWireSA2"/>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/MonomolecularWire1"/>
-                <Cooldown Link="Behavior/MonomolecularWire1"/>
-            </Cost>
-        </DamageResponse>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="MonoWireMissile3">
-        <Cost>
-            <Charge Link="Behavior/MonomolecularWire1"/>
-            <Cooldown Link="Behavior/MonomolecularWire1"/>
-        </Cost>
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Requirements value="MonoWire3"/>
-        <Period value="0.02"/>
-        <PeriodicEffect value="MonoWireSA3"/>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/MonomolecularWire1"/>
-                <Cooldown Link="Behavior/MonomolecularWire1"/>
-            </Cost>
-        </DamageResponse>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="MonoWireMissile4">
-        <Cost>
-            <Charge Link="Behavior/MonomolecularWire1"/>
-            <Cooldown Link="Behavior/MonomolecularWire1"/>
-        </Cost>
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Requirements value="MonoWire4"/>
-        <Period value="0.02"/>
-        <PeriodicEffect value="MonoWireSA4"/>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/MonomolecularWire1"/>
-                <Cooldown Link="Behavior/MonomolecularWire1"/>
-            </Cost>
-        </DamageResponse>
-    </CBehaviorBuff>
     <CBehaviorBuff id="MonomolecularWire1">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-feedback-color.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -2270,45 +2350,13 @@
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="MonomolecularWire2">
-        <Cost>
-            <Charge Link="Behavior/MonomolecularWire1"/>
-            <Cooldown Link="Behavior/MonomolecularWire1"/>
-        </Cost>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-feedback-color.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="3"/>
         <Modification>
             <ModifyFlags index="SuppressMoving" value="1"/>
             <StateFlags index="Uncommandable" value="1"/>
-            <DeathResponse>
-                <Cost>
-                    <Charge Link="Behavior/MonomolecularWire1"/>
-                    <Cooldown Link="Behavior/MonomolecularWire1"/>
-                </Cost>
-            </DeathResponse>
         </Modification>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/MonomolecularWire1"/>
-                <Cooldown Link="Behavior/MonomolecularWire1"/>
-            </Cost>
-        </DamageResponse>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="MonoWireMissile1">
-        <Cost>
-            <Charge Link="Behavior/MonomolecularWire1"/>
-            <Cooldown Link="Behavior/MonomolecularWire1"/>
-        </Cost>
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Requirements value="MonoWire1"/>
-        <Period value="0.02"/>
-        <PeriodicEffect value="MonoWireSA1"/>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/MonomolecularWire1"/>
-                <Cooldown Link="Behavior/MonomolecularWire1"/>
-            </Cost>
-        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="OpportunedShot">
         <InfoFlags index="Hidden" value="1"/>
@@ -2897,6 +2945,8 @@
             <DamageDealtFraction index="Ranged" value="0.15"/>
         </Modification>
         <Tooltip value="Button/Tooltip/M79Flamethrower"/>
+        <InitialEffect value="UnequipFlamethrower"/>
+        <FinalEffect value="EquipFlamethrower"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TwinkleToes">
         <Cost>
@@ -4198,6 +4248,8 @@
         <Modification MoveSpeedBonus="0.0507" AttackSpeedMultiplier="1.08">
             <DamageDealtFraction index="Ranged" value="0.15"/>
         </Modification>
+        <InitialEffect value="UnequipRifleSet"/>
+        <FinalEffect value="EquipRifleSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ArachCharge">
         <Cost>
@@ -4449,6 +4501,8 @@
             <WeaponScanBonus value="2"/>
             <DamageDealtFraction index="Ranged" value="0.75"/>
         </Modification>
+        <InitialEffect value="UnequipRifleSet"/>
+        <FinalEffect value="EquipRifleSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SmokeGrenadeLoop">
         <Cost>

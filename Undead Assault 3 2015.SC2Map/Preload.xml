@@ -4,9 +4,11 @@
 <Asset path="textures\medals\mdlcombat infantry medal.dds" Type="Image"/>
 <Asset path="textures\medals\mdldist serv medal.dds" Type="Image"/>
 <Asset path="assets\textures\btn-tips-missioncase.dds" Type="Image"/>
+<Asset path="assets\textures\ui_ingame_lotv_healthbar.dds" Type="Image"/>
 <Asset path="textures\medals\mdlmarksman infantry medal.dds" Type="Image"/>
 <Asset path="assets\textures\btn-command-terran-buildstructure.dds" Type="Image"/>
 <Asset path="textures\medals\mdlbronze star.dds" Type="Image"/>
+<Asset path="assets\textures\ui_ingame_lotv_energybar.dds" Type="Image"/>
 <Asset path="textures\decals\combat medic badge.dds" Type="Image"/>
 <Asset path="assets\textures\ui_frame_small_base_zerg.dds" Type="Image"/>
 <Asset path="textures\medals\mdlgood conduct medal.dds" Type="Image"/>
@@ -16,6 +18,7 @@
 <Asset path="textures\medals\mdlsilver star.dds" Type="Image"/>
 <Asset path="assets\textures\btn-tips-hotkeys.dds" Type="Image"/>
 <Asset path="assets\textures\ui_tip_questionmark.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-armory.dds" Type="Image"/>
 <Asset path="textures\medals\mdlmeritorious service medal.dds" Type="Image"/>
 <Asset path="assets\textures\btn-tips-biosample.dds" Type="Image"/>
 <Asset path="assets\textures\ui_mission_frame_massege.dds" Type="Image"/>
@@ -28,7 +31,6 @@
 <Asset path="assets\textures\btn-research-terran-microfiltering.dds" Type="Image"/>
 <Asset path="assets\textures\ui_hots_icon_generic_infestation.dds" Type="Image"/>
 <Asset path="assets\textures\fireball_10.lvl0" Type="Image"/>
-<Asset path="assets\textures\ui_ingame_hotscampaign_unitstatus_healthbar.dds" Type="Image"/>
 <Asset path="assets\textures\ui_ingame_resourcesharing_frame_message.dds" Type="Image"/>
 <Asset path="assets\textures\ui_ingame_help_techtree_questionmark.dds" Type="Image"/>
 <Asset path="assets\textures\btn-tips-hacking.dds" Type="Image"/>
@@ -205,7 +207,6 @@
 <Behavior id="NoDraw"/>
 <Behavior id="Flashlight"/>
 <Behavior id="BurstFire"/>
-<Behavior id="BWCycloneMissileAI"/>
 <Behavior id="BurstFire2"/>
 <Behavior id="BurstFireFullyAutomatic"/>
 <Behavior id="BurstFireStacks"/>
@@ -223,7 +224,6 @@
 <Behavior id="Prone2"/>
 <Behavior id="Prone"/>
 <Behavior id="PMCExplosionReduction"/>
-<Behavior id="IonCannonAI"/>
 <Behavior id="ClusterRocketsAIGroupMech"/>
 <Behavior id="ClusterRocketsAIHero"/>
 <Behavior id="CollectingSample"/>
@@ -242,13 +242,18 @@
 <Behavior id="FragAIGrouporHero"/>
 <Behavior id="FuelDischargeAIGroupHero"/>
 <Behavior id="GroundFlareAIHero"/>
+<Behavior id="IPR"/>
 <Behavior id="LiftBootsIn"/>
+<Behavior id="M241MMG"/>
+<Behavior id="M41SAW"/>
 <Behavior id="MRLAIHeroMechanical"/>
+<Behavior id="EquipSteelSaber"/>
 <Behavior id="Spawned"/>
 <Behavior id="TimeStopped"/>
 <Behavior id="UnknownBehavior"/>
 <Behavior id="Plus1MS"/>
 <Behavior id="Darreus"/>
+<Behavior id="AimAssist"/>
 <Behavior id="ClusterRocketsAIIgnis"/>
 <Behavior id="BornToLead"/>
 <Behavior id="Intellectual"/>
@@ -431,7 +436,9 @@
 <Sound id="Mission_MusicCue005"/>
 <Sound id="BridgeToStarMapTransition"/>
 <Sound id="HybridADeath"/>
+<Sound id="magin"/>
 <Sound id="Hill_Ready"/>
+<Sound id="charginghandle"/>
 <Sound id="FlareTarget2"/>
 <Sound id="IonCannonStart"/>
 <Sound id="AmmoBelt"/>
@@ -450,10 +457,8 @@
 <Sound id="CASImpact"/>
 <Sound id="Darkness"/>
 <Sound id="Heartbeat"/>
-<Sound id="charginghandle"/>
 <Sound id="noammo"/>
 <Sound id="magout"/>
-<Sound id="magin"/>
 <Sound id="lowammo"/>
 <Sound id="diebuzz"/>
 <Terrain id="AgriaEx1"/>
@@ -466,7 +471,19 @@
 <Unit id="CivilianFemale" Variations="0,1,2"/>
 <Unit id="TerranDropPod"/>
 <Unit id="ColonistTransport"/>
+<Unit id="CombatEngineer"/>
+<Unit id="Cyborg"/>
+<Unit id="FireSupportSpecialist"/>
+<Unit id="GhostHero"/>
+<Unit id="JavelinGunner2"/>
+<Unit id="PlatoonLeader"/>
+<Unit id="Rifleman"/>
+<Unit id="AutomaticRifleman"/>
 <Unit id="MK44SentryGun"/>
+<Unit id="SquadDesignatedMarksman"/>
+<Unit id="CavalryScout"/>
+<Unit id="Flamethrower"/>
+<Unit id="CombatMedic"/>
 <Unit id="74DFlamethrower"/>
 <Unit id="AH25Hunter"/>
 <Unit id="Aspectus"/>
@@ -480,8 +497,10 @@
 <Unit id="FTRallyPoint"/>
 <Unit id="Generator"/>
 <Unit id="GhostMini"/>
+<Unit id="Grotesque"/>
 <Unit id="APRounds"/>
 <Unit id="68WCombatMedic"/>
+<Unit id="LNSquadDesignatedMarksman"/>
 <Unit id="Apiary"/>
 <Unit id="Swarmer"/>
 <Unit id="InfantrySDM"/>
@@ -490,10 +509,12 @@
 <Unit id="M1Abrams"/>
 <Unit id="M241MMG"/>
 <Unit id="M5MAR"/>
+<Unit id="Morbus"/>
 <Unit id="SquadLeader"/>
 <Unit id="TimeStop"/>
 <Unit id="USMCR"/>
 <Unit id="Umbra"/>
+<Unit id="Unburied"/>
 <Unit id="Vesania"/>
 <Unit id="Shocker"/>
 <Unit id="Metasis"/>
@@ -504,10 +525,15 @@
 <Unit id="KEC"/>
 <Unit id="IDMR2"/>
 <Unit id="ISS7"/>
+<Unit id="Lacerti"/>
 <Unit id="Ignis"/>
 <Unit id="DeadHeroIndicator"/>
 <Unit id="Immussilus"/>
+<Unit id="LNCombatEngineer"/>
 <Unit id="EnergyBattery"/>
+<Unit id="LNRifleman"/>
+<Unit id="LNAutomaticRifleman"/>
+<Unit id="LNJavelinGunner"/>
 <Unit id="M41SAW"/>
 <Unit id="ExplosiveCharge"/>
 <Unit id="AimAssist"/>
@@ -527,10 +553,12 @@
 <Unit id="GroundFlareItem"/>
 <Unit id="MuscleRelaxant"/>
 <Unit id="KineticIntegrator"/>
+<Unit id="Krill"/>
 <Unit id="EnergyCell"/>
 <Unit id="KevlarBodyArmor"/>
 <Unit id="InfestedSilo"/>
 <Unit id="M79Flamethrower"/>
+<Unit id="Turned"/>
 <Unit id="Shredder"/>
 <Unit id="HK42"/>
 <Unit id="Gargoyle"/>
@@ -552,18 +580,38 @@
 <Unit id="QuikClot"/>
 <Unit id="InfantryRifleman"/>
 <Unit id="CombatWalker"/>
+<Unit id="Horror"/>
 <Unit id="BattleWalker"/>
+<Unit id="Commando"/>
+<Unit id="Drake"/>
+<Unit id="Hopper"/>
+<Unit id="Raisuli"/>
+<Unit id="Livid"/>
+<Unit id="Minerva"/>
 <Unit id="Crab"/>
+<Unit id="Cacumen"/>
+<Unit id="Licker"/>
+<Unit id="Gargantuan"/>
+<Unit id="Hunter"/>
 <Unit id="Darreus"/>
+<Unit id="Bruchus"/>
+<Unit id="Leaper"/>
+<Unit id="Pooch"/>
 <Unit id="Charger"/>
+<Unit id="Spitter"/>
+<Unit id="StalkerZombie"/>
 <Unit id="Swollen"/>
 <Unit id="Creeper"/>
 <Unit id="Boomer"/>
 <Unit id="Cursed"/>
 <Unit id="Tarantula"/>
+<Unit id="Arachnathid"/>
+<Unit id="Ares"/>
+<Unit id="ArachnidMother"/>
 <Unit id="Risen"/>
 <Unit id="Eel"/>
 <Unit id="Thanatos"/>
+<Unit id="ThresherMaw"/>
 <Unit id="Zombie"/>
 <Unit id="Zulu"/>
 <Weapon id="PlasmaRifleCryo"/>
