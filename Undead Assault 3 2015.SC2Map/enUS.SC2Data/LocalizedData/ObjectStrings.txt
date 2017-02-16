@@ -88,6 +88,8 @@ Actor/EditorPrefix/AilmentPoisonSound=(Ailment)
 Actor/EditorPrefix/AmmoBackPack=(Visual Attachment)
 Actor/EditorPrefix/AnabolicEnhancement=
 Actor/EditorPrefix/ArrayPack=(Visual Attachment)
+Actor/EditorPrefix/AttackOffset=(Weapon)
+Actor/EditorPrefix/AttackOffsetY01=(Weapon)
 Actor/EditorPrefix/AutoRifleW=(Weapon Attachment)
 Actor/EditorPrefix/BackPack=(Visual Attachment)
 Actor/EditorPrefix/Binoculars=(Visual Attachment)
@@ -96,12 +98,16 @@ Actor/EditorPrefix/CognitiveEnhancement=
 Actor/EditorPrefix/CommsHeadset=(Visual Attachment)
 Actor/EditorPrefix/CommsPack=(Visual Attachment)
 Actor/EditorPrefix/CriticalHitEffect=Hit -
-Actor/EditorPrefix/CryoBuff=
 Actor/EditorPrefix/DrakeShockClaws=
 Actor/EditorPrefix/EelBite=
 Actor/EditorPrefix/EnergyLeak=
+Actor/EditorPrefix/EquipSoundA=Weapon -
+Actor/EditorPrefix/EquipSoundB=Weapon -
+Actor/EditorPrefix/EquipSoundC=Weapon -
 Actor/EditorPrefix/FlameThrowerMask=(Visual Attachment)
 Actor/EditorPrefix/FlameThrowerW=(Weapon Attachment)
+Actor/EditorPrefix/FlamethrowerWeaponFlame=(Visual Attachment)
+Actor/EditorPrefix/FlamethrowerWeaponLight=(Visual Attachment)
 Actor/EditorPrefix/FlashBuff=
 Actor/EditorPrefix/FuelDischarge=
 Actor/EditorPrefix/FuelSynthesizer=
@@ -119,6 +125,7 @@ Actor/EditorPrefix/LickerTongueModel=
 Actor/EditorPrefix/LickerTongueSound=
 Actor/EditorPrefix/M5MARW=(Weapon Attachment)
 Actor/EditorPrefix/M79W=(Weapon Attachment)
+Actor/EditorPrefix/M92TorrentW=(Weapon Attachment)
 Actor/EditorPrefix/MMGW=(Weapon Attachment)
 Actor/EditorPrefix/MedicChemicals=(Visual Attachment)
 Actor/EditorPrefix/MedicalScanVisor=(Visual Attachment)
@@ -193,6 +200,7 @@ Actor/Name/AimAssist=Aim Assist
 Actor/Name/AmmoBackPack=Ammo Back Pack
 Actor/Name/AmmoCase=Ammo Case
 Actor/Name/AnabolicEnhancement=Anabolic Enhancement
+Actor/Name/Animations=Animations
 Actor/Name/Apiary=Apiary
 Actor/Name/ApiaryAttack=Apiary Attack
 Actor/Name/ArachChargeCast=Arach Charge Cast
@@ -211,6 +219,8 @@ Actor/Name/Arm_Right_Attach=Arm_Right_Attach
 Actor/Name/ArrayPack=Array Pack
 Actor/Name/Aspectus=Aspectus
 Actor/Name/AspectusAttack=Aspectus Attack
+Actor/Name/AttackOffset=Attack Offset Y -0.2
+Actor/Name/AttackOffsetY01=Attack Offset Y -0.1
 Actor/Name/AutoRifleFire=Auto Rifle Fire
 Actor/Name/AutoRifleIncendiaryAttack=Auto Rifle Incendiary Attack
 Actor/Name/AutoRifleMinigunFire=Auto Rifle Minigun Fire
@@ -320,6 +330,7 @@ Actor/Name/Darreus=Darreus
 Actor/Name/DarreusAttack=Darreus Attack
 Actor/Name/DarreusAttackStart=Darreus Attack Start
 Actor/Name/DeadHeroIndicator=Dead Hero Indicator
+Actor/Name/DisruptorBuff=Disruptor Buff
 Actor/Name/DrJashan=Dr Jashan
 Actor/Name/Drake=Drake
 Actor/Name/DrakeShockClaws=Drake Shock Claws
@@ -333,6 +344,9 @@ Actor/Name/EnergyCell=Energy Cell
 Actor/Name/EnergyCellSound=Energy Cell Sound
 Actor/Name/EnergyLeak=Energy Leak
 Actor/Name/EnhancementSound=Enhancement Sound
+Actor/Name/EquipSoundA=Equip Sound A
+Actor/Name/EquipSoundB=Equip Sound B
+Actor/Name/EquipSoundC=Equip Sound C
 Actor/Name/ExplosiveCharge=Explosive Charge
 Actor/Name/ExplosiveChargeRadius=Explosive Charge Radius
 Actor/Name/ExplosiveChargeUnit=Explosive Charge
@@ -455,7 +469,6 @@ Actor/Name/Immussilus=Immussilus
 Actor/Name/ImmussilusAttack=Immussilus Attack
 Actor/Name/IncendiaryAttackMissile=Incendiary Attack Missile
 Actor/Name/IncendiaryBuff=Incendiary Buff
-Actor/Name/IncendiaryRoundsFire=Incendiary Rounds Fire
 Actor/Name/InfantryAutoRifle=Infantry Auto Rifle
 Actor/Name/InfantryRifleman=Infantry Rifleman
 Actor/Name/InfantryRiflemanAttack=Infantry Rifleman Attack
@@ -531,6 +544,7 @@ Actor/Name/M5MARW=M5 MAR W
 Actor/Name/M79Flamethrower=M79 Flamethrower
 Actor/Name/M79W=M79W
 Actor/Name/M92Torrent=M92 Torrent
+Actor/Name/M92TorrentW=M92 Torrent W
 Actor/Name/MATVAttack=M-ATV Attack
 Actor/Name/MGL=MGL
 Actor/Name/MGL1=MGL1
@@ -619,6 +633,7 @@ Actor/Name/PoliceOfficerAttack=Police Officer Attack
 Actor/Name/PoliceOfficerAttackShotgun=Police Officer Attack Shotgun
 Actor/Name/PoliceOfficerShotgun=Police Officer
 Actor/Name/Pooch=Pooch
+Actor/Name/PoochAttack=Pooch Attack
 Actor/Name/QuikClot=Quik Clot
 Actor/Name/QuikClotSound=Quik Clot Sound
 Actor/Name/RailGunAction=Rail Gun Action
@@ -655,6 +670,7 @@ Actor/Name/SOpFootLeft=SOp Foot Left
 Actor/Name/SOpFootRight=SOp Foot Right
 Actor/Name/SOpHigherBy15=SOpHigherBy1.5
 Actor/Name/SOpLiftBootsFlames=SOpLiftBootsFlames
+Actor/Name/SOpMoveBy05=SOp Move By 0.5
 Actor/Name/SOpUpsideDown=SOpUpsideDown
 Actor/Name/SPCS=SPCS
 Actor/Name/STSW=STS W
@@ -748,6 +764,8 @@ Behavior/EditorPrefix/AcidSplash=(Swollen)
 Behavior/EditorPrefix/ArachCharge=
 Behavior/EditorPrefix/ArachChargeTarg=
 Behavior/EditorPrefix/ArachnathidClaws=
+Behavior/EditorPrefix/AttachAmmoBackPack=Apply Model -
+Behavior/EditorPrefix/AttachArrayPack=Apply Model -
 Behavior/EditorPrefix/BeltLinking=LN -
 Behavior/EditorPrefix/BornToLead=(SI)
 Behavior/EditorPrefix/BornToLeadTarget=(SI)
@@ -766,8 +784,35 @@ Behavior/EditorPrefix/CommandoTentacle=
 Behavior/EditorPrefix/Dexterity=Skill - 
 Behavior/EditorPrefix/Energetic=(SI)
 Behavior/EditorPrefix/EnergyLeak=(Ailment)
+Behavior/EditorPrefix/EquipAmmoBackPack=Apply Model -
+Behavior/EditorPrefix/EquipArrayPack=Apply Model -
+Behavior/EditorPrefix/EquipBackPack=Apply Model -
+Behavior/EditorPrefix/EquipBinoculars=Apply Model -
+Behavior/EditorPrefix/EquipCommsHeadset=Apply Model -
+Behavior/EditorPrefix/EquipCommsPack=Apply Model -
+Behavior/EditorPrefix/EquipDMR=Apply Model -
+Behavior/EditorPrefix/EquipFlamethrower=Apply Model -
+Behavior/EditorPrefix/EquipFlamethrowerFlame=Apply Model -
+Behavior/EditorPrefix/EquipFlamethrowerLight=Apply Model -
+Behavior/EditorPrefix/EquipFlamethrowerMask=Apply Model -
+Behavior/EditorPrefix/EquipMachineGun=Apply Model -
+Behavior/EditorPrefix/EquipMedicChemicals=Apply Model -
+Behavior/EditorPrefix/EquipMedicalScanVisor=Apply Model -
+Behavior/EditorPrefix/EquipPistol=Apply Model -
+Behavior/EditorPrefix/EquipPlasmaRifle=Apply Model -
+Behavior/EditorPrefix/EquipRifle=Apply Model -
+Behavior/EditorPrefix/EquipScoutVisor=Apply Model -
+Behavior/EditorPrefix/EquipShield=Apply Model -
+Behavior/EditorPrefix/EquipShotgun=Apply Model -
+Behavior/EditorPrefix/EquipStandardVisionVisor=Apply Model -
+Behavior/EditorPrefix/EquipSteelSaber=Apply Model -
+Behavior/EditorPrefix/EquipTacticalVisor=Apply Model -
+Behavior/EditorPrefix/EquipTankPack=Apply Model -
+Behavior/EditorPrefix/EquipWaistPack=Apply Model -
 Behavior/EditorPrefix/FieldCameraTimedLife=
 Behavior/EditorPrefix/Fitness=Skill - 
+Behavior/EditorPrefix/FlamethrowerFlame=Apply Model -
+Behavior/EditorPrefix/FlamethrowerLight=Apply Model -
 Behavior/EditorPrefix/FlareGun=
 Behavior/EditorPrefix/FracturedArm=(Ailment)
 Behavior/EditorPrefix/FracturedLeg=(Ailment)
@@ -809,6 +854,7 @@ Behavior/EditorPrefix/ReactiveFire=(SI)
 Behavior/EditorPrefix/RifleButtBehaviorCSlam=
 Behavior/EditorPrefix/RifleButtBehaviorController=
 Behavior/EditorPrefix/SOFAR=Item -
+Behavior/EditorPrefix/STS=(SI)
 Behavior/EditorPrefix/SmokeGrenadeTimedLife=
 Behavior/EditorPrefix/StalkerCharge=
 Behavior/EditorPrefix/StynerBR2=Item -
@@ -855,10 +901,6 @@ Behavior/EditorSuffix/Leadership4T=(Target)
 Behavior/EditorSuffix/LightFilter=(15)
 Behavior/EditorSuffix/LightFilterGhost=(Ghost)
 Behavior/EditorSuffix/MarksmanshipLNlesser=lesser
-Behavior/EditorSuffix/MonoWireMissile1=
-Behavior/EditorSuffix/MonoWireMissile2=
-Behavior/EditorSuffix/MonoWireMissile3=
-Behavior/EditorSuffix/MonoWireMissile4=
 Behavior/EditorSuffix/MonomolecularWire1=1
 Behavior/EditorSuffix/MonomolecularWire2=2
 Behavior/EditorSuffix/Napalm5=(Mini)
@@ -929,6 +971,31 @@ Behavior/Name/DifficultyModifierArmy=Difficulty Modifier Army
 Behavior/Name/DifficultyModifierBoss=Difficulty Modifier Boss
 Behavior/Name/Disarmable=Disarmable
 Behavior/Name/Energetic=Energetic
+Behavior/Name/EquipAmmoBackPack=Equip Ammo Back Pack
+Behavior/Name/EquipArrayPack=Equip Array Pack
+Behavior/Name/EquipBackPack=Equip Back Pack
+Behavior/Name/EquipBinoculars=Equip Binoculars
+Behavior/Name/EquipCommsHeadset=Equip Comms Headset
+Behavior/Name/EquipCommsPack=Equip Comms Pack
+Behavior/Name/EquipDMR=Equip DMR
+Behavior/Name/EquipFlamethrower=Equip Flamethrower
+Behavior/Name/EquipFlamethrowerFlame=Equip Flamethrower Flame
+Behavior/Name/EquipFlamethrowerLight=Equip Flamethrower Light
+Behavior/Name/EquipFlamethrowerMask=Equip Flamethrower Mask
+Behavior/Name/EquipMachineGun=Equip Machine Gun
+Behavior/Name/EquipMedicChemicals=Equip Medic Chemicals
+Behavior/Name/EquipMedicalScanVisor=Equip Medical Scan Visor
+Behavior/Name/EquipPistol=Equip Pistol
+Behavior/Name/EquipPlasmaRifle=Equip Plasma Rifle
+Behavior/Name/EquipRifle=Equip Rifle
+Behavior/Name/EquipScoutVisor=Equip Scout Visor
+Behavior/Name/EquipShield=Equip Shield
+Behavior/Name/EquipShotgun=Equip Shotgun
+Behavior/Name/EquipStandardVisionVisor=Equip Standard Vision Visor
+Behavior/Name/EquipSteelSaber=Equip Steel Saber
+Behavior/Name/EquipTacticalVisor=Equip Tactical Visor
+Behavior/Name/EquipTankPack=Equip Tank Pack
+Behavior/Name/EquipWaistPack=Equip Waist Pack
 Behavior/Name/EscortingSlow=Escorting Slow
 Behavior/Name/Evasion10=Evasion 10
 Behavior/Name/Evasion15=Evasion 15
@@ -1033,7 +1100,7 @@ Behavior/Name/RifleButtCyborg=Rifle Butt Cyborg
 Behavior/Name/RifleButtCyborg2=Rifle Butt Cyborg 2
 Behavior/Name/RifleButtCyborgCharging=Rifle Butt Cyborg Charging
 Behavior/Name/RifleButtLN=Rifle Butt
-Behavior/Name/STSPlaceholder=STS Placeholder
+Behavior/Name/STS=STS
 Behavior/Name/Security1=Security 1
 Behavior/Name/Security2=Security 2
 Behavior/Name/Security3=Security 3
@@ -1172,6 +1239,7 @@ Effect/EditorPrefix/AspectusBullet=
 Effect/EditorPrefix/AspectusDamage=
 Effect/EditorPrefix/AssaultRifle=Combat Medic - 
 Effect/EditorPrefix/AssaultRiflePL=Platoon Leader - 
+Effect/EditorPrefix/AttachArrayPack=Model Equip -
 Effect/EditorPrefix/BarricadePlace=
 Effect/EditorPrefix/BoomerClaws=Zombie - 
 Effect/EditorPrefix/BornToLeadAB=(SI)
@@ -1190,6 +1258,7 @@ Effect/EditorPrefix/CallforFirePLDamage=
 Effect/EditorPrefix/CavAssaultRifle=
 Effect/EditorPrefix/CavBullet=
 Effect/EditorPrefix/CavalryScoutLaunchSet=Weapon -
+Effect/EditorPrefix/CavalryScoutLaunchSteelSaberSet=Weapon -
 Effect/EditorPrefix/ChargerChargeSet=
 Effect/EditorPrefix/ChargerClaws=
 Effect/EditorPrefix/ClawsDamage=Zombie - 
@@ -1210,6 +1279,7 @@ Effect/EditorPrefix/CombatMedicLaunchSet=Weapon -
 Effect/EditorPrefix/CombatWalkerLaunchMissile=
 Effect/EditorPrefix/CombatWalkerMinigunsDamage=
 Effect/EditorPrefix/CommanderBullet=
+Effect/EditorPrefix/CommanderLaunchSet=Weapon -
 Effect/EditorPrefix/CommanderRifle=
 Effect/EditorPrefix/CommandoTentacleAB=
 Effect/EditorPrefix/CommandoTentacleLaunchMissile=
@@ -1228,8 +1298,51 @@ Effect/EditorPrefix/DMRDamageLN=LN -
 Effect/EditorPrefix/DMRDamageMini=Mini -
 Effect/EditorPrefix/DMRLaunchLN=
 Effect/EditorPrefix/DarreusClaws=
+Effect/EditorPrefix/DetachAmmoBackPack=Model Equip -
 Effect/EditorPrefix/Discipline=(SI)
 Effect/EditorPrefix/EelDamage=
+Effect/EditorPrefix/EqiupAutomaticRiflemanSet=Model Equip -
+Effect/EditorPrefix/EquipAmmoBackPack=Model Equip -
+Effect/EditorPrefix/EquipArrayPack=Model Equip -
+Effect/EditorPrefix/EquipAutomaticRiflemanSet=Model Equip -
+Effect/EditorPrefix/EquipBackPack=Model Equip -
+Effect/EditorPrefix/EquipBinoculars=Model Equip -
+Effect/EditorPrefix/EquipCavalryScoutSet=Model Equip -
+Effect/EditorPrefix/EquipCombatMedicSet=Model Equip -
+Effect/EditorPrefix/EquipCommanderSet=Model Equip -
+Effect/EditorPrefix/EquipCommsHeadset=Model Equip -
+Effect/EditorPrefix/EquipCommsPack=Model Equip -
+Effect/EditorPrefix/EquipCyborgSet=Model Equip -
+Effect/EditorPrefix/EquipDMR=Model Equip -
+Effect/EditorPrefix/EquipFSSSet=Model Equip -
+Effect/EditorPrefix/EquipFlamethrower=Model Equip -
+Effect/EditorPrefix/EquipFlamethrowerFlame=Model Equip -
+Effect/EditorPrefix/EquipFlamethrowerLight=Model Equip -
+Effect/EditorPrefix/EquipFlamethrowerMask=Model Equip -
+Effect/EditorPrefix/EquipFlamethrowerSet=Model Equip -
+Effect/EditorPrefix/EquipGhostSet=Model Equip -
+Effect/EditorPrefix/EquipJavelinGunnerLNSet=Model Equip -
+Effect/EditorPrefix/EquipJavelinGunnerSet=Model Equip -
+Effect/EditorPrefix/EquipMachineGun=Model Equip -
+Effect/EditorPrefix/EquipMedicChemicals=Model Equip -
+Effect/EditorPrefix/EquipMedicalScanVisor=Model Equip -
+Effect/EditorPrefix/EquipPistol=Model Equip -
+Effect/EditorPrefix/EquipPlasmaRifle=Model Equip -
+Effect/EditorPrefix/EquipPlatoonLeaderSet=Model Equip -
+Effect/EditorPrefix/EquipRifle=Model Equip -
+Effect/EditorPrefix/EquipRifleSet=Model Equip -
+Effect/EditorPrefix/EquipRiflemanSet=Model Equip -
+Effect/EditorPrefix/EquipSDMSet=Model Equip -
+Effect/EditorPrefix/EquipSFAATSet=Model Equip -
+Effect/EditorPrefix/EquipScoutVisor=Model Equip -
+Effect/EditorPrefix/EquipShield=Model Equip -
+Effect/EditorPrefix/EquipShotgun=Model Equip -
+Effect/EditorPrefix/EquipSquadLeaderSet=Model Equip -
+Effect/EditorPrefix/EquipStandardVisionVisor=Model Equip -
+Effect/EditorPrefix/EquipSteelSaber=Model Equip -
+Effect/EditorPrefix/EquipTacticalVisor=Model Equip -
+Effect/EditorPrefix/EquipTankPack=Model Equip -
+Effect/EditorPrefix/EquipWaistPack=Model Equip -
 Effect/EditorPrefix/ExplosiveCharge=
 Effect/EditorPrefix/FSSBullet=
 Effect/EditorPrefix/FSSLaunchSet=Weapon -
@@ -1357,7 +1470,6 @@ Effect/EditorPrefix/MachinegunSwitchNearorFar=Weapon -
 Effect/EditorPrefix/MachinegunSwitchShotNumber=Weapon -
 Effect/EditorPrefix/MetasisAttack=
 Effect/EditorPrefix/MinervaFist=
-Effect/EditorPrefix/MonoWireLaunch1=
 Effect/EditorPrefix/MorbusSludgeDamage=
 Effect/EditorPrefix/MorbusSludgeLaunch=
 Effect/EditorPrefix/MotherFangsDamage=
@@ -1438,6 +1550,8 @@ Effect/EditorPrefix/SprintSetNew=
 Effect/EditorPrefix/SprintSetNew2=
 Effect/EditorPrefix/SquadLeaderBullet=
 Effect/EditorPrefix/SquadLeaderDamage=
+Effect/EditorPrefix/SquadLeaderLaunchSet=Weapon -
+Effect/EditorPrefix/SquadLeaderSet=Weapon -
 Effect/EditorPrefix/StalkerChargePersistent=
 Effect/EditorPrefix/StalkerChargeSet=
 Effect/EditorPrefix/StalkerHorn=Zombie - 
@@ -1452,6 +1566,49 @@ Effect/EditorPrefix/TurnedClaws=
 Effect/EditorPrefix/UmbraBulletLaunch=
 Effect/EditorPrefix/UmbraRifleDamage=
 Effect/EditorPrefix/UnburiedClaws=
+Effect/EditorPrefix/UnequipAmmoBackPack=Model Equip -
+Effect/EditorPrefix/UnequipArrayPack=Model Equip -
+Effect/EditorPrefix/UnequipAutomaticRiflemanSet=Model Equip -
+Effect/EditorPrefix/UnequipBackPack=Model Equip -
+Effect/EditorPrefix/UnequipBinoculars=Model Equip -
+Effect/EditorPrefix/UnequipCavalryScoutSet=Model Equip -
+Effect/EditorPrefix/UnequipCavalryScoutWeaponCopy=Model Equip -
+Effect/EditorPrefix/UnequipCombatMedicSet=Model Equip -
+Effect/EditorPrefix/UnequipCommanderSet=Model Equip -
+Effect/EditorPrefix/UnequipCommsHeadset=Model Equip -
+Effect/EditorPrefix/UnequipCommsPack=Model Equip -
+Effect/EditorPrefix/UnequipCyborgSet=Model Equip -
+Effect/EditorPrefix/UnequipDMR=Model Equip -
+Effect/EditorPrefix/UnequipDMR2=Model Equip -
+Effect/EditorPrefix/UnequipFSSSet=Model Equip -
+Effect/EditorPrefix/UnequipFlamethrower=Model Equip -
+Effect/EditorPrefix/UnequipFlamethrowerFlame=Model Equip -
+Effect/EditorPrefix/UnequipFlamethrowerLight=Model Equip -
+Effect/EditorPrefix/UnequipFlamethrowerMask=Model Equip -
+Effect/EditorPrefix/UnequipFlamethrowerSet=Model Equip -
+Effect/EditorPrefix/UnequipGhostSet=Model Equip -
+Effect/EditorPrefix/UnequipJavelinGunnerLNSet=Model Equip -
+Effect/EditorPrefix/UnequipJavelinGunnerSet=Model Equip -
+Effect/EditorPrefix/UnequipMachineGun=Model Equip -
+Effect/EditorPrefix/UnequipMedicChemicals=Model Equip -
+Effect/EditorPrefix/UnequipMedicalScanVisor=Model Equip -
+Effect/EditorPrefix/UnequipPistol=Model Equip -
+Effect/EditorPrefix/UnequipPlasmaRifle=Model Equip -
+Effect/EditorPrefix/UnequipPlatoonLeaderSet=Model Equip -
+Effect/EditorPrefix/UnequipRifle=Model Equip -
+Effect/EditorPrefix/UnequipRifleSet=Model Equip -
+Effect/EditorPrefix/UnequipRiflemanSet=Model Equip -
+Effect/EditorPrefix/UnequipSDMSet=Model Equip -
+Effect/EditorPrefix/UnequipSFAATSet=Model Equip -
+Effect/EditorPrefix/UnequipScoutVisor=Model Equip -
+Effect/EditorPrefix/UnequipShield=Model Equip -
+Effect/EditorPrefix/UnequipShotgun=Model Equip -
+Effect/EditorPrefix/UnequipSquadLeaderSet=Model Equip -
+Effect/EditorPrefix/UnequipStandardVisionVisor=Model Equip -
+Effect/EditorPrefix/UnequipSteelSaber=Model Equip -
+Effect/EditorPrefix/UnequipTacticalVisor=Model Equip -
+Effect/EditorPrefix/UnequipTankPack=Model Equip -
+Effect/EditorPrefix/UnequipWaistPack=Model Equip -
 Effect/EditorPrefix/VesaniaGLDamage=
 Effect/EditorPrefix/VesaniaGLLaunch=
 Effect/EditorPrefix/WhitePhosphorousDoT=
@@ -1525,7 +1682,6 @@ Effect/EditorSuffix/Machinegun=(Damage)
 Effect/EditorSuffix/MachinegunCPMultishot2=(Minigun)
 Effect/EditorSuffix/MachinegunFire3=(Incendiary Round)
 Effect/EditorSuffix/MiniFlamethrowerDamage=(Damage)
-Effect/EditorSuffix/MonoWireLaunch1=(Launch Missile)
 Effect/EditorSuffix/MorbusSludgeDamage=
 Effect/EditorSuffix/MorbusSludgeLaunch=
 Effect/EditorSuffix/ParalysisTrapDamage2=
@@ -1763,11 +1919,13 @@ Light/Name/UA3Day=UA3 Day
 Light/Name/UA3Dusk=UA3 Dusk
 Light/Name/UA3Night=UA3 Night
 Model/EditorPrefix/2140StandardRifle=(Weapon)
+Model/EditorPrefix/40mmGrenade=Projectile -
 Model/EditorPrefix/AmmoBackPack=(Attachment)
 Model/EditorPrefix/ArrayPack=(Attachment)
 Model/EditorPrefix/AutoRifle=(Weapon)
 Model/EditorPrefix/BackPack=(Attachment)
 Model/EditorPrefix/Binoculars=(Attachment)
+Model/EditorPrefix/Bullet=Projectile -
 Model/EditorPrefix/CommPack=(Attachment)
 Model/EditorPrefix/CommsHeadset=(Attachment)
 Model/EditorPrefix/DrakeClaw=
@@ -1780,6 +1938,7 @@ Model/EditorPrefix/Iss7=(Weapon)
 Model/EditorPrefix/LegPack=(Attachment)
 Model/EditorPrefix/M5MAR=(Weapon)
 Model/EditorPrefix/M79=(Weapon)
+Model/EditorPrefix/M92Torrent=(Weapon)
 Model/EditorPrefix/MMG=(Weapon)
 Model/EditorPrefix/MedicChemicals=(Attachment)
 Model/EditorPrefix/Medicalscanvisor=(Attachment Visor)
@@ -1804,7 +1963,7 @@ Model/EditorPrefix/WaistPack=(Attachment)
 Model/EditorSuffix/Item=
 Model/EditorSuffix/ItemCasualty=
 Model/Name/2140StandardRifle=Rifle
-Model/Name/40mmGrenadeWeapon=40mm Grenade Weapon
+Model/Name/40mmGrenade=40mm Grenade
 Model/Name/ATRocketImpact=AT Rocket Impact
 Model/Name/Abrams120Launch=Abrams 120 Launch
 Model/Name/AmmoBackPack=Ammo Back Pack
@@ -1827,6 +1986,7 @@ Model/Name/BoomerDeathFountain=Boomer Death Fountain
 Model/Name/BradleyHEAttackImpact=Bradley HE Attack Impact
 Model/Name/BradleyHEImpact=Bradley HE Impact
 Model/Name/BradleyHELaunch=Bradley HE Launch
+Model/Name/Bullet=Bullet
 Model/Name/Cacumen=Cacumen
 Model/Name/CallForFireWarning=Call For Fire Warning
 Model/Name/Claymore=Claymore
@@ -1858,6 +2018,7 @@ Model/Name/HeroSelector=Hero Selector
 Model/Name/Hull=Hull
 Model/Name/Hunter=Hunter
 Model/Name/IDMR2=IDMR-2
+Model/Name/Ignis=Ignis
 Model/Name/IncendiaryAttackImpact=Incendiary Attack Impact
 Model/Name/InfestedSilo=Infested Silo
 Model/Name/InfestedSiloExplode=Infested Silo Explode
@@ -1872,6 +2033,7 @@ Model/Name/M1Abrams=M1 Abrams
 Model/Name/M2BradleyIFV=M2 Bradley IFV
 Model/Name/M5MAR=M5 MAR
 Model/Name/M79=M79
+Model/Name/M92Torrent=M92 Torrent
 Model/Name/MGLImpact=MGL Impact
 Model/Name/MMG=MMG
 Model/Name/MRLImpact=MRL Impact
@@ -1925,6 +2087,7 @@ Model/Name/Tarantula=Tarantula
 Model/Name/Tombstone1=Tombstone1
 Model/Name/Tombstone2=Tombstone2
 Model/Name/USMCR=US MCR
+Model/Name/Vesania=Vesania
 Model/Name/WaistPack=Waist Pack
 Model/Name/Zombie=Zombie
 Model/Name/ZombieNew=Zombie New
@@ -2025,10 +2188,6 @@ Requirement/Name/Marksmanship03=Marksmanship03
 Requirement/Name/Marksmanship04=Marksmanship04
 Requirement/Name/MarksmanshipMedic=Marksmanship Medic
 Requirement/Name/MarksmanshipMedic1M=Marksmanship Medic 1M
-Requirement/Name/MonoWire1=Mono Wire1
-Requirement/Name/MonoWire2=Mono Wire2
-Requirement/Name/MonoWire3=Mono Wire3
-Requirement/Name/MonoWire4=Mono Wire4
 Requirement/Name/Napalm1=Napalm1
 Requirement/Name/Napalm1M=Napalm1M
 Requirement/Name/Napalm2=Napalm2
@@ -2082,7 +2241,7 @@ Requirement/Name/Training1=Training 1
 Requirement/Name/Training2=Training 2
 Requirement/Name/TrainingShow=Training Show
 Requirement/Name/WeaponRifle=Weapon Rifle
-RequirementNode/Name/5=5
+RequirementNode/Name/And2121746728GTE2121746728CountUpgradeTrainingCompleteOnlyTechTreeCheat1LT3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= {Training 1}1 && {Training 1}CountUpgrade(Training,CompleteOnly)[TechTreeCheat] < {Training 3}3
 RequirementNode/Name/And2304769686GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat4GTECountUpgradeTrainingCompleteOnlyTechTreeCheat4=CountUpgrade(Leadership,CompleteOnly)[TechTreeCheat] >= 4 && {Leadership & Training 4}CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= 4
 RequirementNode/Name/And2411104750EqCountBehaviorDecloaking1CompleteOnlyAtUnit0EqCountBehaviorDecloaking2CompleteOnlyAtUnit0EqCountBehaviorDecloaking3CompleteOnlyAtUnit0EqCountBehaviorDecloaking4CompleteOnlyAtUnit0EqCountBehaviorDecloaking5CompleteOnlyAtUnit0GTECountAbilGhostSkillsCompleteOnlyAtUnit1=CountBehavior(Decloaking1,CompleteOnlyAtUnit) == 0 && {Cloak Delay}CountBehavior(Decloaking2,CompleteOnlyAtUnit) == 0 && {Cloak Delay}CountBehavior(Decloaking3,CompleteOnlyAtUnit) == 0 && {Cloak Delay}CountBehavior(Decloaking4,CompleteOnlyAtUnit) == 0 && {Cloak Delay}CountBehavior(Decloaking5,CompleteOnlyAtUnit) == 0 && {Cloak Delay}CountAbil(GhostSkills,CompleteOnlyAtUnit) >= 1
 RequirementNode/Name/And3863654470GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 4 && {Soldier Skills 4 and Marksmanship 2}CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] >= 2
@@ -2090,11 +2249,11 @@ RequirementNode/Name/AndEq1126111820CountUpgradeSSGCompleteOnlyTechTreeCheat1Eq3
 RequirementNode/Name/AndEq1315196357CountUpgradePFCCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0=CountUpgrade(PFC,CompleteOnly)[TechTreeCheat] == {PFC}1 && CountUpgrade(RifleMode,CompleteOnly) == {Not Rifle}0
 RequirementNode/Name/AndEq1342765758CountUpgradeSFCEnCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0=CountUpgrade(SFCEn,CompleteOnly)[TechTreeCheat] == {SFC, Enlisted}1 && CountUpgrade(RifleMode,CompleteOnly) == {Not Rifle}0
 RequirementNode/Name/AndEq2092276232CountUpgradeMSGCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0=CountUpgrade(MSG,CompleteOnly)[TechTreeCheat] == {MSG}1 && CountUpgrade(RifleMode,CompleteOnly) == {Not Rifle}0
+RequirementNode/Name/AndEq2432695962CountUpgradeCPLCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0=CountUpgrade(CPL,CompleteOnly)[TechTreeCheat] == {CPL}1 && CountUpgrade(RifleMode,CompleteOnly) == {Not Rifle}0
 RequirementNode/Name/AndEq3793755040CountUnitISBotQueuedOrBetter0GTE2687546691CountUpgradeSecurityCompleteOnly2=CountUnit(ISBot,QueuedOrBetter) == {Max 1 IS Bot}0 && CountUpgrade(Security,CompleteOnly) >= {Security 2}2
 RequirementNode/Name/AndEq3823691090CountUpgrade1LTCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0=CountUpgrade(1LT,CompleteOnly)[TechTreeCheat] == {1LT}1 && CountUpgrade(RifleMode,CompleteOnly) == {Not Rifle}0
 RequirementNode/Name/AndEq4182996759CountUpgradeSGTCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0=CountUpgrade(SGT,CompleteOnly)[TechTreeCheat] == {SGT}1 && CountUpgrade(RifleMode,CompleteOnly) == {Not Rifle}0
 RequirementNode/Name/AndEq981512461CountUnitM1SentryGunQueuedOrBetter0LT223606906CountAbilSecurityCompleteOnlyAtUnit4=CountUnit(M1SentryGun,QueuedOrBetter) == {Max 1 Sentry Gun}0 && CountAbil(Security,CompleteOnlyAtUnit) < {Security Level 1-3}4
-RequirementNode/Name/AndEqCountUpgradeCPLCompleteOnlyTechTreeCheat1EqCountUpgradeRifleModeCompleteOnly0=CountUpgrade(CPL,CompleteOnly)[TechTreeCheat] == 1 && CountUpgrade(RifleMode,CompleteOnly) == 0
 RequirementNode/Name/AndGTE2276327908CountAbilCyborgStrengthCompleteOnlyAtUnit3GTE1102934219CountAbilCyborgStealthCompleteOnlyAtUnit3=CountAbil(CyborgStrength,CompleteOnlyAtUnit) >= {Strength 3}3 && CountAbil(CyborgStealth,CompleteOnlyAtUnit) >= {Stealth 3}3
 RequirementNode/Name/AndGTE2276327908CountAbilCyborgStrengthCompleteOnlyAtUnit3GTE1102934219CountAbilCyborgStealthCompleteOnlyAtUnit3GTE3063185261CountAbilCyborgAgilityCompleteOnlyAtUnit3=CountAbil(CyborgStrength,CompleteOnlyAtUnit) >= {Strength 3}3 && CountAbil(CyborgStealth,CompleteOnlyAtUnit) >= {Stealth 3}3 && CountAbil(CyborgAgility,CompleteOnlyAtUnit) >= {Agility 3}3
 RequirementNode/Name/AndGTE2791772819CountAbilCyborgStrengthCompleteOnlyAtUnit3Eq518497321CountBehaviorChargeCompleteOnlyAtUnit1=CountAbil(CyborgStrength,CompleteOnlyAtUnit) >= {Strength level 3}3 && CountBehavior(Charge,CompleteOnlyAtUnit) == {Charging}1
@@ -2117,7 +2276,6 @@ RequirementNode/Name/CountAbilCombatEnhancementsCompleteOnlyAtUnit=CountAbil(Com
 RequirementNode/Name/CountAbilCyborgAgilityCompleteOnlyAtUnit=CountAbil(CyborgAgility,CompleteOnlyAtUnit)
 RequirementNode/Name/CountAbilCyborgStealthCompleteOnlyAtUnit=CountAbil(CyborgStealth,CompleteOnlyAtUnit)
 RequirementNode/Name/CountAbilCyborgStrengthCompleteOnlyAtUnit=CountAbil(CyborgStrength,CompleteOnlyAtUnit)
-RequirementNode/Name/CountAbilFirstAidCompleteOnlyAtUnit=CountAbil(FirstAid,CompleteOnlyAtUnit)
 RequirementNode/Name/CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat]
 RequirementNode/Name/CountAbilFragGrenadeCompleteOnlyAtUnitTechTreeCheat=CountAbil(FragGrenade,CompleteOnlyAtUnit)[TechTreeCheat]
 RequirementNode/Name/CountAbilGhostSkillsCompleteOnlyAtUnit=CountAbil(GhostSkills,CompleteOnlyAtUnit)
@@ -2131,10 +2289,9 @@ RequirementNode/Name/CountAbilOrbitalStrikeCompleteOnlyAtUnit=CountAbil(OrbitalS
 RequirementNode/Name/CountAbilPlasmaGrenadeCompleteOnlyAtUnit=CountAbil(PlasmaGrenade,CompleteOnlyAtUnit)
 RequirementNode/Name/CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat]
 RequirementNode/Name/CountAbilReviveCompleteOnlyAtUnitTechTreeCheat=CountAbil(Revive,CompleteOnlyAtUnit)[TechTreeCheat]
-RequirementNode/Name/CountAbilRiflemanSkillsCompleteOnlyAtUnit=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)
 RequirementNode/Name/CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat]
 RequirementNode/Name/CountAbilSecurityCompleteOnlyAtUnit=CountAbil(Security,CompleteOnlyAtUnit)
-RequirementNode/Name/CountAbilSoldierSkillsCompleteOnlyAtUnit=CountAbil(SoldierSkills,CompleteOnlyAtUnit)
+RequirementNode/Name/CountAbilSoldierSkillsCompleteOnlyAtUnit389129910TechTreeCheat=CountAbil(SoldierSkills,CompleteOnlyAtUnit){Soldier Skills Level 3}[TechTreeCheat]
 RequirementNode/Name/CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat]
 RequirementNode/Name/CountBehaviorAgility3CompleteOnlyAtUnit=CountBehavior(Agility3,CompleteOnlyAtUnit)
 RequirementNode/Name/CountBehaviorChargeCompleteOnlyAtUnit=CountBehavior(Charge,CompleteOnlyAtUnit)
@@ -2174,7 +2331,6 @@ RequirementNode/Name/CountUpgradeIDFSupportCompleteOnly=CountUpgrade(IDFSupport,
 RequirementNode/Name/CountUpgradeLeadershipCompleteOnlyTechTreeCheat=CountUpgrade(Leadership,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/CountUpgradeMGENCompleteOnlyTechTreeCheat=CountUpgrade(MGEN,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/CountUpgradeMSGCompleteOnlyTechTreeCheat=CountUpgrade(MSG,CompleteOnly)[TechTreeCheat]
-RequirementNode/Name/CountUpgradeMonoWireCompleteOnlyTechTreeCheat=CountUpgrade(MonoWire,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/CountUpgradePFCCompleteOnlyTechTreeCheat=CountUpgrade(PFC,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/CountUpgradeRangerCompleteOnly=CountUpgrade(Ranger,CompleteOnly)
 RequirementNode/Name/CountUpgradeRifleModeCompleteOnly=CountUpgrade(RifleMode,CompleteOnly)
@@ -2190,6 +2346,7 @@ RequirementNode/Name/CountUpgradeWO2CompleteOnlyTechTreeCheat=CountUpgrade(WO2,C
 RequirementNode/Name/CountUpgradeWO3CompleteOnlyTechTreeCheat=CountUpgrade(WO3,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/CountUpgradeWO5CompleteOnlyTechTreeCheat=CountUpgrade(WO5,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/Eq10=1 == 0
+RequirementNode/Name/Eq1091882887CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat4=CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] == {Marksmanship Level 4}4
 RequirementNode/Name/Eq1126111820CountUpgradeSSGCompleteOnlyTechTreeCheat1=CountUpgrade(SSG,CompleteOnly)[TechTreeCheat] == {SSG}1
 RequirementNode/Name/Eq1315196357CountUpgradePFCCompleteOnlyTechTreeCheat1=CountUpgrade(PFC,CompleteOnly)[TechTreeCheat] == {PFC}1
 RequirementNode/Name/Eq1342765758CountUpgradeSFCEnCompleteOnlyTechTreeCheat1=CountUpgrade(SFCEn,CompleteOnly)[TechTreeCheat] == {SFC, Enlisted}1
@@ -2197,13 +2354,22 @@ RequirementNode/Name/Eq1529213028CountUpgradeBarbaricCompleteOnly1=CountUpgrade(
 RequirementNode/Name/Eq1805456185CountUpgradeCASOnStationCompleteOnlyTechTreeCheat1=CountUpgrade(CASOnStation,CompleteOnly)[TechTreeCheat] == {CAS On Station}1
 RequirementNode/Name/Eq2092276232CountUpgradeMSGCompleteOnlyTechTreeCheat1=CountUpgrade(MSG,CompleteOnly)[TechTreeCheat] == {MSG}1
 RequirementNode/Name/Eq2276327908CountBehaviorStrength3CompleteOnlyAtUnit1=CountBehavior(Strength3,CompleteOnlyAtUnit) == {Strength 3}1
+RequirementNode/Name/Eq2432695962CountUpgradeCPLCompleteOnlyTechTreeCheat1=CountUpgrade(CPL,CompleteOnly)[TechTreeCheat] == {CPL}1
+RequirementNode/Name/Eq2462162057CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] == {Augmentation Level 5}5
+RequirementNode/Name/Eq2506488513CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] == {Augmentation Level 2}2
+RequirementNode/Name/Eq2821025729CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] == {Soldier Skills Level 4}4
+RequirementNode/Name/Eq2879198198CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2=CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] == {Marksmanship Level 2}2
+RequirementNode/Name/Eq2892571211CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] == {Augmentation Level 1}1
 RequirementNode/Name/Eq307393282CountBehaviorProneCompleteOnlyAtUnit0=CountBehavior(Prone,CompleteOnlyAtUnit) == {Not Prone}0
 RequirementNode/Name/Eq3185170552CountUpgradeCPTCompleteOnlyTechTreeCheat1=CountUpgrade(CPT,CompleteOnly)[TechTreeCheat] == {CPT}1
 RequirementNode/Name/Eq3230784200CountUpgradeRifleModeCompleteOnly0=CountUpgrade(RifleMode,CompleteOnly) == {Not Rifle}0
+RequirementNode/Name/Eq3343152956CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] == {Augmentation Level 4}4
 RequirementNode/Name/Eq3501222248CountBehaviorAgility3CompleteOnlyAtUnit1=CountBehavior(Agility3,CompleteOnlyAtUnit) == {Agility 3 Active}1
 RequirementNode/Name/Eq3550057370CountUpgradeCSMCompleteOnlyTechTreeCheat1=CountUpgrade(CSM,CompleteOnly)[TechTreeCheat] == {CSM}1
+RequirementNode/Name/Eq3723031100CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat3=CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] == {Marksmanship Level 3}3
 RequirementNode/Name/Eq3793755040CountUnitISBotQueuedOrBetter0=CountUnit(ISBot,QueuedOrBetter) == {Max 1 IS Bot}0
 RequirementNode/Name/Eq3823691090CountUpgrade1LTCompleteOnlyTechTreeCheat1=CountUpgrade(1LT,CompleteOnly)[TechTreeCheat] == {1LT}1
+RequirementNode/Name/Eq3824807800CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] == {Soldier Skills Level 2}2
 RequirementNode/Name/Eq3888807122CountUpgradeWO3CompleteOnlyTechTreeCheat1=CountUpgrade(WO3,CompleteOnly)[TechTreeCheat] == {WO3}1
 RequirementNode/Name/Eq3972752984CountUpgradeWO5CompleteOnlyTechTreeCheat1=CountUpgrade(WO5,CompleteOnly)[TechTreeCheat] == {WO5}1
 RequirementNode/Name/Eq4143660971CountBehaviorStealth2CompleteOnlyAtUnit1=CountBehavior(Stealth2,CompleteOnlyAtUnit) == {Stealth Active}1
@@ -2213,6 +2379,9 @@ RequirementNode/Name/Eq457914689CountUpgrade1SGCompleteOnlyTechTreeCheat1=CountU
 RequirementNode/Name/Eq474972807CountUpgradeSGMCompleteOnlyTechTreeCheat1=CountUpgrade(SGM,CompleteOnly)[TechTreeCheat] == {SGM}1
 RequirementNode/Name/Eq505824172CountUpgradeWO2CompleteOnlyTechTreeCheat1=CountUpgrade(WO2,CompleteOnly)[TechTreeCheat] == {WO2}1
 RequirementNode/Name/Eq518497321CountBehaviorChargeCompleteOnlyAtUnit1=CountBehavior(Charge,CompleteOnlyAtUnit) == {Charging}1
+RequirementNode/Name/Eq529531359CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1=CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] == {Marksmanship Level 1}1
+RequirementNode/Name/Eq567023099CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] == {Augmentation Level 3}3
+RequirementNode/Name/Eq605371476CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] == {Soldier Skills Level 1}1
 RequirementNode/Name/Eq861056159CountUpgradeSkiesClearCompleteOnlyTechTreeCheat1=CountUpgrade(SkiesClear,CompleteOnly)[TechTreeCheat] == {Authorization}1
 RequirementNode/Name/Eq92015944CountUpgradeMGENCompleteOnlyTechTreeCheat1=CountUpgrade(MGEN,CompleteOnly)[TechTreeCheat] == {MGEN}1
 RequirementNode/Name/Eq981512461CountUnitM1SentryGunQueuedOrBetter0=CountUnit(M1SentryGun,QueuedOrBetter) == {Max 1 Sentry Gun}0
@@ -2233,10 +2402,10 @@ RequirementNode/Name/EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1=CountAbil
 RequirementNode/Name/EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat2=CountAbil(Napalm,CompleteOnlyAtUnit)[TechTreeCheat] == 2
 RequirementNode/Name/EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat3=CountAbil(Napalm,CompleteOnlyAtUnit)[TechTreeCheat] == 3
 RequirementNode/Name/EqCountAbilNapalmCompleteOnlyAtUnitTechTreeCheat4=CountAbil(Napalm,CompleteOnlyAtUnit)[TechTreeCheat] == 4
-RequirementNode/Name/EqCountAbilSoldierSkillsCompleteOnlyAtUnit2=CountAbil(SoldierSkills,CompleteOnlyAtUnit) == 2
-RequirementNode/Name/EqCountAbilSoldierSkillsCompleteOnlyAtUnit3=CountAbil(SoldierSkills,CompleteOnlyAtUnit) == 3
-RequirementNode/Name/EqCountAbilSoldierSkillsCompleteOnlyAtUnit4=CountAbil(SoldierSkills,CompleteOnlyAtUnit) == 4
-RequirementNode/Name/EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] == 1
+RequirementNode/Name/EqCountAbilSoldierSkillsCompleteOnlyAtUnit389129910TechTreeCheat3=CountAbil(SoldierSkills,CompleteOnlyAtUnit){Soldier Skills Level 3}[TechTreeCheat] == 3
+RequirementNode/Name/EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] == 2
+RequirementNode/Name/EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] == 3
+RequirementNode/Name/EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] == 4
 RequirementNode/Name/EqCountBehaviorDecloaking1CompleteOnlyAtUnit0=CountBehavior(Decloaking1,CompleteOnlyAtUnit) == 0
 RequirementNode/Name/EqCountBehaviorDecloaking2CompleteOnlyAtUnit0=CountBehavior(Decloaking2,CompleteOnlyAtUnit) == 0
 RequirementNode/Name/EqCountBehaviorDecloaking3CompleteOnlyAtUnit0=CountBehavior(Decloaking3,CompleteOnlyAtUnit) == 0
@@ -2251,109 +2420,113 @@ RequirementNode/Name/EqCountBehaviorStrength2CompleteOnlyAtUnit1=CountBehavior(S
 RequirementNode/Name/EqCountUpgrade1LifeCompleteOnly0=CountUpgrade(1Life,CompleteOnly) == 0
 RequirementNode/Name/EqCountUpgrade1LifeCompleteOnly1=CountUpgrade(1Life,CompleteOnly) == 1
 RequirementNode/Name/EqCountUpgrade1LifeQueuedOnly=CountUpgrade(1Life,QueuedOnly) == ()
-RequirementNode/Name/EqCountUpgradeCPLCompleteOnlyTechTreeCheat1=CountUpgrade(CPL,CompleteOnly)[TechTreeCheat] == 1
-RequirementNode/Name/EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat1=CountUpgrade(MonoWire,CompleteOnly)[TechTreeCheat] == 1
-RequirementNode/Name/EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat2=CountUpgrade(MonoWire,CompleteOnly)[TechTreeCheat] == 2
-RequirementNode/Name/EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat3=CountUpgrade(MonoWire,CompleteOnly)[TechTreeCheat] == 3
-RequirementNode/Name/EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat4=CountUpgrade(MonoWire,CompleteOnly)[TechTreeCheat] == 4
 RequirementNode/Name/EqCountUpgradeRangerCompleteOnly1=CountUpgrade(Ranger,CompleteOnly) == 1
-RequirementNode/Name/EqCountUpgradeRifleModeCompleteOnly0=CountUpgrade(RifleMode,CompleteOnly) == 0
 RequirementNode/Name/GTCountAbilFragGrenadeCompleteOnlyAtUnitTechTreeCheat0=CountAbil(FragGrenade,CompleteOnlyAtUnit)[TechTreeCheat] > 0
+RequirementNode/Name/GTE1088855040CountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1=CountAbil(Napalm,CompleteOnlyAtUnit)[TechTreeCheat] >= {Napalm Level 1}1
 RequirementNode/Name/GTE1102934219CountAbilCyborgStealthCompleteOnlyAtUnit3=CountAbil(CyborgStealth,CompleteOnlyAtUnit) >= {Stealth 3}3
+RequirementNode/Name/GTE119275194CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat] >= {First Aid Level 4}4
 RequirementNode/Name/GTE1300418668CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(GhostSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Ghost Skills level 4}4
 RequirementNode/Name/GTE1310947799CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(JavelinSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Javelin Skills level 3}3
 RequirementNode/Name/GTE1397761057CountAbilOrbitalStrikeCompleteOnlyAtUnit3=CountAbil(OrbitalStrike,CompleteOnlyAtUnit) >= {JFO 3}3
 RequirementNode/Name/GTE1501146480CountUpgradeEngineeringSkillsCompleteOnly1=CountUpgrade(EngineeringSkills,CompleteOnly) >= {Engineering Skills level 1}1
+RequirementNode/Name/GTE1619583487CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(LeadershipSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Leadership Skills Level 1}1
 RequirementNode/Name/GTE1791906363CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Soldier Skills level 3}3
 RequirementNode/Name/GTE1805456185CountUpgradeCASOnStationCompleteOnly1=CountUpgrade(CASOnStation,CompleteOnly) >= {CAS On Station}1
+RequirementNode/Name/GTE1809330113CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Rifleman Skills Level 4}4
 RequirementNode/Name/GTE1860585296CountUpgradeIDFSupportCompleteOnly2=CountUpgrade(IDFSupport,CompleteOnly) >= {IDF Support 2}2
 RequirementNode/Name/GTE1918093729CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21=CountBehavior(HeroLevels,CompleteOnlyAtUnit){Level 1: Requires Hero Level 3}[TechTreeCheat] >= {Level 1: Requires Hero Level 3}((CountAbil(Revive,CompleteOnlyAtUnit)[TechTreeCheat] * 2) + 1)
+RequirementNode/Name/GTE1919610661CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Reconaissance Skills Level 4}4
 RequirementNode/Name/GTE1921614202CountUpgradeSecurityCompleteOnly1=CountUpgrade(Security,CompleteOnly) >= {Security Level 1}1
 RequirementNode/Name/GTE1979772316CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(GhostSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Ghost Skills level 2}2
 RequirementNode/Name/GTE1989884963CountAbilCombatEnhancementsCompleteOnlyAtUnit4=CountAbil(CombatEnhancements,CompleteOnlyAtUnit) >= {Combat Enhancements level 4}4
+RequirementNode/Name/GTE2121746728CountUpgradeTrainingCompleteOnlyTechTreeCheat1=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= {Training 1}1
+RequirementNode/Name/GTE2127053401CountUpgradeLeadershipCompleteOnlyTechTreeCheat4=CountUpgrade(Leadership,CompleteOnly)[TechTreeCheat] >= {Leadership Level 4}4
+RequirementNode/Name/GTE2201648162CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(LeadershipSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Leadership Skills Level 4}4
 RequirementNode/Name/GTE2213874053CountAbilCombatEnhancementsCompleteOnlyAtUnit2=CountAbil(CombatEnhancements,CompleteOnlyAtUnit) >= {Combat Enhancements level 2}2
 RequirementNode/Name/GTE2276327908CountAbilCyborgStrengthCompleteOnlyAtUnit3=CountAbil(CyborgStrength,CompleteOnlyAtUnit) >= {Strength 3}3
+RequirementNode/Name/GTE2318366529CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(MarksmanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Marksman Skills Level 3}3
 RequirementNode/Name/GTE2373625175CountUpgradeEngineeringSkillsCompleteOnly3=CountUpgrade(EngineeringSkills,CompleteOnly) >= {Security 3}3
+RequirementNode/Name/GTE2415045778CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Reconaissance Skills Level 1}1
+RequirementNode/Name/GTE2415934315CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Reconaissance Skills Level 3}3
 RequirementNode/Name/GTE2420255148CountAbilOrbitalStrikeCompleteOnlyAtUnit1=CountAbil(OrbitalStrike,CompleteOnlyAtUnit) >= {JFO 1}1
 RequirementNode/Name/GTE2425553789CountUpgradeIDFSupportCompleteOnly3=CountUpgrade(IDFSupport,CompleteOnly) >= {IDF Support 3}3
+RequirementNode/Name/GTE2462162057CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= {Augmentation Level 5}5
 RequirementNode/Name/GTE2495743555CountAbilCombatEnhancementsCompleteOnlyAtUnit3=CountAbil(CombatEnhancements,CompleteOnlyAtUnit) >= {Combat Enhancements level 3}3
+RequirementNode/Name/GTE2506488513CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= {Augmentation Level 2}2
 RequirementNode/Name/GTE2516338816CountAbilOrbitalStrikeCompleteOnlyAtUnit2=CountAbil(OrbitalStrike,CompleteOnlyAtUnit) >= {JFO 2}2
 RequirementNode/Name/GTE2593853111CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Soldier Skills level 4}4
 RequirementNode/Name/GTE2687546691CountUpgradeSecurityCompleteOnly2=CountUpgrade(Security,CompleteOnly) >= {Security 2}2
 RequirementNode/Name/GTE2708380730CountAbilOrbitalStrikeCompleteOnlyAtUnit4=CountAbil(OrbitalStrike,CompleteOnlyAtUnit) >= {JFO 4}4
 RequirementNode/Name/GTE2791772819CountAbilCyborgStrengthCompleteOnlyAtUnit3=CountAbil(CyborgStrength,CompleteOnlyAtUnit) >= {Strength level 3}3
+RequirementNode/Name/GTE2821025729CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Soldier Skills Level 4}4
+RequirementNode/Name/GTE2892571211CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= {Augmentation Level 1}1
 RequirementNode/Name/GTE2925036810CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(GhostSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Ghost Skills level 3}3
 RequirementNode/Name/GTE3063185261CountAbilCyborgAgilityCompleteOnlyAtUnit3=CountAbil(CyborgAgility,CompleteOnlyAtUnit) >= {Agility 3}3
+RequirementNode/Name/GTE3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= {Training 3}3
+RequirementNode/Name/GTE3293826747CountUpgradeTrainingCompleteOnlyTechTreeCheat2=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= {Training 2}2
+RequirementNode/Name/GTE3343152956CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= {Augmentation Level 4}4
 RequirementNode/Name/GTE3447350149CountAbilSecurityCompleteOnlyAtUnit2=CountAbil(Security,CompleteOnlyAtUnit) >= {Security Level 2}2
 RequirementNode/Name/GTE3447350149CountUpgradeSecurityCompleteOnly2=CountUpgrade(Security,CompleteOnly) >= {Security Level 2}2
 RequirementNode/Name/GTE3476359170CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(JavelinSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Javelin Skills level 2}2
+RequirementNode/Name/GTE3506875869CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Reconaissance Skills Level 2}2
+RequirementNode/Name/GTE3509451132CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Rifleman Skills Level 1}1
 RequirementNode/Name/GTE3564591396CountAbilOrbitalStrikeCompleteOnlyAtUnit5=CountAbil(OrbitalStrike,CompleteOnlyAtUnit) >= {JFO 5}5
+RequirementNode/Name/GTE3674476840CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Rifleman Skills Level 2}2
+RequirementNode/Name/GTE3722802059CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(MarksmanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Marksman Skills Level 2}2
 RequirementNode/Name/GTE3737081613CountUpgradeEngineeringSkillsCompleteOnly2=CountUpgrade(EngineeringSkills,CompleteOnly) >= {Engineering Skills level 2}2
+RequirementNode/Name/GTE378448441CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(LeadershipSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Leadership Skills Level 3}3
+RequirementNode/Name/GTE380389238CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Rifleman Skills Level 3}3
+RequirementNode/Name/GTE3824807800CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Soldier Skills Level 2}2
 RequirementNode/Name/GTE3855879615CountUpgradeSecurityCompleteOnly3=CountUpgrade(Security,CompleteOnly) >= {Security Level 3}3
 RequirementNode/Name/GTE3896639198CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(GhostSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Ghost Skills level 1}1
 RequirementNode/Name/GTE3923531317CountUpgradeEngineeringSkillsCompleteOnly4=CountUpgrade(EngineeringSkills,CompleteOnly) >= {Engineering Skills 4}4
 RequirementNode/Name/GTE4002722016CountUpgradeEngineeringSkillsCompleteOnly3=CountUpgrade(EngineeringSkills,CompleteOnly) >= {Engineering Skills level 3}3
+RequirementNode/Name/GTE4004373163CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat2=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat] >= {First Aid Level 2}2
+RequirementNode/Name/GTE4016420288CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat] >= {First Aid Level 3}3
+RequirementNode/Name/GTE4026750960CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat1=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat] >= {First Aid Level 1}1
 RequirementNode/Name/GTE4031064180CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(JavelinSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Javelin Skills level 1}1
 RequirementNode/Name/GTE404353804CountUpgradeIDFSupportCompleteOnly5=CountUpgrade(IDFSupport,CompleteOnly) >= {IDF Support 5}5
 RequirementNode/Name/GTE4144293025CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat5=CountAbil(GhostSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Ghost Skills level 5}5
+RequirementNode/Name/GTE4146920530CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(MarksmanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Marksman Skills Level 1}1
 RequirementNode/Name/GTE4209075357CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(JavelinSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Javelin Skills level 4}4
 RequirementNode/Name/GTE4257896482CountAbilCombatEnhancementsCompleteOnlyAtUnit1=CountAbil(CombatEnhancements,CompleteOnlyAtUnit) >= {Combat Enhancements level 1}1
 RequirementNode/Name/GTE473313262CountAbilSecurityCompleteOnlyAtUnit4=CountAbil(Security,CompleteOnlyAtUnit) >= {Security Level 4}4
 RequirementNode/Name/GTE473313262CountUpgradeSecurityCompleteOnly4=CountUpgrade(Security,CompleteOnly) >= {Security Level 4}4
 RequirementNode/Name/GTE524278969CountUpgradeIDFSupportCompleteOnly4=CountUpgrade(IDFSupport,CompleteOnly) >= {IDF Support 4}4
+RequirementNode/Name/GTE529531359CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1=CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] >= {Marksmanship Level 1}1
+RequirementNode/Name/GTE535010406CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(LeadershipSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Leadership Skills Level 2}2
+RequirementNode/Name/GTE567023099CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= {Augmentation Level 3}3
+RequirementNode/Name/GTE579486704CountUpgradeLeadershipCompleteOnlyTechTreeCheat2=CountUpgrade(Leadership,CompleteOnly)[TechTreeCheat] >= {Leadership Level 2}2
+RequirementNode/Name/GTE605371476CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= {Soldier Skills Level 1}1
+RequirementNode/Name/GTE879857690CountUpgradeTrainingCompleteOnlyTechTreeCheat4=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= {Training 4}4
 RequirementNode/Name/GTE89067501CountUpgradeEngineeringSkillsCompleteOnly4=CountUpgrade(EngineeringSkills,CompleteOnly) >= {Engineering Skills level 4}4
 RequirementNode/Name/GTE893805867CountUpgradeIDFSupportCompleteOnly1=CountUpgrade(IDFSupport,CompleteOnly) >= {IDF Support 1}1
-RequirementNode/Name/GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= 1
-RequirementNode/Name/GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= 2
-RequirementNode/Name/GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= 3
 RequirementNode/Name/GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= 4
 RequirementNode/Name/GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] >= 5
-RequirementNode/Name/GTECountAbilFirstAidCompleteOnlyAtUnit1=CountAbil(FirstAid,CompleteOnlyAtUnit) >= 1
-RequirementNode/Name/GTECountAbilFirstAidCompleteOnlyAtUnit2=CountAbil(FirstAid,CompleteOnlyAtUnit) >= 2
-RequirementNode/Name/GTECountAbilFirstAidCompleteOnlyAtUnit3=CountAbil(FirstAid,CompleteOnlyAtUnit) >= 3
-RequirementNode/Name/GTECountAbilFirstAidCompleteOnlyAtUnit4=CountAbil(FirstAid,CompleteOnlyAtUnit) >= 4
+RequirementNode/Name/GTECountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat] >= 3
+RequirementNode/Name/GTECountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat] >= 4
 RequirementNode/Name/GTECountAbilGhostSkillsCompleteOnlyAtUnit1=CountAbil(GhostSkills,CompleteOnlyAtUnit) >= 1
-RequirementNode/Name/GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(LeadershipSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 1
-RequirementNode/Name/GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(LeadershipSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 2
-RequirementNode/Name/GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(LeadershipSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 3
-RequirementNode/Name/GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(LeadershipSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 4
-RequirementNode/Name/GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(MarksmanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 1
-RequirementNode/Name/GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(MarksmanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 2
-RequirementNode/Name/GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(MarksmanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 3
-RequirementNode/Name/GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1=CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] >= 1
 RequirementNode/Name/GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2=CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] >= 2
-RequirementNode/Name/GTECountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1=CountAbil(Napalm,CompleteOnlyAtUnit)[TechTreeCheat] >= 1
-RequirementNode/Name/GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 1
-RequirementNode/Name/GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 2
-RequirementNode/Name/GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 3
-RequirementNode/Name/GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(ReconnaissanceSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 4
-RequirementNode/Name/GTECountAbilRiflemanSkillsCompleteOnlyAtUnit1=CountAbil(RiflemanSkills,CompleteOnlyAtUnit) >= 1
-RequirementNode/Name/GTECountAbilRiflemanSkillsCompleteOnlyAtUnit2=CountAbil(RiflemanSkills,CompleteOnlyAtUnit) >= 2
-RequirementNode/Name/GTECountAbilRiflemanSkillsCompleteOnlyAtUnit3=CountAbil(RiflemanSkills,CompleteOnlyAtUnit) >= 3
-RequirementNode/Name/GTECountAbilRiflemanSkillsCompleteOnlyAtUnit4=CountAbil(RiflemanSkills,CompleteOnlyAtUnit) >= 4
 RequirementNode/Name/GTECountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 2
+RequirementNode/Name/GTECountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 3
 RequirementNode/Name/GTECountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 4
-RequirementNode/Name/GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 1
-RequirementNode/Name/GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 2
 RequirementNode/Name/GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(SoldierSkills,CompleteOnlyAtUnit)[TechTreeCheat] >= 4
-RequirementNode/Name/GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat2=CountUpgrade(Leadership,CompleteOnly)[TechTreeCheat] >= 2
 RequirementNode/Name/GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat4=CountUpgrade(Leadership,CompleteOnly)[TechTreeCheat] >= 4
 RequirementNode/Name/GTECountUpgradeTrainingCompleteOnly2=CountUpgrade(Training,CompleteOnly) >= 2
 RequirementNode/Name/GTECountUpgradeTrainingCompleteOnlyTechTreeCheat1=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= 1
-RequirementNode/Name/GTECountUpgradeTrainingCompleteOnlyTechTreeCheat2=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= 2
 RequirementNode/Name/GTECountUpgradeTrainingCompleteOnlyTechTreeCheat3=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= 3
 RequirementNode/Name/GTECountUpgradeTrainingCompleteOnlyTechTreeCheat4=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] >= 4
 RequirementNode/Name/LT223606906CountAbilSecurityCompleteOnlyAtUnit4=CountAbil(Security,CompleteOnlyAtUnit) < {Security Level 1-3}4
+RequirementNode/Name/LT3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] < {Training 3}3
 RequirementNode/Name/LT3916787485CountUnitSatchelChargeCEQueuedOrBetter1=CountUnit(SatchelChargeCE,QueuedOrBetter) < {Max 1 satchel charge}1
 RequirementNode/Name/LT643609641CountUnitBarricadeQueuedOrBetter3=CountUnit(Barricade,QueuedOrBetter) < {Max 3 barricades}3
 RequirementNode/Name/LTCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] < 4
 RequirementNode/Name/LTCountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5=CountAbil(Augmentation,CompleteOnlyAtUnit)[TechTreeCheat] < 5
-RequirementNode/Name/LTCountAbilFirstAidCompleteOnlyAtUnit3=CountAbil(FirstAid,CompleteOnlyAtUnit) < 3
-RequirementNode/Name/LTCountAbilFirstAidCompleteOnlyAtUnit4=CountAbil(FirstAid,CompleteOnlyAtUnit) < 4
+RequirementNode/Name/LTCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat] < 3
+RequirementNode/Name/LTCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4=CountAbil(FirstAid,CompleteOnlyAtUnit)[TechTreeCheat] < 4
 RequirementNode/Name/LTCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat4=CountAbil(Marksmanship,CompleteOnlyAtUnit)[TechTreeCheat] < 4
 RequirementNode/Name/LTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3=CountAbil(Revive,CompleteOnlyAtUnit)[TechTreeCheat] < 3
-RequirementNode/Name/LTCountAbilRiflemanSkillsCompleteOnlyAtUnit3=CountAbil(RiflemanSkills,CompleteOnlyAtUnit) < 3
-RequirementNode/Name/LTCountAbilRiflemanSkillsCompleteOnlyAtUnit4=CountAbil(RiflemanSkills,CompleteOnlyAtUnit) < 4
+RequirementNode/Name/LTCountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat3=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] < 3
 RequirementNode/Name/LTCountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4=CountAbil(RiflemanSkills,CompleteOnlyAtUnit)[TechTreeCheat] < 4
 RequirementNode/Name/LTCountUpgradeTrainingCompleteOnlyTechTreeCheat3=CountUpgrade(Training,CompleteOnly)[TechTreeCheat] < 3
 RequirementNode/Name/LTE1461848182CountUnitM1SentryGunQueuedOrBetter1=CountUnit(M1SentryGun,QueuedOrBetter) <= {Max 2 Sentry Guns}1
@@ -2491,6 +2664,7 @@ Texture/Name/CamoCADPAT=Camo CADPAT
 Texture/Name/CamoChameleon=Camo Chameleon
 Texture/Name/CamoDefault=Camo Default
 Texture/Name/CamoDesert=Camo Desert
+Texture/Name/CamoLN=Camo LN
 Texture/Name/CamoMARPAT=Camo MARPAT
 Texture/Name/CamoMedic=Camo Medic
 Texture/Name/CamoMulticam=Camo Multicam
@@ -2515,6 +2689,12 @@ Texture/Name/DecalRavensword=Decal Ravensword
 Texture/Name/DecalUSFlag=Decal US Flag
 Texture/Name/DecalWolves=Decal Wolves
 Texture/Name/DecalZES=Decal ZES
+Texture/Name/IgnisADiffuse=IgnisADiffuse
+Texture/Name/IgnisAEmissive=IgnisAEmissive
+Texture/Name/IgnisASpecular=IgnisASpecular
+Texture/Name/IgnisBDiffuse=IgnisBDiffuse
+Texture/Name/IgnisBEmissive=IgnisBEmissive
+Texture/Name/IgnisBSpecular=IgnisBSpecular
 Texture/Name/InfestedCivilianBloody=Infested Civilian Bloody
 Texture/Name/PoliceOfficer_Diffuse=PoliceOfficer_Diffuse
 Texture/Name/Rank1LT=Rank1LT
@@ -2545,6 +2725,9 @@ Texture/Name/RankSMA=RankSMA
 Texture/Name/RankSPC=RankSPC
 Texture/Name/RankSSG=RankSSG
 Texture/Name/RankWO1=RankWO1
+Texture/Name/VesaniaADiffuse=VesaniaADiffuse
+Texture/Name/VesaniaAEmissive=VesaniaAEmissive
+Texture/Name/VesaniaASpecular=VesaniaASpecular
 Texture/Name/VikingWoodland=Viking Woodland
 Texture/Name/WeaponsCacheRock=Weapons Cache Rock
 Texture/Name/ZombieDiff=Zombie Diff
@@ -2593,44 +2776,63 @@ Unit/EditorPrefix/Aspectus=RA -
 Unit/EditorPrefix/AutomaticRifleman=MOS -
 Unit/EditorPrefix/BMDD=Item Crate -
 Unit/EditorPrefix/BattleWalker=NPC -
+Unit/EditorPrefix/BetaCellAnalyzer=Item Crate -
 Unit/EditorPrefix/BioSample=Item Crate -
 Unit/EditorPrefix/Boomer=Undead -
 Unit/EditorPrefix/BradleyHERound=Weapon -
 Unit/EditorPrefix/Bruchus=Undead -
 Unit/EditorPrefix/BulletRound=Weapon -
 Unit/EditorPrefix/Cacumen=Undead -
+Unit/EditorPrefix/Casualty=Item Crate -
 Unit/EditorPrefix/CavalryScout=MOS -
 Unit/EditorPrefix/Charger=Undead -
+Unit/EditorPrefix/Civilian=NPC -
+Unit/EditorPrefix/CivilianFemale=NPC -
 Unit/EditorPrefix/Claymore2=Item Crate -
 Unit/EditorPrefix/ClusterRocket=Weapon -
+Unit/EditorPrefix/ColonistShip=NPC -
+Unit/EditorPrefix/ColonistShipFlying=NPC -
 Unit/EditorPrefix/CombatEngineer=MOS -
 Unit/EditorPrefix/CombatEngineerMini=Mini -
 Unit/EditorPrefix/CombatMedic=MOS -
 Unit/EditorPrefix/CombatWalker=NPC -
+Unit/EditorPrefix/Commander=NPC -
 Unit/EditorPrefix/Commando=Undead -
 Unit/EditorPrefix/Cougher=Undead -
 Unit/EditorPrefix/Crab=Undead -
 Unit/EditorPrefix/Creeper=Undead -
 Unit/EditorPrefix/Cursed=Undead -
 Unit/EditorPrefix/Cyborg=MOS -
+Unit/EditorPrefix/DURounds=Item Crate -
 Unit/EditorPrefix/Darreus=Undead -
 Unit/EditorPrefix/DrJashan=RA -
 Unit/EditorPrefix/Drake=Undead -
 Unit/EditorPrefix/Eel=Undead -
+Unit/EditorPrefix/EnergyBattery=Item Crate -
+Unit/EditorPrefix/EnergyCell=Item Crate -
+Unit/EditorPrefix/ExplosiveCharge=Item Crate -
+Unit/EditorPrefix/FarmerAkma=NPC -
 Unit/EditorPrefix/Feederling2=Virophage
 Unit/EditorPrefix/FireSupportSpecialist=MOS -
+Unit/EditorPrefix/FirstAidKit=Item Crate -
 Unit/EditorPrefix/Flamethrower=MOS -
 Unit/EditorPrefix/FlamethrowerFlame=Weapon -
+Unit/EditorPrefix/FlareGun=Item Crate -
+Unit/EditorPrefix/Flashlight=Item Crate -
+Unit/EditorPrefix/FragGrenade=Item Crate -
 Unit/EditorPrefix/Gargantuan=Undead -
 Unit/EditorPrefix/Gargoyle=Undead -
 Unit/EditorPrefix/GhostHero=MOS -
 Unit/EditorPrefix/GhostMini=Mini -
 Unit/EditorPrefix/Glutton=Undead -
+Unit/EditorPrefix/Gourmand=Undead -
 Unit/EditorPrefix/Grotesque=Undead -
+Unit/EditorPrefix/GroundFlareItem=Item Crate -
 Unit/EditorPrefix/HK42=Item Crate -
 Unit/EditorPrefix/Hopper=Undead -
 Unit/EditorPrefix/Horror=Undead -
 Unit/EditorPrefix/Hunter=Undead -
+Unit/EditorPrefix/IDMR2=Item Crate -
 Unit/EditorPrefix/IPR=Item Crate -
 Unit/EditorPrefix/ISS7=Item Crate -
 Unit/EditorPrefix/Ignis=RA -
@@ -2647,6 +2849,7 @@ Unit/EditorPrefix/KevlarBodyArmor=Item Crate -
 Unit/EditorPrefix/KineticIntegrator=Item Crate -
 Unit/EditorPrefix/Krill=Undead -
 Unit/EditorPrefix/LLDR=Item Crate -
+Unit/EditorPrefix/LMTV=NPC -
 Unit/EditorPrefix/LNAutomaticRifleman=LN -
 Unit/EditorPrefix/LNCombatEngineer=LN -
 Unit/EditorPrefix/LNJavelinGunner=LN -
@@ -2661,11 +2864,20 @@ Unit/EditorPrefix/LiftBoots=Item Crate -
 Unit/EditorPrefix/Livid=Undead -
 Unit/EditorPrefix/M135Minigun=Item Crate -
 Unit/EditorPrefix/M1Abrams=NPC -
+Unit/EditorPrefix/M241MMG=Item Crate -
+Unit/EditorPrefix/M2BradleyIFV=NPC -
+Unit/EditorPrefix/M41SAW=Item Crate -
 Unit/EditorPrefix/M5MAR=Item Crate -
 Unit/EditorPrefix/M79Flamethrower=Item Crate -
+Unit/EditorPrefix/M92Torrent=Item Crate -
 Unit/EditorPrefix/MGL=Item Crate -
+Unit/EditorPrefix/MK44SentryGun2=Item Crate -
+Unit/EditorPrefix/MK44SentryGunPacked=Item Crate -
+Unit/EditorPrefix/MK79SentryGunPacked=Item Crate -
 Unit/EditorPrefix/MRL=Item Crate -
 Unit/EditorPrefix/MRLRocket=Weapon -
+Unit/EditorPrefix/Magazines=Item Crate -
+Unit/EditorPrefix/Mayor=NPC -
 Unit/EditorPrefix/Metasis=Undead -
 Unit/EditorPrefix/Minerva=Undead -
 Unit/EditorPrefix/MinigunMissile=Weapon -
@@ -2676,6 +2888,7 @@ Unit/EditorPrefix/OPA=Item Crate -
 Unit/EditorPrefix/PelletRound=Weapon -
 Unit/EditorPrefix/PlagueVector=Undead -
 Unit/EditorPrefix/PlasmaGrenade=Weapon -
+Unit/EditorPrefix/PlasmaRifleMissile=Weapon -
 Unit/EditorPrefix/PlatoonLeader=MOS -
 Unit/EditorPrefix/PoliceOfficer=NPC -
 Unit/EditorPrefix/PoliceOfficerShotgun=NPC -
@@ -2685,6 +2898,7 @@ Unit/EditorPrefix/Raisuli=Undead -
 Unit/EditorPrefix/Rifleman=MOS -
 Unit/EditorPrefix/Risen=Undead -
 Unit/EditorPrefix/SAMMissile=Weapon -
+Unit/EditorPrefix/SAMSite=NPC -
 Unit/EditorPrefix/SAMSitePacked=Item Crate -
 Unit/EditorPrefix/SFAAT=MOS -
 Unit/EditorPrefix/SOFAR=Item Crate -
@@ -2698,7 +2912,7 @@ Unit/EditorPrefix/SmokeGrenadeItem=Item Crate -
 Unit/EditorPrefix/Sniper=Mini -
 Unit/EditorPrefix/Spitter=Undead -
 Unit/EditorPrefix/SquadDesignatedMarksman=MOS -
-Unit/EditorPrefix/SquadLeader=NPC -
+Unit/EditorPrefix/SquadLeader=RA -
 Unit/EditorPrefix/StalkerZombie=Undead -
 Unit/EditorPrefix/StynerBR2=Item Crate -
 Unit/EditorPrefix/Swarmer=Undead -
@@ -2707,6 +2921,7 @@ Unit/EditorPrefix/Tarantula=Undead -
 Unit/EditorPrefix/TemplateMOS=MOS -
 Unit/EditorPrefix/Thanatos=Undead -
 Unit/EditorPrefix/ThresherMaw=Undead -
+Unit/EditorPrefix/TimeStop=RA -
 Unit/EditorPrefix/Turned=Undead -
 Unit/EditorPrefix/USMCR=Item Crate -
 Unit/EditorPrefix/Umbra=RA -
@@ -2718,8 +2933,12 @@ Unit/EditorSuffix/BDS=
 Unit/EditorSuffix/BioResonator=
 Unit/EditorSuffix/BradleyHERound=(BHER)
 Unit/EditorSuffix/BulletRound=(BR)
+Unit/EditorSuffix/Civilian=(Male)
+Unit/EditorSuffix/CivilianFemale=(Female)
 Unit/EditorSuffix/Claymore=(Unit)
 Unit/EditorSuffix/Claymore2=(Item)
+Unit/EditorSuffix/ColonistShip=(Landed)
+Unit/EditorSuffix/ColonistShipFlying=(Flying)
 Unit/EditorSuffix/ColonistTransport=
 Unit/EditorSuffix/ColonistTransport2=
 Unit/EditorSuffix/DrJashan=(Male)
@@ -2728,14 +2947,11 @@ Unit/EditorSuffix/FarmerAkma=(Male)
 Unit/EditorSuffix/Feederling2=
 Unit/EditorSuffix/FlamethrowerFlame=(FTF)
 Unit/EditorSuffix/Generator=
-Unit/EditorSuffix/Gourmand=
 Unit/EditorSuffix/GroundFlareItem=(Item)
 Unit/EditorSuffix/Hull=
 Unit/EditorSuffix/ICBMSilo=
 Unit/EditorSuffix/IncendiaryRound=(IR)
 Unit/EditorSuffix/InfestedSilo=
-Unit/EditorSuffix/LMTV=
-Unit/EditorSuffix/M2BradleyIFV=
 Unit/EditorSuffix/MK44SentryGun2=(Mission)
 Unit/EditorSuffix/Mayor=(Male)
 Unit/EditorSuffix/MinigunMissile=(MGM)
@@ -2749,7 +2965,6 @@ Unit/EditorSuffix/SatchelChargeCE=(CE)
 Unit/EditorSuffix/SmokeGrenadeItem=(Item)
 Unit/EditorSuffix/StalkerZombie=(undead)
 Unit/EditorSuffix/Swarmer=(Flying)
-Unit/EditorSuffix/TimeStop=
 Validator/EditorPrefix/ArachChargeNoBehavior=
 Validator/EditorPrefix/NotClass4Hemo=Ailment -
 Validator/EditorPrefix/RifleButtDoesNotHaveBehavior=
@@ -2799,6 +3014,7 @@ Validator/Name/HasIncendiaryRound=Has Incendiary Round
 Validator/Name/HasIncendiaryRoundAndEnergy=Has Incendiary Round And Energy
 Validator/Name/HasMGBurstUpgraded=Has MG Burst Upgraded
 Validator/Name/HasModerateAilment=Has Moderate Ailment
+Validator/Name/HasSteelSaber=Has Steel Saber
 Validator/Name/HasSuppressiveFire1=Has Suppressive Fire 1
 Validator/Name/HasSuppressiveFire12=Has Suppressive Fire 2
 Validator/Name/HasSuppressiveFire13=Has Suppressive Fire 3
@@ -2839,6 +3055,12 @@ Validator/Name/MachinegunTestNear=Machinegun Test Near
 Validator/Name/MachinegunTestNear3=Machinegun Test Near Copy 2
 Validator/Name/Minerals1=Minerals < 1
 Validator/Name/Minigun=Minigun
+Validator/Name/MonoWire1=Mono Wire 1
+Validator/Name/MonoWire2=Mono Wire 2
+Validator/Name/MonoWire3=Mono Wire < 3
+Validator/Name/MonoWire32=Mono Wire >= 3
+Validator/Name/MonoWire33=Mono Wire 3
+Validator/Name/MonoWire4=Mono Wire 4
 Validator/Name/NanoMiniLifeAil=Nano Mini Life Ail
 Validator/Name/Napalm1=Napalm1
 Validator/Name/Napalm2=Napalm2
@@ -2851,6 +3073,7 @@ Validator/Name/NotClass4Hemo=Not Class 4 Hemo
 Validator/Name/NotEnemy=Not Enemy
 Validator/Name/NotFullyAutomatic=Not Fully Automatic
 Validator/Name/NotSprinting=Not Sprinting
+Validator/Name/NotSteelSaber=Not Steel Saber
 Validator/Name/PlayerNotHasRounds=Player Not Has Minerals
 Validator/Name/RaceZerg=Race Zerg
 Validator/Name/RapidFiring=Rapid Firing
@@ -2875,6 +3098,7 @@ Validator/Name/TargetIsMassiveMechanicalorLD=Target Is Massive/Mechanical or LD
 Validator/Name/TargetLifeGT=TargetLifeGT
 Validator/Name/TargetisTerran=Target is Terran
 Validator/Name/UnitSprinting=Unit Sprinting
+Validator/Name/UnitisCavScout=Unit is Cav Scout
 Weapon/EditorPrefix/120mmL44M256SmoothboreCannon=
 Weapon/EditorPrefix/30mmChainGun=
 Weapon/EditorPrefix/50Cal=MK44 Sentry Gun
@@ -2949,6 +3173,7 @@ Weapon/EditorPrefix/PlasmaRifleCryo=Ghost -
 Weapon/EditorPrefix/PlasmaRifleDisruptor=Ghost - 
 Weapon/EditorPrefix/PlasmaRifleIncendiary=Ghost - 
 Weapon/EditorPrefix/PoliceOfficerShotgun=
+Weapon/EditorPrefix/PoochBite=
 Weapon/EditorPrefix/RaisuliClaws=
 Weapon/EditorPrefix/RisenClaws=Zombie - 
 Weapon/EditorPrefix/SAMMissile=

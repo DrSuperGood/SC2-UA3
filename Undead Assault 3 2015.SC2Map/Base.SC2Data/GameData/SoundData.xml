@@ -505,7 +505,7 @@
         <Mode value="3DWorld"/>
     </CSound>
     <CSound id="SatchelChargeExplode2" parent="Terran_ExplosionSmall">
-        <AssetArray index="0" File="Sounds\new sounds\40mmImpact.ogg" Pitch="-18.090000,-15.090000" FacialGroup=""/>
+        <AssetArray index="0" File="Sounds\new sounds\40mmImpact.ogg" Pitch="-18.090000,-15.089999" FacialGroup=""/>
         <AssetArray index="1" removed="1"/>
         <AssetArray index="2" removed="1"/>
         <AssetArray index="3" removed="1"/>
@@ -662,7 +662,7 @@
     </CSound>
     <CSound id="BradleyEngineLoop">
         <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Sounds\new sounds\engine loop.ogg" Volume="-47.310001,-47.310001" FacialGroup=""/>
+        <AssetArray File="Sounds\new sounds\engine loop.ogg" Volume="-47.309998,-47.309998" FacialGroup=""/>
         <Category value="Spell"/>
         <LoopCount value="-1"/>
         <Mode value="3DWorld"/>
@@ -873,9 +873,9 @@
         <AssetArray index="4" removed="1"/>
     </CSound>
     <CSound id="Zombie_AttackImpact" parent="Zerg_AttackImpactSmallPierce">
-        <AssetArray index="0" File="Sounds\ZombieMedBashFlesh1.wav" FacialGroup=""/>
-        <AssetArray index="1" File="Sounds\ZombieMedBashFlesh2.wav" FacialGroup=""/>
-        <AssetArray index="2" File="Sounds\ZombieMedBashFlesh3.wav" FacialGroup=""/>
+        <AssetArray index="0" File="Sounds\ZombieMedBashFlesh3.wav" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
         <AssetArray index="3" removed="1"/>
         <AssetArray index="4" removed="1"/>
     </CSound>
