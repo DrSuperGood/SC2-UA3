@@ -14,6 +14,12 @@
         </Frame>
     </Frame>
 
+    <!-- Resource & items -->
+    <Frame type="ResourcePanel" name="GameUI/UIContainer/FullscreenUpperContainer/ResourcePanel" file="GameUI">
+        <Anchor side="Left" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="Min" offset="-1200"/>
+        <Anchor side="Bottom" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="Min" offset="-42"/>
+    </Frame>
+
     <!-- sprint panel 550x74 -->
     <Frame type="Frame" name="GameUI/UIContainer/ConsoleUIContainer" file="GameUI">
         <Frame type="Frame" name="ProgressUnitFrame" template="HotS_GameUnitFrame/ProgressUnitFrameTemplate">
@@ -22,12 +28,33 @@
             <Anchor side="Left" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="Min" offset="-460"/>
             <Anchor side="Bottom" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="Min" offset="25"/>
         </Frame>
-    </Frame>
 
-    <!-- Resource & items -->
-    <Frame type="ResourcePanel" name="GameUI/UIContainer/FullscreenUpperContainer/ResourcePanel" file="GameUI">
-        <Anchor side="Left" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="Min" offset="-1200"/>
-        <Anchor side="Bottom" relative="$parent/$parent/ConsoleUIContainer/CommandPanel" pos="Min" offset="-42"/>
+        <!-- HUD Button -->
+        <Frame type="Button" name="HUDButton" template="ArmyButton/ArmyButtonTemplate">
+            <Anchor side="Bottom" relative="$parent/ArmyButton" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent/ArmyButton" pos="Max" offset="-5"/>
+            <Visible val="false"/>
+
+            <Frame type="Label" name="CountLabel">
+                <Anchor side="Top" relative="$parent" pos="Min" offset="4"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="-1"/>
+                <Width val="37"/>
+                <Style val="IdleButtonCharge"/>
+                <RenderPriority val="520"/>
+                <Text val="FT"/>
+            </Frame>
+
+            <Frame type="Label" name="HotkeyLabel">
+                <Anchor side="Top" relative="$this" pos="Max" offset="0"/>
+                <Anchor side="Left" relative="$this" pos="Max" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Max" offset="-8"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="-10"/>
+                <AutoSizeClamps minwidth="" maxwidth="90" minheight="" maxheight=""/>
+                <RenderPriority val="520"/>
+                <Style val="GameButtonCharge"/>
+                <Text val="F2"/>
+            </Frame>
+        </Frame>
     </Frame>
 
     <!-- Timer Window -->
@@ -49,6 +76,7 @@
         </Frame>
     </Frame>
 
+    <!-- Inventory Panel -->
     <Frame type="InventoryPanel" name="GameUI/UIContainer/ConsoleUIContainer/InventoryPanel" file="GameUI">
         <Frame type="InventoryContainer" name="InventoryButtons">
             <Anchor side="Bottom" relative="$parent" pos="Max" offset="-210"/>

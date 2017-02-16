@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
-    <CRequirementConst id="5"/>
+    <CRequirementAnd id="And2121746728GTE2121746728CountUpgradeTrainingCompleteOnlyTechTreeCheat1LT3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3">
+        <OperandArray value="GTE2121746728CountUpgradeTrainingCompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="LT3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3"/>
+    </CRequirementAnd>
     <CRequirementAnd id="And2304769686GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat4GTECountUpgradeTrainingCompleteOnlyTechTreeCheat4">
         <OperandArray value="GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat4"/>
         <OperandArray value="GTECountUpgradeTrainingCompleteOnlyTechTreeCheat4"/>
@@ -34,6 +37,11 @@
         <OperandArray value="Eq2092276232CountUpgradeMSGCompleteOnlyTechTreeCheat1"/>
         <OperandArray value="Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndEq2432695962CountUpgradeCPLCompleteOnlyTechTreeCheat1Eq3230784200CountUpgradeRifleModeCompleteOnly0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="Eq2432695962CountUpgradeCPLCompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="Eq3230784200CountUpgradeRifleModeCompleteOnly0"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndEq3793755040CountUnitISBotQueuedOrBetter0GTE2687546691CountUpgradeSecurityCompleteOnly2">
         <Tooltip value=""/>
         <OperandArray value="Eq3793755040CountUnitISBotQueuedOrBetter0"/>
@@ -52,10 +60,6 @@
         <Tooltip value=""/>
         <OperandArray value="Eq981512461CountUnitM1SentryGunQueuedOrBetter0"/>
         <OperandArray value="LT223606906CountAbilSecurityCompleteOnlyAtUnit4"/>
-    </CRequirementAnd>
-    <CRequirementAnd id="AndEqCountUpgradeCPLCompleteOnlyTechTreeCheat1EqCountUpgradeRifleModeCompleteOnly0">
-        <OperandArray value="EqCountUpgradeCPLCompleteOnlyTechTreeCheat1"/>
-        <OperandArray value="EqCountUpgradeRifleModeCompleteOnly0"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTE2276327908CountAbilCyborgStrengthCompleteOnlyAtUnit3GTE1102934219CountAbilCyborgStealthCompleteOnlyAtUnit3">
         <Tooltip value=""/>
@@ -113,7 +117,6 @@
         <OperandArray value="EqCountUpgrade1LifeCompleteOnly1"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndLTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3EqCountUpgrade1LifeCompleteOnly0">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="LTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3"/>
         <OperandArray value="EqCountUpgrade1LifeCompleteOnly0"/>
     </CRequirementAnd>
@@ -165,9 +168,6 @@
         <Tooltip value=""/>
         <Count Link="CyborgStrength" State="CompleteOnlyAtUnit"/>
     </CRequirementCountAbil>
-    <CRequirementCountAbil id="CountAbilFirstAidCompleteOnlyAtUnit">
-        <Count Link="FirstAid" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountAbil>
     <CRequirementCountAbil id="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat">
         <Count Link="FirstAid" State="CompleteOnlyAtUnit"/>
     </CRequirementCountAbil>
@@ -216,9 +216,6 @@
         <Tooltip value=""/>
         <Count Link="Revive" State="CompleteOnlyAtUnit"/>
     </CRequirementCountAbil>
-    <CRequirementCountAbil id="CountAbilRiflemanSkillsCompleteOnlyAtUnit">
-        <Count Link="RiflemanSkills" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountAbil>
     <CRequirementCountAbil id="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat">
         <Count Link="RiflemanSkills" State="CompleteOnlyAtUnit"/>
     </CRequirementCountAbil>
@@ -227,7 +224,7 @@
         <Tooltip value=""/>
         <Count Link="Security" State="CompleteOnlyAtUnit"/>
     </CRequirementCountAbil>
-    <CRequirementCountAbil id="CountAbilSoldierSkillsCompleteOnlyAtUnit">
+    <CRequirementCountAbil id="CountAbilSoldierSkillsCompleteOnlyAtUnit389129910TechTreeCheat">
         <Count Link="SoldierSkills" State="CompleteOnlyAtUnit"/>
     </CRequirementCountAbil>
     <CRequirementCountAbil id="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat">
@@ -401,9 +398,6 @@
         <Tooltip value=""/>
         <Count Link="MSG" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeMonoWireCompleteOnlyTechTreeCheat">
-        <Count Link="MonoWire" State="CompleteOnly"/>
-    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradePFCCompleteOnlyTechTreeCheat">
         <Count Link="PFC" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
@@ -462,6 +456,10 @@
         <OperandArray index="0" value="1"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
+    <CRequirementEq id="Eq1091882887CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
+    </CRequirementEq>
     <CRequirementEq id="Eq1126111820CountUpgradeSSGCompleteOnlyTechTreeCheat1">
         <OperandArray index="0" value="CountUpgradeSSGCompleteOnlyTechTreeCheat"/>
         <OperandArray index="1" value="1"/>
@@ -490,6 +488,30 @@
         <OperandArray index="0" value="CountBehaviorStrength3CompleteOnlyAtUnit"/>
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
+    <CRequirementEq id="Eq2432695962CountUpgradeCPLCompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeCPLCompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq2462162057CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="5"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq2506488513CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq2821025729CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq2879198198CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq2892571211CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
     <CRequirementEq id="Eq307393282CountBehaviorProneCompleteOnlyAtUnit0">
         <OperandArray index="0" value="CountBehaviorProneCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="0"/>
@@ -502,6 +524,10 @@
         <OperandArray index="0" value="CountUpgradeRifleModeCompleteOnly"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
+    <CRequirementEq id="Eq3343152956CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
+    </CRequirementEq>
     <CRequirementEq id="Eq3501222248CountBehaviorAgility3CompleteOnlyAtUnit1">
         <OperandArray index="0" value="CountBehaviorAgility3CompleteOnlyAtUnit"/>
         <OperandArray index="1" value="1"/>
@@ -510,6 +536,10 @@
         <OperandArray index="0" value="CountUpgradeCSMCompleteOnlyTechTreeCheat"/>
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
+    <CRequirementEq id="Eq3723031100CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat3">
+        <OperandArray index="0" value="CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementEq>
     <CRequirementEq id="Eq3793755040CountUnitISBotQueuedOrBetter0">
         <OperandArray index="0" value="CountUnitISBotQueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
@@ -517,6 +547,10 @@
     <CRequirementEq id="Eq3823691090CountUpgrade1LTCompleteOnlyTechTreeCheat1">
         <OperandArray index="0" value="CountUpgrade1LTCompleteOnlyTechTreeCheat"/>
         <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq3824807800CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
     </CRequirementEq>
     <CRequirementEq id="Eq3888807122CountUpgradeWO3CompleteOnlyTechTreeCheat1">
         <OperandArray index="0" value="CountUpgradeWO3CompleteOnlyTechTreeCheat"/>
@@ -552,6 +586,18 @@
     </CRequirementEq>
     <CRequirementEq id="Eq518497321CountBehaviorChargeCompleteOnlyAtUnit1">
         <OperandArray index="0" value="CountBehaviorChargeCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq529531359CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq567023099CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq605371476CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
     <CRequirementEq id="Eq861056159CountUpgradeSkiesClearCompleteOnlyTechTreeCheat1">
@@ -634,21 +680,25 @@
         <OperandArray index="0" value="CountAbilNapalmCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="4"/>
     </CRequirementEq>
-    <CRequirementEq id="EqCountAbilSoldierSkillsCompleteOnlyAtUnit2">
-        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnit"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountAbilSoldierSkillsCompleteOnlyAtUnit3">
-        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnit"/>
+    <CRequirementEq id="EqCountAbilSoldierSkillsCompleteOnlyAtUnit389129910TechTreeCheat3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnit389129910TechTreeCheat"/>
         <OperandArray index="1" value="3"/>
     </CRequirementEq>
-    <CRequirementEq id="EqCountAbilSoldierSkillsCompleteOnlyAtUnit4">
-        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnit"/>
-        <OperandArray index="1" value="4"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1">
+    <CRequirementEq id="EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
     </CRequirementEq>
     <CRequirementEq id="EqCountBehaviorDecloaking1CompleteOnlyAtUnit0">
         <Tooltip value=""/>
@@ -705,7 +755,6 @@
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
     <CRequirementEq id="EqCountUpgrade1LifeCompleteOnly0">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgrade1LifeCompleteOnly"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
@@ -713,26 +762,6 @@
         <Tooltip value=""/>
         <OperandArray index="0" value="CountUpgrade1LifeCompleteOnly"/>
         <OperandArray index="1" value="1"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeCPLCompleteOnlyTechTreeCheat1">
-        <OperandArray index="0" value="CountUpgradeCPLCompleteOnlyTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat1">
-        <OperandArray index="0" value="CountUpgradeMonoWireCompleteOnlyTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat2">
-        <OperandArray index="0" value="CountUpgradeMonoWireCompleteOnlyTechTreeCheat"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat3">
-        <OperandArray index="0" value="CountUpgradeMonoWireCompleteOnlyTechTreeCheat"/>
-        <OperandArray index="1" value="3"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeMonoWireCompleteOnlyTechTreeCheat4">
-        <OperandArray index="0" value="CountUpgradeMonoWireCompleteOnlyTechTreeCheat"/>
-        <OperandArray index="1" value="4"/>
     </CRequirementEq>
     <CRequirementEq id="EqCountUpgradeRangerCompleteOnly1">
         <OperandArray index="0" value="CountUpgradeRangerCompleteOnly"/>
@@ -743,13 +772,17 @@
         <OperandArray index="0" value="CountAbilFragGrenadeCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="0"/>
     </CRequirementGT>
-    <CRequirementEq id="EqCountUpgradeRifleModeCompleteOnly0">
-        <OperandArray index="0" value="CountUpgradeRifleModeCompleteOnly"/>
-        <OperandArray index="1" value="0"/>
-    </CRequirementEq>
+    <CRequirementGTE id="GTE1088855040CountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilNapalmCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE1102934219CountAbilCyborgStealthCompleteOnlyAtUnit3">
         <OperandArray index="0" value="CountAbilCyborgStealthCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE119275194CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTE1300418668CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat4">
         <OperandArray index="0" value="CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat"/>
@@ -767,6 +800,10 @@
         <OperandArray index="0" value="CountUpgradeEngineeringSkillsCompleteOnly"/>
         <OperandArray index="1" value="1"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE1619583487CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE1791906363CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat3">
         <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
@@ -775,6 +812,10 @@
         <OperandArray index="0" value="CountUpgradeCASOnStationCompleteOnly"/>
         <OperandArray index="1" value="1"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE1809330113CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE1860585296CountUpgradeIDFSupportCompleteOnly2">
         <OperandArray index="0" value="CountUpgradeIDFSupportCompleteOnly"/>
         <OperandArray index="1" value="2"/>
@@ -782,6 +823,10 @@
     <CRequirementGTE id="GTE1918093729CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheatSumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21">
         <OperandArray index="0" value="CountBehaviorHeroLevelsCompleteOnlyAtUnit1918093729TechTreeCheat"/>
         <OperandArray index="1" value="SumMulCountAbilReviveCompleteOnlyAtUnitTechTreeCheat21"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE1919610661CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTE1921614202CountUpgradeSecurityCompleteOnly1">
         <OperandArray index="0" value="CountUpgradeSecurityCompleteOnly"/>
@@ -795,6 +840,18 @@
         <OperandArray index="0" value="CountAbilCombatEnhancementsCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="4"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE2121746728CountUpgradeTrainingCompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeTrainingCompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE2127053401CountUpgradeLeadershipCompleteOnlyTechTreeCheat4">
+        <OperandArray index="0" value="CountUpgradeLeadershipCompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE2201648162CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE2213874053CountAbilCombatEnhancementsCompleteOnlyAtUnit2">
         <OperandArray index="0" value="CountAbilCombatEnhancementsCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="2"/>
@@ -803,8 +860,20 @@
         <OperandArray index="0" value="CountAbilCyborgStrengthCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="3"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE2318366529CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat3">
+        <OperandArray index="0" value="CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE2373625175CountUpgradeEngineeringSkillsCompleteOnly3">
         <OperandArray index="0" value="CountUpgradeEngineeringSkillsCompleteOnly"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE2415045778CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE2415934315CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat3">
+        <OperandArray index="0" value="CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTE2420255148CountAbilOrbitalStrikeCompleteOnlyAtUnit1">
@@ -815,9 +884,17 @@
         <OperandArray index="0" value="CountUpgradeIDFSupportCompleteOnly"/>
         <OperandArray index="1" value="3"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE2462162057CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat5">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="5"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE2495743555CountAbilCombatEnhancementsCompleteOnlyAtUnit3">
         <OperandArray index="0" value="CountAbilCombatEnhancementsCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE2506488513CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTE2516338816CountAbilOrbitalStrikeCompleteOnlyAtUnit2">
         <OperandArray index="0" value="CountAbilOrbitalStrikeCompleteOnlyAtUnit"/>
@@ -839,6 +916,14 @@
         <OperandArray index="0" value="CountAbilCyborgStrengthCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="3"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE2821025729CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE2892571211CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE2925036810CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat3">
         <OperandArray index="0" value="CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
@@ -846,6 +931,18 @@
     <CRequirementGTE id="GTE3063185261CountAbilCyborgAgilityCompleteOnlyAtUnit3">
         <OperandArray index="0" value="CountAbilCyborgAgilityCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3">
+        <OperandArray index="0" value="CountUpgradeTrainingCompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE3293826747CountUpgradeTrainingCompleteOnlyTechTreeCheat2">
+        <OperandArray index="0" value="CountUpgradeTrainingCompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE3343152956CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTE3447350149CountAbilSecurityCompleteOnlyAtUnit2">
         <OperandArray index="0" value="CountAbilSecurityCompleteOnlyAtUnit"/>
@@ -859,12 +956,40 @@
         <OperandArray index="0" value="CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="2"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE3506875869CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE3509451132CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE3564591396CountAbilOrbitalStrikeCompleteOnlyAtUnit5">
         <OperandArray index="0" value="CountAbilOrbitalStrikeCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="5"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE3674476840CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE3722802059CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE3737081613CountUpgradeEngineeringSkillsCompleteOnly2">
         <OperandArray index="0" value="CountUpgradeEngineeringSkillsCompleteOnly"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE378448441CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat3">
+        <OperandArray index="0" value="CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE380389238CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat3">
+        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE3824807800CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="2"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTE3855879615CountUpgradeSecurityCompleteOnly3">
@@ -883,6 +1008,18 @@
         <OperandArray index="0" value="CountUpgradeEngineeringSkillsCompleteOnly"/>
         <OperandArray index="1" value="3"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE4004373163CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE4016420288CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3">
+        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE4026750960CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE4031064180CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat1">
         <OperandArray index="0" value="CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="1"/>
@@ -894,6 +1031,10 @@
     <CRequirementGTE id="GTE4144293025CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat5">
         <OperandArray index="0" value="CountAbilGhostSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="5"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE4146920530CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTE4209075357CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat4">
         <OperandArray index="0" value="CountAbilJavelinSkillsCompleteOnlyAtUnitTechTreeCheat"/>
@@ -915,6 +1056,30 @@
         <OperandArray index="0" value="CountUpgradeIDFSupportCompleteOnly"/>
         <OperandArray index="1" value="4"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTE529531359CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE535010406CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat2">
+        <OperandArray index="0" value="CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE567023099CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3">
+        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE579486704CountUpgradeLeadershipCompleteOnlyTechTreeCheat2">
+        <OperandArray index="0" value="CountUpgradeLeadershipCompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE605371476CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1">
+        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE879857690CountUpgradeTrainingCompleteOnlyTechTreeCheat4">
+        <OperandArray index="0" value="CountUpgradeTrainingCompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="4"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTE89067501CountUpgradeEngineeringSkillsCompleteOnly4">
         <OperandArray index="0" value="CountUpgradeEngineeringSkillsCompleteOnly"/>
         <OperandArray index="1" value="4"/>
@@ -922,18 +1087,6 @@
     <CRequirementGTE id="GTE893805867CountUpgradeIDFSupportCompleteOnly1">
         <OperandArray index="0" value="CountUpgradeIDFSupportCompleteOnly"/>
         <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat1">
-        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat2">
-        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat3">
-        <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="3"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat4">
         <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
@@ -943,20 +1096,14 @@
         <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="5"/>
     </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilFirstAidCompleteOnlyAtUnit1">
-        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnit"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilFirstAidCompleteOnlyAtUnit2">
-        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnit"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilFirstAidCompleteOnlyAtUnit3">
-        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnit"/>
+    <CRequirementGTE id="GTECountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
     </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilFirstAidCompleteOnlyAtUnit4">
-        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnit"/>
+    <CRequirementGTE id="GTECountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="4"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountAbilGhostSkillsCompleteOnlyAtUnit1">
@@ -964,77 +1111,14 @@
         <OperandArray index="0" value="CountAbilGhostSkillsCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="1"/>
     </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat1">
-        <Tooltip value=""/>
-        <OperandArray index="0" value="CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat2">
-        <Tooltip value=""/>
-        <OperandArray index="0" value="CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat3">
-        <Tooltip value=""/>
-        <OperandArray index="0" value="CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="3"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat4">
-        <Tooltip value=""/>
-        <OperandArray index="0" value="CountAbilLeadershipSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="4"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat1">
-        <OperandArray index="0" value="CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat2">
-        <OperandArray index="0" value="CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat3">
-        <OperandArray index="0" value="CountAbilMarksmanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="3"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat1">
-        <OperandArray index="0" value="CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
     <CRequirementGTE id="GTECountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat2">
         <Tooltip value=""/>
         <OperandArray index="0" value="CountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="2"/>
     </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilNapalmCompleteOnlyAtUnitTechTreeCheat1">
-        <OperandArray index="0" value="CountAbilNapalmCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat1">
-        <OperandArray index="0" value="CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat2">
-        <OperandArray index="0" value="CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat3">
-        <OperandArray index="0" value="CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="3"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat4">
-        <OperandArray index="0" value="CountAbilReconnaissanceSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="4"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit1">
-        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnit"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit2">
-        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnit"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit3">
-        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnit"/>
+    <CRequirementGTE id="GTECountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4">
@@ -1042,29 +1126,13 @@
         <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="4"/>
     </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilRiflemanSkillsCompleteOnlyAtUnit4">
-        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnit"/>
-        <OperandArray index="1" value="4"/>
-    </CRequirementGTE>
     <CRequirementGTE id="GTECountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat2">
         <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat1">
-        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat2">
-        <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="2"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat4">
         <OperandArray index="0" value="CountAbilSoldierSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="4"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountUpgradeLeadershipCompleteOnlyTechTreeCheat2">
-        <OperandArray index="0" value="CountUpgradeLeadershipCompleteOnlyTechTreeCheat"/>
-        <OperandArray index="1" value="2"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountUpgradeTrainingCompleteOnly2">
         <Tooltip value=""/>
@@ -1079,10 +1147,6 @@
         <OperandArray index="0" value="CountUpgradeTrainingCompleteOnlyTechTreeCheat"/>
         <OperandArray index="1" value="1"/>
     </CRequirementGTE>
-    <CRequirementGTE id="GTECountUpgradeTrainingCompleteOnlyTechTreeCheat2">
-        <OperandArray index="0" value="CountUpgradeTrainingCompleteOnlyTechTreeCheat"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementGTE>
     <CRequirementGTE id="GTECountUpgradeTrainingCompleteOnlyTechTreeCheat3">
         <OperandArray index="0" value="CountUpgradeTrainingCompleteOnlyTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
@@ -1094,6 +1158,10 @@
     <CRequirementLT id="LT223606906CountAbilSecurityCompleteOnlyAtUnit4">
         <OperandArray index="0" value="CountAbilSecurityCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="4"/>
+    </CRequirementLT>
+    <CRequirementLT id="LT3246158532CountUpgradeTrainingCompleteOnlyTechTreeCheat3">
+        <OperandArray index="0" value="CountUpgradeTrainingCompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="3"/>
     </CRequirementLT>
     <CRequirementLT id="LT3916787485CountUnitSatchelChargeCEQueuedOrBetter1">
         <OperandArray index="0" value="CountUnitSatchelChargeCEQueuedOrBetter"/>
@@ -1111,12 +1179,14 @@
         <OperandArray index="0" value="CountAbilAugmentationCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="5"/>
     </CRequirementLT>
-    <CRequirementLT id="LTCountAbilFirstAidCompleteOnlyAtUnit3">
-        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnit"/>
+    <CRequirementLT id="LTCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
     </CRequirementLT>
-    <CRequirementLT id="LTCountAbilFirstAidCompleteOnlyAtUnit4">
-        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnit"/>
+    <CRequirementLT id="LTCountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat4">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilFirstAidCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="4"/>
     </CRequirementLT>
     <CRequirementLT id="LTCountAbilMarksmanshipCompleteOnlyAtUnitTechTreeCheat4">
@@ -1124,17 +1194,13 @@
         <OperandArray index="1" value="4"/>
     </CRequirementLT>
     <CRequirementLT id="LTCountAbilReviveCompleteOnlyAtUnitTechTreeCheat3">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountAbilReviveCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
     </CRequirementLT>
-    <CRequirementLT id="LTCountAbilRiflemanSkillsCompleteOnlyAtUnit3">
-        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnit"/>
+    <CRequirementLT id="LTCountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>
         <OperandArray index="1" value="3"/>
-    </CRequirementLT>
-    <CRequirementLT id="LTCountAbilRiflemanSkillsCompleteOnlyAtUnit4">
-        <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnit"/>
-        <OperandArray index="1" value="4"/>
     </CRequirementLT>
     <CRequirementLT id="LTCountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat4">
         <OperandArray index="0" value="CountAbilRiflemanSkillsCompleteOnlyAtUnitTechTreeCheat"/>

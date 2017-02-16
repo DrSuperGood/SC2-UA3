@@ -1,8 +1,390 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
-    <CEffectDamage id="ApplyAI">
+    <CEffectApplyBehavior id="EquipAmmoBackPack">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipArrayPack">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/AttachAmmoBackPack"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipBackPack">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/AttachAmmoBackPack"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="EquipAutomaticRiflemanSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipMachineGun"/>
+        <EffectArray value="EquipAmmoBackPack"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="EquipBinoculars">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="EquipCyborgSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipMachineGun"/>
+        <EffectArray value="EquipAmmoBackPack"/>
+        <EffectArray value="EquipCommsHeadset"/>
+        <EffectArray value="EquipScoutVisor"/>
+    </CEffectSet>
+    <CEffectSet id="EquipFSSSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipCommsHeadset"/>
+        <EffectArray value="EquipCommsPack"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="EquipFlamethrowerFlame">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipFlamethrowerLight">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="EquipCavalryScoutSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipSteelSaber"/>
+        <EffectArray value="EquipCommsPack"/>
+        <EffectArray value="EquipScoutVisor"/>
+    </CEffectSet>
+    <CEffectSet id="EquipGhostSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipPlasmaRifle"/>
+        <EffectArray value="EquipBinoculars"/>
+    </CEffectSet>
+    <CEffectSet id="EquipJavelinGunnerSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipStandardVisionVisor"/>
+        <EffectArray value="EquipBackPack"/>
+    </CEffectSet>
+    <CEffectSet id="EquipJavelinGunnerLNSet">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/EquipJavelinGunnerSet"/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipStandardVisionVisor"/>
+    </CEffectSet>
+    <CEffectSet id="EquipPlatoonLeaderSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipArrayPack"/>
+        <EffectArray value="EquipTacticalVisor"/>
+    </CEffectSet>
+    <CEffectSet id="EquipSquadLeaderSet">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/EquipPlatoonLeaderSet"/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipArrayPack"/>
+        <EffectArray value="EquipTacticalVisor"/>
+    </CEffectSet>
+    <CEffectSet id="EquipSDMSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipDMR"/>
+        <EffectArray value="EquipBinoculars"/>
+        <EffectArray value="EquipPistol"/>
+        <EffectArray value="EquipWaistPack"/>
+    </CEffectSet>
+    <CEffectSet id="EquipCommanderSet">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/EquipPlatoonLeaderSet"/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipArrayPack"/>
+        <EffectArray value="EquipTacticalVisor"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipCombatMedicSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipBackPack"/>
+        <EffectArray value="UnequipMedicalScanVisor"/>
+        <EffectArray value="UnequipMedicChemicals"/>
+        <EffectArray value="UnequipShield"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipCyborgSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipMachineGun"/>
+        <EffectArray value="UnequipAmmoBackPack"/>
+        <EffectArray value="UnequipCommsHeadset"/>
+        <EffectArray value="UnequipScoutVisor"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipFSSSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipCommsHeadset"/>
+        <EffectArray value="UnequipCommsPack"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="UnequipFlamethrowerLight">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipFlamethrowerLight"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipFlamethrowerFlame">
+        <ValidatorArray index="0" value="RemoveFlamethrowerLightTargetFilters"/>
+        <EditorCategories value=""/>
+        <Marker Link="Effect/RemoveFlamethrowerLight"/>
+        <BehaviorLink value="EquipFlamethrowerLight"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipBinoculars">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/EquipBinoculars"/>
+        <BehaviorLink value="EquipBinoculars"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="EquipCommsHeadset">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipCommsPack">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipFlamethrowerMask">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipMedicChemicals">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipMedicalScanVisor">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipPistol">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="EquipSFAATSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipShotgun"/>
+        <EffectArray value="EquipCommsHeadset"/>
+        <EffectArray value="EquipCommsPack"/>
+    </CEffectSet>
+    <CEffectSet id="EquipFlamethrowerSet">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/EquipCombatMedicSet"/>
+        <EffectArray value="EquipFlamethrower"/>
+        <EffectArray value="EquipFlamethrowerMask"/>
+        <EffectArray value="EquipTankPack"/>
+        <EffectArray value="EquipFlamethrowerFlame"/>
+        <EffectArray value="EquipFlamethrowerLight"/>
+    </CEffectSet>
+    <CEffectSet id="EquipRiflemanSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipBackPack"/>
+    </CEffectSet>
+    <CEffectSet id="EquipCombatMedicSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipBackPack"/>
+        <EffectArray value="EquipMedicalScanVisor"/>
+        <EffectArray value="EquipMedicChemicals"/>
+        <EffectArray value="EquipShield"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="EquipScoutVisor">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipShield">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipStandardVisionVisor">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipTacticalVisor">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipTankPack">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipWaistPack">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="UnequipArrayPack">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipArrayPack"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="UnequipAutomaticRiflemanSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipMachineGun"/>
+        <EffectArray value="UnequipAmmoBackPack"/>
+    </CEffectSet>
+    <CEffectSet id="EquipRifleSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EquipRifle"/>
+        <EffectArray value="EquipSteelSaber"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="UnequipBackPack">
+        <EditorCategories value=""/>
+        <Behavior value="EquipBackPack"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="UnequipCommsHeadset">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipCommsHeadset"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipCommsPack">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipCommsPack"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipFlamethrowerMask">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipFlamethrowerMask"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="UnequipGhostSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipPlasmaRifle"/>
+        <EffectArray value="UnequipBinoculars"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipJavelinGunnerSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipStandardVisionVisor"/>
+        <EffectArray value="UnequipBackPack"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipJavelinGunnerLNSet">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/UnequipJavelinGunnerSet"/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipStandardVisionVisor"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="UnequipMedicChemicals">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipMedicChemicals"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipMedicalScanVisor">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipMedicalScanVisor"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipPistol">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipPistol"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="UnequipPlatoonLeaderSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipArrayPack"/>
+        <EffectArray value="UnequipTacticalVisor"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipSquadLeaderSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipArrayPack"/>
+        <EffectArray value="UnequipTacticalVisor"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipSDMSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipDMR"/>
+        <EffectArray value="UnequipBinoculars"/>
+        <EffectArray value="UnequipPistol"/>
+        <EffectArray value="UnequipWaistPack"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipSFAATSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipShotgun"/>
+        <EffectArray value="UnequipCommsHeadset"/>
+        <EffectArray value="UnequipCommsPack"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipRiflemanSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipBackPack"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipRifleSet">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/EquipRifleSet"/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipSteelSaber"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="MonomolecularWireCreatePersist">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="CasterPoint"/>
+        <OffsetVectorStartLocation Value="CasterPoint"/>
+        <PeriodCount value="17"/>
+        <PeriodicEffectArray value="MonomolecularWireSearchArea"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="0,-2,0"/>
+        <PeriodicOffsetArray value="0,-3,0"/>
+        <PeriodicOffsetArray value="0,-4,0"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicOffsetArray value="0,-6,0"/>
+        <PeriodicOffsetArray value="0,-7,0"/>
+        <PeriodicOffsetArray value="0,-8,0"/>
+        <PeriodicOffsetArray value="0,-9,0"/>
+        <PeriodicOffsetArray value="0,-10,0"/>
+        <PeriodicOffsetArray value="0,-11,0"/>
+        <PeriodicOffsetArray value="0,-12,0"/>
+        <PeriodicOffsetArray value="0,-13,0"/>
+        <PeriodicOffsetArray value="0,-14,0"/>
+        <PeriodicOffsetArray value="0,-15,0"/>
+        <PeriodicOffsetArray value="0,-16,0"/>
+        <PeriodicOffsetArray value="0,-17,0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="MonomolecularWireSearchArea">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="-;Self,Mechanical,Psionic,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="90" Radius="1.5" Effect="MonomolecularWireSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MonomolecularWireSet">
+        <ValidatorArray value="NoMWBuff"/>
+        <EditorCategories value="Race:Terran"/>
+        <Marker>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <EffectArray value="MonoWireDamage1"/>
+        <EffectArray value="MonoWireDamage2"/>
+        <EffectArray value="MonoWireDamage3"/>
+        <EffectArray value="MonoWireDamage4"/>
+        <EffectArray value="MonoWireAB1"/>
+        <EffectArray value="MonoWireAB2"/>
+    </CEffectSet>
+    <CEffectSet id="CavalryScoutLaunchSteelSaberSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SteelSaberBullet"/>
+        <EffectArray value="HeroReload"/>
+    </CEffectSet>
+    <CEffectDamage id="ChargerAI">
         <EditorCategories value=""/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="EquipSteelSaber">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipDMR">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipFlamethrower">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipMachineGun">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipPlasmaRifle">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EquipShotgun">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SquadLeaderLaunchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SquadLeaderBullet"/>
+        <EffectArray value="NPCReload"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="EquipRifle">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="CommanderLaunchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="CommanderBullet"/>
+        <EffectArray value="NPCReload"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="UnequipDMR">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipDMR"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipFlamethrower">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipFlamethrower"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipMachineGun">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipMachineGun"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipPlasmaRifle">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipPlasmaRifle"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipRifle">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipRifle"/>
+    </CEffectRemoveBehavior>
     <CEffectDamage id="HunterRoar">
         <EditorCategories value="Race:Zerg"/>
         <AINotifyFlags index="HurtEnemy" value="1"/>
@@ -382,16 +764,19 @@
         <EditorCategories value=""/>
         <EffectArray value="MachinegunSwitchMissileType"/>
         <EffectArray value="BulletDrainMineral"/>
+        <EffectArray value="HeroReload"/>
     </CEffectSet>
     <CEffectSet id="MachinegunBulletImpact">
         <EditorCategories value=""/>
         <EffectArray value="MachinegunSwitchDamage"/>
     </CEffectSet>
     <CEffectSet id="MachinegunFire3" parent="MachinegunFire">
-        <EffectArray value="IncendiaryRoundCost"/>
+        <EffectArray index="2" value="IncendiaryRoundCost"/>
+        <EffectArray value="HeroReload"/>
     </CEffectSet>
     <CEffectSet id="MachineGunFire3" parent="MachinegunFire">
         <EffectArray index="1" value="BulletDrainEnergy"/>
+        <EffectArray index="2" value="NPCReload"/>
     </CEffectSet>
     <CEffectEnumArea id="30mmChainGunSA">
         <EditorCategories value=""/>
@@ -1654,6 +2039,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="ImmediateSmokeImpact"/>
         <AmmoUnit value="Shell"/>
+        <Flags index="Placement" value="1"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="IncendiaryRndDoT">
         <EditorCategories value="Race:Terran"/>
@@ -1915,6 +2301,7 @@
         <LaunchOffset value="0,0,2"/>
         <ImpactEffect value="M1AbramsDamage"/>
         <AmmoUnit value="BradleyHERound"/>
+        <ImpactLocation Value="TargetPoint"/>
     </CEffectLaunchMissile>
     <CEffectCreateUnit id="M1SentryGun">
         <EditorCategories value="Race:Terran"/>
@@ -1967,7 +2354,7 @@
         <WhichUnit Value="Source"/>
         <Abil value="MiniMRL"/>
         <Player Value="Source"/>
-        <Target Value="TargetUnitOrPoint"/>
+        <Target Value="TargetPoint"/>
         <ValidatorArray value="FilterHeroMechArmorMassive"/>
         <ValidatorArray value="NoNearbyAllies6"/>
     </CEffectIssueOrder>
@@ -2113,7 +2500,7 @@
         <Amount value="600"/>
         <Random value="25"/>
         <AreaArray Radius="2.5" Fraction="1"/>
-        <SearchFilters value="Ground;Missile,Stasis,Dead,Invulnerable"/>
+        <SearchFilters value="-;Psionic,Missile,Stasis,Dead,Invulnerable"/>
         <SearchFlags index="ExtendByUnitRadius" value="1"/>
         <AttributeFactor index="Heroic" value="-0.5"/>
     </CEffectDamage>
@@ -2983,6 +3370,63 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
+    <CEffectSet id="UnequipFlamethrowerSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipFlamethrower"/>
+        <EffectArray value="UnequipFlamethrowerMask"/>
+        <EffectArray value="UnequipTankPack"/>
+        <EffectArray value="UnequipFlamethrowerFlame"/>
+        <EffectArray value="UnequipFlamethrowerLight"/>
+    </CEffectSet>
+    <CEffectSet id="UnequipCavalryScoutSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipSteelSaber"/>
+        <EffectArray value="UnequipCommsPack"/>
+        <EffectArray value="UnequipScoutVisor"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="UnequipScoutVisor">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipScoutVisor"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipShield">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipShield"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipShotgun">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipShotgun"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="UnequipCommanderSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnequipRifle"/>
+        <EffectArray value="UnequipArrayPack"/>
+        <EffectArray value="UnequipTacticalVisor"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="UnequipStandardVisionVisor">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipStandardVisionVisor"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipSteelSaber">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipSteelSaber"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipAmmoBackPack">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipAmmoBackPack"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipTacticalVisor">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipTacticalVisor"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipTankPack">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipTankPack"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="UnequipWaistPack">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EquipWaistPack"/>
+    </CEffectRemoveBehavior>
     <CEffectDamage id="VesaniaExplosionDmg">
         <EditorCategories value="Race:Zerg"/>
         <Amount value="200"/>
@@ -3063,6 +3507,9 @@
         <AttributeFactor index="Armored" value="-0.2"/>
         <AttributeFactor index="Mechanical" value="-0.2"/>
         <AttributeFactor index="Heroic" value="-0.6"/>
+        <Total value="Combine"/>
+        <ExcludeArray Value="Target"/>
+        <ExcludeArray Value="Source"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="VesaniaGLLaunch">
         <EditorCategories value="Race:Terran"/>
@@ -3311,27 +3758,25 @@
     </CEffectCreateUnit>
     <CEffectDamage id="MonoWireDamage3">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Armored" value="-100"/>
-        <AttributeBonus index="Massive" value="-100"/>
-        <AttributeBonus index="Heroic" value="-400"/>
-        <ArmorReduction value="12"/>
+        <AttributeBonus index="Heroic" value="-0.5"/>
         <Amount value="1600"/>
         <Marker Link="Mono Wire">
             <MatchFlags index="CasterUnit" value="1"/>
         </Marker>
+        <ValidatorArray value="MonoWire33"/>
+        <Total value="Combine"/>
     </CEffectDamage>
     <CEffectDamage id="MonoWireDamage4">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Armored" value="-100"/>
-        <AttributeBonus index="Massive" value="-100"/>
-        <AttributeBonus index="Heroic" value="-400"/>
-        <ArmorReduction value="14"/>
+        <AttributeBonus index="Heroic" value="-0.5"/>
         <Amount value="2000"/>
         <Marker Link="Mono Wire">
             <MatchFlags index="CasterUnit" value="1"/>
         </Marker>
+        <ValidatorArray value="MonoWire4"/>
+        <Total value="Combine"/>
     </CEffectDamage>
-    <CEffectLaunchMissile id="MonoWireLaunch1">
+    <CEffectLaunchMissile id="MonoWireLaunch">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Value="TargetPoint"/>
@@ -3407,118 +3852,36 @@
         <Marker Link="Mono Wire">
             <MatchFlags index="CasterUnit" value="1"/>
         </Marker>
+        <ValidatorArray index="0" value="MonoWire3"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="MonoWireAB2">
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="MonomolecularWire1"/>
+        <Behavior value="MonomolecularWire2"/>
         <Marker Link="Mono Wire">
             <MatchFlags index="CasterUnit" value="1"/>
         </Marker>
+        <ValidatorArray index="0" value="MonoWire32"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="MonoWireDamage1">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Armored" value="-50"/>
-        <AttributeBonus index="Massive" value="-50"/>
-        <AttributeBonus index="Heroic" value="-200"/>
-        <ArmorReduction value="8"/>
+        <AttributeBonus index="Heroic" value="-0.5"/>
         <Amount value="800"/>
         <Marker Link="Mono Wire">
             <MatchFlags index="CasterUnit" value="1"/>
         </Marker>
+        <ValidatorArray value="MonoWire1"/>
+        <Total value="Combine"/>
     </CEffectDamage>
     <CEffectDamage id="MonoWireDamage2">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Armored" value="-100"/>
-        <AttributeBonus index="Massive" value="-100"/>
-        <AttributeBonus index="Heroic" value="-400"/>
-        <ArmorReduction value="9"/>
+        <AttributeBonus index="Heroic" value="-0.5"/>
         <Amount value="1200"/>
         <Marker Link="Mono Wire">
             <MatchFlags index="CasterUnit" value="1"/>
         </Marker>
+        <ValidatorArray value="MonoWire2"/>
+        <Total value="Combine"/>
     </CEffectDamage>
-    <CEffectCreatePersistent id="MonoWireOffset1">
-        <EditorCategories value="Race:Terran"/>
-        <WhichLocation Value="SourceUnitOrPoint"/>
-        <PeriodCount value="1"/>
-        <PeriodicEffectArray value="MonoWireLaunch1"/>
-        <PeriodicOffsetArray value="0,-17,0"/>
-        <PeriodicPeriodArray value="0"/>
-    </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="MonoWireOffset2">
-        <EditorCategories value="Race:Terran"/>
-        <Marker Link="Effect/MonoWireOffset1"/>
-        <WhichLocation Value="SourceUnitOrPoint"/>
-        <PeriodCount value="1"/>
-        <PeriodicEffectArray value="MonoWireLaunch1"/>
-        <PeriodicOffsetArray value="0,-20,0"/>
-        <PeriodicPeriodArray value="0"/>
-    </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="MonoWireOffset3">
-        <EditorCategories value="Race:Terran"/>
-        <Marker Link="Effect/MonoWireOffset1"/>
-        <WhichLocation Value="SourceUnitOrPoint"/>
-        <PeriodCount value="1"/>
-        <PeriodicEffectArray value="MonoWireLaunch1"/>
-        <PeriodicOffsetArray value="0,-24,0"/>
-        <PeriodicPeriodArray value="0"/>
-    </CEffectCreatePersistent>
-    <CEffectEnumArea id="MonoWireSA1">
-        <EditorCategories value="Race:Terran"/>
-        <SearchFilters value="-;Self,Player,Mechanical,Psionic,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="MonoWireSet1"/>
-    </CEffectEnumArea>
-    <CEffectEnumArea id="MonoWireSA2">
-        <EditorCategories value="Race:Terran"/>
-        <SearchFilters value="-;Self,Player,Mechanical,Psionic,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="MonoWireSet2"/>
-    </CEffectEnumArea>
-    <CEffectEnumArea id="MonoWireSA3">
-        <EditorCategories value="Race:Terran"/>
-        <SearchFilters value="-;Self,Player,Mechanical,Psionic,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="MonoWireSet3"/>
-    </CEffectEnumArea>
-    <CEffectEnumArea id="MonoWireSA4">
-        <EditorCategories value="Race:Terran"/>
-        <SearchFilters value="-;Self,Player,Mechanical,Psionic,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="MonoWireSet4"/>
-    </CEffectEnumArea>
-    <CEffectSet id="MonoWireSet1">
-        <EditorCategories value="Race:Terran"/>
-        <EffectArray value="MonoWireDamage1"/>
-        <EffectArray value="MonoWireAB1"/>
-        <ValidatorArray value="NoMWBuff"/>
-        <Marker Link="Mono Wire">
-            <MatchFlags index="CasterUnit" value="1"/>
-        </Marker>
-    </CEffectSet>
-    <CEffectSet id="MonoWireSet2">
-        <EditorCategories value="Race:Terran"/>
-        <EffectArray value="MonoWireDamage2"/>
-        <EffectArray value="MonoWireAB1"/>
-        <ValidatorArray value="NoMWBuff"/>
-        <Marker Link="Mono Wire">
-            <MatchFlags index="CasterUnit" value="1"/>
-        </Marker>
-    </CEffectSet>
-    <CEffectSet id="MonoWireSet3">
-        <ValidatorArray value="NoMWBuff"/>
-        <EditorCategories value="Race:Terran"/>
-        <Marker Link="Mono Wire">
-            <MatchFlags index="CasterUnit" value="1"/>
-        </Marker>
-        <EffectArray value="MonoWireDamage3"/>
-        <EffectArray value="MonoWireAB2"/>
-    </CEffectSet>
-    <CEffectSet id="MonoWireSet4">
-        <ValidatorArray value="NoMWBuff"/>
-        <EditorCategories value="Race:Terran"/>
-        <Marker Link="Mono Wire">
-            <MatchFlags index="CasterUnit" value="1"/>
-        </Marker>
-        <EffectArray value="MonoWireDamage4"/>
-        <EffectArray value="MonoWireAB2"/>
-    </CEffectSet>
     <CEffectApplyBehavior id="OpportunedShot">
         <EditorCategories value="Race:Terran"/>
         <Chance value="0.3"/>
@@ -4257,6 +4620,7 @@
         <LaunchOffset value="0,0,2"/>
         <ImpactEffect value="BradleyHEDamage"/>
         <AmmoUnit value="BradleyHERound"/>
+        <ImpactLocation Value="TargetPoint"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="CommanderBullet">
         <ValidatorArray index="0" value="NeedleSpinesLaunchMissileTargetFilters"/>
@@ -4956,6 +5320,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="SmokeGrenadeImpact"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="Placement" value="1"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="PoliceOfficerRifleBullet">
         <ValidatorArray index="0" value="NeedleSpinesLaunchMissileTargetFilters"/>
@@ -5023,6 +5388,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="GroundFlareImpact"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="Placement" value="1"/>
     </CEffectLaunchMissile>
     <CEffectEnumArea id="SmokeGrenadeSearchArea">
         <EditorCategories value="Race:Terran"/>
@@ -5237,6 +5603,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FragGrenadeDamage4"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="Placement" value="1"/>
+        <Flags index="PointFallback" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="FragGrenadeLaunchMissile2">
         <ValidatorArray index="0" removed="1"/>
@@ -5244,6 +5612,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FragGrenadeDamage2"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="Placement" value="1"/>
+        <Flags index="PointFallback" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="FragGrenade3LaunchMissile">
         <ValidatorArray index="0" removed="1"/>
@@ -5251,6 +5621,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FragGrenadeDamage3"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="Placement" value="1"/>
+        <Flags index="PointFallback" value="0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="RiflemanAssaultRifle" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -5313,6 +5685,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FragGrenadeDamage1"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="Placement" value="1"/>
+        <Flags index="PointFallback" value="0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="FragGrenadeDamage2" parent="FragGrenadeDamage1">
         <Amount value="650"/>
