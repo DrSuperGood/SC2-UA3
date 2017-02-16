@@ -3686,6 +3686,7 @@ Param/Value/B696D40F=If you die, a medic can revive you.
 Param/Value/B69E89EA=: I never thought anybody would come! Thank you!
 Param/Value/B6D07CD2=<c val="FF0000"> -RESPAWN</c>
 Param/Value/B6F208B8=, press <c val="008000">\</c> and click the K button next to their name.
+Param/Value/B7190199=+
 Param/Value/B731897E=GEN
 Param/Value/B74D95B4=Some sentry guns placed.
 Param/Value/B76BED0E=OctoCamo unlocked.

@@ -11,7 +11,6 @@
         <Value>bnet:Swarm (Campaign)/0.0/999,file:Campaigns/Swarm.SC2Campaign</Value>
         <Value>bnet:Swarm Story (Campaign)/0.0/999,file:Campaigns/SwarmStory.SC2Campaign</Value>
         <Value>bnet:Undead Assault 3 2015 Assets/1.0/211722</Value>
-        <Value>file:Mods\UA3 2015\UA3 2015 Assets.SC2Mod</Value>
     </Dependencies>
     <Screenshot>
         <File>

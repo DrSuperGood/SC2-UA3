@@ -26764,9 +26764,9 @@ bool gt_CriticalShot_Func (bool testConds, bool runActions) {
     SoundPlayOnUnit(SoundLink("CriticalShot", -1), PlayerGroupAll(), EventUnit(), 0.0, 100.0, 0.0);
     lv_totaldamage = (EventUnitDamageAmount() * (lv_level + 2.0));
     UnitDamage(EventUnitDamageSourceUnit(), "CriticalShotBonus", EventUnit(), (EventUnitDamageAmount() * (lv_level + 1.0)));
-    TextTagCreate((StringExternal("Param/Value/576A9F80") + TextWithColor(FixedToText(lv_totaldamage, 0), gv_cOLOURCOMBATEFFECT)), 24, UnitGetPosition(EventUnitDamageSourceUnit()), 1.0, true, false, PlayerGroupAll());
+    TextTagCreate((TextWithColor(StringExternal("Param/Value/B7190199"), gv_cOLOURCOMBATEFFECT) + TextWithColor(FixedToText(lv_totaldamage, 0), gv_cOLOURCOMBATEFFECT)), 20, UnitGetPosition(EventUnitDamageSourceUnit()), 1.0, true, false, PlayerGroupAll());
     TextTagAttachToUnit(TextTagLastCreated(), EventUnitDamageSourceUnit(), 1.0);
-    TextTagSetTime(TextTagLastCreated(), c_textTagTimeDuration, 1.25);
+    TextTagSetTime(TextTagLastCreated(), c_textTagTimeDuration, 0.75);
     TextTagSetTime(TextTagLastCreated(), c_textTagTimeFadeOut, 0.5);
     TextTagSetVelocity(TextTagLastCreated(), 0.75, 90.0);
     TriggerEnable(TriggerGetCurrent(), true);
