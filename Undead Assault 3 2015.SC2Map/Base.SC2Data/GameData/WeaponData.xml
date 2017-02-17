@@ -169,7 +169,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="SquadLeaderBullet"/>
+        <Effect value="SquadLeaderLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DMR">
         <EditorCategories value="Race:Terran"/>
@@ -190,10 +190,11 @@
         <Backswing value="0"/>
         <Effect value="SDMMiniLaunchSet"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="DrakeClaws">
+    <CWeaponLegacy id="DrakeBite">
         <EditorCategories value="Race:Zerg"/>
         <Options index="Melee" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="EelDamage"/>
         <TargetFilters value="Ground,Visible;Psionic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="150"/>
         <Range value="0.1"/>
@@ -217,7 +218,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="PlasmRifleMissile"/>
+        <Effect value="GhostMiniLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GrotesqueCleaver">
         <EditorCategories value="Race:Zerg"/>
@@ -407,6 +408,18 @@
         <Backswing value="0"/>
         <Effect value="SentryGunMMGLaunchMissile"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PoochBite">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="MutantClaws"/>
+        <TargetFilters value="Ground,Visible;Psionic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="40"/>
+        <Range value="0.1"/>
+        <Period value="1.2"/>
+        <DamagePoint value="0.2666"/>
+        <Effect value="MutantClaws"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PlasmaRifle">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-ability-terran-raynorplasmagun.dds"/>
@@ -484,7 +497,7 @@
         <Period value="0.3"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="GhostDisLaunchSet"/>
+        <Effect value="GhostIncinLaunchSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ApiarySpores">
         <EditorCategories value="Race:Zerg"/>
@@ -557,12 +570,11 @@
         <Cost>
             <Resource index="Minerals" value="1"/>
             <Resource index="Custom" value="1"/>
-            <Cooldown Link="Weapon/MachineGun"/>
         </Cost>
         <Period value="0.25"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="SteelSaberBullet"/>
+        <Effect value="CavalryScoutLaunchSteelSaberSet"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GrenadeLauncher">
         <EditorCategories value="Race:Terran"/>
@@ -691,7 +703,7 @@
         <Period value="0.35"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="CommanderBullet"/>
+        <Effect value="CommanderLaunchSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Carbine">

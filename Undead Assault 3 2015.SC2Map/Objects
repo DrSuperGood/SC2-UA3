@@ -105,7 +105,7 @@
     <ObjectUnit Id="1291" Position="190.7094,71.9355,0" Rotation="5.9826" Scale="1,1,1" UnitType="Civilian">
         <Texture TexSlot="main" TexProps="male,03" TexLink=""/>
     </ObjectUnit>
-    <ObjectUnit Id="274" Variation="1" Position="104.5886,120.8676,0" Rotation="0.191" Scale="1,1,1" UnitType="CivilianFemale"/>
+    <ObjectUnit Id="274" Variation="1" Position="104.5898,120.8698,0" Rotation="0.191" Scale="1,1,1" Name="Akma&apos;s Wife" UnitType="CivilianFemale"/>
     <ObjectUnit Id="1256" Position="95.246,224.9584,0" Rotation="2.4096" Scale="1,1,1" UnitType="CivilianFemale">
         <Texture TexSlot="main" TexProps="female,02" TexLink=""/>
     </ObjectUnit>
@@ -8691,14 +8691,14 @@
         <CameraValue Index="FalloffStart" Value="0.0002"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
-    <ObjectCamera Id="2587" Position="25.6076,236.3664,0" Rotation="0.3881" Scale="1,1,1" Name="TCP Cin" Color="0,0,0,0" CameraTarget="25.6076,236.3664">
+    <ObjectCamera Id="2587" Position="25.6076,236.3664,0" Rotation="0.388" Scale="1,1,1" Name="TCP Cin" Color="0,0,0,0" CameraTarget="25.6076,236.3664">
         <CameraValue Index="FieldOfView" Value="27.7995"/>
         <CameraValue Index="NearClip" Value="0.0998"/>
         <CameraValue Index="FarClip" Value="600"/>
         <CameraValue Index="ShadowClip" Value="75"/>
         <CameraValue Index="Distance" Value="17.4831"/>
         <CameraValue Index="Pitch" Value="22.94"/>
-        <CameraValue Index="Yaw" Value="22.2551"/>
+        <CameraValue Index="Yaw" Value="22.2412"/>
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffStart" Value="0.0002"/>
         <CameraValue Index="FalloffEnd" Value="8"/>

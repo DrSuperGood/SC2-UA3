@@ -4,6 +4,10 @@
         <Model value="Models/Soldier/Weapons/Standard Rifle.m3"/>
         <EditorCategories value=""/>
     </CModel>
+    <CModel id="Bullet" parent="MissileFX">
+        <Model value="Buttons\models\Projectiles\Seewhatsee_Bullet.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
     <CModel id="ATRocketImpact" parent="ImpactFX">
         <Model value="Assets\Effects\Terran\YamatoMissileImpact\YamatoMissileImpact.m3"/>
         <EditorCategories value="Race:Terran"/>
@@ -117,11 +121,44 @@
         <Model value="Assets\UI\Feedback\Confirmation_Attack\Confirmation_Attack.m3"/>
         <EditorCategories value="Race:Terran"/>
     </CModel>
+    <CModel id="Ignis" parent="Unit" Race="Terran">
+        <Model value="Assets\Units\Terran\FirebatMercenary\FirebatMercenary.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid04"/>
+        <TechPurchaseCamera value="TechPurchaseInfantry"/>
+        <UnitGlossaryCamera value="Star2CameraMid04"/>
+        <TextureDeclares Prefix="Firebat_">
+            <Adaptions TriggerOnSubstring="_Diffuse" Slot="main"/>
+            <Adaptions TriggerOnSubstring="_Emissive" Slot="main"/>
+            <Adaptions TriggerOnSubstring="_Specular" Slot="main"/>
+        </TextureDeclares>
+        <TextureDeclares Prefix="FirebatMercenary_">
+            <Adaptions TriggerOnSubstring="_Diffuse" Slot="head"/>
+            <Adaptions TriggerOnSubstring="_Emissive" Slot="head"/>
+            <Adaptions TriggerOnSubstring="_Specular" Slot="head"/>
+        </TextureDeclares>
+    </CModel>
     <CModel id="Lyote">
         <TextureDeclares index="0" Prefix="Lyote_">
             <Adaptions TriggerOnSubstring="_Normal" Slot="main"/>
             <Adaptions TriggerOnSubstring="_Specular" Slot="main"/>
         </TextureDeclares>
+    </CModel>
+    <CModel id="M92Torrent" parent="Unit">
+        <Model value="Models\Soldier\Weapons\NanaKey_WP_MikeMorhaimeSkin_SniperGun.m3"/>
+        <EditorCategories value=""/>
+    </CModel>
+    <CModel id="Marauder">
+        <TextureDeclares>
+            <Adaptions TriggerOnSubstring="_Diffuse" Slot="main"/>
+            <Adaptions TriggerOnSubstring="_Emissive" Slot="main"/>
+            <Adaptions TriggerOnSubstring="_Specular" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="Vesania" parent="Marauder">
+        <Occlusion value="None"/>
+        <TextureDeclares index="0" Prefix="Marauder_"/>
+        <TextureDeclares/>
     </CModel>
     <CModel id="VikingFighterRipWaveAttackImpact">
         <ScaleMax value="2.000000,2.000000,2.000000"/>
@@ -306,9 +343,7 @@
             <Attachment value="Ref_Head"/>
             <Payload value="Mercenary03_Stand_Cover_Talk_04"/>
         </Events>
-        <FacialController value="LocalizedData\Facial\SM_Mercenary03.fxa"/>
         <Flags index="Download" value="1"/>
-        <Flags index="Facial" value="1"/>
         <Flags index="IgnoreAspectRatioScale" value="0"/>
     </CModel>
     <CModel id="IDMR2" parent="Unit">
@@ -350,14 +385,8 @@
         <Model value="Models/Soldier/Weapons/m241.m3"/>
         <EditorCategories value=""/>
     </CModel>
-    <CModel id="Marauder">
-        <TextureDeclares>
-            <Adaptions TriggerOnSubstring="_01" Slot="decal"/>
-        </TextureDeclares>
-    </CModel>
     <CModel id="MedicChemicals" parent="Unit">
-        <Model value="Models/Soldier/Med Chemicals.m3"/>
-        <EditorCategories value=""/>
+        <Model value="Models\Soldier\Med Chemicals.m3"/>
     </CModel>
     <CModel id="Medicalscanvisor" parent="Unit">
         <Model value="Models/Soldier/Medical Scan Visor.m3"/>
@@ -691,7 +720,7 @@
         <Lighting value="0UA3Cycle"/>
     </CModel>
     <CModel id="NeedleSpinesWeapon2" parent="MissileFX">
-        <Model value="Assets\Effects\Zerg\HydraliskMissile\HydraliskMissile.m3"/>
+        <Model value="Buttons\models\Projectiles\Seewhatsee_Bullet.m3"/>
         <EditorCategories value="Race:Zerg"/>
     </CModel>
     <CModel id="ReviveHero" parent="FX">
@@ -793,6 +822,7 @@
     </CModel>
     <CModel id="Item" parent="Doodad">
         <Model value="Assets\Doodads\Crate\Crate_01.m3"/>
+        <Occlusion value="Show"/>
     </CModel>
     <CModel id="Glutton" parent="Unit" Race="Zerg">
         <Model value="fleshgolem2.m3"/>
@@ -917,7 +947,7 @@
         <ScaleMax value="2.200000,2.200000,2.200000"/>
         <ScaleMin value="1.900000,1.900000,1.900000"/>
     </CModel>
-    <CModel id="40mmGrenadeWeapon" parent="MissileFX">
+    <CModel id="40mmGrenade" parent="MissileFX">
         <Model value="Buttons\models\Projectiles\40mm Grenade.m3"/>
         <EditorCategories value="Race:Terran"/>
         <SelectionRadius value="0.833200"/>
