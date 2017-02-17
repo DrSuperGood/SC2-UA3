@@ -1,3 +1,0 @@
-DocInfo/DescLong=This mod contains the generic Assets used by the map Undead Assault 3 2015. These assets were extracted from the map itself to enable smaller or partial map updates. Developers can freely link this mod to save space but be aware that it is subject to revision based on Undead Assault 3 2015.
-DocInfo/DescShort=UA3 Players
-DocInfo/Name=Undead Assault 3 2015 Assets
