@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CActorUnit id="CasterDummy" parent="PolygonBase" unitName="CasterDummy">
+        <Model value="ShapeSphere"/>
+        <BuildModel value="ShapeSphere"/>
+        <DeathArray index="Normal" ModelLink="ShapeSphere"/>
+        <PlacementModel value="ShapeSphere"/>
+    </CActorUnit>
     <CActorEventMacro id="Animations">
         <EditorCategories value=""/>
         <On Terms="Abil.FlareGunItem.SourceCastStart" Send="AnimPlay Superior Superior"/>
@@ -44,6 +50,7 @@
     </CActorSound>
     <CActorUnit id="68WCombatMedic" parent="GenericUnitBase" unitName="68WCombatMedic">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.InfantryRiflemanRifle; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.InfantryRiflemanRifle; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -108,6 +115,7 @@
     </CActorUnit>
     <CActorUnit id="74DFlamethrower" parent="GenericUnitBase" unitName="74DFlamethrower">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.74DFlamethrower; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.74DFlamethrower; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -298,6 +306,7 @@
     </CActorSound>
     <CActorUnit id="AutomaticRifleman" parent="GenericUnitBase" unitName="AutomaticRifleman">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -375,6 +384,7 @@
     </CActorSimple>
     <CActorUnit id="CavalryScout" parent="GenericUnitBase" unitName="CavalryScout">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -440,6 +450,7 @@
     </CActorUnit>
     <CActorUnit id="CombatEngineer" parent="GenericUnitBase" unitName="CombatEngineer">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -505,6 +516,7 @@
     </CActorUnit>
     <CActorUnit id="CombatEngineerMini" parent="GenericUnitBase" unitName="CombatEngineerMini">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.Shotgun; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.Shotgun; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -569,6 +581,7 @@
     </CActorUnit>
     <CActorUnit id="CombatMedic" parent="GenericUnitBase" unitName="CombatMedic">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.AssaultRifle2; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.AssaultRifle2; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -634,6 +647,7 @@
     </CActorUnit>
     <CActorUnit id="Cyborg" parent="GenericUnitBase" unitName="Cyborg">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -700,6 +714,7 @@
     </CActorUnit>
     <CActorUnit id="FireSupportSpecialist" parent="GenericUnitBase" unitName="FireSupportSpecialist">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -765,6 +780,7 @@
     </CActorUnit>
     <CActorUnit id="Flamethrower" parent="GenericUnitBase" unitName="Flamethrower">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.Flamethrower; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.Flamethrower; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -944,6 +960,7 @@
     </CActorBeamSimple>
     <CActorUnit id="Ghost2" parent="GenericUnitBase" unitName="GhostHero">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1010,6 +1027,7 @@
     </CActorUnit>
     <CActorUnit id="Ghost3" parent="GenericUnitBase" unitName="GhostMini">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1111,6 +1129,7 @@
     </CActorSound>
     <CActorUnit id="InfantryRifleman" parent="GenericUnitBase" unitName="InfantryRifleman">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.InfantryRiflemanRifle; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.InfantryRiflemanRifle; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1187,6 +1206,7 @@
     </CActorSimple>
     <CActorUnit id="JavelinGunner2" parent="GenericUnitBase" unitName="JavelinGunner2">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1252,6 +1272,7 @@
     </CActorUnit>
     <CActorUnit id="JavelinGunner" parent="GenericUnitBase" unitName="JavelinGunner">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.AssaultRifleJavGun; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.AssaultRifleJavGun; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1311,6 +1332,7 @@
     </CActorUnit>
     <CActorUnit id="LNAutoRifle" parent="GenericUnitBase" unitName="LNAutomaticRifleman">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.SquadAutomaticWeaponLN; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.SquadAutomaticWeaponLN; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1372,6 +1394,7 @@
     </CActorUnit>
     <CActorUnit id="LNCombatEngineer" parent="GenericUnitBase" unitName="LNCombatEngineer">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.LNShotgun; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.LNShotgun; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1433,6 +1456,7 @@
     </CActorUnit>
     <CActorUnit id="LNJavelinGunner" parent="GenericUnitBase" unitName="LNJavelinGunner">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.LNAssaultRifle; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.LNAssaultRifle; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1489,6 +1513,7 @@
     </CActorUnit>
     <CActorUnit id="LNRifleman" parent="GenericUnitBase" unitName="LNRifleman">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.LNAssaultRifle; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.LNAssaultRifle; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1548,6 +1573,7 @@
     </CActorUnit>
     <CActorUnit id="LNSquadDesignatedMarksman" parent="GenericUnitBase" unitName="LNSquadDesignatedMarksman">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.DMRLN; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.DMRLN; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1621,6 +1647,7 @@
     </CActorModel>
     <CActorUnit id="PlatoonLeader" parent="GenericUnitBase" unitName="PlatoonLeader">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.AssaultRiflePL.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.AssaultRiflePL.AttackStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1788,6 +1815,7 @@
     </CActorDoodad>
     <CActorUnit id="SFAAT" parent="GenericUnitBase" unitName="SFAAT">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.ShotgunSFAAT; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.ShotgunSFAAT; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1872,6 +1900,7 @@
     </CActorSound>
     <CActorUnit id="Sniper" parent="GenericUnitBase" unitName="Sniper">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.SniperRifle; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.SniperRifle; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -1931,6 +1960,7 @@
     </CActorUnit>
     <CActorUnit id="SquadDesignatedMarksman" parent="GenericUnitBase" unitName="SquadDesignatedMarksman">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.DesignatedMarksmanRifle; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.DesignatedMarksmanRifle; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -2000,6 +2030,7 @@
     </CActorUnit>
     <CActorUnit id="SquadLeader" parent="GenericUnitBase" unitName="SquadLeader">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.AssaultRifleSLMini; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.AssaultRifleSLMini; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -5650,6 +5681,7 @@
     </CActorAction>
     <CActorUnit id="InfantrySDM" parent="GenericUnitBase" unitName="InfantrySDM">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -6688,9 +6720,12 @@
     </CActorModel>
     <CActorAction id="OrbitalStrikeAction" parent="GenericAttack" effectImpact="FragGrenadeDamage1" effectLaunch="FragGrenade1LaunchMissile">
         <FogVisibility value="Visible"/>
-        <On index="1" Terms="Effect.OrbitalStrikeDamage1.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
-        <On index="2" Terms="Effect.OrbitalStrikeDamage1.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
-        <On index="6" Terms="Effect.OrbitalStrikeDamage1.Start; At Caster" Send="Create"/>
+        <On index="1" Terms="Effect.SplashDamage.Start; FromEffectTreeDescendant" Send="ActionDamage"/>
+        <On index="2" Terms="Effect.SplashDamage.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On index="3" Terms="Effect.Bogus.Start; At Caster" Send="Create"/>
+        <On index="4" Terms="Effect.OrbitalStrikeDamage1.Start; At Caster" Send="Create"/>
+        <On index="5" removed="1"/>
+        <On index="6" removed="1"/>
         <Beam value="OrbitalStrikeBeam"/>
         <ImpactMap index="None">
             <Model value="TossGrenadeImpact"/>
@@ -10963,6 +10998,7 @@
     </CActorMissile>
     <CActorUnit id="Commander" parent="GenericUnitBase" unitName="Commander">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.AssaultRifle3; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart.AssaultRifle3; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
@@ -12209,6 +12245,7 @@
     </CActorDoodad>
     <CActorUnit id="InfantryAutoRifle" parent="GenericUnitBase" unitName="InfantryAutomaticRifleman">
         <Macros value="UnloadDropAnim"/>
+        <Macros value="Animations"/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
         <On Terms="WeaponStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>

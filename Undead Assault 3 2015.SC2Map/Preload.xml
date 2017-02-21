@@ -247,7 +247,6 @@
 <Behavior id="M241MMG"/>
 <Behavior id="M41SAW"/>
 <Behavior id="MRLAIHeroMechanical"/>
-<Behavior id="EquipSteelSaber"/>
 <Behavior id="Spawned"/>
 <Behavior id="TimeStopped"/>
 <Behavior id="UnknownBehavior"/>
@@ -459,11 +458,11 @@
 <Sound id="Heartbeat"/>
 <Sound id="noammo"/>
 <Sound id="magout"/>
-<Sound id="lowammo"/>
 <Sound id="diebuzz"/>
 <Terrain id="AgriaEx1"/>
 <Unit id="InfestedCivilian"/>
 <Unit id="ColonistShipFlying"/>
+<Unit id="ColonistShip"/>
 <Unit id="DestructibleGateStraightHorizontalBF"/>
 <Unit id="MetalGateDiagonalULBR"/>
 <Unit id="MetalGateStraightHorizontalBF"/>

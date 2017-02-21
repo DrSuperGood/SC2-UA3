@@ -210,7 +210,6 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventoryFlame"/>
@@ -417,7 +416,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="CallForFireAspectus"/>
@@ -435,7 +434,7 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
         </CardLayouts>
@@ -1326,7 +1325,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventoryPlasma"/>
@@ -1354,7 +1353,7 @@
             <LayoutButtons Type="AbilCmd" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
         </CardLayouts>
         <Radius value="0.375"/>
         <SeparationRadius value="0.375"/>
@@ -1538,7 +1537,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventoryRifle"/>
@@ -1561,7 +1560,7 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -1615,6 +1614,7 @@
         <Name value="Unit/Name/LNSquadDesignatedMarksman"/>
         <EnergyStart value="35"/>
         <EnergyMax value="35"/>
+        <AbilArray index="4" Link="Reload2"/>
         <AbilArray Link="MiniInventorySDM"/>
         <AbilArray Link="BinocularsLN"/>
         <AbilArray Link="RapidFireLN"/>
@@ -1629,6 +1629,9 @@
             <LayoutButtons Face="RapidFireOff2" Type="AbilCmd" AbilCmd="RapidFireLN,Off" Row="2" Column="3"/>
             <LayoutButtons Face="MarksmanSkillsLN" Type="Passive" Behavior="MarksmanSkills2" Row="2" Column="2"/>
             <LayoutButtons Face="FieldCameraLN" Type="AbilCmd" AbilCmd="FieldCameraLN,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <CardLayouts index="1" CardId="0003">
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
         </CardLayouts>
         <EffectArray index="Birth" value="EquipDMR"/>
         <EffectArray index="Death" value="UnequipDMR"/>
@@ -1824,7 +1827,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventorySDM"/>
@@ -1848,7 +1851,7 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -1985,7 +1988,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="MiniMRL"/>
         <AbilArray Link="Jump"/>
@@ -2006,7 +2009,7 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -2853,7 +2856,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventoryRifle"/>
@@ -2875,12 +2878,12 @@
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="AdditionalActions" Type="Submenu" SubmenuCardId="0003" Row="1" Column="3"/>
-            <LayoutButtons Face="FragGrenadeItem" Type="AbilCmd" AbilCmd="FragGrenadeMini,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="FragGrenade" Type="AbilCmd" AbilCmd="FragGrenadeMini,Execute" Row="2" Column="4"/>
         </CardLayouts>
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -3732,6 +3735,7 @@
         <Name value="Unit/Name/LNCombatEngineer"/>
         <EnergyStart value="25"/>
         <EnergyMax value="25"/>
+        <AbilArray index="4" Link="Reload2"/>
         <AbilArray Link="MiniInventoryShotgun"/>
         <AbilArray Link="ClusterRocketsLN"/>
         <AbilArray Link="BarricadeLN"/>
@@ -3743,6 +3747,9 @@
             <LayoutButtons Face="ClusterRocketsLN" Type="AbilCmd" AbilCmd="ClusterRocketsLN,Execute" Row="2" Column="1"/>
             <LayoutButtons Face="M1SentryGunLN" Type="AbilCmd" AbilCmd="M1SentryGunLN,Execute" Row="2" Column="2"/>
             <LayoutButtons Face="BarricadeLN" Type="AbilCmd" AbilCmd="BarricadeLN,Execute" Row="1" Column="2"/>
+        </CardLayouts>
+        <CardLayouts index="1" CardId="0003">
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
         </CardLayouts>
         <EffectArray index="Birth" value="EquipShotgun"/>
         <EffectArray index="Death" value="UnequipShotgun"/>
@@ -3768,6 +3775,7 @@
         <Name value="Unit/Name/LNRifleman"/>
         <EnergyStart value="60"/>
         <EnergyMax value="60"/>
+        <AbilArray index="4" Link="Reload2"/>
         <AbilArray Link="MiniInventoryRifle"/>
         <AbilArray Link="FiremodeLN"/>
         <AbilArray Link="FragGrenadeLN"/>
@@ -3782,6 +3790,7 @@
             <LayoutButtons Face="GroundFlare" Type="AbilCmd" AbilCmd="GroundFlareLN,Execute" Row="2" Column="4"/>
         </CardLayouts>
         <CardLayouts index="1" CardId="0003">
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="FiremodeBurst" Type="AbilCmd" AbilCmd="FiremodeLN,On" Row="1" Column="1"/>
             <LayoutButtons Face="FiremodeSemi" Type="AbilCmd" AbilCmd="FiremodeLN,Off" Row="1" Column="1"/>
         </CardLayouts>
@@ -3792,6 +3801,7 @@
         <Name value="Unit/Name/LNAutomaticRifleman"/>
         <EnergyStart value="100"/>
         <EnergyMax value="100"/>
+        <AbilArray index="4" Link="Reload2"/>
         <AbilArray Link="MiniInventoryMG"/>
         <AbilArray Link="SuppressiveFireLN"/>
         <BehaviorArray Link="MGBurst"/>
@@ -3806,6 +3816,9 @@
             <LayoutButtons Face="SuppressiveFireLN" Type="AbilCmd" AbilCmd="SuppressiveFireLN,On" Row="2" Column="2"/>
             <LayoutButtons Face="SuppressiveFireOff" Type="AbilCmd" AbilCmd="SuppressiveFireLN,Off" Row="2" Column="2"/>
         </CardLayouts>
+        <CardLayouts index="1" CardId="0003">
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
+        </CardLayouts>
         <EffectArray index="Birth" value="EquipAutomaticRiflemanSet"/>
         <EffectArray index="Death" value="UnequipAutomaticRiflemanSet"/>
     </CUnit>
@@ -3813,6 +3826,7 @@
         <Name value="Unit/Name/LNJavelinGunner"/>
         <EnergyStart value="60"/>
         <EnergyMax value="60"/>
+        <AbilArray index="4" Link="Reload2"/>
         <AbilArray Link="MiniInventoryRifle"/>
         <AbilArray Link="FiremodeLN"/>
         <AbilArray Link="HERocketLN"/>
@@ -3827,6 +3841,7 @@
             <LayoutButtons Face="SmokeGrenadeLN" Type="AbilCmd" AbilCmd="SmokeGrenadeLN,Execute" Row="2" Column="3"/>
         </CardLayouts>
         <CardLayouts index="1" CardId="0003">
+            <LayoutButtons index="2" Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="FiremodeBurst" Type="AbilCmd" AbilCmd="FiremodeLN,On" Row="1" Column="1"/>
             <LayoutButtons Face="FiremodeSemi" Type="AbilCmd" AbilCmd="FiremodeLN,Off" Row="1" Column="1"/>
         </CardLayouts>
@@ -4020,7 +4035,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventoryRifle"/>
@@ -4044,7 +4059,7 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -4692,7 +4707,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventoryMG"/>
@@ -4712,7 +4727,7 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -4785,7 +4800,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="ClusterRocketsMini"/>
         <AbilArray Link="Jump"/>
@@ -4806,7 +4821,7 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -4915,7 +4930,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Binoculars"/>
         <AbilArray Link="Jump"/>
@@ -4935,7 +4950,7 @@
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>
@@ -5792,7 +5807,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="Jump"/>
         <BehaviorArray Link="XPSharing"/>
         <WeaponArray Link="PoliceOfficerShotgun"/>
@@ -5803,7 +5818,7 @@
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="2" Column="1"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="2" Column="2"/>
         </CardLayouts>
         <Radius value="0.375"/>
@@ -6089,7 +6104,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="Jump"/>
         <BehaviorArray Link="XPSharing"/>
         <WeaponArray Link="PoliceOfficerRifle"/>
@@ -6100,7 +6115,7 @@
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="2" Column="1"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="2" Column="2"/>
         </CardLayouts>
         <Radius value="0.375"/>
@@ -6581,7 +6596,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="Sprint"/>
-        <AbilArray Link="Reload"/>
+        <AbilArray Link="Reload2"/>
         <AbilArray Link="PerformSelfAidMini"/>
         <AbilArray Link="Jump"/>
         <AbilArray Link="MiniInventoryRifle"/>
@@ -6589,6 +6604,7 @@
         <AbilArray Link="FlareGunItem"/>
         <AbilArray Link="FragGrenadeMini"/>
         <AbilArray Link="Prone"/>
+        <AbilArray Link="FragGrenadeMini"/>
         <BehaviorArray Link="XPSharing"/>
         <BehaviorArray Link="ApplyAI"/>
         <WeaponArray Link="InfantryRiflemanRifle"/>
@@ -6599,11 +6615,12 @@
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="AdditionalActions" Type="Submenu" SubmenuCardId="0003" Row="1" Column="3"/>
+            <LayoutButtons Face="FragGrenade" Type="AbilCmd" AbilCmd="FragGrenadeMini,Execute" Row="2" Column="4"/>
         </CardLayouts>
         <CardLayouts CardId="0003">
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Sprint" Type="AbilCmd" AbilCmd="Sprint,Execute" Row="0" Column="0"/>
-            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Reload" Type="AbilCmd" AbilCmd="Reload2,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="PerformSelfAid" Type="AbilCmd" AbilCmd="PerformSelfAidMini,Execute" Row="0" Column="2"/>
             <LayoutButtons Face="Jump" Type="AbilCmd" AbilCmd="Jump,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Prone" Type="AbilCmd" AbilCmd="Prone,Execute" Row="0" Column="3"/>

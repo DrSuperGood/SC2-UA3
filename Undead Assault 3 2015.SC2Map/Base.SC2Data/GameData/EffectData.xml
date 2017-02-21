@@ -89,6 +89,16 @@
         <EffectArray value="EquipArrayPack"/>
         <EffectArray value="EquipTacticalVisor"/>
     </CEffectSet>
+    <CEffectSet id="MachineGunSet">
+        <EditorCategories value=""/>
+        <EffectArray value="MachinegunSwitchShotNumber"/>
+        <EffectArray value="HeroReload"/>
+    </CEffectSet>
+    <CEffectSet id="MachineGunMiniSet">
+        <EditorCategories value=""/>
+        <EffectArray value="MachinegunSwitchShotNumber"/>
+        <EffectArray value="NPCReload"/>
+    </CEffectSet>
     <CEffectSet id="UnequipCombatMedicSet">
         <EditorCategories value=""/>
         <EffectArray value="UnequipRifle"/>
@@ -1107,6 +1117,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="ATDamage1"/>
         <AmmoUnit value="ATRocket"/>
+        <ImpactOffset value="0.4,0,0"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="ATRocket2" parent="ATRocket1">
         <ImpactEffect value="ATDamage2"/>
@@ -1355,6 +1367,7 @@
         <AmmoUnit value="ClusterRocket"/>
         <Movers Link="TornadoMissileWeaponClose" IfRangeLTE="6"/>
         <Movers Link="TornadoMissileWeapon" IfRangeLTE="20"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectApplyBehavior id="CEClusterRocketStunAB">
         <EditorCategories value="Race:Terran"/>
@@ -1399,6 +1412,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="CallforFirePLDamage"/>
         <AmmoUnit value="Shell"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="CallforFirePLDamage">
         <EditorCategories value="Race:Terran"/>
@@ -1890,6 +1904,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="HEDamage1"/>
         <AmmoUnit value="MRLRocket"/>
+        <ImpactOffset value="0.4,0,0"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="HERocket2">
         <ValidatorArray index="0" removed="1"/>
@@ -1897,6 +1913,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="HEDamage2"/>
         <AmmoUnit value="MRLRocket"/>
+        <ImpactOffset value="0.4,0,0"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="HERocket3">
         <ValidatorArray index="0" removed="1"/>
@@ -1904,6 +1922,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="HEDamage3"/>
         <AmmoUnit value="MRLRocket"/>
+        <ImpactOffset value="0.4,0,0"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="HERocket4">
         <ValidatorArray index="0" removed="1"/>
@@ -1911,6 +1931,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="HEDamage4"/>
         <AmmoUnit value="MRLRocket"/>
+        <ImpactOffset value="0.4,0,0"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectEnumArea id="HellfireAIGroup">
         <ValidatorArray value="LifeMaxGE400"/>
@@ -2040,6 +2062,7 @@
         <ImpactEffect value="ImmediateSmokeImpact"/>
         <AmmoUnit value="Shell"/>
         <Flags index="Placement" value="1"/>
+        <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="IncendiaryRndDoT">
         <EditorCategories value="Race:Terran"/>
@@ -2316,6 +2339,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="MGLDamage1"/>
         <AmmoUnit value="40mmGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="MGLLaunch2">
         <ValidatorArray index="0" removed="1"/>
@@ -2324,6 +2348,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="MGLDamage2"/>
         <AmmoUnit value="40mmGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="MGLLaunch3">
         <ValidatorArray index="0" removed="1"/>
@@ -2332,6 +2357,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="MGLDamage3"/>
         <AmmoUnit value="40mmGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="MGLLaunch4">
         <ValidatorArray index="0" removed="1"/>
@@ -2340,6 +2366,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="MGLDamage4"/>
         <AmmoUnit value="40mmGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectEnumArea id="MRLAIEnumMechanical">
         <EditorCategories value="Race:Terran"/>
@@ -2506,7 +2533,6 @@
     </CEffectDamage>
     <CEffectCreatePersistent id="OrbitalStrikeDummy">
         <EditorCategories value="Race:Terran"/>
-        <Marker Link="Effect/PlasmaGrenadeDamage1"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <InitialDelay value="2"/>
@@ -2618,6 +2644,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="PlasmaGrenadePers1"/>
         <AmmoUnit value="PlasmaGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="PlasmaGrenadeLaunch2">
         <ValidatorArray index="0" removed="1"/>
@@ -2625,6 +2652,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="PlasmaGrenadePers12"/>
         <AmmoUnit value="PlasmaGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="PlasmaGrenadeLaunch3">
         <ValidatorArray index="0" removed="1"/>
@@ -2632,6 +2660,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="PlasmaGrenadePers122"/>
         <AmmoUnit value="PlasmaGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="PlasmaGrenadeLaunch4">
         <ValidatorArray index="0" removed="1"/>
@@ -2639,6 +2668,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="PlasmaGrenadePers1222"/>
         <AmmoUnit value="PlasmaGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectCreatePersistent id="PlasmaGrenadePers1">
         <EditorCategories value="Race:Terran"/>
@@ -3211,6 +3241,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="TOWImpact"/>
         <AmmoUnit value="MRLRocket"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectCreatePersistent id="TOWPersist">
         <EditorCategories value="Race:Terran"/>
@@ -3449,6 +3480,7 @@
         <AmmoUnit value="ClusterRocket"/>
         <Movers Link="TornadoMissileWeaponClose" IfRangeLTE="6"/>
         <Movers Link="TornadoMissileWeapon" IfRangeLTE="20"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectCreatePersistent id="ClusterRocketsShocker">
         <EditorCategories value="Race:Terran"/>
@@ -3516,6 +3548,7 @@
         <Marker Link="Effect/RiflemanBullet"/>
         <ImpactEffect value="VesaniaGLDamage"/>
         <AmmoUnit value="PunisherGrenadesLMWeapon"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="MetasisAttack">
         <EditorCategories value="Race:Zerg"/>
@@ -3552,6 +3585,7 @@
         <Marker Link="Effect/RiflemanBullet"/>
         <ImpactEffect value="MK79SentryGun"/>
         <AmmoUnit value="40mmGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="ShockerChainGunLaunch">
         <ValidatorArray index="0" value="NeedleSpinesLaunchMissileTargetFilters"/>
@@ -3559,6 +3593,7 @@
         <LaunchOffset value="-3,0.5,0.2"/>
         <ImpactEffect value="ShockerChainGun"/>
         <AmmoUnit value="NeedleSpinesWeapon"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="ShockerChainGun" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -3630,6 +3665,7 @@
         <AmmoUnit value="ClusterRocket"/>
         <Movers Link="TornadoMissileWeaponClose" IfRangeLTE="6"/>
         <Movers Link="TornadoMissileWeapon" IfRangeLTE="20"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectCreatePersistent id="ClusterRocketsCombatWalker">
         <EditorCategories value="Race:Terran"/>
@@ -4033,6 +4069,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="GravitonChargePersistent1"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="GravitonCharge2LaunchMissile">
         <ValidatorArray index="0" removed="1"/>
@@ -4041,6 +4078,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="GravitonChargePersistent2"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="GravitonCharge3LaunchMissile">
         <ValidatorArray index="0" removed="1"/>
@@ -4049,6 +4087,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="GravitonChargePersistent3"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="GravitonCharge4LaunchMissile">
         <ValidatorArray index="0" removed="1"/>
@@ -4057,6 +4096,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="GravitonChargePersistent4"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectApplyBehavior id="GravitonChargeAB">
         <EditorCategories value="Race:Terran"/>
@@ -4355,6 +4395,7 @@
         <AmmoUnit value="ClusterRocket"/>
         <Movers Link="TornadoMissileWeaponClose" IfRangeLTE="6"/>
         <Movers Link="TornadoMissileWeapon" IfRangeLTE="20"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectEnumArea id="FlareGunSearchArea">
         <EditorCategories value="Race:Terran"/>
@@ -4493,6 +4534,8 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FlareGunImpact"/>
         <AmmoUnit value="40mmGrenade"/>
+        <ImpactOffset value="0.4,0,0"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectApplyBehavior id="FlareGunTimedLife">
         <ValidatorArray index="0" value="SmokeGrenadeSlowTargetFilters"/>
@@ -4509,7 +4552,7 @@
         <ValidatorArray value="Energy1"/>
         <EditorCategories value="Race:Terran"/>
         <WhichUnit Value="Source"/>
-        <Abil value="Reload"/>
+        <Abil value="Reload2"/>
     </CEffectIssueOrder>
     <CEffectLaunchMissile id="LNAssaultRifleBullet">
         <ValidatorArray index="0" value="NeedleSpinesLaunchMissileTargetFilters"/>
@@ -4546,6 +4589,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="MGLDamage"/>
         <AmmoUnit value="40mmGrenade"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectSet id="IncendiaryRoundImpact">
         <EditorCategories value="Race:Terran"/>
@@ -4592,6 +4636,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="MRLDamage1"/>
         <AmmoUnit value="MRLRocket"/>
+        <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectApplyBehavior id="IncendiaryRoundApplyBehavior1">
         <EditorCategories value="Race:Terran"/>
@@ -4621,6 +4666,7 @@
         <ImpactEffect value="BradleyHEDamage"/>
         <AmmoUnit value="BradleyHERound"/>
         <ImpactLocation Value="TargetPoint"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="CommanderBullet">
         <ValidatorArray index="0" value="NeedleSpinesLaunchMissileTargetFilters"/>
@@ -5321,6 +5367,8 @@
         <ImpactEffect value="SmokeGrenadeImpact"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
         <Flags index="Placement" value="1"/>
+        <Flags index="ValidateBenign" value="0"/>
+        <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="PoliceOfficerRifleBullet">
         <ValidatorArray index="0" value="NeedleSpinesLaunchMissileTargetFilters"/>
@@ -5389,6 +5437,8 @@
         <ImpactEffect value="GroundFlareImpact"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
         <Flags index="Placement" value="1"/>
+        <Flags index="ValidateBenign" value="0"/>
+        <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectEnumArea id="SmokeGrenadeSearchArea">
         <EditorCategories value="Race:Terran"/>
@@ -5605,6 +5655,8 @@
         <AmmoUnit value="TossGrenadeWeapon"/>
         <Flags index="Placement" value="1"/>
         <Flags index="PointFallback" value="0"/>
+        <Flags index="ValidateBenign" value="0"/>
+        <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="FragGrenadeLaunchMissile2">
         <ValidatorArray index="0" removed="1"/>
@@ -5614,6 +5666,8 @@
         <AmmoUnit value="TossGrenadeWeapon"/>
         <Flags index="Placement" value="1"/>
         <Flags index="PointFallback" value="0"/>
+        <Flags index="ValidateBenign" value="0"/>
+        <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="FragGrenade3LaunchMissile">
         <ValidatorArray index="0" removed="1"/>
@@ -5623,6 +5677,8 @@
         <AmmoUnit value="TossGrenadeWeapon"/>
         <Flags index="Placement" value="1"/>
         <Flags index="PointFallback" value="0"/>
+        <Flags index="ValidateBenign" value="0"/>
+        <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="RiflemanAssaultRifle" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -5687,6 +5743,8 @@
         <AmmoUnit value="TossGrenadeWeapon"/>
         <Flags index="Placement" value="1"/>
         <Flags index="PointFallback" value="0"/>
+        <Flags index="ValidateBenign" value="0"/>
+        <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="FragGrenadeDamage2" parent="FragGrenadeDamage1">
         <Amount value="650"/>
@@ -5799,6 +5857,7 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="WhitePhosphorousImpact"/>
         <AmmoUnit value="Shell"/>
+        <Flags index="ValidateBenign" value="0"/>
     </CEffectLaunchMissile>
     <CEffectApplyBehavior id="WhitePhosphorousTimedLife">
         <EditorCategories value="Race:Terran"/>
