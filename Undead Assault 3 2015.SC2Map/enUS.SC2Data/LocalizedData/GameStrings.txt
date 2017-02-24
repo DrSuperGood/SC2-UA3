@@ -195,6 +195,7 @@ Abil/Name/RapidFire=Rapid Fire
 Abil/Name/RapidFireLN=Rapid Fire
 Abil/Name/ReconnaissanceSkills=Reconnaissance Skills
 Abil/Name/Reload=Reload
+Abil/Name/Reload2=Reload
 Abil/Name/RepairCE=Repair (CE)
 Abil/Name/Revive=Revive
 Abil/Name/RiflemanSkills=Rifleman Skills
@@ -1489,6 +1490,20 @@ DocInfo/PatchNote364=- Monomecular wire backblast bug fixed.
 DocInfo/PatchNote365=- Fixed vesania & mk79 impact animation.
 DocInfo/PatchNote366=- Ch.1 farmer akma mission fixed.
 DocInfo/PatchNote367=- Updated asset mod.
+DocInfo/PatchNote368=*Patch by RedCell5*
+DocInfo/PatchNote369=
+DocInfo/PatchNote370=-Fixed learn ability exploit that was being used during chapter transitions.
+DocInfo/PatchNote371=-Fixed MK44 exploit.
+DocInfo/PatchNote372=-Sentries now return correct ammo charges.
+DocInfo/PatchNote373=-Traumatic brain injury camera shake will cease when hero is killed.
+DocInfo/PatchNote374=-Fixed inventory bug with explosive charges losing charges. 
+DocInfo/PatchNote375=-Fixed Call For Fire actor data.
+DocInfo/PatchNote376=-Fixed Orbital Strike impact animation.
+DocInfo/PatchNote377=-Fixed a bug that caused flares, grenades, and rockets impact location to sometimes fail.
+DocInfo/PatchNote378=-Abilities that use projectiles will now use map base height properly now.
+DocInfo/PatchNote379=-Reformatted various text tags for cleaner look.
+DocInfo/PatchNote380=-Fixed evac zone response time in survival mode.
+DocInfo/PatchNote381=-Fixed heroes not becoming invunerable when extracted in survival mode.
 DocInfo/Screenshot01=Read the objectives and focus on them as a team. Remember - teamwork is key!
 DocInfo/ScreenshotHowToPlay01=This is the first screen you will see. It is recommended, as a new player, you vote for "Normal."
 DocInfo/ScreenshotHowToPlay04=Items are spawned randomly around the map. Read the tooltips! They contain vital information about the item - such as an MRL's backblast.
@@ -1988,6 +2003,8 @@ Effect/Name/MRLAISet=MRL AI Set
 Effect/Name/MRLBackblastDamage=MRL Backblast Damage
 Effect/Name/MRLDamage1=MRL Damage1
 Effect/Name/MRLFire=MRL Fire
+Effect/Name/MachineGunMiniSet=Machine Gun Mini Set
+Effect/Name/MachineGunSet=Machine Gun Set
 Effect/Name/MachineGunSwitchCost=Machine Gun Switch Cost
 Effect/Name/Machinegun=Machine Gun
 Effect/Name/MachinegunBullet=Machine Gun Bullet
@@ -2701,6 +2718,7 @@ Param/Value/33179379=<s val="AiurChefCenterSize22Bold">
 Param/Value/33ECCFA0=<c val="008000">Soldier:</c> We need to move on to the next objective.
 Param/Value/33F7D325=<c val="008000">Soldier:</c> The fog is clearing!
 Param/Value/33F8588F=Bank importing is not supported in your region.
+Param/Value/34076D8E=: Reloading!
 Param/Value/3413323E=Vehicle proceeded safely
 Param/Value/34144A3E=CADPAT camo pattern unlocked.
 Param/Value/34606553=Destroy Air Threats
@@ -2818,7 +2836,6 @@ Param/Value/41CB3CA8=<c val="0000FF">Dark Sky:</c> You don't have to enter yours
 Param/Value/4210CFA0=(None)
 Param/Value/422878FF= 
 Param/Value/424637D4=TCP 
-Param/Value/42A69E0C=
 Param/Value/42A9E408=<c val="008000">Saber Main:</c> We'll be overrun in 5. We need immediate assistance.
 Param/Value/43232507=<s val="AiurChefCenterSize22Bold">-
 Param/Value/4323C52C=<c val="008000">Ravensword:</c> Outlaw 6, ISR assets have picked up combat walkers moving towards your AO. ETA 20 minutes.
@@ -2911,7 +2928,6 @@ Param/Value/4FAC10DF=Gourmand
 Param/Value/4FDDC571= 
 Param/Value/4FF40249=hp 
 Param/Value/4FF75FE8=WO1
-Param/Value/4FFF3ABB=: Reloading!
 Param/Value/50015077=Invalid debug command.
 Param/Value/5023853F=<c val="008000">Soldier:</c> A vehicle has been destroyed!
 Param/Value/50457341=Steel Saber
@@ -3515,7 +3531,6 @@ Param/Value/9F75F147=Reduces reload and unjam time by 25%.
 Param/Value/9F784A4D=<c val="00FF80">Aspectus:</c> So some soldiers think they are tough? *Sigh* this again. Just like in Africa, a bunch of self-righteous pawns think they can rule the world. This will be quick.
 Param/Value/9FA03715= 
 Param/Value/9FA459F3= <c val="FF8000">Deaths:</c> 
-Param/Value/9FAD62A2=player revmoed
 Param/Value/9FC3B634=<s val="ArcadeFighterScoreTitle">Chapter 3</s><n/><n/><s val="BattleChatPrefix"><c val="77BBBB">Nihil Moderabile</c></s>
 Param/Value/9FC959B5=Vehicle proceeded safely
 Param/Value/A07CC903=<c val="008000">Ravensword:</c> The resonators have been air-dropped. Retrieve and activate them to destroy the tunnel systems.
@@ -3540,7 +3555,6 @@ Param/Value/A1FB7C45=(None)
 Param/Value/A214AFB1=SGT
 Param/Value/A236DD9F=Destroy RA Attack Helicopters
 Param/Value/A246756D=Abdul's truck broke down on the road. Escort him to Thalim so he can be safe.
-Param/Value/A25194CD=: Reloading!
 Param/Value/A28346CA=<c val="008000">Tank Commander:</c> All systems are go. Heading back to security zone.
 Param/Value/A2868178=</s>
 Param/Value/A28C032B=<c val="800080">Over 2,000 kills, Combat Action Badge awarded</c>
@@ -3687,7 +3701,7 @@ Param/Value/B696D40F=If you die, a medic can revive you.
 Param/Value/B69E89EA=: I never thought anybody would come! Thank you!
 Param/Value/B6D07CD2=<c val="FF0000"> -RESPAWN</c>
 Param/Value/B6F208B8=, press <c val="008000">\</c> and click the K button next to their name.
-Param/Value/B7190199=+
+Param/Value/B7190199=<s val="BossBarHP"><c val="FF0000">+</c>
 Param/Value/B731897E=GEN
 Param/Value/B74D95B4=Some sentry guns placed.
 Param/Value/B76BED0E=OctoCamo unlocked.

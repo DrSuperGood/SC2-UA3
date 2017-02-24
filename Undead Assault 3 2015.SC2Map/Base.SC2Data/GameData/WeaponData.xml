@@ -347,7 +347,7 @@
         <Period value="0.5"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="MachinegunSwitchShotNumber"/>
+        <Effect value="MachineGunSet"/>
         <DisplayAttackCount value="4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MorbusSludge">
@@ -994,7 +994,7 @@
         <Period value="0.5"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="MachinegunSwitchShotNumber"/>
+        <Effect value="MachineGunMiniSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
         <DisplayAttackCount value="4"/>
     </CWeaponLegacy>
@@ -1031,7 +1031,7 @@
         <Period value="0.5"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0"/>
-        <Effect value="MachinegunSwitchShotNumber"/>
+        <Effect value="MachineGunSet"/>
         <ChaseFilters value="-;Player,Ally,Neutral,Enemy"/>
         <DisplayAttackCount value="4"/>
         <DisplayEffect value="Machinegun"/>
@@ -1080,7 +1080,7 @@
         <MinScanRange value="17"/>
         <Range value="17"/>
         <Period value="0.5"/>
-        <Effect value="MachinegunSwitchShotNumber"/>
+        <Effect value="MachineGunMiniSet"/>
         <DisplayAttackCount value="4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DarreusClaws">

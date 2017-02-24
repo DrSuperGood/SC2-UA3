@@ -66,7 +66,7 @@
         <Vital value="Energy"/>
     </CValidatorUnitCompareVital>
     <CValidatorUnitCompareVital id="Energy1">
-        <WhichUnit Value="Source"/>
+        <WhichUnit Value="Caster"/>
         <Compare value="LT"/>
         <Value value="1"/>
         <Vital value="Energy"/>
@@ -100,7 +100,6 @@
         <Types index="Building" value="0"/>
     </CValidatorLocationPathable>
     <CValidatorPlayerCompareResource id="Minerals1">
-        <WhichPlayer Value="Source"/>
         <Compare value="LT"/>
         <Value value="1"/>
     </CValidatorPlayerCompareResource>

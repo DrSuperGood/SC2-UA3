@@ -1781,7 +1781,7 @@
                 <HideCount value="1"/>
                 <Link value="Abil/AutoTurret"/>
             </Charge>
-            <Cooldown Link="Raven Build Link" Location="Unit"/>
+            <Cooldown Link="Raven Build Link"/>
         </Cost>
         <Placeholder value="MK79SentryGun"/>
         <Range value="1.5"/>
@@ -2186,6 +2186,22 @@
         </Cost>
         <BehaviorArray value="RapidFireLN"/>
     </CAbilBehavior>
+    <CAbilEffectInstant id="Reload2">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <AutoCastFilters value="-;-"/>
+        <AINotifyEffect value=""/>
+        <EffectRange index="0" removed="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Reload">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="RepairCE">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Flags index="AllowMovement" value="1"/>
@@ -2961,7 +2977,7 @@
                 <CountUse value="1"/>
                 <Link value="ItemCharges"/>
             </Charge>
-            <Cooldown Location="Unit"/>
+            <Cooldown TimeStart="0.0625" TimeUse="0.0625"/>
         </Cost>
         <Placeholder value="ExplosiveChargeUnit"/>
         <Range value="1.5"/>
@@ -3803,7 +3819,7 @@
                 <HideCount value="1"/>
                 <Link value="Abil/AutoTurret"/>
             </Charge>
-            <Cooldown Link="Raven Build Link" Location="Unit"/>
+            <Cooldown Link="Raven Build Link"/>
         </Cost>
         <Placeholder value="MK44SentryGun"/>
         <Range value="1.5"/>
