@@ -242,17 +242,11 @@
         </EffectCost>
         <EffectFlags index="Transient" value="1"/>
     </CItemEffectInstant>
-    <CItemEffectInstant id="KineticIntegrator">
+    <CItem id="KineticIntegrator">
         <Flags index="DropOnDeath" value="1"/>
         <Class value="Misc"/>
         <CarryBehaviorArray value="KineticIntegrator"/>
-        <Effect value=""/>
-        <EffectCost>
-            <Charge Link="ItemCharges"/>
-            <Cooldown Location="Unit" TimeUse="2"/>
-        </EffectCost>
-        <EffectFlags index="Transient" value="1"/>
-    </CItemEffectInstant>
+    </CItem>
     <CItem id="HK42">
         <Flags index="DropOnDeath" value="1"/>
         <Class value="WeaponRifle"/>

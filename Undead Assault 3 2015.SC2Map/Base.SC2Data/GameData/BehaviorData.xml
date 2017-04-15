@@ -2538,6 +2538,9 @@
         <Modification AttackSpeedMultiplier="0.5">
             <ModifyFlags index="SuppressMoving" value="1"/>
             <DamageDealtFraction index="Ranged" value="0.7"/>
+            <AbilLinkDisableArray value="Jump"/>
+            <AbilLinkDisableArray value="Sprint"/>
+            <AbilLinkDisableArray value="Prone"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="RapidFire1">
@@ -4004,6 +4007,7 @@
         <InfoIcon value="Buttons\BTNEnergyGenerator.dds"/>
         <Period value="0.8"/>
         <PeriodicEffect value="EnergyCell"/>
+        <DisableValidatorArray value="IsHero"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ImprovedBloodTransfusion">
         <InfoIcon value="Buttons\BTNhealinginjection.dds"/>
