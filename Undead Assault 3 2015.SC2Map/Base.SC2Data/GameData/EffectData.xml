@@ -774,19 +774,16 @@
         <EditorCategories value=""/>
         <EffectArray value="MachinegunSwitchMissileType"/>
         <EffectArray value="BulletDrainMineral"/>
-        <EffectArray value="HeroReload"/>
     </CEffectSet>
     <CEffectSet id="MachinegunBulletImpact">
         <EditorCategories value=""/>
         <EffectArray value="MachinegunSwitchDamage"/>
     </CEffectSet>
     <CEffectSet id="MachinegunFire3" parent="MachinegunFire">
-        <EffectArray index="2" value="IncendiaryRoundCost"/>
-        <EffectArray value="HeroReload"/>
+        <EffectArray value="IncendiaryRoundCost"/>
     </CEffectSet>
     <CEffectSet id="MachineGunFire3" parent="MachinegunFire">
         <EffectArray index="1" value="BulletDrainEnergy"/>
-        <EffectArray index="2" value="NPCReload"/>
     </CEffectSet>
     <CEffectEnumArea id="30mmChainGunSA">
         <EditorCategories value=""/>
@@ -5653,9 +5650,6 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FragGrenadeDamage4"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
-        <Flags index="Placement" value="1"/>
-        <Flags index="PointFallback" value="0"/>
-        <Flags index="ValidateBenign" value="0"/>
         <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="FragGrenadeLaunchMissile2">
@@ -5664,9 +5658,6 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FragGrenadeDamage2"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
-        <Flags index="Placement" value="1"/>
-        <Flags index="PointFallback" value="0"/>
-        <Flags index="ValidateBenign" value="0"/>
         <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="FragGrenade3LaunchMissile">
@@ -5675,9 +5666,6 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FragGrenadeDamage3"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
-        <Flags index="Placement" value="1"/>
-        <Flags index="PointFallback" value="0"/>
-        <Flags index="ValidateBenign" value="0"/>
         <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="RiflemanAssaultRifle" parent="DU_WEAP">
@@ -5741,9 +5729,6 @@
         <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="FragGrenadeDamage1"/>
         <AmmoUnit value="TossGrenadeWeapon"/>
-        <Flags index="Placement" value="1"/>
-        <Flags index="PointFallback" value="0"/>
-        <Flags index="ValidateBenign" value="0"/>
         <ImpactOffset value="0.4,0,0"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="FragGrenadeDamage2" parent="FragGrenadeDamage1">

@@ -1100,6 +1100,7 @@ trigger gt_CameraShakeLarge;
 trigger gt_JumpInjury;
 trigger gt_LearnMarksmanSkills;
 trigger gt_Prone;
+trigger gt_BehaviorSafeLoop;
 trigger gt_LaserDesignatorReveal;
 trigger gt_DropMagazine;
 trigger gt_FlamethrowerMagazines;
@@ -1219,6 +1220,10 @@ trigger gt_ReloadHero;
 trigger gt_ReloadMini;
 trigger gt_Jam;
 trigger gt_Unjam;
+trigger gt_AutomaticReloadFromEffect;
+trigger gt_AutomaticReloadMiniFromEffect;
+trigger gt_AutomaticReload;
+trigger gt_AutomaticReloadMini;
 trigger gt_HeroGainLevel;
 trigger gt_HeroDeath;
 trigger gt_Revive;
@@ -6368,7 +6373,6 @@ void gf_InitGameSetup () {
         if ((PlayerStatus(lv_loopint) == c_playerStatusActive)) {
             PlayerGroupAdd(gv_players, lv_loopint);
             PlayerOptionOverride(lv_loopint, "simplecommandcard", "0");
-            PlayerOptionOverride(lv_loopint, "displayunitstatus", "Damaged");
             PlayerOptionOverride(lv_loopint, "showcurrentordermodel", "0");
         }
 
@@ -27040,6 +27044,38 @@ void gt_Prone_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Behavior Safe Loop
+//--------------------------------------------------------------------------------------------------
+bool gt_BehaviorSafeLoop_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitGroupLoopBegin(gv_heroesGroup);
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("Marksmanship", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("SoldierSkills", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("Augmentation", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("FirstAid", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("Napalm", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("ReconnaissanceSkills", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("MarksmanSkills", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("LeadershipSkills", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("EngineeringSkills", 0)), c_orderQueueReplace);
+        UnitIssueOrder(UnitGroupLoopCurrent(), Order(AbilityCommand("GhostSkills", 0)), c_orderQueueReplace);
+    }
+    UnitGroupLoopEnd();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_BehaviorSafeLoop_Init () {
+    gt_BehaviorSafeLoop = TriggerCreate("gt_BehaviorSafeLoop_Func");
+    TriggerAddEventTimePeriodic(gt_BehaviorSafeLoop, 10.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Laser Designator Reveal
 //--------------------------------------------------------------------------------------------------
 bool gt_LaserDesignatorReveal_Func (bool testConds, bool runActions) {
@@ -33468,6 +33504,247 @@ void gt_Unjam_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Automatic Reload From Effect
+//--------------------------------------------------------------------------------------------------
+bool gt_AutomaticReloadFromEffect_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_attacker;
+    int lv_owner;
+
+    // Variable Initialization
+    lv_attacker = EventPlayerEffectUsedUnit(c_effectUnitCaster);
+    lv_owner = EventPlayerEffectUsedUnitOwner(c_effectPlayerOrigin);
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitGroupHasUnit(gv_heroesGroup, lv_attacker) == true))) {
+            return false;
+        }
+
+        if (!((PlayerGetPropertyInt(lv_owner, c_playerPropMinerals) < 1))) {
+            return false;
+        }
+
+        if (!((UnitGroupHasUnit(gv_reloading, lv_attacker) == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    gf_ReloadPlayer(lv_owner, lv_owner);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_AutomaticReloadFromEffect_Init () {
+    gt_AutomaticReloadFromEffect = TriggerCreate("gt_AutomaticReloadFromEffect_Func");
+    TriggerAddEventPlayerEffectUsed(gt_AutomaticReloadFromEffect, c_playerAny, "BulletDrainMineral");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Automatic Reload Mini From Effect
+//--------------------------------------------------------------------------------------------------
+bool gt_AutomaticReloadMiniFromEffect_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_attacker;
+    int lv_owner;
+    int lv_texttag;
+    fixed lv_reloadbasetime;
+    fixed lv_reloadmod;
+
+    // Variable Initialization
+    lv_attacker = EventPlayerEffectUsedUnit(c_effectUnitCaster);
+    lv_owner = EventPlayerEffectUsedUnitOwner(c_effectPlayerOrigin);
+    lv_texttag = c_textTagNone;
+    lv_reloadbasetime = RandomFixed(3.8, 4.2);
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitGroupHasUnit(gv_reloading, lv_attacker) == false))) {
+            return false;
+        }
+
+        if (!((UnitGetPropertyFixed(lv_attacker, c_unitPropEnergy, c_unitPropCurrent) < 1.0))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((UnitBehaviorEnabled(lv_attacker, "Training1") == true)) {
+        lv_reloadmod = 0.6;
+    }
+
+    if ((UnitBehaviorEnabled(lv_attacker, "Training2") == true)) {
+        lv_reloadmod = 1.5;
+    }
+
+    if ((UnitHasBehavior(lv_attacker, "SOFAR") == true)) {
+        lv_reloadbasetime = (lv_reloadbasetime * 0.85);
+    }
+
+    UnitGroupAdd(gv_reloading, lv_attacker);
+    TextTagCreate((TextWithColor(PlayerName(lv_owner), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lv_owner, false))) + StringExternal("Param/Value/14E5FC56")), 16, UnitGetPosition(lv_attacker), 1.0, true, true, PlayerGroupAll());
+    lv_texttag = TextTagLastCreated();
+    TextTagSetTime(lv_texttag, c_textTagTimeDuration, 4.0);
+    TextTagAttachToUnit(lv_texttag, lv_attacker, 1.0);
+    SoundPlayAtPoint(SoundLink("magout", -1), PlayerGroupAll(), UnitGetPosition(lv_attacker), 0.0, 100.0, 0.0);
+    Wait((RandomFixed((lv_reloadbasetime - 0.2), (lv_reloadbasetime + 0.2)) - lv_reloadmod), c_timeGame);
+    SoundPlayAtPoint(SoundLink("magin", -1), PlayerGroupAll(), UnitGetPosition(lv_attacker), 0.0, 100.0, 0.0);
+    Wait(1.0, c_timeGame);
+    SoundPlayAtPoint(SoundLink("charginghandle", -1), PlayerGroupAll(), UnitGetPosition(lv_attacker), 0.0, 100.0, 0.0);
+    UnitSetPropertyFixed(lv_attacker, c_unitPropEnergyPercent, 100.0);
+    TextTagDestroy(lv_texttag);
+    UnitGroupRemove(gv_reloading, lv_attacker);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_AutomaticReloadMiniFromEffect_Init () {
+    gt_AutomaticReloadMiniFromEffect = TriggerCreate("gt_AutomaticReloadMiniFromEffect_Func");
+    TriggerAddEventPlayerEffectUsed(gt_AutomaticReloadMiniFromEffect, c_playerAny, "BulletDrainEnergy");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Automatic Reload
+//--------------------------------------------------------------------------------------------------
+bool gt_AutomaticReload_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_attacker;
+    int lv_owner;
+
+    // Variable Initialization
+    lv_attacker = EventUnit();
+    lv_owner = EventPlayer();
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitGroupHasUnit(gv_heroesGroup, lv_attacker) == true))) {
+            return false;
+        }
+
+        if (!((PlayerGetPropertyInt(lv_owner, c_playerPropMinerals) == 0))) {
+            return false;
+        }
+
+        if (!((UnitGetType(lv_attacker) != "Flamethrower"))) {
+            return false;
+        }
+
+        if (!((UnitGroupHasUnit(gv_reloading, lv_attacker) == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    gf_ReloadPlayer(lv_owner, lv_owner);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_AutomaticReload_Init () {
+    gt_AutomaticReload = TriggerCreate("gt_AutomaticReload_Func");
+    TriggerAddEventUnitStartedAttack(gt_AutomaticReload, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Automatic Reload Mini
+//--------------------------------------------------------------------------------------------------
+bool gt_AutomaticReloadMini_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_attacker;
+    int lv_texttag;
+    fixed lv_reloadbasetime;
+    fixed lv_reloadmod;
+    point lv_position;
+
+    // Variable Initialization
+    lv_attacker = EventUnit();
+    lv_texttag = c_textTagNone;
+    lv_reloadbasetime = RandomFixed(3.8, 4.2);
+    lv_position = UnitGetPosition(lv_attacker);
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitGroupHasUnit(gv_reloading, EventUnit()) == false))) {
+            return false;
+        }
+
+        if (!((UnitGetPropertyFixed(EventUnit(), c_unitPropEnergy, c_unitPropCurrent) < 1.0))) {
+            return false;
+        }
+
+        if (!(((UnitGetType(EventUnit()) == "PoliceOfficer") || (UnitGetType(EventUnit()) == "PoliceOfficerShotgun") || (UnitGetType(EventUnit()) == "InfantryAutomaticRifleman") || (UnitGetType(EventUnit()) == "InfantryRifleman") || (UnitGetType(EventUnit()) == "LNAutomaticRifleman") || (UnitGetType(EventUnit()) == "LNRifleman") || (UnitGetType(EventUnit()) == "LNJavelinGunner") || (UnitGetType(EventUnit()) == "LNCombatEngineer") || (UnitGetType(EventUnit()) == "LNSquadDesignatedMarksman") || (UnitGetType(EventUnit()) == "Sniper") || (UnitGetType(EventUnit()) == "CombatEngineerMini") || (UnitGetType(EventUnit()) == "Commander") || (UnitGetType(EventUnit()) == "JavelinGunner") || (UnitGetType(EventUnit()) == "SquadLeader") || (UnitGetType(EventUnit()) == "68WCombatMedic") || (UnitGetType(EventUnit()) == "InfantrySDM")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((UnitBehaviorEnabled(EventUnit(), "Training1") == true)) {
+        lv_reloadmod = 0.6;
+    }
+
+    if ((UnitBehaviorEnabled(EventUnit(), "Training2") == true)) {
+        lv_reloadmod = 1.5;
+    }
+
+    if ((UnitHasBehavior(EventUnit(), "SOFAR") == true)) {
+        lv_reloadbasetime = (lv_reloadbasetime * 0.85);
+    }
+
+    UnitGroupAdd(gv_reloading, lv_attacker);
+    if ((lv_position != null)) {
+        TextTagCreate((TextWithColor(PlayerName(EventPlayer()), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(EventPlayer(), false))) + StringExternal("Param/Value/E108CB34")), 16, lv_position, 1.0, true, true, PlayerGroupAll());
+        lv_texttag = TextTagLastCreated();
+        TextTagSetTime(lv_texttag, c_textTagTimeDuration, 4.0);
+        TextTagAttachToUnit(lv_texttag, lv_attacker, 1.0);
+    }
+
+    if ((lv_position != null)) {
+        SoundPlayAtPoint(SoundLink("magout", -1), PlayerGroupAll(), lv_position, 0.0, 100.0, 0.0);
+    }
+
+    Wait((RandomFixed((lv_reloadbasetime - 0.2), (lv_reloadbasetime + 0.2)) - lv_reloadmod), c_timeGame);
+    if ((lv_position != null)) {
+        SoundPlayAtPoint(SoundLink("magin", -1), PlayerGroupAll(), lv_position, 0.0, 100.0, 0.0);
+    }
+
+    Wait(1.0, c_timeGame);
+    if ((lv_position != null)) {
+        SoundPlayAtPoint(SoundLink("charginghandle", -1), PlayerGroupAll(), lv_position, 0.0, 100.0, 0.0);
+    }
+
+    UnitSetPropertyFixed(lv_attacker, c_unitPropEnergyPercent, 100.0);
+    if ((lv_position != null)) {
+        TextTagDestroy(lv_texttag);
+    }
+
+    UnitGroupRemove(gv_reloading, lv_attacker);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_AutomaticReloadMini_Init () {
+    gt_AutomaticReloadMini = TriggerCreate("gt_AutomaticReloadMini_Func");
+    TriggerAddEventUnitStartedAttack(gt_AutomaticReloadMini, null);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Hero Gain Level
 //--------------------------------------------------------------------------------------------------
 bool gt_HeroGainLevel_Func (bool testConds, bool runActions) {
@@ -35197,6 +35474,7 @@ void InitTriggers () {
     gt_JumpInjury_Init();
     gt_LearnMarksmanSkills_Init();
     gt_Prone_Init();
+    gt_BehaviorSafeLoop_Init();
     gt_LaserDesignatorReveal_Init();
     gt_DropMagazine_Init();
     gt_FlamethrowerMagazines_Init();
@@ -35316,6 +35594,10 @@ void InitTriggers () {
     gt_ReloadMini_Init();
     gt_Jam_Init();
     gt_Unjam_Init();
+    gt_AutomaticReloadFromEffect_Init();
+    gt_AutomaticReloadMiniFromEffect_Init();
+    gt_AutomaticReload_Init();
+    gt_AutomaticReloadMini_Init();
     gt_HeroGainLevel_Init();
     gt_HeroDeath_Init();
     gt_Revive_Init();

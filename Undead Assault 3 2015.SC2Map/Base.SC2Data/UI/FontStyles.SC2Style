@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StyleFile>
+    <Style name="BossBarTitle" template="BossBarTitleTerran" font="UI\Fonts\Eurostile-Bol.otf" height="24" vjustify="Top" hjustify="Center" styleflags="Shadow" textcolor="255,68,255,116" highlightcolor="255,0,0,0" disabledcolor="255,0,0,0" hotkeycolor="255,0,0,0" hyperlinkcolor="255,0,0,0" glowcolor="255,0,0,0" shadowoffset="2" outlinewidth="0"/>
     <Style name="0UI_LCD" font="UI\Fonts\LiquidCrystal-Bold.otf" height="20" vjustify="Top" hjustify="Left" fontflags="HintingAuto" styleflags="Shadow | Glow | Outline" textcolor="255,159,237,215" highlightcolor="255,0,0,0" disabledcolor="255,0,0,0" hotkeycolor="255,0,0,0" hyperlinkcolor="255,0,0,0" glowcolor="255,0,128,255" shadowoffset="2" outlinewidth="1"/>
 </StyleFile>
