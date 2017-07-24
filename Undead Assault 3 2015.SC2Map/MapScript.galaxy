@@ -16019,7 +16019,7 @@ bool gt_FarmerAkma_Func (bool testConds, bool runActions) {
     for ( ; ( (autoE5731956_ai >= 0 && lv_int <= autoE5731956_ae) || (autoE5731956_ai <= 0 && lv_int >= autoE5731956_ae) ) ; lv_int += autoE5731956_ai ) {
         while ((lv_siloNotSet[lv_int] == true)) {
             lv_randomSilo = RandomInt(1, 8);
-            if ((lv_siloSet[gv_silonextint] == false)) {
+            if ((lv_siloSet[lv_randomSilo] == false)) {
                 gv_silonext[lv_int] = gv_silos[lv_randomSilo];
                 lv_siloSet[lv_randomSilo] = true;
                 lv_siloNotSet[lv_int] = false;
