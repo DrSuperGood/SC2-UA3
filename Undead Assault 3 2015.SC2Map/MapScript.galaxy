@@ -15972,21 +15972,16 @@ void gt_FarmerAkmaWork_Init () {
 // Trigger: Farmer Akma
 //--------------------------------------------------------------------------------------------------
 bool gt_FarmerAkma_Func (bool testConds, bool runActions) {
-    int init_i;
-
     int autoE5731956_ae;
     int autoE5731956_ai;
 
     // Variable Declarations
     int lv_int;
-    bool[9] lv_siloSet;
-    bool[9] lv_siloNotSet;
+    int lv_siloListCount;
     int lv_randomSilo;
 
     // Variable Initialization
-    for (init_i = 0; init_i <= 8; init_i += 1) {
-        lv_siloNotSet[init_i] = true;
-    }
+    lv_siloListCount = 8;
 
     // Actions
     if (!runActions) {
@@ -16017,16 +16012,10 @@ bool gt_FarmerAkma_Func (bool testConds, bool runActions) {
     autoE5731956_ai = 1;
     lv_int = 1;
     for ( ; ( (autoE5731956_ai >= 0 && lv_int <= autoE5731956_ae) || (autoE5731956_ai <= 0 && lv_int >= autoE5731956_ae) ) ; lv_int += autoE5731956_ai ) {
-        while ((lv_siloNotSet[lv_int] == true)) {
-            lv_randomSilo = RandomInt(1, 8);
-            if ((lv_siloSet[gv_silonextint] == false)) {
-                gv_silonext[lv_int] = gv_silos[lv_randomSilo];
-                lv_siloSet[lv_randomSilo] = true;
-                lv_siloNotSet[lv_int] = false;
-            }
-
-            Wait(0.1, c_timeGame);
-        }
+        lv_randomSilo = RandomInt(1, lv_siloListCount);
+        gv_silonext[lv_int] = gv_silos[lv_randomSilo];
+        gv_silos[lv_randomSilo] = gv_silos[lv_siloListCount];
+        lv_siloListCount -= 1;
     }
     gf_MissionText(StringExternal("Param/Value/6E6CA469"));
     Wait(7.0, c_timeGame);
@@ -16241,7 +16230,7 @@ bool gt_FarmerAkmaLoop_Func (bool testConds, bool runActions) {
         }
         else {
             gv_silonextint += 1;
-            if ((gv_silonextint == gv_silocount)) {
+            if ((gv_silonextint > gv_silocount)) {
                 UnitGroupRemove(gv_undeadTargetGroup, gv_farmerakma);
                 PlayerGroupLoopBegin(PlayerGroupAll());
                 for ( ; !PlayerGroupLoopDone() ; PlayerGroupLoopStep() ) {
