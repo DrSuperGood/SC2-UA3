@@ -316,10 +316,10 @@
 <Effect id="InfestedSiloExplosionDamage"/>
 <Effect id="ReviveModifyUnit"/>
 <Effect id="WhitePhosphorousLaunch"/>
+<Light id="TimeStop"/>
 <Light id="BioResonator"/>
 <Light id="NODs"/>
 <Light id="NODsBright"/>
-<Light id="TimeStop"/>
 <Light id="UA3Dawn"/>
 <Light id="UA3Day"/>
 <Light id="UA3Dusk"/>
@@ -339,8 +339,8 @@
 <Model id="FireMedium"/>
 <Model id="RainEmitterLarge"/>
 <Model id="Rock"/>
-<Model id="EnergyNovaShockwave"/>
 <Model id="BriefingHighlight"/>
+<Model id="EnergyNovaShockwave"/>
 <Model id="Exclamation"/>
 <Model id="BioResExplode"/>
 <Model id="PingSimpleSmall"/>
